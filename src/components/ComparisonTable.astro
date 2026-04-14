@@ -1,0 +1,92 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+
+interface TableColumn {
+  key: string;
+  label: string;
+}
+
+interface TableRow {
+  name: string;
+  affiliateLinkId?: string;
+  values: Record<string, string | number>;
+  highlight?: boolean;
+}
+
+interface Props {
+  title: string;
+  columns: TableColumn[];
+  rows: TableRow[];
+}
+
+const { title, columns, rows } = Astro.props;
+---
+
+<div class="comparison-table-wrapper">
+  <h3>{title}</h3>
+  <div class="table-scroll">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Naam</th>
+          {columns.map((col) => <th>{col.label}</th>)}
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr class:list={[{ highlight: row.highlight }]}>
+            <td class="product-name">{row.name}</td>
+            {columns.map((col) => (
+              <td>{row.values[col.key] ?? '—'}</td>
+            ))}
+            <td>
+              {row.affiliateLinkId && (
+                <AffiliateButton linkId={row.affiliateLinkId} variant="primary" />
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .comparison-table-wrapper {
+    margin: 2rem 0;
+  }
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap;
+  }
+  .comparison-table th {
+    background: var(--color-bg-alt);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: var(--color-text-light);
+  }
+  .product-name {
+    font-weight: 600;
+  }
+  tr.highlight {
+    background: #eff6ff;
+  }
+  tr.highlight .product-name {
+    color: var(--color-primary);
+  }
+</style>

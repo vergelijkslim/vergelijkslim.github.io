@@ -1,0 +1,32 @@
+---
+import { getLink, buildTrackingUrl, getDefaults } from '../lib/affiliates';
+
+interface Props {
+  linkId: string;
+  label?: string;
+  variant?: 'primary' | 'cta';
+  trackingParams?: Record<string, string>;
+}
+
+const { linkId, label, variant = 'cta', trackingParams } = Astro.props;
+const link = getLink(linkId);
+const defaults = getDefaults();
+
+if (!link) {
+  throw new Error(`Affiliate link "${linkId}" not found. Register it in affiliate-data.ts`);
+}
+
+const href = buildTrackingUrl(link, trackingParams);
+const buttonLabel = label || link.label;
+---
+
+<a
+  href={href}
+  rel={defaults.rel}
+  target={defaults.target}
+  class:list={['btn', `btn-${variant}`]}
+  data-affiliate-id={linkId}
+  data-affiliate-network={link.network}
+>
+  {buttonLabel}
+</a>

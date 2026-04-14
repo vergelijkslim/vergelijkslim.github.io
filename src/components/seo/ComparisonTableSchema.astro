@@ -1,0 +1,22 @@
+---
+interface TableRow {
+  name: string;
+  [key: string]: string | number | boolean;
+}
+
+interface Props {
+  items: TableRow[];
+  aboutName: string;
+}
+
+const { items, aboutName } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Table',
+  about: aboutName,
+  description: `Vergelijking van ${items.length} ${aboutName}`,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

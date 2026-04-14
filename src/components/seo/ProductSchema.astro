@@ -1,0 +1,46 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  image?: string;
+  brand?: string;
+  ratingValue?: number;
+  ratingCount?: number;
+  priceRange?: string;
+  url?: string;
+}
+
+const {
+  name,
+  description,
+  image,
+  brand,
+  ratingValue,
+  ratingCount,
+  priceRange,
+  url = Astro.url.href,
+} = Astro.props;
+
+const schema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name,
+  description,
+  url,
+};
+
+if (image) schema.image = image;
+if (brand) schema.brand = { '@type': 'Brand', name: brand };
+if (ratingValue && ratingCount) {
+  schema.aggregateRating = {
+    '@type': 'AggregateRating',
+    ratingValue,
+    reviewCount: ratingCount,
+    bestRating: 5,
+    worstRating: 1,
+  };
+}
+if (priceRange) schema.offers = { '@type': 'AggregateOffer', priceCurrency: 'EUR', priceRange };
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
