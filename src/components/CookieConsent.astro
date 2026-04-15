@@ -1,0 +1,111 @@
+---
+---
+<div id="cookie-consent" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-content">
+    <p>
+      Wij gebruiken cookies om je ervaring te verbeteren en ons verkeer te analyseren.
+      Lees meer in ons <a href="/privacy/">privacybeleid</a>.
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="cookie-btn cookie-accept">Accepteren</button>
+      <button id="cookie-decline" class="cookie-btn cookie-decline">Weigeren</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a2e;
+    color: #f0f0f0;
+    padding: 1rem 1.5rem;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .cookie-banner.visible {
+    display: block;
+  }
+
+  .cookie-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .cookie-content p {
+    margin: 0;
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    min-width: 200px;
+  }
+
+  .cookie-content a {
+    color: #7ec8e3;
+    text-decoration: underline;
+  }
+
+  .cookie-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .cookie-btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .cookie-accept {
+    background: #2ecc71;
+    color: #fff;
+  }
+
+  .cookie-accept:hover {
+    background: #27ae60;
+  }
+
+  .cookie-decline {
+    background: transparent;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+  }
+
+  .cookie-decline:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+</style>
+
+<script is:inline>
+  (function() {
+    var consent = localStorage.getItem('cookie-consent');
+    if (consent) return;
+
+    var banner = document.getElementById('cookie-consent');
+    if (!banner) return;
+    banner.classList.add('visible');
+
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+      localStorage.setItem('cookie-consent', 'accepted');
+      banner.classList.remove('visible');
+    });
+
+    document.getElementById('cookie-decline').addEventListener('click', function() {
+      localStorage.setItem('cookie-consent', 'declined');
+      banner.classList.remove('visible');
+      window['ga-disable-G-XXXXXXXXXX'] = true;
+    });
+  })();
+</script>
