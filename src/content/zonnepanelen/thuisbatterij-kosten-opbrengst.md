@@ -4,7 +4,7 @@ description: "Alles over thuisbatterijen in combinatie met zonnepanelen. Vergeli
 niche: "zonnepanelen"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: false
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:

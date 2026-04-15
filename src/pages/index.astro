@@ -6,48 +6,22 @@ import '../lib/affiliate-data';
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'VergelijkSlim.nl',
+  name: 'ZonneWijzer.nl',
   url: Astro.site?.href,
-  description: 'Onafhankelijke vergelijkingen en reviews voor de Nederlandse markt',
+  description: 'Onafhankelijke gids voor zonnepanelen en zonne-energie in Nederland',
   inLanguage: 'nl',
 };
 
-const niches = [
-  {
-    title: 'Zonnepanelen & Energie',
-    description: 'Vergelijk zonnepanelen, energieleveranciers en bespaar op uw energierekening.',
-    href: '/zonnepanelen/',
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`,
-    color: '#f59e0b',
-    bgColor: '#fef3c7',
-  },
-  {
-    title: 'Hosting & SaaS',
-    description: 'De beste webhosting en software tools voor Nederlandse ondernemers en websites.',
-    href: '/hosting/',
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`,
-    color: '#1a56db',
-    bgColor: '#e8f0fe',
-  },
-  {
-    title: 'Woningverbetering',
-    description: 'Kosten, tips en offertes voor verbouwingen, renovaties en onderhoud.',
-    href: '/woningverbetering/',
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-    color: '#047857',
-    bgColor: '#ecfdf5',
-  },
-];
+const allArticles = (await getCollection('zonnepanelen'))
+  .filter((a) => !a.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
-const allZonnepanelen = (await getCollection('zonnepanelen')).filter(a => !a.data.draft && a.data.featured);
-const allHosting = (await getCollection('hosting')).filter(a => !a.data.draft && a.data.featured);
-const allWoning = (await getCollection('woningverbetering')).filter(a => !a.data.draft && a.data.featured);
+const featured = allArticles.filter((a) => a.data.featured).slice(0, 3);
+const latest = allArticles.slice(0, 6);
 
-const featured = [
-  ...allZonnepanelen.map(a => ({ ...a, niche: 'zonnepanelen' })),
-  ...allHosting.map(a => ({ ...a, niche: 'hosting' })),
-  ...allWoning.map(a => ({ ...a, niche: 'woningverbetering' })),
-].sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()).slice(0, 6);
+const gidsen = allArticles.filter((a) => a.data.type === 'gids');
+const vergelijkingen = allArticles.filter((a) => a.data.type === 'vergelijking');
+const regionaal = allArticles.filter((a) => a.data.type === 'regionaal');
 
 const typeLabels: Record<string, string> = {
   vergelijking: 'Vergelijking',
@@ -56,27 +30,47 @@ const typeLabels: Record<string, string> = {
   regionaal: 'Regionaal',
 };
 
-function estimateReadTime(body: string): number {
-  const words = body.split(/\s+/).length;
-  return Math.max(1, Math.ceil(words / 250));
-}
+const sections = [
+  {
+    title: 'Gidsen & Advies',
+    description: 'Uitgebreide handleidingen over kosten, subsidies en installatie.',
+    href: '/gidsen/',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+    count: gidsen.length,
+  },
+  {
+    title: 'Vergelijkingen',
+    description: 'Vergelijk merken, installateurs en offertes naast elkaar.',
+    href: '/vergelijkingen/',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
+    count: vergelijkingen.length,
+  },
+  {
+    title: 'Regionaal advies',
+    description: 'Vind de beste installateurs en aanbieders bij jou in de buurt.',
+    href: '/regionaal/',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    count: regionaal.length,
+  },
+];
 ---
 
 <BaseLayout
-  title="VergelijkSlim.nl — Slim vergelijken, beter kiezen"
-  description="Onafhankelijke vergelijkingen en reviews van zonnepanelen, webhosting en woningverbetering voor de Nederlandse markt."
+  title="ZonneWijzer.nl"
+  description="Onafhankelijk advies over zonnepanelen, prijzen, subsidies en installateurs. Vergelijk offertes en bespaar op je energierekening."
   structuredData={structuredData}
 >
   <section class="hero">
     <div class="container hero-content">
       <span class="hero-badge">Onafhankelijk & Eerlijk</span>
-      <h1>Slim vergelijken,<br />beter kiezen</h1>
+      <h1>Jouw gids voor<br />zonne-energie</h1>
       <p class="hero-sub">
-        Vergelijk producten en diensten op basis van prijs, kwaliteit en betrouwbaarheid.
-        Onze redactie onderzoekt, test en beoordeelt — zodat u de juiste keuze maakt.
+        Onafhankelijk advies over zonnepanelen, kosten en subsidies.
+        Vergelijk installateurs en vind de beste deal voor jouw dak.
       </p>
       <div class="hero-cta">
-        <a href="#categorieen" class="btn btn-cta">Bekijk categorieën</a>
+        <a href="/artikelen/" class="btn btn-cta">Bekijk alle artikelen</a>
+        <a href="/vergelijkingen/" class="btn btn-outline">Vergelijk nu</a>
       </div>
     </div>
   </section>
@@ -89,32 +83,32 @@ function estimateReadTime(body: string): number {
           <span>100% onafhankelijk</span>
         </div>
         <div class="trust-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <span>Betrouwbare reviews</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span>Specialist in zonne-energie</span>
         </div>
         <div class="trust-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <span>Voor Nederlandse consumenten</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Gratis offertes vergelijken</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="niches" id="categorieen">
+  <section class="sections" id="onderwerpen">
     <div class="container">
       <div class="section-header">
-        <h2>Onze categorieën</h2>
-        <p>Kies een categorie en ontdek onze vergelijkingen en reviews.</p>
+        <h2>Onze onderwerpen</h2>
+        <p>Alles wat je moet weten over zonnepanelen, van kosten tot installatie.</p>
       </div>
-      <div class="niche-grid">
-        {niches.map((niche) => (
-          <a href={niche.href} class="niche-card">
-            <div class="niche-icon" style={`background: ${niche.bgColor}; color: ${niche.color};`}>
-              <Fragment set:html={niche.icon} />
+      <div class="section-grid">
+        {sections.map((section) => (
+          <a href={section.href} class="section-card">
+            <div class="section-icon">
+              <Fragment set:html={section.icon} />
             </div>
-            <h3>{niche.title}</h3>
-            <p>{niche.description}</p>
-            <span class="niche-link">Bekijk artikelen &rarr;</span>
+            <h3>{section.title}</h3>
+            <p>{section.description}</p>
+            <span class="section-meta">{section.count} artikelen &rarr;</span>
           </a>
         ))}
       </div>
@@ -126,19 +120,19 @@ function estimateReadTime(body: string): number {
       <div class="container">
         <div class="section-header">
           <h2>Uitgelichte artikelen</h2>
-          <p>Onze meest populaire vergelijkingen en reviews.</p>
+          <p>Onze meest gelezen gidsen en vergelijkingen.</p>
         </div>
         <div class="featured-grid">
           {featured.map((article) => (
-            <a href={`/${article.niche}/${article.id}/`} class="featured-card">
+            <a href={`/zonnepanelen/${article.id}/`} class="featured-card">
               <div class="featured-card-top">
-                <span class="badge badge-primary">{typeLabels[article.data.type] || article.data.type}</span>
+                <span class="badge badge-amber">{typeLabels[article.data.type] || article.data.type}</span>
               </div>
               <h3>{article.data.title}</h3>
               <p>{article.data.description}</p>
               <div class="featured-card-meta">
                 <span>{article.data.author}</span>
-                <span>·</span>
+                <span>&middot;</span>
                 <span>{article.data.publishDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
               </div>
             </a>
@@ -147,11 +141,34 @@ function estimateReadTime(body: string): number {
       </div>
     </section>
   )}
+
+  {latest.length > 0 && (
+    <section class="latest">
+      <div class="container">
+        <div class="section-header">
+          <h2>Laatste artikelen</h2>
+          <p>Recent gepubliceerd en bijgewerkt.</p>
+        </div>
+        <div class="latest-grid">
+          {latest.map((article) => (
+            <a href={`/zonnepanelen/${article.id}/`} class="latest-card">
+              <span class="badge badge-primary">{typeLabels[article.data.type] || article.data.type}</span>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </a>
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/artikelen/" class="btn btn-primary">Bekijk alle artikelen</a>
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>
 
 <style>
   .hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%);
+    background: linear-gradient(135deg, #451a03 0%, #78350f 40%, #b45309 70%, #d97706 100%);
     color: #fff;
     padding: 4rem 0 5rem;
     text-align: center;
@@ -162,7 +179,7 @@ function estimateReadTime(body: string): number {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.08) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 50% 0%, rgba(251,191,36,0.15) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-content {
@@ -190,12 +207,29 @@ function estimateReadTime(body: string): number {
     font-size: 1.125rem;
     opacity: 0.85;
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 560px;
     margin: 0 auto 2rem;
+  }
+  .hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   .hero-cta .btn {
     font-size: 1rem;
     padding: 0.875rem 2rem;
+  }
+  .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: var(--radius-lg);
+  }
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.7);
+    color: #fff;
   }
   @media (min-width: 768px) {
     .hero { padding: 6rem 0 7rem; }
@@ -223,7 +257,7 @@ function estimateReadTime(body: string): number {
     color: var(--color-text-light);
   }
   .trust-item svg {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     flex-shrink: 0;
   }
   @media (min-width: 768px) {
@@ -240,20 +274,20 @@ function estimateReadTime(body: string): number {
     margin-top: 0.5rem;
   }
 
-  .niches {
+  .sections {
     padding: 4rem 0;
   }
-  .niche-grid {
+  .section-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   @media (min-width: 768px) {
-    .niche-grid {
+    .section-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .niche-card {
+  .section-card {
     display: block;
     padding: 2rem;
     border: 1px solid var(--color-border);
@@ -262,13 +296,13 @@ function estimateReadTime(body: string): number {
     background: var(--color-bg);
     transition: all var(--transition-base);
   }
-  .niche-card:hover {
+  .section-card:hover {
     text-decoration: none;
     box-shadow: var(--shadow-lg);
     transform: translateY(-3px);
-    border-color: transparent;
+    border-color: var(--color-primary-light);
   }
-  .niche-icon {
+  .section-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -276,20 +310,22 @@ function estimateReadTime(body: string): number {
     height: 56px;
     border-radius: var(--radius-lg);
     margin-bottom: 1.25rem;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
   }
-  .niche-card h3 {
+  .section-card h3 {
     font-family: var(--font-sans);
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
-  .niche-card p {
+  .section-card p {
     color: var(--color-text-light);
     font-size: 0.9375rem;
     margin-bottom: 1rem;
     line-height: 1.6;
   }
-  .niche-link {
+  .section-meta {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -350,5 +386,50 @@ function estimateReadTime(body: string): number {
     border-top: 1px solid var(--color-border-light);
     font-size: 0.8125rem;
     color: var(--color-text-muted);
+  }
+
+  .latest {
+    padding: 4rem 0;
+  }
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 640px) {
+    .latest-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .latest-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .latest-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text);
+    transition: all var(--transition-base);
+  }
+  .latest-card:hover {
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-primary-light);
+  }
+  .latest-card h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .latest-card p {
+    color: var(--color-text-light);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+  .view-all {
+    text-align: center;
+    margin-top: 2rem;
   }
 </style>

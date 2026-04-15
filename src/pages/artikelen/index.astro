@@ -4,13 +4,13 @@ import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
 import { getCollection } from 'astro:content';
 import '../../lib/affiliate-data';
 
-const articles = (await getCollection('hosting'))
+const articles = (await getCollection('zonnepanelen'))
   .filter((a) => !a.data.draft)
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
 const breadcrumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Hosting & SaaS', href: '/hosting/' },
+  { name: 'Alle artikelen', href: '/artikelen/' },
 ];
 
 const typeLabels: Record<string, string> = {
@@ -22,8 +22,8 @@ const typeLabels: Record<string, string> = {
 ---
 
 <BaseLayout
-  title="Beste Webhosting & SaaS Vergelijken – Reviews & Prijzen"
-  description="Vergelijk de beste webhosting providers en SaaS tools voor de Nederlandse markt. Onafhankelijke reviews en eerlijke vergelijkingen."
+  title="Alle Artikelen over Zonnepanelen"
+  description="Overzicht van al onze artikelen over zonnepanelen: gidsen, vergelijkingen, reviews en regionaal advies."
 >
   <BreadcrumbSchema items={breadcrumbs} />
 
@@ -33,10 +33,10 @@ const typeLabels: Record<string, string> = {
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a>
           <span class="sep">/</span>
-          <span class="current">Hosting & SaaS</span>
+          <span class="current">Alle artikelen</span>
         </nav>
-        <h1>Hosting & SaaS vergelijken</h1>
-        <p>Onafhankelijke reviews van webhosting, website builders en software tools. Vind de beste oplossing voor uw bedrijf of website.</p>
+        <h1>Alle artikelen</h1>
+        <p>Compleet overzicht van al onze zonnepanelen content. Gidsen, vergelijkingen en regionaal advies.</p>
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-number">{articles.length}</span>
@@ -44,13 +44,13 @@ const typeLabels: Record<string, string> = {
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-number">{articles.filter(a => a.data.type === 'vergelijking').length}</span>
-            <span class="stat-label">Vergelijkingen</span>
+            <span class="stat-number">{articles.filter(a => a.data.type === 'gids').length}</span>
+            <span class="stat-label">Gidsen</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-number">{articles.filter(a => a.data.type === 'review').length}</span>
-            <span class="stat-label">Reviews</span>
+            <span class="stat-number">{articles.filter(a => a.data.type === 'vergelijking').length}</span>
+            <span class="stat-label">Vergelijkingen</span>
           </div>
         </div>
       </div>
@@ -61,9 +61,11 @@ const typeLabels: Record<string, string> = {
     <div class="container">
       <div class="article-grid">
         {articles.map((article) => (
-          <a href={`/hosting/${article.id}/`} class="article-card">
+          <a href={`/zonnepanelen/${article.id}/`} class="article-card">
             <div class="card-top">
-              <span class="badge badge-primary">{typeLabels[article.data.type] || article.data.type}</span>
+              <span class={`badge ${article.data.type === 'regionaal' ? 'badge-green' : article.data.type === 'gids' ? 'badge-amber' : 'badge-primary'}`}>
+                {typeLabels[article.data.type] || article.data.type}
+              </span>
             </div>
             <h2>{article.data.title}</h2>
             <p>{article.data.description}</p>
@@ -82,7 +84,7 @@ const typeLabels: Record<string, string> = {
 
 <style>
   .category-hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%);
+    background: linear-gradient(135deg, #451a03 0%, #78350f 50%, #b45309 100%);
     padding: 3rem 0 3.5rem;
     color: #fff;
   }
@@ -94,17 +96,32 @@ const typeLabels: Record<string, string> = {
   .breadcrumb a:hover { color: #fff; }
   .breadcrumb .sep { color: rgba(255,255,255,0.4); }
   .breadcrumb .current { color: rgba(255,255,255,0.8); }
-  .category-hero h1 { color: #fff; margin-bottom: 0.75rem; font-size: 2.25rem; }
+  .category-hero h1 {
+    color: #fff; margin-bottom: 0.75rem; font-size: 2.25rem;
+  }
   @media (min-width: 768px) {
     .category-hero { padding: 4rem 0 4.5rem; }
     .category-hero h1 { font-size: 2.75rem; }
   }
-  .category-hero p { color: rgba(255,255,255,0.8); font-size: 1.0625rem; max-width: 560px; line-height: 1.7; }
-  .hero-stats { display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; }
+  .category-hero p {
+    color: rgba(255,255,255,0.8); font-size: 1.0625rem;
+    max-width: 560px; line-height: 1.7;
+  }
+  .hero-stats {
+    display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem;
+  }
   .stat { text-align: center; }
-  .stat-number { display: block; font-size: 1.5rem; font-weight: 700; font-family: var(--font-sans); color: #fff; }
-  .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.6); }
-  .stat-divider { width: 1px; height: 32px; background: rgba(255,255,255,0.2); }
+  .stat-number {
+    display: block; font-size: 1.5rem; font-weight: 700;
+    font-family: var(--font-sans); color: #fff;
+  }
+  .stat-label {
+    font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.05em; color: rgba(255,255,255,0.6);
+  }
+  .stat-divider {
+    width: 1px; height: 32px; background: rgba(255,255,255,0.2);
+  }
 
   .articles { padding: 2.5rem 0; }
   .article-grid { display: grid; gap: 1.5rem; }
@@ -113,15 +130,26 @@ const typeLabels: Record<string, string> = {
   .article-card {
     display: flex; flex-direction: column; padding: 1.5rem;
     border: 1px solid var(--color-border); border-radius: var(--radius-lg);
-    color: var(--color-text); background: var(--color-bg); transition: all var(--transition-base);
+    color: var(--color-text); background: var(--color-bg);
+    transition: all var(--transition-base);
   }
-  .article-card:hover { text-decoration: none; box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--color-primary-light); }
+  .article-card:hover {
+    text-decoration: none; box-shadow: var(--shadow-md);
+    transform: translateY(-2px); border-color: var(--color-primary-light);
+  }
   .card-top { margin-bottom: 0.75rem; }
-  .article-card h2 { font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
-  .article-card p { color: var(--color-text-light); font-size: 0.875rem; line-height: 1.6; flex: 1; }
+  .article-card h2 {
+    font-family: var(--font-sans); font-size: 1.0625rem;
+    font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem;
+  }
+  .article-card p {
+    color: var(--color-text-light); font-size: 0.875rem;
+    line-height: 1.6; flex: 1;
+  }
   .card-footer {
     display: flex; justify-content: space-between; align-items: center;
-    margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--color-border-light);
+    margin-top: 1rem; padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border-light);
     font-size: 0.8125rem; color: var(--color-text-muted);
   }
   .card-author { font-weight: 500; }

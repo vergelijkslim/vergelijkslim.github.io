@@ -4,7 +4,7 @@ description: "Bereken hoeveel zonnepanelen je nodig hebt op basis van je verbrui
 niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: false
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:

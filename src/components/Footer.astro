@@ -2,9 +2,10 @@
 const year = new Date().getFullYear();
 
 const categories = [
-  { label: 'Zonnepanelen', href: '/zonnepanelen/' },
-  { label: 'Hosting & SaaS', href: '/hosting/' },
-  { label: 'Woningverbetering', href: '/woningverbetering/' },
+  { label: 'Gidsen', href: '/gidsen/' },
+  { label: 'Vergelijkingen', href: '/vergelijkingen/' },
+  { label: 'Regionaal advies', href: '/regionaal/' },
+  { label: 'Alle artikelen', href: '/artikelen/' },
 ];
 
 const info = [
@@ -19,13 +20,13 @@ const info = [
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo">Vergelijk<strong>Slim</strong>.nl</a>
+        <a href="/" class="footer-logo">Zonne<strong>Wijzer</strong>.nl</a>
         <p class="footer-tagline">
-          Onafhankelijke vergelijkingen en eerlijke reviews voor de Nederlandse consument.
+          Jouw onafhankelijke gids voor zonnepanelen en zonne-energie in Nederland. Eerlijk advies, heldere vergelijkingen.
         </p>
       </div>
       <div class="footer-col">
-        <h4>Categorieën</h4>
+        <h4>Onderwerpen</h4>
         <ul>
           {categories.map((cat) => (
             <li><a href={cat.href}>{cat.label}</a></li>
@@ -42,14 +43,14 @@ const info = [
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; {year} VergelijkSlim.nl — Alle rechten voorbehouden</p>
+      <p>&copy; {year} ZonneWijzer.nl — Alle rechten voorbehouden</p>
     </div>
   </div>
 </footer>
 
 <style>
   .site-footer {
-    background: var(--color-text);
+    background: #1a1a2e;
     color: #cbd5e1;
     padding: 3.5rem 0 0;
     margin-top: 4rem;
@@ -78,7 +79,7 @@ const info = [
   }
   .footer-logo:hover { text-decoration: none; color: #fff; }
   .footer-logo strong {
-    color: #93bbfb;
+    color: #fbbf24;
   }
   .footer-tagline {
     margin-top: 0.75rem;

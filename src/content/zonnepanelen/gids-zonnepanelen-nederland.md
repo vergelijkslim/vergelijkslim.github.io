@@ -4,7 +4,7 @@ description: "Complete gids over zonnepanelen in Nederland. Kosten, subsidies, b
 niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: true
 affiliateLinks: ["zonnepanelen-offerte", "energieleverancier-vergelijk"]
 keywords:

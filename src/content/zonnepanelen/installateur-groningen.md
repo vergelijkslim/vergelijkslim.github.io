@@ -4,7 +4,7 @@ description: "De beste zonnepanelen installateurs in Groningen. Inclusief extra 
 niche: "zonnepanelen"
 type: "regionaal"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: false
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:

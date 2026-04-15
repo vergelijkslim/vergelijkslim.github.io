@@ -4,7 +4,7 @@ description: "Zoek je een betrouwbare zonnepanelen installateur in Rotterdam? Ve
 niche: "zonnepanelen"
 type: "regionaal"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: false
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:

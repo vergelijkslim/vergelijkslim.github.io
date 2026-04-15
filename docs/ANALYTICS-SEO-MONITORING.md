@@ -7,7 +7,7 @@
 1. Ga naar [analytics.google.com](https://analytics.google.com)
 2. Klik "Start measuring" → maak een nieuw account "VergelijkSlim"
 3. Maak een property "VergelijkSlim.nl" met tijdzone Europe/Amsterdam en valuta EUR
-4. Kies "Web" als platform, vul `vergelijkslim.nl` in als URL
+4. Kies "Web" als platform, vul `zonnewijzer.nl` in als URL
 5. Kopieer het **Measurement ID** (format: `G-XXXXXXXXXX`)
 6. Vervang `G-XXXXXXXXXX` in `src/layouts/BaseLayout.astro` (2x) met je echte Measurement ID
 7. Bouw de site opnieuw en deploy
@@ -41,16 +41,16 @@ Zorg dat affiliate links het attribuut `data-affiliate="partnernaam"` hebben.
 
 ## 2. Google Search Console (GSC)
 
-### Verificatie stappen voor vergelijkslim.nl
+### Verificatie stappen voor zonnewijzer.nl
 
 1. Ga naar [search.google.com/search-console](https://search.google.com/search-console)
-2. Klik "Add property" → kies **URL prefix** → vul `https://vergelijkslim.nl` in
+2. Klik "Add property" → kies **URL prefix** → vul `https://zonnewijzer.nl` in
 3. Kies verificatiemethode **HTML tag**:
    - Kopieer de meta tag (format: `<meta name="google-site-verification" content="XXXXX" />`)
    - Voeg toe in `src/layouts/BaseLayout.astro` in de `<head>` sectie, na de viewport meta tag
    - Deploy de site
    - Klik "Verify" in Search Console
-4. Voeg ook `https://vergelijkslim.github.io` toe als property (zolang GitHub Pages URL actief is)
+4. Voeg ook `https://zonnewijzer.github.io` toe als property (zolang GitHub Pages URL actief is)
 
 ### Na verificatie
 
@@ -85,15 +85,15 @@ De sitemap wordt automatisch gegenereerd door `@astrojs/sitemap` en bevat alle p
 User-agent: *
 Allow: /
 
-Sitemap: https://vergelijkslim.github.io/sitemap-index.xml
+Sitemap: https://zonnewijzer.github.io/sitemap-index.xml
 ```
 
-Wanneer het domein vergelijkslim.nl live is, update de Sitemap-URL naar:
+Wanneer het domein zonnewijzer.nl live is, update de Sitemap-URL naar:
 ```
-Sitemap: https://vergelijkslim.nl/sitemap-index.xml
+Sitemap: https://zonnewijzer.nl/sitemap-index.xml
 ```
 
-En update ook `site` in `astro.config.mjs` naar `https://vergelijkslim.nl`.
+En update ook `site` in `astro.config.mjs` naar `https://zonnewijzer.nl`.
 
 ---
 
@@ -167,8 +167,8 @@ Gebaseerd op de huidige content en zoekvolume potentieel in Nederland:
 - [ ] GA4 property aanmaken en Measurement ID invullen in code
 - [ ] Google Search Console property toevoegen en verifiëren
 - [ ] Sitemap indienen via Search Console
-- [ ] robots.txt URL updaten zodra vergelijkslim.nl live is
-- [ ] astro.config.mjs `site` updaten naar vergelijkslim.nl
+- [ ] robots.txt URL updaten zodra zonnewijzer.nl live is
+- [ ] astro.config.mjs `site` updaten naar zonnewijzer.nl
 - [ ] Enhanced Measurement inschakelen in GA4
 - [ ] Affiliate click tracking implementeren
 - [ ] Looker Studio dashboard koppelen aan GA4 + GSC

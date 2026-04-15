@@ -4,7 +4,7 @@ description: "Alle kosten van zonnepanelen in 2026 op een rij. Van aanschaf en i
 niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:
   - zonnepanelen kosten 2026

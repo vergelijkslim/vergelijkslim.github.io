@@ -4,7 +4,7 @@ description: "Welk merk zonnepanelen is de beste keus in 2026? Vergelijk de top 
 niche: "zonnepanelen"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie VergelijkSlim"
+author: "Redactie ZonneWijzer"
 featured: true
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:
