@@ -23,7 +23,9 @@ const { title, columns, rows } = Astro.props;
 ---
 
 <div class="comparison-table-wrapper">
-  <h3>{title}</h3>
+  <div class="table-header">
+    <h3>{title}</h3>
+  </div>
   <div class="table-scroll">
     <table class="comparison-table">
       <thead>
@@ -34,13 +36,16 @@ const { title, columns, rows } = Astro.props;
         </tr>
       </thead>
       <tbody>
-        {rows.map((row) => (
+        {rows.map((row, i) => (
           <tr class:list={[{ highlight: row.highlight }]}>
-            <td class="product-name">{row.name}</td>
+            <td class="product-name">
+              {row.highlight && <span class="best-badge">Beste keuze</span>}
+              {row.name}
+            </td>
             {columns.map((col) => (
               <td>{row.values[col.key] ?? '—'}</td>
             ))}
-            <td>
+            <td class="action-cell">
               {row.affiliateLinkId && (
                 <AffiliateButton linkId={row.affiliateLinkId} variant="primary" />
               )}
@@ -55,6 +60,20 @@ const { title, columns, rows } = Astro.props;
 <style>
   .comparison-table-wrapper {
     margin: 2rem 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .table-header {
+    padding: 1rem 1.25rem;
+    background: var(--color-bg-alt);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .table-header h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
   }
   .table-scroll {
     overflow-x: auto;
@@ -67,26 +86,56 @@ const { title, columns, rows } = Astro.props;
   }
   .comparison-table th,
   .comparison-table td {
-    padding: 0.75rem 1rem;
+    padding: 0.875rem 1rem;
     text-align: left;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border-light);
     white-space: nowrap;
   }
   .comparison-table th {
-    background: var(--color-bg-alt);
+    background: var(--color-bg);
     font-weight: 600;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.025em;
-    color: var(--color-text-light);
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .comparison-table tbody tr {
+    transition: background var(--transition-fast);
+  }
+  .comparison-table tbody tr:hover {
+    background: var(--color-bg-alt);
+  }
+  .comparison-table tbody tr:last-child td {
+    border-bottom: none;
   }
   .product-name {
     font-weight: 600;
+    color: var(--color-text);
+  }
+  .best-badge {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-right: 0.5rem;
+    vertical-align: middle;
   }
   tr.highlight {
-    background: #eff6ff;
+    background: var(--color-primary-light);
+  }
+  tr.highlight:hover {
+    background: #dbe7fd;
   }
   tr.highlight .product-name {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
+  }
+  .action-cell {
+    text-align: right;
   }
 </style>

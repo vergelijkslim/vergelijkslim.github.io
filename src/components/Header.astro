@@ -8,7 +8,15 @@ const niches = [
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo">Vergelijk<strong>Slim</strong>.nl</a>
+    <a href="/" class="logo">
+      <span class="logo-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="6" fill="var(--color-primary)"/>
+          <path d="M8 14L12 18L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">Vergelijk<strong>Slim</strong><span class="logo-dot">.nl</span></span>
+    </a>
     <button class="menu-toggle" aria-label="Menu openen" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -34,26 +42,44 @@ const niches = [
 
 <style>
   .site-header {
-    border-bottom: 1px solid var(--color-border);
     background: var(--color-bg);
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
   }
   .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 72px;
   }
   .logo {
-    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
     color: var(--color-text);
-  }
-  .logo strong {
-    color: var(--color-primary);
+    text-decoration: none;
   }
   .logo:hover { text-decoration: none; }
+  .logo-icon {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .logo-text {
+    font-size: 1.375rem;
+    font-weight: 400;
+    font-family: var(--font-sans);
+    letter-spacing: -0.02em;
+  }
+  .logo-text strong {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  .logo-dot {
+    color: var(--color-text-light);
+    font-weight: 400;
+  }
 
   .menu-toggle {
     display: flex;
@@ -62,45 +88,61 @@ const niches = [
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition-fast);
+  }
+  .menu-toggle:hover {
+    background: var(--color-bg-alt);
   }
   .menu-toggle span {
     display: block;
-    width: 24px;
+    width: 22px;
     height: 2px;
     background: var(--color-text);
-    transition: transform 0.2s;
+    border-radius: 1px;
+    transition: transform var(--transition-base);
   }
 
   .main-nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 0.25rem;
   }
   .main-nav a {
-    color: var(--color-text);
+    display: block;
+    padding: 0.5rem 0.875rem;
+    color: var(--color-text-light);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9375rem;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
   }
   .main-nav a:hover {
     color: var(--color-primary);
+    background: var(--color-primary-light);
+    text-decoration: none;
   }
 
   @media (max-width: 767px) {
     .main-nav {
       display: none;
       position: absolute;
-      top: 64px;
+      top: 72px;
       left: 0;
       right: 0;
       background: var(--color-bg);
       border-bottom: 1px solid var(--color-border);
-      padding: 1rem;
+      padding: 0.75rem 1.25rem;
+      box-shadow: var(--shadow-lg);
     }
     .main-nav.open { display: block; }
     .main-nav ul {
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.25rem;
+    }
+    .main-nav a {
+      padding: 0.75rem 1rem;
     }
   }
   @media (min-width: 768px) {

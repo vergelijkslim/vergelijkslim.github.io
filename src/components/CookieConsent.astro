@@ -2,10 +2,13 @@
 ---
 <div id="cookie-consent" class="cookie-banner" role="dialog" aria-label="Cookie consent">
   <div class="cookie-content">
-    <p>
-      Wij gebruiken cookies om je ervaring te verbeteren en ons verkeer te analyseren.
-      Lees meer in ons <a href="/privacy/">privacybeleid</a>.
-    </p>
+    <div class="cookie-text">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <p>
+        Wij gebruiken cookies om je ervaring te verbeteren en ons verkeer te analyseren.
+        Lees meer in ons <a href="/privacy/">privacybeleid</a>.
+      </p>
+    </div>
     <div class="cookie-actions">
       <button id="cookie-accept" class="cookie-btn cookie-accept">Accepteren</button>
       <button id="cookie-decline" class="cookie-btn cookie-decline">Weigeren</button>
@@ -16,75 +19,87 @@
 <style>
   .cookie-banner {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #1a1a2e;
-    color: #f0f0f0;
-    padding: 1rem 1.5rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    max-width: 480px;
+    background: var(--color-text);
+    color: #e2e8f0;
+    padding: 1.25rem;
     z-index: 9999;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     display: none;
   }
-
+  @media (min-width: 640px) {
+    .cookie-banner {
+      left: auto;
+      right: 1.5rem;
+      bottom: 1.5rem;
+    }
+  }
   .cookie-banner.visible {
     display: block;
   }
-
   .cookie-content {
-    max-width: 960px;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
   }
-
-  .cookie-content p {
+  .cookie-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .cookie-text svg {
+    flex-shrink: 0;
+    color: #93bbfb;
+    margin-top: 2px;
+  }
+  .cookie-text p {
     margin: 0;
-    flex: 1;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    min-width: 200px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #cbd5e1;
   }
-
-  .cookie-content a {
-    color: #7ec8e3;
+  .cookie-text a {
+    color: #93bbfb;
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
-
+  .cookie-text a:hover {
+    color: #fff;
+  }
   .cookie-actions {
     display: flex;
     gap: 0.5rem;
-    flex-shrink: 0;
   }
-
   .cookie-btn {
-    padding: 0.5rem 1.25rem;
+    flex: 1;
+    padding: 0.625rem 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: var(--radius-md);
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 600;
+    font-family: var(--font-sans);
+    transition: all var(--transition-fast);
   }
-
   .cookie-accept {
-    background: #2ecc71;
+    background: var(--color-primary);
     color: #fff;
   }
-
   .cookie-accept:hover {
-    background: #27ae60;
+    background: var(--color-primary-dark);
   }
-
   .cookie-decline {
-    background: transparent;
-    color: #f0f0f0;
-    border: 1px solid #f0f0f0;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
-
   .cookie-decline:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
   }
 </style>
 

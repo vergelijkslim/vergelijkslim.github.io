@@ -1,7 +1,8 @@
 ---
 ---
 <aside class="affiliate-disclosure">
-  <div class="container">
+  <div class="container disclosure-inner">
+    <svg class="disclosure-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
     <p>
       <strong>Affiliate disclaimer:</strong> Deze website bevat affiliate links.
       Wanneer je via onze links een product of dienst aanschaft, ontvangen wij
@@ -14,10 +15,28 @@
 
 <style>
   .affiliate-disclosure {
-    background: #fef3c7;
-    border-top: 1px solid #fcd34d;
-    padding: 0.75rem 0;
+    background: #fffbeb;
+    border-top: 1px solid #fde68a;
+    padding: 0.875rem 0;
     font-size: 0.8125rem;
+    color: #78350f;
+  }
+  .disclosure-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  .disclosure-icon {
+    flex-shrink: 0;
+    margin-top: 1px;
+    color: #d97706;
+  }
+  .affiliate-disclosure a {
     color: #92400e;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .affiliate-disclosure a:hover {
+    color: #78350f;
   }
 </style>

@@ -12,6 +12,13 @@ const breadcrumbs = [
   { name: 'Home', href: '/' },
   { name: 'Zonnepanelen', href: '/zonnepanelen/' },
 ];
+
+const typeLabels: Record<string, string> = {
+  vergelijking: 'Vergelijking',
+  review: 'Review',
+  gids: 'Gids',
+  regionaal: 'Regionaal',
+};
 ---
 
 <BaseLayout
@@ -22,8 +29,31 @@ const breadcrumbs = [
 
   <section class="category-hero">
     <div class="container">
-      <h1>Zonnepanelen vergelijken</h1>
-      <p>Onafhankelijk advies over zonnepanelen, energiebesparing en duurzaamheid.</p>
+      <div class="hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="sep">/</span>
+          <span class="current">Zonnepanelen</span>
+        </nav>
+        <h1>Zonnepanelen vergelijken</h1>
+        <p>Onafhankelijk advies over zonnepanelen, energiebesparing en duurzaamheid. Vergelijk prijzen, rendement en kwaliteit van de beste aanbieders.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">{articles.length}</span>
+            <span class="stat-label">Artikelen</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">{articles.filter(a => a.data.type === 'vergelijking').length}</span>
+            <span class="stat-label">Vergelijkingen</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">{articles.filter(a => a.data.type === 'review').length}</span>
+            <span class="stat-label">Reviews</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -32,13 +62,17 @@ const breadcrumbs = [
       <div class="article-grid">
         {articles.map((article) => (
           <a href={`/zonnepanelen/${article.id}/`} class="article-card">
+            <div class="card-top">
+              <span class="badge badge-primary">{typeLabels[article.data.type] || article.data.type}</span>
+            </div>
             <h2>{article.data.title}</h2>
             <p>{article.data.description}</p>
-            <span class="article-meta">
-              {article.data.publishDate.toLocaleDateString('nl-NL')}
-              {' · '}
-              {article.data.type}
-            </span>
+            <div class="card-footer">
+              <span class="card-author">{article.data.author}</span>
+              <span class="card-date">
+                {article.data.publishDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' })}
+              </span>
+            </div>
           </a>
         ))}
       </div>
@@ -48,31 +82,111 @@ const breadcrumbs = [
 
 <style>
   .category-hero {
-    background: var(--color-bg-alt);
-    padding: 3rem 0;
-    border-bottom: 1px solid var(--color-border);
+    background: linear-gradient(135deg, #451a03 0%, #78350f 50%, #b45309 100%);
+    padding: 3rem 0 3.5rem;
+    color: #fff;
   }
-  .category-hero h1 { margin-bottom: 0.5rem; }
-  .category-hero p { color: var(--color-text-light); font-size: 1.125rem; }
+  .breadcrumb {
+    display: flex; align-items: center; gap: 0.375rem;
+    font-size: 0.8125rem; margin-bottom: 1.25rem;
+  }
+  .breadcrumb a { color: rgba(255,255,255,0.6); }
+  .breadcrumb a:hover { color: #fff; }
+  .breadcrumb .sep { color: rgba(255,255,255,0.4); }
+  .breadcrumb .current { color: rgba(255,255,255,0.8); }
+  .category-hero h1 {
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-size: 2.25rem;
+  }
+  @media (min-width: 768px) {
+    .category-hero { padding: 4rem 0 4.5rem; }
+    .category-hero h1 { font-size: 2.75rem; }
+  }
+  .category-hero p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.0625rem;
+    max-width: 560px;
+    line-height: 1.7;
+  }
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .stat { text-align: center; }
+  .stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    color: #fff;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.6);
+  }
+  .stat-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255,255,255,0.2);
+  }
 
-  .articles { padding: 2rem 0; }
+  .articles { padding: 2.5rem 0; }
   .article-grid {
     display: grid;
     gap: 1.5rem;
   }
+  @media (min-width: 640px) {
+    .article-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .article-grid { grid-template-columns: repeat(3, 1fr); }
+  }
   .article-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
     border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-lg);
     color: var(--color-text);
-    transition: box-shadow 0.2s;
+    background: var(--color-bg);
+    transition: all var(--transition-base);
   }
   .article-card:hover {
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--color-primary-light);
   }
-  .article-card h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-  .article-card p { color: var(--color-text-light); font-size: 0.9375rem; margin-bottom: 0.5rem; }
-  .article-meta { font-size: 0.8125rem; color: var(--color-text-light); }
+  .card-top {
+    margin-bottom: 0.75rem;
+  }
+  .article-card h2 {
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .article-card p {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    flex: 1;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+  }
+  .card-author { font-weight: 500; }
 </style>
