@@ -24,6 +24,9 @@ faq:
 relatedArticles:
   - "badkamer-renovatie-kosten"
   - "dakkapel-kosten"
+  - "keuken-renovatie-kosten"
+  - "warmtepomp-kosten"
+  - "woning-isoleren-volgorde"
 ---
 
 Een verbouwing is een van de grootste investeringen die je als huiseigenaar doet. Of je nu je badkamer wilt renoveren, een uitbouw plant of je hele woning wilt verduurzamen: goede voorbereiding bespaart duizenden euros. In deze gids vind je alle kosten, tips en subsidies voor het verbouwen van je huis in 2026.

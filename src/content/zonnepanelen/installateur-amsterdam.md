@@ -23,6 +23,8 @@ faq:
 relatedArticles:
   - "gids-zonnepanelen-nederland"
   - "beste-zonnepanelen-2026"
+  - "installateur-rotterdam"
+  - "installateur-utrecht"
 ---
 
 Op zoek naar een betrouwbare zonnepanelen installateur in Amsterdam? We hebben de beste installateurs in de regio Amsterdam vergeleken op prijs, kwaliteit, reviews en service.

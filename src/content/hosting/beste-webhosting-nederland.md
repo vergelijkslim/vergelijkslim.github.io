@@ -25,6 +25,8 @@ relatedArticles:
   - "transip-review"
   - "antagonist-review"
   - "wordpress-hosting-vergelijken"
+  - "beste-wordpress-hosting"
+  - "beste-vps-hosting-nederland"
 ---
 
 Op zoek naar de beste webhosting in Nederland? Of je nu een blog start, een webshop opzet of een zakelijke website nodig hebt: de juiste hostingprovider maakt het verschil. We hebben de populairste Nederlandse hostingproviders uitgebreid getest op snelheid, betrouwbaarheid, support en prijs.
