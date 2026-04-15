@@ -1,46 +1,49 @@
-# Deployment Guide — vergelijkslim.nl
+# Deployment Guide — vergelijkslim.github.io
 
-## Vercel Setup
+## GitHub Pages Setup
 
-1. Import the Git repository in the Vercel dashboard.
-2. Vercel auto-detects the Astro framework. Verify these settings:
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Node.js Version:** 22.x
+### 1. Create GitHub Account & Repository
 
-## Domain Configuration
+1. Create a GitHub account with username `vergelijkslim` at https://github.com/signup.
+2. Create a new **public** repository named `vergelijkslim.github.io`.
+   - This special repo name enables the site at `https://vergelijkslim.github.io`.
 
-### Add domain in Vercel
+### 2. Push This Codebase
 
-1. Go to **Project Settings → Domains**.
-2. Add `vergelijkslim.nl` as the primary domain.
-3. Add `www.vergelijkslim.nl` (Vercel will auto-redirect to the apex domain via `vercel.json`).
+```bash
+git remote add origin https://github.com/vergelijkslim/vergelijkslim.github.io.git
+git push -u origin main
+```
 
-### DNS Records
+### 3. Enable GitHub Pages
 
-Configure these DNS records at your domain registrar:
+1. Go to **Settings → Pages** in the repository.
+2. Under **Source**, select **GitHub Actions**.
+3. The included workflow (`.github/workflows/deploy.yml`) will automatically build and deploy on every push to `main`.
 
-| Type  | Name | Value                  | TTL  |
-|-------|------|------------------------|------|
-| A     | @    | 76.76.21.21            | 300  |
-| AAAA  | @    | 2001:4860:4802:32::15  | 300  |
-| CNAME | www  | cname.vercel-dns.com.  | 300  |
+### 4. Verify
 
-> Vercel's IP addresses may change. Always verify the current values in the Vercel dashboard under **Project Settings → Domains** after adding the domain.
+After the first push, the GitHub Actions workflow will run. Check:
 
-### HTTPS
+1. **Actions tab** — confirm the "Deploy to GitHub Pages" workflow completes successfully.
+2. Visit `https://vergelijkslim.github.io` — the site should load.
+3. Confirm sitemap at `https://vergelijkslim.github.io/sitemap-index.xml`.
 
-Vercel provisions SSL certificates automatically via Let's Encrypt once DNS propagation completes. No manual action required.
+## Future: Custom Domain (vergelijkslim.nl)
 
-### Redirects
+When ready to use the real domain:
 
-- `www.vergelijkslim.nl` → `vergelijkslim.nl` (301 permanent redirect, configured in `vercel.json`)
+1. Update `astro.config.mjs`: change `site` to `https://vergelijkslim.nl`.
+2. In repo **Settings → Pages → Custom domain**, enter `vergelijkslim.nl`.
+3. Configure DNS at registrar:
 
-## Verification
+| Type  | Name | Value                              | TTL  |
+|-------|------|------------------------------------|------|
+| A     | @    | 185.199.108.153                    | 300  |
+| A     | @    | 185.199.109.153                    | 300  |
+| A     | @    | 185.199.110.153                    | 300  |
+| A     | @    | 185.199.111.153                    | 300  |
+| CNAME | www  | vergelijkslim.github.io.           | 300  |
 
-After deployment:
-
-1. Confirm `https://vergelijkslim.nl` loads the site.
-2. Confirm `https://www.vergelijkslim.nl` redirects to the apex domain.
-3. Confirm sitemap is accessible at `https://vergelijkslim.nl/sitemap-index.xml`.
-4. Verify SSL certificate is valid.
+4. Enable **Enforce HTTPS** in Settings → Pages.
+5. GitHub auto-provisions an SSL certificate.
