@@ -29,7 +29,7 @@ const links: AffiliateLink[] = [
     id: 'installateur-vergelijk',
     network: 'direct',
     merchant: 'Zonnepanelen.net',
-    url: 'https://www.zonnepanelen.net/installateurs/',
+    url: 'https://www.zonnepanelen.net/installateur/',
     niche: 'zonnepanelen',
     label: 'Vergelijk installateurs',
     commissionType: 'cpa',

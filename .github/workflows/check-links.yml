@@ -1,0 +1,37 @@
+name: Weekly Link Check
+
+on:
+  schedule:
+    # Every Monday at 08:00 UTC
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Check external links
+        run: npm run check-links
+
+      - name: Upload report on failure
+        if: failure()
+        run: |
+          npm run check-links -- --json > link-report.json || true
+          echo "::warning::Broken links detected — see link-report.json artifact"
+
+      - name: Upload link report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-report
+          path: link-report.json
