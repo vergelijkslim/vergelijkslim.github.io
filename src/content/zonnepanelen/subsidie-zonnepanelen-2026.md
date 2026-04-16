@@ -23,57 +23,62 @@ relatedArticles:
   - "kosten-zonnepanelen-2026"
 ---
 
-Subsidies voor zonnepanelen zijn in 2026 minder royaal dan een paar jaar geleden, maar er valt nog steeds serieus geld terug te halen. Het probleem? De regelingen zijn versnipperd over landelijk, provinciaal en gemeentelijk niveau. Wij hebben het uitgezocht.
+Subsidies voor zonnepanelen — het is een beetje als puzzelen met drie verschillende dozen door elkaar. Er zijn landelijke regelingen, provinciale potjes en gemeentelijke subsidies, en ze hebben allemaal andere voorwaarden. Wij hebben het voor je uitgezocht, zodat jij niet tien websites hoeft af te struinen.
 
-## De grote drie: dit kun je sowieso krijgen
+## De grote drie waar iedereen recht op heeft
 
-### 1. BTW-vrijstelling (0% BTW) — automatisch
+### 0% BTW — je grootste meevaller
 
-Sinds 2023 betaal je 0% BTW op zonnepanelen voor je woning. Dit hoef je niet aan te vragen — je installateur past het automatisch toe.
+Dit klinkt misschien niet sexy, maar het is veruit de belangrijkste "subsidie." Sinds 2023 betaal je 0% BTW op zonnepanelen voor je woning. Dat scheelt je 21% op de aanschafprijs.
 
-**Besparing:** Op een systeem van 5.000 EUR exclusief BTW scheelde dit voorheen 1.050 EUR. Nu is die 5.000 EUR ook je totaalprijs.
+Wat dat concreet betekent: op een systeem van 5.000 euro betaalde je vroeger 1.050 euro aan BTW. Nu niet meer. Je hoeft er niks voor te doen — je installateur past het automatisch toe.
 
-### 2. ISDE-subsidie — 225 tot 375 EUR per kWp
+### ISDE-subsidie — tot 375 euro per kWp
 
-De Investeringssubsidie Duurzame Energie (ISDE) is de belangrijkste nationale subsidie. Maar let op: er zit een addertje onder het gras.
+De Investeringssubsidie Duurzame Energie is de grote landelijke subsidie. En die kan flink oplopen: voor een gemiddeld systeem van 5 kWp praat je over zo'n 1.800 euro terug.
 
-**De voorwaarde die iedereen mist:** Je krijgt de ISDE alleen als je zonnepanelen combineert met minimaal een andere isolatiemaatregel. Alleen panelen = geen subsidie.
+Maar — en dit is het addertje waar veel mensen tegenaan lopen — je krijgt de ISDE alleen als je panelen combineert met een isolatiemaatregel. Alleen panelen kopen? Geen subsidie. Je moet ook je spouwmuur isoleren, of je dak, of je vloer, of nieuwe HR++ ramen laten plaatsen.
 
-| Combinatie | ISDE voor panelen | ISDE voor isolatie | Totaal subsidie |
+Klinkt vervelend, maar het kan juist in je voordeel werken. Stel je laat je spouwmuur isoleren. Dat kost je 1.000 tot 2.500 euro en bespaart je 250 tot 450 euro per jaar aan stookkosten. En het ontsluit 1.500 tot 2.000 euro subsidie voor je zonnepanelen. Reken maar uit: die spouwmuurisolatie verdient zichzelf terug in twee tot drie jaar, en de panelen-subsidie krijg je er gratis bij.
+
+| Combinatie | Subsidie panelen | Subsidie isolatie | Totaal |
 |---|---|---|---|
-| Panelen + spouwmuurisolatie | ~1.800 EUR (bij 5 kWp) | ~350 EUR | ~2.150 EUR |
-| Panelen + dakisolatie | ~1.800 EUR (bij 5 kWp) | ~600 EUR | ~2.400 EUR |
-| Panelen + HR++ glas | ~1.800 EUR (bij 5 kWp) | ~1.500 EUR | ~3.300 EUR |
+| Panelen + spouwmuurisolatie | ~1.800 EUR | ~350 EUR | ~2.150 EUR |
+| Panelen + dakisolatie | ~1.800 EUR | ~600 EUR | ~2.400 EUR |
+| Panelen + HR++ glas | ~1.800 EUR | ~1.500 EUR | ~3.300 EUR |
 
-**Pro tip:** Spouwmuurisolatie is de goedkoopste "instap" om ISDE-waardig te worden. Kost 1.000-2.500 EUR, levert 250-450 EUR/jaar besparing, en ontsluit 1.500-2.000 EUR subsidie voor je panelen. Het is eigenlijk gratis geld.
+### Energiebespaarlening — 0% rente
 
-### 3. Energiebespaarlening — 0% rente
+Via het Nationaal Warmtefonds kun je tot 25.000 euro lenen tegen nul procent rente. Nul. Voor een investering die je 15-20% rendement oplevert. Die deal krijg je bij geen enkele bank.
 
-Via het Nationaal Warmtefonds kun je tot 25.000 EUR lenen tegen 0% rente voor verduurzaming van je woning. Looptijd: tot 20 jaar.
+Looptijd tot 20 jaar, en je kunt het gebruiken voor alles wat met verduurzaming te maken heeft. Panelen, isolatie, warmtepomp — alles in één lening.
 
-Dit is geen subsidie in de traditionele zin, maar 0% rente voor een investering die 15-20% rendement oplevert? Dat is beter dan elke belegging.
+## Gemeentelijke subsidies — hier zit het goud
 
-## Gemeentelijke subsidies: de verborgen schat
+Dit is waar het echt interessant wordt, en waar de meeste mensen geld laten liggen. Veel gemeenten hebben eigen subsidiepotjes die bovenop de landelijke regelingen komen. Het probleem: ze zijn slecht vindbaar en vaak snel leeg.
 
-Hier wordt het interessant. Veel gemeenten hebben eigen subsidieregelingen die bovenop de landelijke subsidies komen. Het probleem: ze zijn slecht vindbaar en vaak snel op.
+Een paar voorbeelden van wat er te halen valt:
 
-| Gemeente | Regeling | Bedrag |
-|---|---|---|
-| Amsterdam | Duurzaam Amsterdam | Tot 4.000 EUR voor verduurzamingspakket |
-| Rotterdam | Rotterdams Energiefonds | Lening tegen 0% rente |
-| Utrecht | Utrechts Stimuleringsfonds | Tot 500 EUR extra |
-| Den Haag | Zon op Dak | Tot 400 EUR |
-| Groningen | Nationaal Programma | Tot 10.000 EUR voor aardbevingsgebied |
+**Amsterdam** biedt via Duurzaam Amsterdam tot 4.000 euro voor een compleet verduurzamingspakket. Dat is flink. Ze hebben ook een speciale groene-daken-subsidie van 50 euro per vierkante meter als je zonnepanelen combineert met een sedumdak.
 
-**Actie:** Ga naar je gemeentewebsite en zoek op "subsidie verduurzaming" of "energiesubsidie". Of bel gewoon even met de gemeente — de meeste hebben een energieloket dat je gratis advies geeft.
+**Rotterdam** heeft het Rotterdams Energiefonds met 0% rente leningen. Ze hebben ook een speciale regeling voor huishoudens met een laag inkomen.
 
-## Stappenplan: maximaal subsidie binnenhalen
+**Utrecht** geeft tot 500 euro extra bovenop de landelijke subsidies via het Utrechts Stimuleringsfonds.
 
-1. **Check je gemeente eerst.** Gemeentelijke subsidies zijn vaak eerder op dan landelijke.
-2. **Vraag subsidie aan VOOR je tekent.** Bij de meeste regelingen mag je nog geen opdracht gegeven hebben.
-3. **Combineer slim.** Panelen + spouwmuur = meeste subsidie per euro investering.
-4. **Bewaar alles.** Offertes, facturen, betaalbewijzen. Je hebt ze nodig voor de subsidieafhandeling.
-5. **Wees snel.** Veel potjes zijn jaarlijks en raken op. Begin van het jaar aanvragen is het slimst.
+**Groningen** spant de kroon: tot 10.000 euro in het aardbevingsgebied via het Nationaal Programma.
+
+De slimste zet? Bel gewoon even met het energieloket van je gemeente. De meeste gemeenten hebben er een, en het advies is gratis. Ze kennen alle regelingen en helpen je met de aanvragen. Vijf minuten bellen kan je honderden euro's opleveren.
+
+## Het stappenplan om niks te missen
+
+**Check eerst je gemeente.** Gemeentelijke potjes raken sneller op dan landelijke regelingen. Begin van het jaar aanvragen is het slimst.
+
+**Vraag subsidie aan vóór je tekent.** Dit is de valkuil waar de meeste mensen intrappen. Bij de meeste regelingen mag je nog geen opdracht hebben gegeven aan een installateur. Eerst subsidie aanvragen, dan pas tekenen. Doe je het andersom, ben je je subsidie kwijt.
+
+**Combineer slim.** Panelen plus spouwmuurisolatie levert je de meeste subsidie per geïnvesteerde euro op. De spouwmuur verdient zichzelf terug, en het ontsluit een berg subsidie voor je panelen.
+
+**Bewaar alles.** Offertes, facturen, betaalbewijzen, foto's van voor en na de installatie. De subsidie-afhandeling kan soms maanden duren, en ze vragen om alles.
+
+**Wees snel.** De meeste potjes hebben een jaarlijks budget. Als dat op is, is het op. Wacht niet tot september met aanvragen.
 
 ---
-

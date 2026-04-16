@@ -24,57 +24,70 @@ relatedArticles:
   - "thuisbatterij-kosten-opbrengst"
 ---
 
-De salderingsregeling is het onderwerp waar de meeste paniek over bestaat. "Worden zonnepanelen nu minder interessant?" Nee. Maar het verdienmodel verandert. Hier leggen we precies uit wat er gebeurt, zonder paniekzaaierij.
+"Maar de salderingsregeling stopt toch?" Die vraag stelde mijn buurvrouw toen ze hoorde dat wij zonnepanelen overwegen. En je hoort het overal — op verjaardagen, bij de koffieautomaat, op Funda-forums. Iedereen is in paniek over de salderingsregeling.
 
-## Hoe saldering nu werkt (2026)
+Die paniek is nergens voor nodig. Ja, er verandert iets. Nee, zonnepanelen worden niet zinloos. Laat me het even rustig uitleggen.
 
-Simpel: je wekt overdag meer stroom op dan je gebruikt. Die stroom gaat het net op. 's Avonds gebruik je stroom van het net. Op je jaarafrekening worden die twee met elkaar verrekend. Je betaalt alleen voor het verschil.
+## Hoe het nu werkt — in gewone-mensentaal
 
-**Voorbeeld:** Je wekt 4.500 kWh op en verbruikt 4.000 kWh. Je betaalt voor 0 kWh (je hebt overschot). Dat overschot van 500 kWh verdampt overigens — je krijgt er niks voor. Daarom is precies genoeg opwekken het slimst.
+Overdag produceren je panelen meer stroom dan je huis gebruikt. Die stroom gaat het elektriciteitsnet op. 's Avonds, als de zon onder is, gebruik je stroom van het net. Op je jaarafrekening worden die twee tegen elkaar weggestreept. Je betaalt alleen voor het verschil.
 
-## Wat er verandert (2027-2031)
+Stel je wekt 4.500 kWh op en verbruikt 4.000 kWh. Dan betaal je voor 0 kWh — je hebt zelfs 500 kWh over. Dat overschot verdampt overigens, daar krijg je niks voor. Vandaar dat precies genoeg opwekken het slimst is.
 
-| Jaar | Hoeveel mag je salderen | Voorbeeld (2.500 kWh teruggeleverd) |
+Zo werkt het in 2026. En het is het laatste jaar dat dit volledig mag.
+
+## Wat er verandert — jaar voor jaar
+
+Vanaf 2027 mag je steeds minder salderen. Het gaat stapsgewijs, niet in één klap.
+
+| Jaar | Hoeveel mag je salderen | Wat je bespaard op 2.500 kWh teruglevering |
 |---|---|---|
-| 2026 | 100% | 2.500 kWh gesaldeerd. Netto: 0 EUR kosten |
-| 2027 | 64% | 1.600 kWh gesaldeerd (400 EUR besparing), 900 kWh tegen teruglevertarief (~63 EUR) |
-| 2028 | 55% | 1.375 kWh gesaldeerd (344 EUR), 1.125 kWh tegen teruglevertarief (~79 EUR) |
-| 2029 | 46% | 1.150 kWh gesaldeerd (288 EUR), 1.350 kWh tegen ~95 EUR |
-| 2030 | 37% | 925 kWh gesaldeerd (231 EUR), 1.575 kWh tegen ~110 EUR |
-| 2031 | 28% | 700 kWh gesaldeerd (175 EUR), 1.800 kWh tegen ~126 EUR |
+| 2026 | 100% | 625 EUR (volledige saldering) |
+| 2027 | 64% | 400 EUR gesaldeerd + 63 EUR terugleververgoeding = 463 EUR |
+| 2028 | 55% | 344 EUR + 79 EUR = 423 EUR |
+| 2029 | 46% | 288 EUR + 95 EUR = 383 EUR |
+| 2030 | 37% | 231 EUR + 110 EUR = 341 EUR |
+| 2031 | 28% | 175 EUR + 126 EUR = 301 EUR |
 
-*Teruglevertarief geschat op 0,07-0,09 EUR/kWh. Energietarief geschat op 0,25 EUR/kWh.*
+*Gerekend met een stroomprijs van 0,25 EUR/kWh en een teruglevertarief van 0,07-0,09 EUR/kWh.*
 
-## Wat betekent dit voor de terugverdientijd?
+Je gaat er elk jaar een beetje op achteruit. Maar kijk even goed naar die getallen: zelfs in 2031, als je nog maar 28% mag salderen, bespaar je nog ruim 300 euro per jaar op 2.500 kWh teruglevering. Tel daar je eigen verbruik bij op — dat blijft altijd de volle 25 cent per kWh waard — en je praat nog steeds over een besparing van 700 tot 900 euro per jaar.
 
-| Moment van installatie | Terugverdientijd (10 panelen) |
+## Wat dit betekent voor je terugverdientijd
+
+| Wanneer je installeert | Terugverdientijd (10 panelen) |
 |---|---|
 | 2026 | 5-6 jaar |
 | 2027 | 6-7 jaar |
 | 2028 | 6-7 jaar |
 | 2030 | 7-8 jaar |
 
-Het verschil is dus 1-2 jaar extra terugverdientijd. Niet niks, maar ook geen reden om geen panelen te nemen. Je verdient ze nog steeds ruim terug binnen de levensduur.
+Het verschil is één tot twee jaar extra. Op een investering die 25 jaar meegaat is dat peanuts. Je panelen verdienen zichzelf nog steeds ruim terug — het duurt alleen iets langer.
 
 ## Drie dingen die je nu kunt doen
 
-### 1. Installeer in 2026 als dat kan
-Je profiteert nog een heel jaar van 100% saldering. Dat scheelt 100-200 EUR in het eerste jaar ten opzichte van 2027.
+### Installeer in 2026 als het kan
 
-### 2. Verhoog je eigen verbruik
-Hoe meer stroom je direct zelf gebruikt, hoe minder je afhankelijk bent van saldering:
-- **Wasmachine/vaatwasser:** Programmeer ze om 12:00-14:00 (piek productie)
-- **Warmtepompboiler:** Verwarm je water overdag met zonnestroom
-- **Elektrische auto laden:** Laad je EV overdag als je thuis werkt
-- **Slimme apparaten:** Gebruik smart plugs om apparaten op zonnestroom te plannen
+Je profiteert nog een heel jaar van 100% saldering. Dat scheelt je 100 tot 200 euro ten opzichte van volgend jaar. Geen fortuin, maar leuk meegenomen.
 
-### 3. Overweeg na 2027 een thuisbatterij
-Een bescheiden batterij (5 kWh, ~4.500 EUR) kan na 2027-2028 financieel begin te lonen als de batterprijzen verder dalen. Nog niet nu, maar hou het in de gaten.
+### Verschuif je stroomgebruik naar overdag
 
-## De belangrijkste boodschap
+Dit is de grootste win, en hij kost je niks. Hoe meer stroom je direct zelf gebruikt, hoe minder je afhankelijk bent van saldering.
 
-Zonnepanelen blijven een uitstekende investering, ook na de afbouw van saldering. Het rendement daalt van "spectaculair" naar "heel goed". Je terugverdientijd gaat van 5 naar 7 jaar. Op een investering van 25+ jaar is dat een detail.
+Zet je wasmachine aan tussen 12:00 en 14:00, als de zon op z'n sterkst is. Programmeer je vaatwasser voor de middag. Heb je een warmtepompboiler? Laat die overdag je water verwarmen. Werk je thuis? Laad je elektrische auto overdag in plaats van 's nachts.
 
-Wat wel verandert: de strategie verschuift van "maximaal opwekken" naar "maximaal zelf gebruiken". Dat is een nuanceverschil, geen gamechanger.
+Een collega van me deed dit consequent na zijn eerste zomer met panelen. Zijn eigen verbruik ging van 35% naar 55%. Dat scheelde hem 200 euro per jaar — zonder ook maar iets extra te kopen.
+
+### Overweeg na 2027 een thuisbatterij
+
+Een bescheiden batterij van 5 kWh kost nu zo'n 4.500 euro. Puur financieel is dat in 2026 nog niet rendabel. Maar als de batterprijzen blijven dalen zoals verwacht, en de saldering verder afgebouwd wordt, begint het rond 2028-2029 interessant te worden.
+
+Onze tip: als je nu panelen laat installeren, vraag je installateur alvast om de bekabeling geschikt te maken voor een toekomstige batterij. Dat kost een paar tientjes extra en bespaart je later honderden euro's aan installatiekosten.
+
+## De kern van het verhaal
+
+Zonnepanelen blijven gewoon een goede investering. Het rendement gaat van "spectaculair" naar "heel goed." Je terugverdientijd gaat van vijf naar zeven jaar. Over een levensduur van 25 jaar is dat een detail.
+
+Wat wel verandert: de strategie verschuift. Van "zoveel mogelijk opwekken en terugleveren" naar "zoveel mogelijk zelf gebruiken." Dat is een kleine aanpassing in je gedrag, niet een reden om geen panelen te nemen. Het is het verschil tussen een heel goed rendement en een geweldig rendement — in beide gevallen verdien je er flink aan.
 
 

@@ -22,55 +22,56 @@ relatedArticles:
   - "plat-dak"
 ---
 
-De meeste "calculators" online geven je een getal zonder context. Hier leer je niet alleen hoeveel panelen je nodig hebt, maar ook hoeveel er echt op je dak passen en waar je op moet letten.
+"Hoeveel panelen heb ik nodig?" is de vraag die iedereen stelt, en eerlijk gezegd is het simpeler dan je denkt. Je hebt geen ingewikkelde calculator nodig. Een rekenmachine en je energierekening — meer niet.
 
-## De simpele berekening
+## De formule die altijd werkt
 
-**Formule:** Jaarverbruik (kWh) / 380 = aantal panelen
+Pak je jaarverbruik in kWh. Staat op je energierekening of in de app van je energieleverancier. Deel dat getal door 380. Klaar.
 
-Die 380 kWh is de gemiddelde jaaropbrengst per paneel (425 Wp) in Nederland, rekening houdend met bewolking, systeemverliezen en een gemiddeld goed georienteerd dak.
+Die 380 kWh is wat een modern paneel van 425 wattpiek gemiddeld per jaar produceert in Nederland. Daar zit alles al in: bewolkte dagen, systeemverliezen, een normaal georienteerd dak.
 
-| Jouw situatie | Verbruik | Panelen nodig | Investering |
+Dus als je 3.800 kWh per jaar verbruikt: 3.800 gedeeld door 380 = 10 panelen. Zo simpel is het.
+
+| Jouw situatie | Verbruik per jaar | Panelen nodig | Kost je ongeveer |
 |---|---|---|---|
-| Alleenstaand, zuinig | 1.500 kWh | 4 panelen | 2.000-2.800 EUR |
-| Stel zonder kinderen | 2.800 kWh | 8 panelen | 3.200-4.500 EUR |
-| Gezin, 2 kinderen | 3.800 kWh | 10 panelen | 3.800-5.500 EUR |
+| Alleen, zuinig leven | 1.500 kWh | 4 panelen | 2.000-2.800 EUR |
+| Samen, geen kinderen | 2.800 kWh | 8 panelen | 3.200-4.500 EUR |
+| Gezin met twee kinderen | 3.800 kWh | 10 panelen | 3.800-5.500 EUR |
 | Groot gezin | 4.500 kWh | 12 panelen | 4.500-6.500 EUR |
-| Thuiswerkers met EV | 6.500 kWh | 18 panelen | 7.000-9.500 EUR |
+| Thuiswerkers met elektrische auto | 6.500 kWh | 18 panelen | 7.000-9.500 EUR |
 
-**Weet je je verbruik niet?** Check je jaarafrekening van je energieleverancier. Of kijk op mijnmeter.nl als je een slimme meter hebt.
+**Geen idee wat je verbruikt?** Kijk op mijnmeter.nl als je een slimme meter hebt. Of pak je laatste jaarafrekening erbij — daar staat een grafiek met je maandverbruik.
 
-## Maar past dat op mijn dak?
+## Past dat eigenlijk op mijn dak?
 
-Goed punt. Een paneel neemt inclusief montage ~1,8 m2 in beslag. Maar je verliest ruimte aan:
+Goeie vraag, want het mooiste rekenwerk is niks waard als je dak te klein is.
 
-- Dakramen en schoorstenen (tel die eraf)
-- Minimaal 30 cm vrij aan alle randen
-- Bij plat dak: 40-50% meer ruimte nodig door rij-afstand
+Een paneel neemt inclusief montage zo'n 1,8 vierkante meter in beslag. Maar je kunt niet je hele dak gebruiken. Je verliest ruimte aan dakramen, schoorstenen, en er moet minstens 30 centimeter vrij blijven aan de randen.
 
-**Vuistregel schuindak:** Meet je bruikbare dakoppervlak in m2 en deel door 2. Dat is je maximale aantal panelen.
+De vuistregel voor een schuin dak: meet je bruikbare dakoppervlak en deel door twee. Dat is je maximum aantal panelen.
 
-**Voorbeeld:** Je hebt een dakvlak van 30 m2 op het zuiden, minus een dakraam van 3 m2. Bruikbaar: 27 m2. Maximum: 13-14 panelen.
+Voorbeeld: je hebt een dakvlak van 30 vierkante meter op het zuiden. Min een dakraam van 3 vierkante meter. Bruikbaar: 27 vierkante meter. Maximum: 13 tot 14 panelen. Meer dan genoeg voor een gemiddeld gezin.
 
-## De toekomst-factor
+Heb je een plat dak? Dan heb je 40-50% meer oppervlak nodig, want de panelen staan op een frame en er moet ruimte tussen voor schaduwvrije plaatsing. Maar het goede nieuws: bij een plat dak kun je east-west opstellen, waardoor je juist meer panelen kwijt kunt.
 
-Hier maken veel mensen een denkfout. Ze berekenen hun huidige verbruik, maar vergeten:
+## De fout die bijna iedereen maakt
 
-| Toekomstige wijziging | Extra verbruik | Extra panelen |
-|---|---|---|
-| Warmtepomp (hybride) | +2.000-3.000 kWh | +6-8 panelen |
-| Warmtepomp (volledig) | +4.000-5.000 kWh | +11-14 panelen |
-| Elektrische auto | +2.500-3.500 kWh | +7-10 panelen |
-| Inductie kookplaat | +300-500 kWh | +1 paneel |
+Mensen berekenen hun huidige verbruik en bestellen exact dat aantal panelen. Logisch, maar kortzichtig. Want de kans is groot dat je verbruik de komende jaren stijgt.
 
-**Ons advies:** Als je dak het toelaat en je budget het aankan, leg 20-30% meer panelen dan je nu nodig hebt. De meerkosten per extra paneel zijn relatief laag (het duurste is de installatie-basiskost die je toch al betaalt), en je bent voorbereid op de toekomst.
+Denk je na over een **warmtepomp**? Dat is 2.000 tot 5.000 kWh extra per jaar. Dat zijn 6 tot 14 panelen extra. Een **elektrische auto** laadt ook 2.500 tot 3.500 kWh per jaar — 7 tot 10 panelen. Zelfs een **inductiekookplaat** vreet 300 tot 500 kWh meer dan gas.
 
-## De eerlijke kanttekening
+Die extra panelen nu meteen leggen is veel goedkoper dan ze later bijplaatsen. De installateur is er toch al, de steiger staat er toch al, en het duurste deel — de basiskosten van de installatie — betaal je maar één keer.
 
-Soms is het antwoord: minder panelen dan je denkt.
+Ons advies: als je dak het toelaat en je budget het aankan, leg 20-30% meer dan je nu nodig hebt. Over vijf jaar ben je blij dat je het gedaan hebt.
 
-Met de afbouw van de salderingsregeling wordt het minder aantrekkelijk om veel meer op te wekken dan je verbruikt. De sweet spot verschuift naar een systeem dat 80-100% van je verbruik dekt, niet 150%.
+## Wanneer minder juist slimmer is
 
-Als je dak ruimte over heeft en je overweegt een thuisbatterij of warmtepomp: leg de panelen nu alvast. Als je geen plannen hebt voor extra elektrificatie: leg precies genoeg voor je huidige verbruik.
+Aan de andere kant: meer is niet altijd beter.
+
+Met de afbouw van de salderingsregeling wordt het minder interessant om veel meer op te wekken dan je verbruikt. Stroom die je overhoudt en teruglevert aan het net, wordt steeds minder waard. De sweet spot verschuift naar een systeem dat 80 tot 100% van je verbruik dekt — niet 150%.
+
+Heb je geen plannen voor een warmtepomp of elektrische auto? Dan is precies genoeg voor je huidige verbruik de slimste keus. Leg geen extra panelen "voor de zekerheid" als je niet weet waar die stroom naartoe gaat.
+
+Maar heb je die plannen wel? Leg dan nu meteen meer. De extra kosten per paneel zijn klein als je toch al een installatie laat doen, en je bespaart jezelf een hoop gedoe over een paar jaar.
 
 

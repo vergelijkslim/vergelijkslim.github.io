@@ -24,87 +24,69 @@ relatedArticles:
   - "subsidie-zonnepanelen-2026"
 ---
 
-Googel "zonnepanelen kosten" en je wordt bedolven onder vage ranges en verouderde prijzen. Hier krijg je de echte cijfers van 2026, gebaseerd op tientallen offertes die we verzameld en vergeleken hebben.
+Een vriend van me belde vorig jaar op. "Ik heb offertes binnen voor zonnepanelen. De een zegt 4.200 euro, de ander 7.100 euro. Zelfde aantal panelen, zelfde dak. Hoe kan dat?" Goeie vraag. En precies het probleem met zonnepanelen-prijzen: iedereen noemt andere bedragen, en als consument heb je geen idee wat eerlijk is.
 
-## De echte prijzen (geen marketingpraatjes)
+Wij hebben tientallen offertes vergeleken. Dit zijn de echte cijfers van 2026.
 
-Laten we beginnen met waar je echt op moet letten: de **totaalprijs inclusief alles**. Geen "vanaf" prijzen, geen losse componenten.
+## De echte prijzen — alles erbij
 
-| Systeemgrootte | Wat je krijgt | Totaalprijs 2026 | Per maand (terugverdientijd) |
-|---|---|---|---|
-| Klein (8 panelen, 3,4 kWp) | Dekt 1-2 persoons huishouden | 3.200 - 4.500 EUR | ~53-75 EUR/mnd gedurende 5 jaar, daarna gratis stroom |
-| Gemiddeld (10 panelen, 4,3 kWp) | Populairste keus | 3.800 - 5.500 EUR | ~63-92 EUR/mnd gedurende 5 jaar |
-| Groot (12 panelen, 5,1 kWp) | Dekt gezin van 4 | 4.500 - 6.500 EUR | ~75-108 EUR/mnd gedurende 5 jaar |
-| Extra groot (16 panelen, 6,8 kWp) | Toekomstbestendig | 6.000 - 8.500 EUR | ~100-142 EUR/mnd gedurende 5 jaar |
+Geen "vanaf"-trucs, geen kleine lettertjes. Dit is wat je kwijt bent als je morgen belt voor een offerte, inclusief panelen, omvormer, montage, bekabeling en installatie:
 
-*Alle prijzen inclusief panelen, omvormer, montagesysteem, installatie en BTW (0%).*
+| Systeem | Wat het dekt | Totaalprijs 2026 |
+|---|---|---|
+| Klein (8 panelen, 3,4 kWp) | Alleenstaand of stel | 3.200 - 4.500 EUR |
+| Gemiddeld (10 panelen, 4,3 kWp) | Gezin met 2-3 personen | 3.800 - 5.500 EUR |
+| Groot (12 panelen, 5,1 kWp) | Gezin van 4 | 4.500 - 6.500 EUR |
+| Extra groot (16 panelen, 6,8 kWp) | Groot verbruik of toekomstbestendig | 6.000 - 8.500 EUR |
 
-## Waar zit het prijsverschil?
+*BTW is 0% voor woningen. Dat scheelt je 21% en is al verwerkt in deze prijzen.*
 
-Die ranges zijn best breed. Dat komt doordat er grote verschillen zitten in:
+Om het in perspectief te zetten: een gemiddeld systeem van 10 panelen kost je zo'n 4.500 euro. Dat is twee keer een vakantie naar Turkije. Maar die vakantie is na twee weken voorbij. Die panelen leveren 25 jaar lang geld op.
 
-**1. Panelen merk (20-35% van totaalprijs)**
-- Budget (JA Solar, Canadian Solar): 0,80-0,90 EUR per Wp
-- Middenklasse (Trina, Longi): 0,90-1,00 EUR per Wp
-- Premium (SunPower, REC): 1,15-1,35 EUR per Wp
+## Waarom die prijsranges zo breed zijn
 
-**2. Omvormer (15-20% van totaalprijs)**
-- String-omvormer (Huawei, SMA): 500-1.000 EUR
-- Micro-omvormers (Enphase): 1.000-1.800 EUR
-- Optimizers (SolarEdge): 800-1.500 EUR
+Dat verschil van soms duizenden euro's komt door vier dingen.
 
-**3. Installateur marge (25-35% van totaalprijs)**
-Dit is waar de grootste variatie zit. Sommige installateurs rekenen 1.500 EUR voor dezelfde klus waar een ander 3.000 EUR voor vraagt. Daarom is 3+ offertes vergelijken zo cruciaal.
+Het **merk** van je panelen maakt uit. Budget-panelen (JA Solar, Canadian Solar) kosten 0,80 tot 0,90 euro per wattpiek. Middenklasse (Trina, Longi) zit op 0,90 tot 1,00 euro. Premium (SunPower, REC) kost 1,15 tot 1,35 euro. Het verschil in opbrengst? Vaak maar 1-2% per jaar. Het verschil in prijs? Honderden tot duizenden euro's.
 
-**4. Daktype en complexiteit**
-- Standaard schuin dak: geen meerkosten
-- Plat dak: +300-500 EUR (ballastsysteem)
-- Meerdere dakvlakken: +200-400 EUR (extra bekabeling)
-- Moeilijk bereikbaar dak: +200-500 EUR (steiger)
+Je **omvormer** maakt ook uit. Een string-omvormer kost 500 tot 1.000 euro. Micro-omvormers kosten 1.000 tot 1.800 euro. Voor de meeste daken zonder schaduw is een string-omvormer prima. Je betaalt dan niet meer dan nodig.
 
-## Rekenvoorbeeld: wat bespaar je echt?
+Maar het grootste verschil zit in de **installateur**. Hier wordt het gek: sommige installateurs rekenen 1.500 euro voor precies dezelfde klus waar een ander 3.000 euro voor vraagt. Geen verschil in kwaliteit, geen verschil in materiaal — puur een verschil in marge. Vandaar dat wij altijd zeggen: vraag minstens drie offertes aan.
 
-Laten we het concreet maken. Familie De Vries uit Amersfoort:
+En dan is er nog je **dak**. Een standaard schuin dak kost niks extra. Een plat dak: 300 tot 500 euro meer voor het ballastframe. Meerdere dakvlakken: 200 tot 400 euro meer aan bekabeling. Moeilijk bereikbaar? Reken op 200 tot 500 euro stellagekosten.
 
-- Tussenwoning, dak op zuidwest (210 graden), helling 35 graden
-- Jaarverbruik: 3.800 kWh
-- Energietarief: 0,25 EUR/kWh
-- Keuze: 10 Trina Solar Vertex S+ panelen met Huawei string-omvormer
+## Een echt rekenvoorbeeld
 
-**Investering:** 4.200 EUR (inclusief alles)
+Geen abstracte cijfers, maar een echt gezin. Familie De Vries uit Amersfoort. Tussenwoning met een dak op het zuidwesten, helling van 35 graden. Ze verbruiken 3.800 kWh per jaar en betalen 25 cent per kWh.
 
-**Jaaropbrengst:**
-- Zuidwest met 35 graden helling = 93% van optimaal
-- 10 x 440 Wp x 0,93 x 0,85 (systeemverlies) = 3.423 kWh per jaar
+Ze kiezen voor 10 Trina Solar panelen met een Huawei string-omvormer. **Totale investering: 4.200 euro.**
 
-**Besparing per jaar:**
-- Eigen verbruik (40%): 1.369 kWh x 0,25 EUR = 342 EUR
-- Saldering 2026 (60%): 2.054 kWh x 0,25 EUR = 514 EUR
-- **Totaal jaar 1: 856 EUR besparing**
+Wat levert dat op? De panelen produceren zo'n 3.400 kWh per jaar. Niet genoeg om alles te dekken, maar ze besparen in 2026 — met volledige saldering — zo'n 856 euro. Dat is 71 euro per maand. Genoeg om je Netflix, Spotify en sportschool-abonnement van te betalen. Elke maand. 25 jaar lang.
 
-**Terugverdientijd: 4,9 jaar**
+Na 4,9 jaar hebben de panelen zichzelf terugverdiend. Alles daarna is puur winst. Over de volledige levensduur van 25 jaar praat je over 17.000 tot 20.000 euro netto rendement op die ene investering van 4.200 euro.
 
-Na die 5 jaar? Dan verdient dit systeem zo'n 800-900 EUR per jaar. Over de hele levensduur van 25+ jaar is dat 17.000-20.000 EUR netto winst op een investering van 4.200 EUR. Probeer dat maar eens te halen met je spaarrekening.
+## De verborgen kosten waar niemand over praat
 
-## De verborgen kosten die niemand noemt
+We willen niet die website zijn die alleen de zonnige kant vertelt. Er zijn kosten waar installateurs liever niet over beginnen.
 
-We willen eerlijk zijn. Er zijn kosten waar installateurs zelden over praten:
+**De omvormer gaat eerder kapot dan je panelen.** Je panelen gaan 25-30 jaar mee. Je omvormer gemiddeld 12-15 jaar. Halverwege moet je hem dus vervangen. Kosten: 500 tot 800 euro. Dat is niet dramatisch, maar je moet er wel rekening mee houden.
 
-**Monitoring abonnement:** Sommige omvormer-fabrikanten (vooral SolarEdge) vragen na een paar jaar een abonnement voor hun monitoring-app. Huawei en Enphase doen dit (nog) niet.
+**Monitoring kan geld kosten.** Sommige merken (let op met SolarEdge) beginnen na een paar jaar een abonnement te vragen voor hun monitoringsapp. Huawei en Enphase doen dat voorlopig niet. Vraag er voor je koopt specifiek naar.
 
-**Omvormer vervanging:** Een omvormer gaat gemiddeld 12-15 jaar mee, terwijl panelen 25-30 jaar meegaan. Reken op 500-800 EUR voor vervanging halverwege de levensduur.
+**Check je verzekering.** De meeste opstalverzekeringen dekken zonnepanelen, maar soms moet je het even melden. Doe dat binnen een maand na installatie. Meerkosten: meestal 0 tot 50 euro per jaar.
 
-**Verzekering:** Check of je opstalverzekering zonnepanelen dekt. Meestal wel, maar soms moet je het even melden. Meerkosten: 0-50 EUR per jaar.
+**Netcongestie kan roet in het eten gooien.** In sommige gebieden is het stroomnet zo vol dat je niet altijd kunt terugleveren. Check bij je netbeheerder — Liander, Enexis of Stedin — of er problemen zijn in jouw postcodegebied. Je kunt altijd panelen plaatsen, maar als je niet kunt terugleveren is je eigen verbruik extra belangrijk.
 
-**Netaansluiting:** In sommige gebieden is het elektriciteitsnet vol (netcongestie). Je kunt dan wel panelen plaatsen, maar mogelijk niet altijd terugleveren. Check bij je netbeheerder (Liander, Enexis, Stedin) of er problemen zijn in jouw postcodegebied.
+## Vijf manieren om honderden euro's te besparen
 
-## Hoe bespaar je op de aanschaf?
+**Vergelijk drie offertes.** Het klinkt als een open deur, maar het scheelt je echt 20 tot 40%. Een kennis van me bespaarde 1.800 euro door simpelweg een derde offerte aan te vragen.
 
-1. **Vergelijk minimaal 3 offertes.** Het prijsverschil kan oplopen tot 40%. Gebruik vergelijkingssites, maar vraag ook direct aan bij lokale installateurs.
-2. **Kies geen premium panelen als dat niet nodig is.** Het verschil tussen 21% en 23% rendement is in de praktijk 100-200 EUR per jaar. Het verschil in aanschaf kan 2.000+ EUR zijn.
-3. **Groepskortingen.** Veel gemeenten organiseren collectieve inkoopacties. Korting: 10-15%.
-4. **Tijdstip.** Najaar en winter zijn het rustigste seizoen voor installateurs. Je kunt soms 5-10% korting bedingen.
-5. **Combineer met isolatie.** Als je toch de steigers laat plaatsen, combineer dan met dakisolatie. Je bespaart op stellagekosten en komt in aanmerking voor ISDE-subsidie.
+**Kies geen premium panelen als dat niet hoeft.** Het verschil tussen 21% en 23% rendement klinkt veel, maar het is in de praktijk 100 tot 200 euro per jaar. Het verschil in aanschaf kan 2.000 euro zijn. Die rekensom maakt zichzelf.
+
+**Check groepskortingen.** Veel gemeenten organiseren collectieve inkoopacties voor hele wijken. Korting: 10-15%. Jouw gemeente heeft misschien zo'n actie en je weet het niet eens.
+
+**Plan in de winter.** Najaar en winter zijn de rustigste maanden voor installateurs. Ze hebben dan minder werk en zijn eerder bereid om korting te geven. 5-10% is realistisch.
+
+**Combineer met isolatie.** Als je toch de steigers laat plaatsen, combineer dan meteen met dakisolatie. Je bespaart op stellagekosten en maakt jezelf subsidie-waardig voor de ISDE.
 
 ---
-

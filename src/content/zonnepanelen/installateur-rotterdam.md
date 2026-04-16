@@ -24,36 +24,40 @@ relatedArticles:
   - "installateur-amsterdam"
 ---
 
-Rotterdam is misschien wel de ideale stad voor zonnepanelen in Nederland. Waarom? Veel platte daken (perfekt voor east-west opstellingen), een gemeente die fors investeert in verduurzaming, en minder VvE-gedoe dan Amsterdam.
+Rotterdam is misschien wel de beste stad in Nederland voor zonnepanelen. Dat klinkt als een bold statement, maar het klopt. De wederopbouw na de oorlog heeft Rotterdam iets gegeven wat andere steden niet hebben: een heleboel platte daken. En platte daken zijn goud waard als het om zonnepanelen gaat.
 
-## Waarom Rotterdam ideaal is
+## Waarom Rotterdam zo goed scoort
 
-- **Architectuur:** Rotterdam heeft door de wederopbouw na WOII veel platte daken. Plat dak = je kiest zelf de optimale hoek en richting
-- **Gemeente Rotterdam:** Een van de meest actieve gemeenten op verduurzamingsgebied. Het Rotterdams Energiefonds biedt 0% rente leningen
-- **Havenstad-mentaliteit:** Minder bureaucratie dan Amsterdam, snellere vergunningverlening
+Door al die platte daken kun je als Rotterdammer zelf bepalen hoe je panelen geplaatst worden. Richting zuiden, east-west — jij kiest. In Amsterdam of Utrecht zit je vast aan het dak dat de architect in 1920 bedacht heeft.
 
-## Onze top 3 voor Rotterdam
+De gemeente Rotterdam is een van de actiefste gemeenten op het gebied van verduurzaming. Het Rotterdams Energiefonds biedt 0% rente leningen voor verduurzaming. En er is minder bureaucratie dan in Amsterdam — geen eindeloze VvE-procedures, geen monumentencommissies voor elk rijtjeshuis.
 
-### 1. Solarwatt Dealer Zuid-Holland (9.0/10)
-- Premium glas-glas panelen, 30 jaar garantie
-- Uitstekende ervaring met platte daken in Rotterdam-Zuid en Kralingen
-- Prijs: hoger segment, maar je krijgt de beste panelen
+De Rotterdamse mentaliteit helpt ook. Niet lullen maar poetsen — en dat geldt ook voor zonnepanelen. Installateurs in Rotterdam zijn nuchter, snel en to-the-point.
 
-### 2. Sungevity Rotterdam (8.8/10)
-- Grootste installateur in de regio, snelste levertijd
-- Alles-in-een service met monitoring
-- Prijs: competitief, goede standaard-kwaliteit
+## Drie installateurs die we aanraden
 
-### 3. HomeQgo Zuid-Holland (8.4/10)
-- Beste budget-optie zonder in te leveren op kwaliteit
-- Focus op woonwijken Rotterdam-Zuid, Schiebroek, Hillegersberg
-- Prijs: 10-15% onder gemiddeld
+### Solarwatt Dealer Zuid-Holland (9.0/10)
 
-## Specifiek voor Rotterdam
+Als je het goed wilt doen, niet het goedkoopste. Solarwatt levert glas-glas panelen met 30 jaar garantie. Die panelen zijn steviger, gaan langer mee, en zijn beter bestand tegen de Rotterdamse wind. Ze hebben veel ervaring met platte daken in Rotterdam-Zuid en Kralingen. De prijs is hoger dan gemiddeld, maar je krijgt er de beste panelen voor.
 
-**Plat dak tip:** Laat de installateur een east-west opstelling berekenen naast de standaard zuid-opstelling. Op veel Rotterdamse platte daken kun je met east-west 30% meer panelen kwijt, wat een hogere totaalopbrengst geeft ondanks het iets lagere rendement per paneel.
+### Sungevity Rotterdam (8.8/10)
 
-**Wind:** Rotterdam is windiger dan de meeste steden (haven-effect). Zorg dat je installateur voldoende ballast berekent voor platte dak-installaties. Besparingen op ballast = risico op panelen die bij storm verschuiven.
+De grootste installateur in de regio, en dat merk je aan de snelheid. Offerte binnen een dag, installatie vaak binnen drie weken. Alles-in-een service inclusief monitoring. Goede standaardkwaliteit voor een competitieve prijs. Als je niet wilt nadenken en gewoon wilt dat het geregeld wordt, is Sungevity je beste keus.
+
+### HomeQgo Zuid-Holland (8.4/10)
+
+De beste optie als je het budget strak wilt houden. HomeQgo focust op woonwijken in Rotterdam-Zuid, Schiebroek en Hillegersberg, en zit 10-15% onder het gemiddelde. Geen franje, gewoon goede panelen goed geïnstalleerd. Voor veel Rotterdammers precies wat ze zoeken.
+
+## Specifiek voor Rotterdam: let op de wind
+
+Rotterdam is windiger dan de meeste steden — dat haveneffect merk je op je dak. Bij platte dak-installaties moet de ballast zwaarder zijn dan in binnenlandse steden. Een goede installateur berekent dit voor je, maar vraag er specifiek naar. Installateurs die besparen op ballast besparen op jouw veiligheid.
+
+En die platte daken: laat altijd een east-west opstelling doorrekenen naast de standaard zuid-opstelling. Op veel Rotterdamse daken kun je met east-west 30-40% meer panelen kwijt. Dat is meer totale stroom, en je verbruikt meer direct — precies wat je wilt met de afbouw van de salderingsregeling.
+
+## Subsidies in Rotterdam
+
+Via het **Rotterdams Energiefonds** kun je lenen tegen 0% rente voor verduurzaming. Er is een **speciale regeling voor huishoudens met laag inkomen** — de gemeente draagt dan een groter deel bij. En de landelijke **ISDE-subsidie** (1.500-2.000 euro bij combinatie met isolatie) kun je er gewoon bovenop stapelen.
+
+Bel even met het Energieloket Rotterdam — ze helpen je gratis met uitzoeken waar je recht op hebt. Dat telefoontje kan je honderden euro's opleveren.
 
 ---
-
