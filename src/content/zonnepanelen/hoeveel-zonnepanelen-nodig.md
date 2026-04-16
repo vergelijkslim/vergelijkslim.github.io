@@ -22,36 +22,55 @@ relatedArticles:
   - "plat-dak"
 ---
 
-## Stap 1: Bepaal Je Jaarlijks Energieverbruik
+De meeste "calculators" online geven je een getal zonder context. Hier leer je niet alleen hoeveel panelen je nodig hebt, maar ook hoeveel er echt op je dak passen en waar je op moet letten.
 
-| Huishouden | Gemiddeld verbruik |
-|---|---|
-| 1 persoon | 1.800 kWh/jaar |
-| 2 personen | 2.800 kWh/jaar |
-| 3 personen | 3.500 kWh/jaar |
-| 4 personen | 4.200 kWh/jaar |
-| 5+ personen | 5.000+ kWh/jaar |
+## De simpele berekening
 
-## Stap 2: Bereken Het Aantal Panelen
+**Formule:** Jaarverbruik (kWh) / 380 = aantal panelen
 
-**Formule:** Jaarverbruik / opbrengst per paneel = aantal panelen
+Die 380 kWh is de gemiddelde jaaropbrengst per paneel (425 Wp) in Nederland, rekening houdend met bewolking, systeemverliezen en een gemiddeld goed georienteerd dak.
 
-Een gemiddeld zonnepaneel (425 Wp) levert in Nederland ~380 kWh per jaar.
+| Jouw situatie | Verbruik | Panelen nodig | Investering |
+|---|---|---|---|
+| Alleenstaand, zuinig | 1.500 kWh | 4 panelen | 2.000-2.800 EUR |
+| Stel zonder kinderen | 2.800 kWh | 8 panelen | 3.200-4.500 EUR |
+| Gezin, 2 kinderen | 3.800 kWh | 10 panelen | 3.800-5.500 EUR |
+| Groot gezin | 4.500 kWh | 12 panelen | 4.500-6.500 EUR |
+| Thuiswerkers met EV | 6.500 kWh | 18 panelen | 7.000-9.500 EUR |
 
-| Verbruik | Aantal panelen | Vermogen |
+**Weet je je verbruik niet?** Check je jaarafrekening van je energieleverancier. Of kijk op mijnmeter.nl als je een slimme meter hebt.
+
+## Maar past dat op mijn dak?
+
+Goed punt. Een paneel neemt inclusief montage ~1,8 m2 in beslag. Maar je verliest ruimte aan:
+
+- Dakramen en schoorstenen (tel die eraf)
+- Minimaal 30 cm vrij aan alle randen
+- Bij plat dak: 40-50% meer ruimte nodig door rij-afstand
+
+**Vuistregel schuindak:** Meet je bruikbare dakoppervlak in m2 en deel door 2. Dat is je maximale aantal panelen.
+
+**Voorbeeld:** Je hebt een dakvlak van 30 m2 op het zuiden, minus een dakraam van 3 m2. Bruikbaar: 27 m2. Maximum: 13-14 panelen.
+
+## De toekomst-factor
+
+Hier maken veel mensen een denkfout. Ze berekenen hun huidige verbruik, maar vergeten:
+
+| Toekomstige wijziging | Extra verbruik | Extra panelen |
 |---|---|---|
-| 2.800 kWh | 8 panelen | 3.4 kWp |
-| 3.500 kWh | 10 panelen | 4.3 kWp |
-| 4.200 kWh | 12 panelen | 5.1 kWp |
-| 5.000 kWh | 14 panelen | 6.0 kWp |
+| Warmtepomp (hybride) | +2.000-3.000 kWh | +6-8 panelen |
+| Warmtepomp (volledig) | +4.000-5.000 kWh | +11-14 panelen |
+| Elektrische auto | +2.500-3.500 kWh | +7-10 panelen |
+| Inductie kookplaat | +300-500 kWh | +1 paneel |
 
-## Stap 3: Check Je Dakoppervlak
+**Ons advies:** Als je dak het toelaat en je budget het aankan, leg 20-30% meer panelen dan je nu nodig hebt. De meerkosten per extra paneel zijn relatief laag (het duurste is de installatie-basiskost die je toch al betaalt), en je bent voorbereid op de toekomst.
 
-Elk paneel heeft ~1.8 m2 nodig (inclusief montagerails).
+## De eerlijke kanttekening
 
-## Stap 4: Houd Rekening Met
+Soms is het antwoord: minder panelen dan je denkt.
 
-- **Dakrichting:** Zuid = 100%, Oost/West = 85%, Noord = 60%
-- **Dakhelling:** Ideaal is 30-35 graden
-- **Schaduw:** Bomen en gebouwen verlagen opbrengst
-- **Toekomst:** Plan extra voor warmtepomp (+3.000-4.000 kWh) of EV (+2.500-3.500 kWh)
+Met de afbouw van de salderingsregeling wordt het minder aantrekkelijk om veel meer op te wekken dan je verbruikt. De sweet spot verschuift naar een systeem dat 80-100% van je verbruik dekt, niet 150%.
+
+Als je dak ruimte over heeft en je overweegt een thuisbatterij of warmtepomp: leg de panelen nu alvast. Als je geen plannen hebt voor extra elektrificatie: leg precies genoeg voor je huidige verbruik.
+
+

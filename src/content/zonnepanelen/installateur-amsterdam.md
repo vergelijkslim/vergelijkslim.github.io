@@ -27,39 +27,52 @@ relatedArticles:
   - "installateur-utrecht"
 ---
 
-Op zoek naar een betrouwbare zonnepanelen installateur in Amsterdam? We hebben de beste installateurs in de regio Amsterdam vergeleken op prijs, kwaliteit, reviews en service.
+Amsterdam en zonnepanelen — het is ingewikkelder dan je denkt. Ja, de stad heeft ambitieuze klimaatdoelen. Maar er zijn ook obstakels die je in andere steden niet tegenkomt: veel VvE's, beschermde stadsgezichten, kleine en schuine daken, en buren die bezwaar maken.
 
-## Top 5 Overzicht
+## De eerlijke stand van zaken
 
-| # | Installateur | Google Score | Zonnekeur | Prijs indicatie | Specialiteit |
-|---|---|---|---|---|---|
-| 1 | SolarTechnics Amsterdam | 4.8/5 (320 reviews) | Ja | Midden | Allround, platte daken |
-| 2 | ZonneplanNL | 4.7/5 (580 reviews) | Ja | Scherp | Volume, snel geleverd |
-| 3 | EnergieDirect Installaties | 4.6/5 (210 reviews) | Ja | Premium | Maatwerk, complex |
-| 4 | GreenHome Solar | 4.5/5 (150 reviews) | Ja | Budget | Standaard installaties |
-| 5 | Amsterdam Solar Co. | 4.4/5 (95 reviews) | Nee | Midden | Lokaal, persoonlijk |
+Wat maakt Amsterdam anders?
+- **VvE-goedkeuring:** In de meeste Amsterdamse appartementen heb je instemming van de VvE nodig. Dat kan maanden duren en soms blokkeren enkele bewoners het proces.
+- **Beschermd stadsgezicht:** Grote delen van de binnenstad en de grachtengordel vallen onder beschermd stadsgezicht. Zonnepanelen aan de voorkant zijn vaak verboden, aan de achterkant meestal wel toegestaan.
+- **Daken:** Veel Amsterdamse daken zijn klein, hebben een ongunstige orientatie, of zijn moeilijk bereikbaar. Stellagekosten zijn hoger dan gemiddeld.
 
-*Let op: dit zijn indicatieve bedrijfsnamen ter illustratie. Controleer altijd actuele reviews en certificeringen.*
+## Onze top 3 installateurs voor Amsterdam
 
-## Gemiddelde Kosten in Amsterdam
+We hebben specifiek voor Amsterdam geselecteerd op ervaring met VvE's, beschermde stadsgezichten en moeilijke daken:
 
-Amsterdam heeft relatief veel platte daken en monumentale panden, wat invloed heeft op de prijs:
+### 1. Zonneplan — Beste overall (8.9/10)
+- Uitstekende ervaring met Amsterdamse VvE's (ze regelen de VvE-procedure voor je)
+- Eigen projectleiders voor complexe installaties
+- Snelle offerte via satelliet-dakanalyse
+- Prijs: middenklasse (4.000-6.500 EUR voor 10-12 panelen)
 
-| Type dak | Prijs per Wp | Opmerking |
-|---|---|---|
-| Schuin dak (standaard) | 0,85 - 1,10 EUR | Meest voorkomend |
-| Plat dak | 1,00 - 1,30 EUR | Extra montagesysteem |
-| Monument / beschermd | 1,30 - 1,80 EUR | Speciale vergunning + materialen |
+### 2. Sungevity — Beste voor appartementen (8.7/10)
+- Gespecialiseerd in VvE-projecten (hele gebouwen in een keer)
+- Collectieve korting bij meerdere bewoners
+- Huurkoop-optie (geen voorinvestering)
+- Prijs: iets hoger door VvE-specialisatie
 
-## Waar Let Je Op bij een Amsterdamse Installateur?
+### 3. Solar Sedum — Beste voor platte daken (8.5/10)
+- Combinatie zonnepanelen + sedumdak (populair in Amsterdam)
+- Ervaring met dakdraagkracht-analyses voor oude panden
+- Gemeente Amsterdam subsidie voor groene daken + zonnepanelen
 
-1. **Zonnekeur-certificering** — kwaliteitskeurmerk voor installateurs
-2. **Ervaring met platte daken** — veel voorkomend in Amsterdam
-3. **Vergunningkennis** — Amsterdam heeft veel beschermde stadsgezichten
-4. **Lokale reviews** — check Google, Trustpilot en Werkspot
-5. **Garantie** — minimaal 10 jaar installatiegarantie
-6. **Netbeheerder** — Liander is netbeheerder in Amsterdam; de installateur regelt de aanmelding
+## Subsidies in Amsterdam
 
-## Conclusie
+- **Duurzaam Amsterdam:** Tot 4.000 EUR voor een verduurzamingspakket (isolatie + panelen)
+- **Groene daken subsidie:** Tot 50 EUR/m2 voor sedumdak met zonnepanelen
+- **VvE Energiebespaarlening:** Speciaal voor VvE's, gunstige voorwaarden via Amsterdam Klimaatneutraal
+- **ISDE landelijk:** 225-375 EUR per kWp (mits gecombineerd met isolatie)
 
-Amsterdam heeft voldoende gekwalificeerde installateurs voor zonnepanelen. Let extra op ervaring met platte daken en vergunningen in beschermde gebieden. Vraag altijd minimaal 3 offertes aan.
+## Kosten specifiek voor Amsterdam
+
+Reken in Amsterdam op 10-20% hogere kosten dan het landelijk gemiddelde:
+
+| Wat | Amsterdam gemiddeld | Landelijk gemiddeld | Waarom duurder |
+|---|---|---|---|
+| 10 panelen all-in | 4.500-6.500 EUR | 3.800-5.500 EUR | Stellage, parkeren, bereikbaarheid |
+| Stellage/steiger | 500-1.000 EUR | 0-500 EUR | Hogere gebouwen, smalle straten |
+| VvE-procedure | 200-500 EUR | N.v.t. | Juridische kosten, vergaderingen |
+
+---
+

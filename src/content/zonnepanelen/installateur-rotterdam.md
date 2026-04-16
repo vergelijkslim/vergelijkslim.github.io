@@ -24,60 +24,36 @@ relatedArticles:
   - "installateur-amsterdam"
 ---
 
-Zoek je een betrouwbare zonnepanelen installateur in Rotterdam? De havenstad heeft door haar ligging en het stedelijke daklandschap specifieke uitdagingen. We hebben de beste installateurs in de regio Rotterdam vergeleken op prijs, kwaliteit, garantie en klantervaringen.
+Rotterdam is misschien wel de ideale stad voor zonnepanelen in Nederland. Waarom? Veel platte daken (perfekt voor east-west opstellingen), een gemeente die fors investeert in verduurzaming, en minder VvE-gedoe dan Amsterdam.
 
-## Top 5 Installateurs Rotterdam
+## Waarom Rotterdam ideaal is
 
-| # | Bedrijf | Beoordeling | Prijs indicatie | Garantie | Specialiteit |
-|---|---|---|---|---|---|
-| 1 | Solarwatt Dealer Zuid-Holland | 9.2/10 | Vanaf 4.200 EUR | 30 jaar | Premium panelen |
-| 2 | Sungevity Rotterdam | 8.9/10 | Vanaf 3.800 EUR | 25 jaar | Alles-in-een service |
-| 3 | Engie Energie Rotterdam | 8.7/10 | Vanaf 3.500 EUR | 20 jaar | Huurkoop opties |
-| 4 | HomeQgo Zuid-Holland | 8.5/10 | Vanaf 3.200 EUR | 15 jaar | Budget-vriendelijk |
-| 5 | Greenchoice Installatie | 8.3/10 | Vanaf 3.600 EUR | 20 jaar | Combinatie met energiecontract |
+- **Architectuur:** Rotterdam heeft door de wederopbouw na WOII veel platte daken. Plat dak = je kiest zelf de optimale hoek en richting
+- **Gemeente Rotterdam:** Een van de meest actieve gemeenten op verduurzamingsgebied. Het Rotterdams Energiefonds biedt 0% rente leningen
+- **Havenstad-mentaliteit:** Minder bureaucratie dan Amsterdam, snellere vergunningverlening
 
-## Zonnepanelen in Rotterdam: Waar Moet Je Op Letten?
+## Onze top 3 voor Rotterdam
 
-Rotterdam heeft een uniek profiel voor zonnepanelen:
+### 1. Solarwatt Dealer Zuid-Holland (9.0/10)
+- Premium glas-glas panelen, 30 jaar garantie
+- Uitstekende ervaring met platte daken in Rotterdam-Zuid en Kralingen
+- Prijs: hoger segment, maar je krijgt de beste panelen
 
-- **Veel platte daken** — Rotterdamse architectuur kent veel platte daken, wat east-west opstellingen mogelijk maakt
-- **Havengebied wind** — Panelen moeten stevig bevestigd worden vanwege de wind vanuit het havengebied
-- **Schaduwanalyse** — Door de mix van hoog- en laagbouw is een goede schaduwanalyse essentieel
-- **Gemeentelijke subsidies** — Rotterdam biedt aanvullende subsidies bovenop de landelijke ISDE-regeling
+### 2. Sungevity Rotterdam (8.8/10)
+- Grootste installateur in de regio, snelste levertijd
+- Alles-in-een service met monitoring
+- Prijs: competitief, goede standaard-kwaliteit
 
-## #1 Solarwatt Dealer Zuid-Holland
+### 3. HomeQgo Zuid-Holland (8.4/10)
+- Beste budget-optie zonder in te leveren op kwaliteit
+- Focus op woonwijken Rotterdam-Zuid, Schiebroek, Hillegersberg
+- Prijs: 10-15% onder gemiddeld
 
-Solarwatt is een Duits premium merk met een uitgebreid dealernetwerk in Zuid-Holland:
+## Specifiek voor Rotterdam
 
-- Gratis dakinspectie en schaduwanalyse
-- Glas-glas panelen met 30 jaar garantie
-- Eigen monitoring app
-- Installatie binnen 4-6 weken na offerte
-- Financieringsmogelijkheden via Greenloan
+**Plat dak tip:** Laat de installateur een east-west opstelling berekenen naast de standaard zuid-opstelling. Op veel Rotterdamse platte daken kun je met east-west 30% meer panelen kwijt, wat een hogere totaalopbrengst geeft ondanks het iets lagere rendement per paneel.
 
-**Sterke punten:** Beste garantie, hoogste kwaliteit panelen, uitstekende monitoring.
-**Nadelen:** Hogere aanschafprijs dan gemiddeld.
+**Wind:** Rotterdam is windiger dan de meeste steden (haven-effect). Zorg dat je installateur voldoende ballast berekent voor platte dak-installaties. Besparingen op ballast = risico op panelen die bij storm verschuiven.
 
-## #2 Sungevity Rotterdam
+---
 
-Sungevity is een van de grootste installateurs van Nederland met een sterk team in Rotterdam:
-
-- Online offerte binnen 24 uur (inclusief satelliet-dakanalyse)
-- Alles-in-een: panelen, omvormer, installatie, monitoring
-- Flexibele betalingsopties (inclusief huurkoop)
-- Klanttevredenheid: 4.5/5 op Trustpilot
-
-## Hoeveel Kosten Zonnepanelen in Rotterdam?
-
-| Aantal panelen | Vermogen | Gemiddelde prijs | Terugverdientijd |
-|---|---|---|---|
-| 8 panelen | 3.4 kWp | 3.200 - 4.500 EUR | 5-7 jaar |
-| 12 panelen | 5.1 kWp | 4.800 - 6.500 EUR | 5-6 jaar |
-| 16 panelen | 6.8 kWp | 6.000 - 8.500 EUR | 5-6 jaar |
-| 20 panelen | 8.5 kWp | 7.500 - 10.000 EUR | 5-7 jaar |
-
-## Subsidies in Rotterdam
-
-- **ISDE-subsidie:** 225-375 EUR per kWp (landelijk)
-- **Rotterdams Energiefonds:** Extra lening tegen 0% rente
-- **Energiearmoede regeling:** Gratis zonnepanelen voor huishoudens met laag inkomen

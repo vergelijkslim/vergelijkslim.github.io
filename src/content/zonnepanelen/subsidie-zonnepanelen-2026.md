@@ -23,58 +23,57 @@ relatedArticles:
   - "kosten-zonnepanelen-2026"
 ---
 
-Overweeg je zonnepanelen te kopen in 2026? Dan wil je natuurlijk weten welke subsidies er beschikbaar zijn. We zetten alle landelijke en regionale regelingen overzichtelijk op een rij.
+Subsidies voor zonnepanelen zijn in 2026 minder royaal dan een paar jaar geleden, maar er valt nog steeds serieus geld terug te halen. Het probleem? De regelingen zijn versnipperd over landelijk, provinciaal en gemeentelijk niveau. Wij hebben het uitgezocht.
 
-## Landelijke Regelingen
+## De grote drie: dit kun je sowieso krijgen
 
-**1. 0% btw op zonnepanelen**
-Sinds 2023 betaal je 0% btw op zonnepanelen voor woningen. Dit geldt voor de panelen, omvormer en installatie. Besparing: circa 21% op de totaalprijs.
+### 1. BTW-vrijstelling (0% BTW) — automatisch
 
-**2. ISDE-regeling (Investeringssubsidie Duurzame Energie)**
-De ISDE biedt subsidie wanneer je zonnepanelen combineert met minimaal een isolatiemaatregel:
+Sinds 2023 betaal je 0% BTW op zonnepanelen voor je woning. Dit hoef je niet aan te vragen — je installateur past het automatisch toe.
 
-| Combinatie | Indicatief subsidiebedrag |
-|---|---|
-| Zonnepanelen + spouwmuurisolatie | 1.400 - 2.500 EUR |
-| Zonnepanelen + dakisolatie | 1.900 - 3.000 EUR |
-| Zonnepanelen + vloerisolatie | 700 - 1.500 EUR |
-| Zonnepanelen + HR++ glas | 1.000 - 2.000 EUR |
+**Besparing:** Op een systeem van 5.000 EUR exclusief BTW scheelde dit voorheen 1.050 EUR. Nu is die 5.000 EUR ook je totaalprijs.
 
-*Exacte bedragen hangen af van oppervlakte en isolatiewaarde.*
+### 2. ISDE-subsidie — 225 tot 375 EUR per kWp
 
-Aanvragen via: mijn.rvo.nl
+De Investeringssubsidie Duurzame Energie (ISDE) is de belangrijkste nationale subsidie. Maar let op: er zit een addertje onder het gras.
 
-**3. Salderingsregeling**
-Tot en met 2027 kun je opgewekte stroom die je teruglevert aan het net verrekenen met je verbruik. Vanaf 2028 wordt de terugleververgoeding stapsgewijs verlaagd:
-- 2027: 100% salderen
-- 2028: ~80% van de leveringstarief
-- 2031: ~40% van de leveringstarief
+**De voorwaarde die iedereen mist:** Je krijgt de ISDE alleen als je zonnepanelen combineert met minimaal een andere isolatiemaatregel. Alleen panelen = geen subsidie.
 
-**4. Nationaal Warmtefonds**
-Lening tegen 0% rente voor energiebesparende maatregelen, tot 25.000 EUR. Zonnepanelen komen in aanmerking als onderdeel van een breder verduurzamingspakket.
+| Combinatie | ISDE voor panelen | ISDE voor isolatie | Totaal subsidie |
+|---|---|---|---|
+| Panelen + spouwmuurisolatie | ~1.800 EUR (bij 5 kWp) | ~350 EUR | ~2.150 EUR |
+| Panelen + dakisolatie | ~1.800 EUR (bij 5 kWp) | ~600 EUR | ~2.400 EUR |
+| Panelen + HR++ glas | ~1.800 EUR (bij 5 kWp) | ~1.500 EUR | ~3.300 EUR |
 
-## Provinciale en Gemeentelijke Subsidies
+**Pro tip:** Spouwmuurisolatie is de goedkoopste "instap" om ISDE-waardig te worden. Kost 1.000-2.500 EUR, levert 250-450 EUR/jaar besparing, en ontsluit 1.500-2.000 EUR subsidie voor je panelen. Het is eigenlijk gratis geld.
 
-Veel provincies en gemeenten bieden aanvullende subsidies. Enkele voorbeelden:
+### 3. Energiebespaarlening — 0% rente
 
-| Regio | Regeling | Bedrag |
+Via het Nationaal Warmtefonds kun je tot 25.000 EUR lenen tegen 0% rente voor verduurzaming van je woning. Looptijd: tot 20 jaar.
+
+Dit is geen subsidie in de traditionele zin, maar 0% rente voor een investering die 15-20% rendement oplevert? Dat is beter dan elke belegging.
+
+## Gemeentelijke subsidies: de verborgen schat
+
+Hier wordt het interessant. Veel gemeenten hebben eigen subsidieregelingen die bovenop de landelijke subsidies komen. Het probleem: ze zijn slecht vindbaar en vaak snel op.
+
+| Gemeente | Regeling | Bedrag |
 |---|---|---|
-| Amsterdam | Duurzaam Amsterdam | Tot 3.000 EUR |
-| Rotterdam | Energietransitie subsidie | Tot 2.500 EUR |
-| Utrecht | Groene daken + energie | Tot 1.500 EUR |
-| Noord-Brabant | Stimuleringsregeling | Variabel |
-| Gelderland | Verduurzaming woningen | Tot 2.000 EUR |
+| Amsterdam | Duurzaam Amsterdam | Tot 4.000 EUR voor verduurzamingspakket |
+| Rotterdam | Rotterdams Energiefonds | Lening tegen 0% rente |
+| Utrecht | Utrechts Stimuleringsfonds | Tot 500 EUR extra |
+| Den Haag | Zon op Dak | Tot 400 EUR |
+| Groningen | Nationaal Programma | Tot 10.000 EUR voor aardbevingsgebied |
 
-*Check altijd verbeterjehuis.nl of je gemeentelijke website voor actuele regelingen.*
+**Actie:** Ga naar je gemeentewebsite en zoek op "subsidie verduurzaming" of "energiesubsidie". Of bel gewoon even met de gemeente — de meeste hebben een energieloket dat je gratis advies geeft.
 
-## Zo Vraag Je Subsidie Aan
+## Stappenplan: maximaal subsidie binnenhalen
 
-1. **Check of je in aanmerking komt** — meestal moet je eigenaar-bewoner zijn
-2. **Vraag offertes aan** — bij minimaal 3 installateurs
-3. **Dien de aanvraag in VOOR installatie** — bij veel regelingen moet je eerst goedkeuring hebben
-4. **Bewaar alle facturen** — je hebt ze nodig voor de subsidieaanvraag
-5. **Dien bewijs in** — foto's en facturen na installatie
+1. **Check je gemeente eerst.** Gemeentelijke subsidies zijn vaak eerder op dan landelijke.
+2. **Vraag subsidie aan VOOR je tekent.** Bij de meeste regelingen mag je nog geen opdracht gegeven hebben.
+3. **Combineer slim.** Panelen + spouwmuur = meeste subsidie per euro investering.
+4. **Bewaar alles.** Offertes, facturen, betaalbewijzen. Je hebt ze nodig voor de subsidieafhandeling.
+5. **Wees snel.** Veel potjes zijn jaarlijks en raken op. Begin van het jaar aanvragen is het slimst.
 
-## Conclusie
+---
 
-In 2026 zijn er volop subsidies beschikbaar voor zonnepanelen in Nederland. Combineer de 0% btw met de ISDE-regeling en gemeentelijke subsidies om maximaal te besparen. Begin altijd met de subsidieaanvraag voordat je de installatie plant.
