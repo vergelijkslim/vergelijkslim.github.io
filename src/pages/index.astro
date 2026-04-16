@@ -69,8 +69,8 @@ const sections = [
         Vergelijk installateurs en vind de beste deal voor jouw dak.
       </p>
       <div class="hero-cta">
-        <a href="/artikelen/" class="btn btn-cta">Bekijk alle artikelen</a>
-        <a href="/vergelijkingen/" class="btn btn-outline">Vergelijk nu</a>
+        <a href="/offerte/" class="btn btn-cta">Gratis offertes aanvragen</a>
+        <a href="/vergelijkingen/" class="btn btn-outline">Vergelijk aanbieders</a>
       </div>
     </div>
   </section>
@@ -164,6 +164,19 @@ const sections = [
       </div>
     </section>
   )}
+
+  <section class="offerte-cta">
+    <div class="container">
+      <div class="offerte-cta-card">
+        <h2>Klaar om te besparen?</h2>
+        <p>Ontvang gratis en vrijblijvend offertes van gecertificeerde installateurs bij jou in de buurt. Vergelijk en bespaar gemiddeld 30%.</p>
+        <div class="offerte-cta-buttons">
+          <a href="/offerte/" class="btn btn-cta">Vraag gratis offertes aan</a>
+        </div>
+        <p class="offerte-note"><small>100% gratis &middot; Geen verplichtingen &middot; Binnen 48 uur reactie</small></p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -431,5 +444,38 @@ const sections = [
   .view-all {
     text-align: center;
     margin-top: 2rem;
+  }
+
+  .offerte-cta {
+    padding: 4rem 0;
+    background: var(--color-bg-alt);
+  }
+  .offerte-cta-card {
+    background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+    border: 1px solid #bbf7d0;
+    border-radius: var(--radius-xl);
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .offerte-cta-card h2 {
+    margin-bottom: 0.75rem;
+  }
+  .offerte-cta-card > p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .offerte-cta-buttons {
+    margin-bottom: 1rem;
+  }
+  .offerte-note small {
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
   }
 </style>

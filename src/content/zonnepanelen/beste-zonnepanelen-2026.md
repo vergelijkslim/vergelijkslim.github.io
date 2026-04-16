@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-15
 author: "Redactie ZonneWijzer"
 featured: true
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
 keywords:
   - beste zonnepanelen 2026
   - zonnepanelen vergelijken

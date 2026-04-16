@@ -47,6 +47,9 @@ export function getLinksByNetwork(network: AffiliateLink['network']): AffiliateL
 }
 
 export function buildTrackingUrl(link: AffiliateLink, params?: Record<string, string>): string {
+  if (link.url.startsWith('#')) {
+    return link.url;
+  }
   const url = new URL(link.url);
   url.searchParams.set('utm_source', 'zonnewijzer');
   url.searchParams.set('utm_medium', 'affiliate');

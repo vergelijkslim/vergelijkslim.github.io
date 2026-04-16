@@ -5,7 +5,7 @@ niche: "zonnepanelen"
 type: "regionaal"
 publishDate: 2026-04-15
 author: "Redactie ZonneWijzer"
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
 keywords:
   - zonnepanelen installateur amsterdam
   - zonnepanelen amsterdam

@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-15
 author: "Redactie ZonneWijzer"
 featured: false
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "thuisbatterij-offerte"]
 keywords:
   - zonnepanelen thuisbatterij
   - thuisbatterij kosten

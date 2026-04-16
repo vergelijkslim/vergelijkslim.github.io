@@ -5,7 +5,7 @@ niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
 author: "Redactie ZonneWijzer"
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "subsidie-check"]
 keywords:
   - zonnepanelen subsidie 2026
   - ISDE subsidie

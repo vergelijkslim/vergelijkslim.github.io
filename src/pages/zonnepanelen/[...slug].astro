@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQSchema from '../../components/seo/FAQSchema.astro';
 import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
 import AffiliateButton from '../../components/AffiliateButton.astro';
+import InlineCTA from '../../components/InlineCTA.astro';
 import { getCollection, render } from 'astro:content';
 import '../../lib/affiliate-data';
 
@@ -90,15 +91,27 @@ const articleSchema = {
           <Content />
         </div>
 
+        <InlineCTA
+          title="Benieuwd wat zonnepanelen jou opleveren?"
+          description="Ontvang gratis en vrijblijvend offertes van gecertificeerde installateurs bij jou in de buurt."
+          linkId="zonnepanelen-offerte"
+          label="Vraag gratis offertes aan"
+          variant="green"
+        />
+
         {affiliateLinks.length > 0 && (
           <div class="cta-box">
-            <h3>Direct vergelijken</h3>
-            <p>Bekijk de beste aanbiedingen bij onze partners.</p>
+            <h3>Vergelijk aanbieders en bespaar</h3>
+            <p>Bekijk de beste aanbiedingen bij onze partners en ontvang vrijblijvend offertes.</p>
             <div class="cta-buttons">
               {affiliateLinks.map((linkId) => (
                 <AffiliateButton linkId={linkId} />
               ))}
+              <a href="/offerte/" class="btn btn-primary">Meer informatie</a>
             </div>
+            <p class="cta-disclaimer">
+              <small>* Deze pagina bevat affiliate links. <a href="/disclaimer/">Lees onze disclaimer</a>.</small>
+            </p>
           </div>
         )}
 
@@ -310,6 +323,18 @@ const articleSchema = {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .cta-disclaimer {
+    margin: 0;
+  }
+  .cta-disclaimer small {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+  .cta-disclaimer a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
   }
 
   .faq-section {
