@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://woningwijzer.github.io/sitemap-index.xml
