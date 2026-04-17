@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Pagina niet gevonden" description="De pagina die je zoekt bestaat niet of is verplaatst." noindex={true}>
+  <section class="error-page">
+    <div class="container">
+      <span class="error-code">404</span>
+      <h1>Pagina niet gevonden</h1>
+      <p>De pagina die je zoekt bestaat niet of is verplaatst.</p>
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">Naar de homepage</a>
+        <a href="/zonnepanelen/" class="btn btn-outline">Bekijk alle artikelen</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .error-page {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .error-code {
+    display: block;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+  }
+  .error-page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .error-page p {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+</style>

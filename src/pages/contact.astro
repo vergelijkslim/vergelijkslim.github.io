@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact" description="Neem contact op met ZonneWijzer.nl voor vragen, suggesties of samenwerkingen.">
+  <section class="legal-page">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Heb je vragen, suggesties of wil je samenwerken? Neem gerust contact met ons op.</p>
+
+      <h2>E-mail</h2>
+      <p>Je kunt ons bereiken via e-mail: <strong>info@zonnewijzer.nl</strong></p>
+
+      <h2>Veelgestelde vragen</h2>
+      <p>Bekijk ook onze <a href="/zonnepanelen/">artikelen</a> — wellicht staat het antwoord op je vraag er al bij.</p>
+
+      <h2>Samenwerking</h2>
+      <p>Ben je installateur, fabrikant of energieleverancier en wil je samenwerken? Stuur ons een e-mail met je voorstel.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal-page { padding: 3rem 0; }
+  .legal-page .container { max-width: var(--content-width); }
+  .legal-page h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+  .legal-page h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  .legal-page p { line-height: 1.8; color: var(--color-text-light); margin-bottom: 1rem; }
+</style>
