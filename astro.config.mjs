@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://vergelijkslim.github.io',
+  site: 'https://slimzonnig.nl',
   integrations: [sitemap()],
   build: {
     format: 'directory',
