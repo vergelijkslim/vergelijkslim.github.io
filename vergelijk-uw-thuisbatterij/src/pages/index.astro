@@ -53,10 +53,10 @@ const sections = [
   <section class="hero">
     <div class="container hero-content">
       <span class="hero-badge">Onafhankelijk & Eerlijk</span>
-      <h1>Jouw gids voor<br />thuisbatterijen & energieopslag</h1>
+      <h1>Thuisbatterij vergelijken:<br />vind de beste keuze</h1>
       <p class="hero-sub">
-        Onafhankelijk advies over kosten, capaciteit en subsidies.
-        Van Tesla Powerwall tot BYD en Huawei.
+        Vergelijk de populairste thuisbatterijen op prijs, capaciteit en kwaliteit.
+        Onafhankelijk advies voor jouw situatie in 2026.
       </p>
       <div class="hero-cta">
         <a href="/artikelen/" class="btn btn-cta">Bekijk alle artikelen</a>
@@ -100,6 +100,43 @@ const sections = [
     </div>
   </section>
 
+  <section class="comparison-table">
+    <div class="container">
+      <div class="section-header">
+        <h2>Populaire thuisbatterijen vergeleken</h2>
+        <p>De meest populaire thuisbatterijen in Nederland op een rij.</p>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Merk & Model</th>
+              <th>Capaciteit</th>
+              <th>Prijs (vanaf)</th>
+              <th>Prijs/kWh</th>
+              <th>Garantie</th>
+              <th>Bijzonderheden</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Sigenergy SigenStor</strong></td><td>5–20 kWh</td><td>€4.500</td><td>~€500/kWh</td><td>10 jaar</td><td>Modulair, incl. omvormer</td></tr>
+            <tr><td><strong>Tesla Powerwall 3</strong></td><td>13,5 kWh</td><td>€8.500</td><td>~€630/kWh</td><td>10 jaar</td><td>All-in-one, Tesla-ecosysteem</td></tr>
+            <tr><td><strong>BYD HVS</strong></td><td>5,1–12,8 kWh</td><td>€4.200</td><td>~€520/kWh</td><td>10 jaar</td><td>Modulair, breed compatibel</td></tr>
+            <tr><td><strong>Huawei LUNA 2000</strong></td><td>5–15 kWh</td><td>€4.800</td><td>~€530/kWh</td><td>10 jaar</td><td>Compact design, goede app</td></tr>
+            <tr><td><strong>Growatt APX</strong></td><td>5–12 kWh</td><td>€3.800</td><td>~€480/kWh</td><td>10 jaar</td><td>Scherp geprijsd, modulair</td></tr>
+            <tr><td><strong>Zendure SolarFlow</strong></td><td>1,9–7,6 kWh</td><td>€1.200</td><td>~€450/kWh</td><td>10 jaar</td><td>Plug & play, balkoncentrale</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Prijzen zijn indicatief (april 2026) en exclusief installatiekosten (reken op €1.500–€2.500 extra).</p>
+      <div class="table-links">
+        <a href="/thuisbatterijen/tesla-powerwall-3-vs-byd-hvs/" class="btn btn-primary">Tesla vs BYD vergelijking</a>
+        <a href="/thuisbatterijen/sigenergy-vs-huawei-luna-2000/" class="btn btn-primary">Sigenergy vs Huawei</a>
+        <a href="/thuisbatterijen/goedkoopste-thuisbatterijen-2026/" class="btn btn-primary">Top 5 goedkoopste</a>
+      </div>
+    </div>
+  </section>
+
   {latest.length > 0 && (
     <section class="latest">
       <div class="container">
@@ -117,6 +154,37 @@ const sections = [
       </div>
     </section>
   )}
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Veelgestelde vragen</h2>
+        <p>Antwoorden op de meest gestelde vragen over thuisbatterijen.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Wat kost een thuisbatterij in 2026?</summary>
+          <p>Een thuisbatterij kost in 2026 tussen de <strong>€3.500 en €9.000</strong>, afhankelijk van de capaciteit en het merk. Tel daar <strong>€1.500–€2.500</strong> installatiekosten bij op. De gemiddelde investering voor een 10 kWh systeem met installatie ligt rond de <strong>€7.000–€8.500</strong>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Hoe snel verdien ik een thuisbatterij terug?</summary>
+          <p>De terugverdientijd hangt af van je verbruik, het aantal zonnepanelen en je energiecontract. Gemiddeld ligt de terugverdientijd op <strong>7–12 jaar</strong>. Met dynamische tarieven en optimaal gebruik kan dit dalen naar <strong>5–8 jaar</strong>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kan ik een thuisbatterij ook zonder zonnepanelen gebruiken?</summary>
+          <p>Ja, dat kan. Met een dynamisch energiecontract kun je goedkope stroom opslaan en gebruiken wanneer de prijs hoog is. De terugverdientijd is dan wel langer dan in combinatie met zonnepanelen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Welke thuisbatterij is het beste voor mij?</summary>
+          <p>Dat hangt af van je situatie. Voor de beste prijs-kwaliteitverhouding raden we de <strong>Sigenergy</strong> of <strong>BYD HVS</strong> aan. Voor wie al in het Tesla-ecosysteem zit, is de <strong>Powerwall 3</strong> een logische keuze. Voor kleine installaties is de <strong>Zendure SolarFlow</strong> een betaalbaar instapmodel.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is een thuisbatterij subsidie mogelijk?</summary>
+          <p>In 2026 is er geen landelijke subsidie specifiek voor thuisbatterijen in Nederland. Sommige gemeenten en provincies bieden wel lokale regelingen. Bekijk onze <a href="/thuisbatterijen/thuisbatterij-subsidie-isde/">subsidiegids</a> voor meer informatie.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -159,4 +227,24 @@ const sections = [
   .latest-card h3 { font-family: var(--font-sans); font-size: 1rem; font-weight: 600; line-height: 1.4; }
   .latest-card p { color: var(--color-text-light); font-size: 0.8125rem; line-height: 1.5; }
   .view-all { text-align: center; margin-top: 2rem; }
+
+  .comparison-table { padding: 4rem 0; }
+  .table-wrapper { overflow-x: auto; margin-bottom: 1rem; }
+  .table-wrapper table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .table-wrapper th { background: var(--color-primary); color: #fff; padding: 0.75rem 1rem; text-align: left; font-weight: 600; white-space: nowrap; }
+  .table-wrapper td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); }
+  .table-wrapper tr:hover { background: var(--color-bg-alt); }
+  .table-note { font-size: 0.8125rem; color: var(--color-text-light); text-align: center; margin-top: 0.5rem; }
+  .table-links { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .table-links .btn { font-size: 0.875rem; padding: 0.625rem 1.25rem; }
+
+  .faq { padding: 4rem 0; background: var(--color-bg-alt); }
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item { border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin-bottom: 0.75rem; background: var(--color-bg); overflow: hidden; }
+  .faq-item summary { padding: 1rem 1.25rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: 0.9375rem; }
+  .faq-item summary::after { content: '+'; font-size: 1.25rem; color: var(--color-primary); font-weight: 700; flex-shrink: 0; margin-left: 1rem; }
+  .faq-item[open] summary::after { content: '-'; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item p { padding: 0 1.25rem 1rem; color: var(--color-text-light); line-height: 1.7; font-size: 0.9375rem; margin: 0; }
+  .faq-item p a { color: var(--color-primary); }
 </style>
