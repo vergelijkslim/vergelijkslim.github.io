@@ -8,7 +8,7 @@ const articleSchema = z.object({
   type: z.enum(['vergelijking', 'review', 'gids', 'regionaal']),
   publishDate: z.coerce.date(),
   updatedDate: z.coerce.date().optional(),
-  author: z.string().default('Redactie ZonneWijzer'),
+  author: z.string().default('Redactie SlimZonnig'),
   draft: z.boolean().default(false),
   featured: z.boolean().default(false),
   affiliateLinks: z.array(z.string()).default([]),

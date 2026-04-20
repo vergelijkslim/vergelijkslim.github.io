@@ -51,7 +51,7 @@ export function buildTrackingUrl(link: AffiliateLink, params?: Record<string, st
     return link.url;
   }
   const url = new URL(link.url);
-  url.searchParams.set('utm_source', 'zonnewijzer');
+  url.searchParams.set('utm_source', 'slimzonnig');
   url.searchParams.set('utm_medium', 'affiliate');
   url.searchParams.set('utm_campaign', link.niche);
   if (params) {

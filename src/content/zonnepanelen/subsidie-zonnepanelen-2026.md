@@ -4,7 +4,7 @@ description: "Overzicht van alle subsidies voor zonnepanelen in 2026. ISDE, sald
 niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie ZonneWijzer"
+author: "Redactie SlimZonnig"
 affiliateLinks: ["zonnepanelen-offerte", "subsidie-check"]
 keywords:
   - zonnepanelen subsidie 2026

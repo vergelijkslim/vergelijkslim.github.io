@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Link checker for ZonneWijzer — crawls dist/ HTML files,
+ * Link checker for SlimZonnig — crawls dist/ HTML files,
  * extracts all outgoing (external) links, and checks HTTP status.
  *
  * Usage:
@@ -18,7 +18,7 @@ import { join, relative } from 'node:path';
 const DIST_DIR = 'dist';
 const TIMEOUT_MS = 15_000;
 const CONCURRENCY = 5;
-const USER_AGENT = 'ZonneWijzer-LinkChecker/1.0';
+const USER_AGENT = 'SlimZonnig-LinkChecker/1.0';
 
 // ── Collect HTML files ──────────────────────────────────────────────
 

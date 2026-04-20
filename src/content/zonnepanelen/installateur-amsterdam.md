@@ -4,7 +4,7 @@ description: "De beste zonnepanelen installateurs in Amsterdam vergeleken op pri
 niche: "zonnepanelen"
 type: "regionaal"
 publishDate: 2026-04-15
-author: "Redactie ZonneWijzer"
+author: "Redactie SlimZonnig"
 affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
 keywords:
   - zonnepanelen installateur amsterdam

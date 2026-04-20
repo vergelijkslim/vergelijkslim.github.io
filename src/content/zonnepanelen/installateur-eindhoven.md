@@ -4,7 +4,7 @@ description: "Vergelijk de top 5 zonnepanelen installateurs in Eindhoven. Prijze
 niche: "zonnepanelen"
 type: "regionaal"
 publishDate: 2026-04-15
-author: "Redactie ZonneWijzer"
+author: "Redactie SlimZonnig"
 featured: false
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:

@@ -4,7 +4,7 @@ description: "Alles over de salderingsregeling voor zonnepanelen. Wat verandert 
 niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-16
-author: "Redactie ZonneWijzer"
+author: "Redactie SlimZonnig"
 affiliateLinks: ["zonnepanelen-offerte"]
 keywords:
   - salderingsregeling 2026
