@@ -1,0 +1,54 @@
+---
+const year = new Date().getFullYear();
+const categories = [
+  { label: 'Gidsen', href: '/gidsen/' },
+  { label: 'Vergelijkingen', href: '/vergelijkingen/' },
+  { label: 'Alle artikelen', href: '/artikelen/' },
+];
+const info = [
+  { label: 'Over ons', href: '/over-ons/' },
+  { label: 'Privacy', href: '/privacy/' },
+  { label: 'Disclaimer', href: '/disclaimer/' },
+  { label: 'Contact', href: '/contact/' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">Thuisbatterij<strong>Wijzer</strong>.nl</a>
+        <p class="footer-tagline">Jouw onafhankelijke gids voor thuisbatterijen, energieopslag en slim energiebeheer in Nederland.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Onderwerpen</h4>
+        <ul>{categories.map((c) => (<li><a href={c.href}>{c.label}</a></li>))}</ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informatie</h4>
+        <ul>{info.map((l) => (<li><a href={l.href}>{l.label}</a></li>))}</ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {year} ThuisbatterijWijzer.nl — Alle rechten voorbehouden</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: #0f172a; color: #cbd5e1; padding: 3.5rem 0 0; margin-top: 4rem; }
+  .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2.5rem; }
+  @media (min-width: 768px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 3rem; } }
+  .footer-brand { max-width: 320px; }
+  .footer-logo { font-family: var(--font-sans); font-size: 1.25rem; color: #fff; text-decoration: none; letter-spacing: -0.02em; }
+  .footer-logo:hover { text-decoration: none; color: #fff; }
+  .footer-logo strong { color: #60a5fa; }
+  .footer-tagline { margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.6; color: #94a3b8; }
+  .footer-col h4 { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #e2e8f0; margin-bottom: 0.875rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 0.5rem; }
+  .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color var(--transition-fast); }
+  .footer-col a:hover { color: #fff; text-decoration: none; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 1.5rem 0; text-align: center; }
+  .footer-bottom p { font-size: 0.8125rem; color: #64748b; }
+</style>
