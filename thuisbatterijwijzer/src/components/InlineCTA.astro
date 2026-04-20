@@ -62,4 +62,10 @@ const { title, description, linkId, label, variant = 'blue' } = Astro.props;
   .inline-cta-action {
     flex-shrink: 0;
   }
+  @media (max-width: 639px) {
+    .inline-cta-action :global(.btn) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 </style>
