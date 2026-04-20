@@ -10,7 +10,7 @@ affiliateLinks:
   - thuisbatterij-offerte
   - coolblue-thuisbatterij
   - bolcom-thuisbatterij
-  - solarcity-batterij
+  - bliq-batterij
 keywords:
   - beste thuisbatterij
   - thuisbatterij vergelijking

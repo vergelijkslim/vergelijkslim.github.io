@@ -18,8 +18,8 @@ const links: AffiliateLink[] = [
   {
     id: 'energieleverancier-vergelijk',
     network: 'direct',
-    merchant: 'Energievergelijken.nl',
-    url: 'https://www.energievergelijken.nl/',
+    merchant: 'Pricewise (Energievergelijken)',
+    url: 'https://www.pricewise.nl/energie-vergelijken/',
     niche: 'zonnepanelen',
     label: 'Vergelijk energieleveranciers',
     commissionType: 'cpa',

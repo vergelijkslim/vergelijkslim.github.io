@@ -7,7 +7,7 @@ publishDate: 2026-04-12
 author: "Redactie ThuisbatterijWijzer"
 affiliateLinks:
   - thuisbatterij-offerte
-  - solarcity-batterij
+  - bliq-batterij
   - subsidie-check
 keywords:
   - thuisbatterij zonnepanelen
