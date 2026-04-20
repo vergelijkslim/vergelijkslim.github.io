@@ -37,6 +37,6 @@
     if (!banner) return;
     banner.classList.add('visible');
     document.getElementById('cookie-accept').addEventListener('click', function() { localStorage.setItem('cookie-consent', 'accepted'); banner.classList.remove('visible'); });
-    document.getElementById('cookie-decline').addEventListener('click', function() { localStorage.setItem('cookie-consent', 'declined'); banner.classList.remove('visible'); window['ga-disable-G-XXXXXXXXXX'] = true; });
+    document.getElementById('cookie-decline').addEventListener('click', function() { localStorage.setItem('cookie-consent', 'declined'); banner.classList.remove('visible'); /* GA4 opt-out: uncomment with real ID when analytics is configured */ });
   })();
 </script>

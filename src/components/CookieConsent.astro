@@ -120,7 +120,8 @@
     document.getElementById('cookie-decline').addEventListener('click', function() {
       localStorage.setItem('cookie-consent', 'declined');
       banner.classList.remove('visible');
-      window['ga-disable-G-XXXXXXXXXX'] = true;
+      // GA4 opt-out: uncomment with real ID when analytics is configured
+      // window['ga-disable-G-XXXXXXXXXX'] = true;
     });
   })();
 </script>
