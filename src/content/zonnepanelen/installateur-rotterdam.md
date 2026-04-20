@@ -28,7 +28,7 @@ Rotterdam is misschien wel de beste stad in Nederland voor zonnepanelen. Dat kli
 
 ## Waarom Rotterdam zo goed scoort
 
-Door al die platte daken kun je als Rotterdammer zelf bepalen hoe je panelen geplaatst worden. Richting zuiden, east-west — jij kiest. In Amsterdam of Utrecht zit je vast aan het dak dat de architect in 1920 bedacht heeft.
+Door al die platte daken kun je als Rotterdammer zelf bepalen hoe je panelen geplaatst worden. Richting zuiden, oost-west — jij kiest. In Amsterdam of Utrecht zit je vast aan het dak dat de architect in 1920 bedacht heeft.
 
 De gemeente Rotterdam is een van de actiefste gemeenten op het gebied van verduurzaming. Het Rotterdams Energiefonds biedt 0% rente leningen voor verduurzaming. En er is minder bureaucratie dan in Amsterdam — geen eindeloze VvE-procedures, geen monumentencommissies voor elk rijtjeshuis.
 
@@ -52,7 +52,7 @@ De beste optie als je het budget strak wilt houden. HomeQgo focust op woonwijken
 
 Rotterdam is windiger dan de meeste steden — dat haveneffect merk je op je dak. Bij platte dak-installaties moet de ballast zwaarder zijn dan in binnenlandse steden. Een goede installateur berekent dit voor je, maar vraag er specifiek naar. Installateurs die besparen op ballast besparen op jouw veiligheid.
 
-En die platte daken: laat altijd een east-west opstelling doorrekenen naast de standaard zuid-opstelling. Op veel Rotterdamse daken kun je met east-west 30-40% meer panelen kwijt. Dat is meer totale stroom, en je verbruikt meer direct — precies wat je wilt met de afbouw van de salderingsregeling.
+En die platte daken: laat altijd een oost-west opstelling doorrekenen naast de standaard zuid-opstelling. Op veel Rotterdamse daken kun je met oost-west 30-40% meer panelen kwijt. Dat is meer totale stroom, en je verbruikt meer direct — precies wat je wilt met de afbouw van de salderingsregeling.
 
 ## Subsidies in Rotterdam
 

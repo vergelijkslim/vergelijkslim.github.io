@@ -10,10 +10,10 @@ affiliateLinks: ["zonnepanelen-offerte"]
 keywords:
   - zonnepanelen plat dak
   - plat dak zonnepanelen
-  - east west opstelling
+  - oost-west opstelling
 faq:
   - question: "Kan ik zonnepanelen op een plat dak leggen?"
-    answer: "Ja, met speciale montagesystemen. Je kunt kiezen uit zuid-gericht, east-west, of plat liggend. Elke opstelling heeft voor- en nadelen."
+    answer: "Ja, met speciale montagesystemen. Je kunt kiezen uit zuid-gericht, oost-west, of plat liggend. Elke opstelling heeft voor- en nadelen."
   - question: "Wat zijn de meerkosten voor een plat dak?"
     answer: "Reken op 300-500 EUR extra voor het ballastframe (30-50 EUR/paneel) en extra installatie-uren (200-400 EUR)."
 relatedArticles:
@@ -30,24 +30,24 @@ Bij een schuin dak zit je vast aan wat de architect ooit bedacht heeft. De richt
 
 Bij een plat dak bepaal jij alles. De hoek, de richting, de opstelling. Jij bent de baas. En dat opent mogelijkheden die je niet hebt op een schuin dak.
 
-## East-west of richting zuiden? Het verrassende antwoord
+## Oost-west of richting zuiden? Het verrassende antwoord
 
-De meeste installateurs zetten je panelen standaard op het zuiden. Per paneel levert dat het meeste op. Maar — en dat vertellen ze er niet altijd bij — de totaalopbrengst van je hele dak kan bij een east-west opstelling hoger zijn.
+De meeste installateurs zetten je panelen standaard op het zuiden. Per paneel levert dat het meeste op. Maar — en dat vertellen ze er niet altijd bij — de totaalopbrengst van je hele dak kan bij een oost-west opstelling hoger zijn.
 
-Hoe zit dat? Bij een zuid-opstelling moet er flink wat ruimte zitten tussen de rijen panelen, anders beschaduwen ze elkaar. Die ruimte kun je niet gebruiken. Bij een east-west opstelling liggen de panelen ruggelings tegen elkaar aan. Je hebt bijna geen rij-afstand nodig, waardoor je 30-40% meer panelen kwijt kunt op hetzelfde dak.
+Hoe zit dat? Bij een zuid-opstelling moet er flink wat ruimte zitten tussen de rijen panelen, anders beschaduwen ze elkaar. Die ruimte kun je niet gebruiken. Bij een oost-west opstelling liggen de panelen ruggelings tegen elkaar aan. Je hebt bijna geen rij-afstand nodig, waardoor je 30-40% meer panelen kwijt kunt op hetzelfde dak.
 
 Op een dak van 30 vierkante meter past dat zo:
 
 | Opstelling | Opbrengst per paneel | Panelen op 30 m² | Totaal per jaar |
 |---|---|---|---|
 | Zuid (30 graden) | 400 kWh | 10 panelen | 4.000 kWh |
-| East-west (15 graden) | 360 kWh | 14 panelen | 5.040 kWh |
+| Oost-west (15 graden) | 360 kWh | 14 panelen | 5.040 kWh |
 
 Vier panelen extra, ruim duizend kWh meer per jaar. Dat is genoeg stroom om je wasmachine twee jaar lang elke dag te laten draaien.
 
-En er is nog een voordeel. East-west panelen produceren gelijkmatiger over de dag. Meer stroom 's ochtends en 's avonds, precies wanneer je thuis bent en stroom gebruikt. Dat verhoogt je eigen verbruik van zo'n 40% naar 50%, wat steeds belangrijker wordt nu de salderingsregeling afgebouwd wordt.
+En er is nog een voordeel. Oost-west panelen produceren gelijkmatiger over de dag. Meer stroom 's ochtends en 's avonds, precies wanneer je thuis bent en stroom gebruikt. Dat verhoogt je eigen verbruik van zo'n 40% naar 50%, wat steeds belangrijker wordt nu de salderingsregeling afgebouwd wordt.
 
-Ons advies: laat je installateur altijd beide opstellingen doorrekenen. Als je meer dan 12 panelen kwijt kunt in east-west (waar je maar 8-10 zou hebben op zuiden), is east-west bijna altijd slimmer.
+Ons advies: laat je installateur altijd beide opstellingen doorrekenen. Als je meer dan 12 panelen kwijt kunt in oost-west (waar je maar 8-10 zou hebben op zuiden), is oost-west bijna altijd slimmer.
 
 ## Drie valkuilen waar je voor moet oppassen
 

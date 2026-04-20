@@ -28,7 +28,7 @@ relatedArticles:
 
 Pak je jaarverbruik in kWh. Staat op je energierekening of in de app van je energieleverancier. Deel dat getal door 380. Klaar.
 
-Die 380 kWh is wat een modern paneel van 425 wattpiek gemiddeld per jaar produceert in Nederland. Daar zit alles al in: bewolkte dagen, systeemverliezen, een normaal georienteerd dak.
+Die 380 kWh is wat een modern paneel van 425 wattpiek gemiddeld per jaar produceert in Nederland. Daar zit alles al in: bewolkte dagen, systeemverliezen, een normaal georiënteerd dak.
 
 Dus als je 3.800 kWh per jaar verbruikt: 3.800 gedeeld door 380 = 10 panelen. Zo simpel is het.
 
@@ -52,7 +52,7 @@ De vuistregel voor een schuin dak: meet je bruikbare dakoppervlak en deel door t
 
 Voorbeeld: je hebt een dakvlak van 30 vierkante meter op het zuiden. Min een dakraam van 3 vierkante meter. Bruikbaar: 27 vierkante meter. Maximum: 13 tot 14 panelen. Meer dan genoeg voor een gemiddeld gezin.
 
-Heb je een plat dak? Dan heb je 40-50% meer oppervlak nodig, want de panelen staan op een frame en er moet ruimte tussen voor schaduwvrije plaatsing. Maar het goede nieuws: bij een plat dak kun je east-west opstellen, waardoor je juist meer panelen kwijt kunt.
+Heb je een plat dak? Dan heb je 40-50% meer oppervlak nodig, want de panelen staan op een frame en er moet ruimte tussen voor schaduwvrije plaatsing. Maar het goede nieuws: bij een plat dak kun je oost-west opstellen, waardoor je juist meer panelen kwijt kunt.
 
 ## De fout die bijna iedereen maakt
 

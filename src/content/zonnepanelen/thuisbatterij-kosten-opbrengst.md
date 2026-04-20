@@ -1,5 +1,5 @@
 ---
-title: "Zonnepanelen en Thuisbatterij: Lohnt Het in 2026?"
+title: "Zonnepanelen en Thuisbatterij: Loont Het in 2026?"
 description: "Alles over thuisbatterijen in combinatie met zonnepanelen. Vergelijk Tesla Powerwall, BYD, Enphase en meer op prijs, capaciteit en terugverdientijd."
 niche: "zonnepanelen"
 type: "vergelijking"
@@ -57,7 +57,7 @@ Ik weet het. Het is een koude douche. Maar je hebt liever dat wij het je nu vert
 
 Het plaatje verandert door een paar ontwikkelingen die eraan komen.
 
-**Batterprijzen dalen.** Met 15-20% per jaar. Als een batterij van 10 kWh straks 3.500 in plaats van 7.500 euro kost, wordt de terugverdientijd ineens een stuk korter. Dat verwachten we rond 2028-2030.
+**Batterijprijzen dalen.** Met 15-20% per jaar. Als een batterij van 10 kWh straks 3.500 in plaats van 7.500 euro kost, wordt de terugverdientijd ineens een stuk korter. Dat verwachten we rond 2028-2030.
 
 **Dynamische energietarieven.** Als je een dynamisch contract hebt, kun je stroom opslaan als die goedkoop is (5 cent per kWh 's nachts) en gebruiken als die duur is (40 cent in de piek). Dat maakt de batterij een stuk rendabeler. Maar je moet er wel actief mee bezig zijn.
 

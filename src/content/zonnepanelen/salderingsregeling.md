@@ -40,7 +40,7 @@ Zo werkt het in 2026. En het is het laatste jaar dat dit volledig mag.
 
 Vanaf 2027 mag je steeds minder salderen. Het gaat stapsgewijs, niet in één klap.
 
-| Jaar | Hoeveel mag je salderen | Wat je bespaard op 2.500 kWh teruglevering |
+| Jaar | Hoeveel mag je salderen | Wat je bespaart op 2.500 kWh teruglevering |
 |---|---|---|
 | 2026 | 100% | 625 EUR (volledige saldering) |
 | 2027 | 64% | 400 EUR gesaldeerd + 63 EUR terugleververgoeding = 463 EUR |
@@ -80,7 +80,7 @@ Een collega van me deed dit consequent na zijn eerste zomer met panelen. Zijn ei
 
 ### Overweeg na 2027 een thuisbatterij
 
-Een bescheiden batterij van 5 kWh kost nu zo'n 4.500 euro. Puur financieel is dat in 2026 nog niet rendabel. Maar als de batterprijzen blijven dalen zoals verwacht, en de saldering verder afgebouwd wordt, begint het rond 2028-2029 interessant te worden.
+Een bescheiden batterij van 5 kWh kost nu zo'n 4.500 euro. Puur financieel is dat in 2026 nog niet rendabel. Maar als de batterijprijzen blijven dalen zoals verwacht, en de saldering verder afgebouwd wordt, begint het rond 2028-2029 interessant te worden.
 
 Onze tip: als je nu panelen laat installeren, vraag je installateur alvast om de bekabeling geschikt te maken voor een toekomstige batterij. Dat kost een paar tientjes extra en bespaart je later honderden euro's aan installatiekosten.
 
