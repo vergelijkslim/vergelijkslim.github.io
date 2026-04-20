@@ -129,3 +129,5 @@ De **SolarEdge Home Battery** is de logische keuze als je al een SolarEdge-omvor
 ## Conclusie
 
 De **BYD Battery-Box HVS** is onze aanrader voor de meeste situaties dankzij de beste prijs-kwaliteitverhouding en uitbreidbaarheid. Heb je liever een compleet all-in-one systeem? Dan is de **Tesla Powerwall 3** de juiste keuze. Vergelijk altijd meerdere offertes om de beste deal te vinden.
+
+> Zoek je ook de beste zonnepanelen? Op [SlimZonnig.nl](https://slimzonnig.nl/) vind je onze [vergelijking van de top 10 merken](https://slimzonnig.nl/zonnepanelen/beste-zonnepanelen-2026/).

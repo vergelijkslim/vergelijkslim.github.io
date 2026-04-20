@@ -54,6 +54,15 @@ const articleSchema = {
   <BreadcrumbSchema items={breadcrumbs} />
   {faq.length > 0 && <FAQSchema items={faq} />}
 
+  {affiliateLinks.length > 0 && (
+    <aside class="article-affiliate-disclosure">
+      <div class="container disclosure-inner">
+        <svg class="disclosure-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <p><strong>Affiliate disclaimer:</strong> Dit artikel bevat affiliate links. Wanneer je via onze links een product of dienst aanschaft, ontvangen wij mogelijk een commissie. Dit heeft geen invloed op de prijs die je betaalt of op onze redactionele onafhankelijkheid. <a href="/disclaimer/">Lees meer</a>.</p>
+      </div>
+    </aside>
+  )}
+
   <article class="article-page">
     <header class="article-header">
       <div class="container header-content">
@@ -156,6 +165,12 @@ const articleSchema = {
 </BaseLayout>
 
 <style>
+  .article-affiliate-disclosure { background: #fffbeb; border-bottom: 1px solid #fde68a; padding: 0.75rem 0; font-size: 0.8125rem; color: #78350f; }
+  .article-affiliate-disclosure .disclosure-inner { display: flex; align-items: flex-start; gap: 0.625rem; }
+  .article-affiliate-disclosure .disclosure-icon { flex-shrink: 0; margin-top: 1px; color: #d97706; }
+  .article-affiliate-disclosure p { margin: 0; line-height: 1.5; }
+  .article-affiliate-disclosure a { color: #92400e; text-decoration: underline; text-underline-offset: 2px; }
+  .article-affiliate-disclosure a:hover { color: #78350f; }
   .article-header {
     background: var(--color-bg-alt);
     border-bottom: 1px solid var(--color-border);

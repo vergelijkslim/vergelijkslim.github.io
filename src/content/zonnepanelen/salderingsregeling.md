@@ -84,6 +84,8 @@ Een bescheiden batterij van 5 kWh kost nu zo'n 4.500 euro. Puur financieel is da
 
 Onze tip: als je nu panelen laat installeren, vraag je installateur alvast om de bekabeling geschikt te maken voor een toekomstige batterij. Dat kost een paar tientjes extra en bespaart je later honderden euro's aan installatiekosten.
 
+> Meer over thuisbatterijen lees je op [ThuisbatterijWijzer.nl](https://thuisbatterijwijzer.nl/) — onze zustersite met uitgebreide [vergelijkingen](https://thuisbatterijwijzer.nl/thuisbatterijen/beste-thuisbatterijen-2026/) en [kosteninformatie](https://thuisbatterijwijzer.nl/thuisbatterijen/thuisbatterij-kosten-2026/).
+
 ## De kern van het verhaal
 
 Zonnepanelen blijven gewoon een goede investering. Het rendement gaat van "spectaculair" naar "heel goed." Je terugverdientijd gaat van vijf naar zeven jaar. Over een levensduur van 25 jaar is dat een detail.

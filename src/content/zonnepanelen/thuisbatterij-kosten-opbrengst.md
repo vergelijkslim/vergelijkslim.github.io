@@ -73,4 +73,12 @@ Het plaatje verandert door een paar ontwikkelingen die eraan komen.
 
 **Onze tussenvorm:** Koop een modulair systeem zoals de BYD HVS. Begin met 5 kWh — dat kost je zo'n 4.800 euro. Niet goedkoop, maar je kunt later bijschakelen als de prijzen dalen en het wél rendabel wordt. Je houdt alle opties open zonder nu de hoofdprijs te betalen.
 
+## Meer lezen over thuisbatterijen
+
+Wil je dieper in de materie duiken? Op onze zustersite ThuisbatterijWijzer.nl vind je uitgebreide reviews en vergelijkingen:
+
+- [Beste thuisbatterijen van 2026 vergeleken](https://thuisbatterijwijzer.nl/thuisbatterijen/beste-thuisbatterijen-2026/)
+- [Wat kost een thuisbatterij in 2026?](https://thuisbatterijwijzer.nl/thuisbatterijen/thuisbatterij-kosten-2026/)
+- [Terugverdientijd berekenen](https://thuisbatterijwijzer.nl/thuisbatterijen/thuisbatterij-terugverdientijd/)
+
 ---

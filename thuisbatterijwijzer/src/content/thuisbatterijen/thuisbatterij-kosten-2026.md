@@ -112,3 +112,5 @@ De terugverdientijd van een thuisbatterij hangt af van:
 ## Conclusie
 
 Een thuisbatterij is in 2026 een steeds aantrekkelijkere investering, zeker met de afbouw van de salderingsregeling. De kosten zijn de afgelopen jaren gedaald en de subsidies maken het nóg betaalbaarder. Vergelijk altijd meerdere offertes om de beste prijs te vinden.
+
+> Heb je nog geen zonnepanelen? Op [SlimZonnig.nl](https://slimzonnig.nl/) vind je een [compleet overzicht van kosten](https://slimzonnig.nl/zonnepanelen/kosten-zonnepanelen-2026/) en de [beste zonnepanelen van 2026](https://slimzonnig.nl/zonnepanelen/beste-zonnepanelen-2026/).

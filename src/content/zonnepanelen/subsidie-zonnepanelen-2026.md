@@ -47,6 +47,10 @@ Klinkt vervelend, maar het kan juist in je voordeel werken. Stel je laat je spou
 | Panelen + dakisolatie | ~1.800 EUR | ~600 EUR | ~2.400 EUR |
 | Panelen + HR++ glas | ~1.800 EUR | ~1.500 EUR | ~3.300 EUR |
 
+### ISDE voor thuisbatterijen
+
+Goed om te weten: via de ISDE kun je ook subsidie krijgen voor een thuisbatterij, mits je die combineert met zonnepanelen of een warmtepomp. Het subsidiebedrag is circa €225 per kWh opslagcapaciteit. Meer hierover lees je op [ThuisbatterijWijzer.nl](https://thuisbatterijwijzer.nl/thuisbatterijen/thuisbatterij-subsidie-isde/).
+
 ### Energiebespaarlening — 0% rente
 
 Via het Nationaal Warmtefonds kun je tot 25.000 euro lenen tegen nul procent rente. Nul. Voor een investering die je 15-20% rendement oplevert. Die deal krijg je bij geen enkele bank.

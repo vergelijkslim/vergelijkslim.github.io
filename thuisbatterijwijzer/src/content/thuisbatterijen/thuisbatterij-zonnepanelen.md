@@ -94,3 +94,11 @@ Met de huidige afbouw verdien je een thuisbatterij **2-3 jaar sneller** terug da
 ## Conclusie
 
 Een thuisbatterij en zonnepanelen zijn inderdaad de perfecte combinatie. Je bespaart meer, bent minder afhankelijk van het stroomnet en profiteert van subsidies. Met de afbouw van de salderingsregeling wordt deze combinatie alleen maar aantrekkelijker.
+
+## Meer lezen over zonnepanelen
+
+Op onze zustersite SlimZonnig.nl vind je uitgebreide informatie over zonnepanelen:
+
+- [Hoeveel zonnepanelen heb je nodig?](https://slimzonnig.nl/zonnepanelen/hoeveel-zonnepanelen-nodig/)
+- [De salderingsregeling 2026-2031 uitgelegd](https://slimzonnig.nl/zonnepanelen/salderingsregeling/)
+- [Beste zonnepanelen van 2026](https://slimzonnig.nl/zonnepanelen/beste-zonnepanelen-2026/)
