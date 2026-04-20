@@ -1,0 +1,167 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+
+interface Stat {
+  label: string;
+  value: string;
+  highlight?: boolean;
+}
+
+interface Props {
+  name: string;
+  description: string;
+  linkId: string;
+  logoSrc?: string;
+  badge?: string;
+  stats: Stat[];
+  usps?: string[];
+  variant?: 'default' | 'featured';
+}
+
+const { name, description, linkId, logoSrc, badge, stats, usps, variant = 'default' } = Astro.props;
+---
+
+<div class:list={['offer-card', { 'offer-card-featured': variant === 'featured' }]}>
+  <div class="offer-card-top">
+    {logoSrc && <img src={logoSrc} alt={`${name} logo`} class="offer-card-logo" loading="lazy" />}
+    {badge && <span class="offer-card-badge">{badge}</span>}
+  </div>
+  <h3 class="offer-card-name">{name}</h3>
+  <p class="offer-card-desc">{description}</p>
+  <div class="offer-card-stats">
+    {stats.map((stat) => (
+      <div class:list={['stat', { 'stat-highlight': stat.highlight }]}>
+        <span class="stat-value">{stat.value}</span>
+        <span class="stat-label">{stat.label}</span>
+      </div>
+    ))}
+  </div>
+  <div class="offer-card-cta">
+    <AffiliateButton linkId={linkId} variant="cta" />
+  </div>
+  {usps && usps.length > 0 && (
+    <ul class="offer-card-usps">
+      {usps.map((usp) => (
+        <li>{usp}</li>
+      ))}
+    </ul>
+  )}
+</div>
+
+<style>
+  .offer-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    margin: 1.5rem 0;
+  }
+  @media (min-width: 768px) {
+    .offer-card {
+      padding: 2rem;
+    }
+  }
+  .offer-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+  }
+  .offer-card-featured {
+    border: 2px solid var(--color-primary);
+    position: relative;
+  }
+  .offer-card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .offer-card-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+  }
+  .offer-card-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .offer-card-name {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.375rem;
+  }
+  .offer-card-desc {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .offer-card-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-value {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .stat-highlight .stat-value {
+    color: var(--color-secondary);
+  }
+  .stat-label {
+    display: block;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    margin-top: 0.125rem;
+  }
+  .offer-card-cta {
+    margin-bottom: 1rem;
+  }
+  .offer-card-cta :global(.btn) {
+    width: 100%;
+    justify-content: center;
+  }
+  .offer-card-usps {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .offer-card-usps li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    padding: 0.25rem 0.625rem;
+    background: var(--color-secondary-light);
+    border-radius: 9999px;
+  }
+  .offer-card-usps li::before {
+    content: '\2713';
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+</style>

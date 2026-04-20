@@ -160,9 +160,54 @@ h3 { font-size: 1.25rem; }
   border-radius: var(--radius-lg);
 }
 
+.btn-cta::after {
+  content: '\2192';
+  margin-left: 0.25rem;
+  transition: transform var(--transition-fast);
+}
+
 .btn-cta:hover {
   background: #065f46;
   color: #fff;
+}
+
+.btn-cta:hover::after {
+  transform: translateX(3px);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn-cta:focus-visible {
+  outline-color: var(--color-secondary);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.0625rem;
 }
 
 .badge {

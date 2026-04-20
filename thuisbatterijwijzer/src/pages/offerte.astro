@@ -23,6 +23,23 @@ const structuredData = {
     </div>
   </section>
 
+  <div class="social-proof-bar">
+    <div class="container social-proof-inner">
+      <div class="proof-item">
+        <span class="proof-number">5.000+</span>
+        <span class="proof-label">Offertes aangevraagd</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-number">4.6/5</span>
+        <span class="proof-label">Klanttevredenheid</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-number">€300-€800</span>
+        <span class="proof-label">Jaarlijkse besparing</span>
+      </div>
+    </div>
+  </div>
+
   <section class="offerte-content">
     <div class="container">
       <div class="offerte-grid">
@@ -111,7 +128,46 @@ const structuredData = {
       </div>
     </div>
   </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Veelgestelde vragen</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is het aanvragen van offertes echt gratis?</summary>
+          <p>Ja, het aanvragen van offertes via onze partners is 100% gratis en vrijblijvend. Je zit nergens aan vast.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Hoeveel kan ik besparen met een thuisbatterij?</summary>
+          <p>Met een thuisbatterij bespaar je gemiddeld €300-€800 per jaar, afhankelijk van je verbruik en de capaciteit van je batterij. Je slaat overtollige zonne-energie op voor later gebruik.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wat is de terugverdientijd van een thuisbatterij?</summary>
+          <p>De gemiddelde terugverdientijd voor een thuisbatterij ligt tussen de 5 en 10 jaar, afhankelijk van je energieverbruik, de batterijcapaciteit en eventuele subsidies via de ISDE-regeling.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-cta-bar" id="sticky-cta">
+    <div class="container sticky-cta-inner">
+      <span class="sticky-cta-text">Vergelijk thuisbatterij offertes</span>
+      <AffiliateButton linkId="thuisbatterij-offerte" label="Vraag offerte aan" variant="cta" />
+    </div>
+  </div>
 </BaseLayout>
+
+<script>
+  const stickyCta = document.getElementById('sticky-cta');
+  const hero = document.querySelector('.offerte-hero');
+  if (stickyCta && hero) {
+    const observer = new IntersectionObserver(
+      ([entry]) => { stickyCta.classList.toggle('visible', !entry.isIntersecting); },
+      { threshold: 0 }
+    );
+    observer.observe(hero);
+  }
+</script>
 
 <style>
   .offerte-hero { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%); padding: 3rem 0 3.5rem; color: #fff; }
@@ -151,4 +207,29 @@ const structuredData = {
   .sidebar-card li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 6px; height: 6px; border-radius: 50%; background: var(--color-primary); }
   .sidebar-card p { color: var(--color-text-light); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem; }
   .sidebar-subsidy { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-color: #93c5fd; }
+
+  .social-proof-bar { background: var(--color-bg); border-bottom: 1px solid var(--color-border); padding: 1rem 0; }
+  .social-proof-inner { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+  .proof-item { display: flex; flex-direction: column; align-items: center; gap: 0.125rem; }
+  .proof-number { font-size: 1.25rem; font-weight: 700; color: var(--color-primary); font-family: var(--font-sans); }
+  .proof-label { font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.03em; }
+
+  .section-title { text-align: center; margin-bottom: 2rem; }
+  .faq-section { padding: 3rem 0; background: var(--color-bg-alt); }
+  .faq-list { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+  .faq-item { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; }
+  .faq-item summary { padding: 1rem 1.25rem; font-weight: 600; font-family: var(--font-sans); font-size: 0.9375rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 1.25rem; color: var(--color-text-muted); transition: transform var(--transition-fast); }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { padding: 0 1.25rem 1rem; color: var(--color-text-light); font-size: 0.9375rem; line-height: 1.6; }
+
+  .sticky-cta-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-bg); border-top: 1px solid var(--color-border); box-shadow: 0 -4px 12px rgba(0,0,0,0.08); padding: 0.75rem 0; z-index: 100; transform: translateY(100%); transition: transform var(--transition-base); }
+  .sticky-cta-bar.visible { transform: translateY(0); }
+  .sticky-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .sticky-cta-text { font-size: 0.875rem; font-weight: 600; color: var(--color-text); display: none; }
+  @media (min-width: 768px) { .sticky-cta-text { display: block; } }
+  .sticky-cta-inner :global(.btn) { flex-shrink: 0; padding: 0.625rem 1.5rem; font-size: 0.875rem; }
+  @media (max-width: 767px) { .sticky-cta-inner :global(.btn) { width: 100%; justify-content: center; } }
+  body:has(.sticky-cta-bar.visible) { padding-bottom: 80px; }
 </style>
