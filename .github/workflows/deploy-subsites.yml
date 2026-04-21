@@ -35,7 +35,8 @@ jobs:
       - id: changes
         run: |
           if [ -n "${{ inputs.site }}" ]; then
-            echo 'sites=["${{ inputs.site }}"]' >> "$GITHUB_OUTPUT"
+            SITE="${{ inputs.site }}"
+            echo "sites=[\"$SITE\"]" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
