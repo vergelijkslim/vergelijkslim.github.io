@@ -1,0 +1,76 @@
+name: Deploy Subsites to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'vergelijk-uw-thuisbatterij/**'
+      - 'vergelijk-uw-laadpaal/**'
+      - 'thuisbatterijwijzer/**'
+      - '.github/workflows/deploy-subsites.yml'
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Site to deploy (leave empty for all changed sites)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - vergelijk-uw-thuisbatterij
+          - vergelijk-uw-laadpaal
+          - thuisbatterijwijzer
+
+permissions:
+  contents: read
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.changes.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: changes
+        run: |
+          if [ -n "${{ inputs.site }}" ]; then
+            echo 'sites=["${{ inputs.site }}"]' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          SITES='[]'
+          for dir in vergelijk-uw-thuisbatterij vergelijk-uw-laadpaal thuisbatterijwijzer; do
+            if git diff --name-only HEAD~1 HEAD -- "$dir/" | grep -q .; then
+              SITES=$(echo "$SITES" | jq --arg s "$dir" '. + [$s]')
+            fi
+          done
+
+          # On workflow_dispatch without site selection, deploy all
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "$SITES" = "[]" ]; then
+            SITES='["vergelijk-uw-thuisbatterij","vergelijk-uw-laadpaal","thuisbatterijwijzer"]'
+          fi
+
+          echo "sites=$SITES" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.sites != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site: ${{ fromJson(needs.detect-changes.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ matrix.site }}/package-lock.json
+      - run: cd ${{ matrix.site }} && npm ci
+      - run: cd ${{ matrix.site }} && npx astro build
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ matrix.site }}/dist --project-name=${{ matrix.site }}
