@@ -51,6 +51,37 @@ const links: AffiliateLink[] = [
     commissionType: 'cpa',
     commissionValue: 'geen commissie (informatief)',
   },
+  // Amazon PartnerNet (tag: vergelijk05-21)
+  {
+    id: 'amazon-tado-thermostaat',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=tado+slimme+thermostaat',
+    niche: 'woningverbetering',
+    label: 'Tado slimme thermostaat bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-isolatiefolie',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=radiatorfolie+isolatiefolie',
+    niche: 'woningverbetering',
+    label: 'Isolatiefolie bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-tochtstopper',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=tochtstrip+tochtstrip+deuren',
+    niche: 'woningverbetering',
+    label: 'Tochtstrips bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
 ];
 
 registerLinks(links);

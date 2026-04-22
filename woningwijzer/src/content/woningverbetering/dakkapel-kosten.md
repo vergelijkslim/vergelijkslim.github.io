@@ -22,6 +22,8 @@ relatedArticles:
   - "huis-verbouwen-gids"
   - "badkamer-renovatie-kosten"
 ---
+*Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
+
 
 Een dakkapel is een van de populairste manieren om extra ruimte en licht te creëren op zolder. Maar wat kost het precies? We zetten alle kosten, regels en tips op een rij.
 
@@ -65,3 +67,22 @@ Een prefab dakkapel wordt vaak in 1 dag geplaatst. Maatwerk duurt 2-5 dagen. De 
 ## Conclusie
 
 Een dakkapel kost gemiddeld 6.000-15.000 EUR en is een uitstekende investering in woonruimte en woningwaarde. Kies prefab voor de beste prijs en vergelijk minimaal 3 offertes.
+
+
+---
+
+*Vergelijk-uw-renovatie.nl is onafhankelijk. We kunnen een vergoeding ontvangen als je via onze links een offerte aanvraagt. Dit beïnvloedt onze beoordelingen niet. Prijzen zijn indicatief (april 2026).*
+
+---
+
+## Vraag vrijblijvend offertes aan
+
+Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
+
+[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+
+[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+
+**Handige producten (via Amazon.nl):**
+- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
+- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)

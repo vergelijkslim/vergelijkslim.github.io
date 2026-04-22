@@ -28,6 +28,8 @@ relatedArticles:
   - "warmtepomp-kosten"
   - "woning-isoleren-volgorde"
 ---
+*Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
+
 
 Een verbouwing is een van de grootste investeringen die je als huiseigenaar doet. Of je nu je badkamer wilt renoveren, een uitbouw plant of je hele woning wilt verduurzamen: goede voorbereiding bespaart duizenden euros. In deze gids vind je alle kosten, tips en subsidies voor het verbouwen van je huis in 2026.
 
@@ -132,3 +134,22 @@ Veel gemeenten bieden aanvullende subsidies voor isolatie, dubbel glas en groene
 ## Conclusie
 
 Een verbouwing is een flinke investering, maar met de juiste voorbereiding en een betrouwbare aannemer kun je duizenden euros besparen. Vergelijk altijd meerdere offertes, maak gebruik van beschikbare subsidies en plan je project zorgvuldig. Gebruik onze tools en vergelijkingen om de beste keuzes te maken voor jouw situatie.
+
+
+---
+
+*Vergelijk-uw-renovatie.nl is onafhankelijk. We kunnen een vergoeding ontvangen als je via onze links een offerte aanvraagt. Dit beïnvloedt onze beoordelingen niet. Prijzen zijn indicatief (april 2026).*
+
+---
+
+## Vraag vrijblijvend offertes aan
+
+Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
+
+[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+
+[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+
+**Handige producten (via Amazon.nl):**
+- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
+- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)

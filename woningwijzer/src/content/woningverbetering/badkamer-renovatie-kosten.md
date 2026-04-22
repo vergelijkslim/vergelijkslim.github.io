@@ -22,6 +22,8 @@ relatedArticles:
   - "huis-verbouwen-gids"
   - "dakkapel-kosten"
 ---
+*Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
+
 
 Wat kost een badkamerrenovatie in 2026? Van een simpele opfrisbeurt tot een complete luxe badkamer: we zetten alle kosten op een rij zodat je precies weet wat je kunt verwachten.
 
@@ -74,3 +76,22 @@ Wat kost een badkamerrenovatie in 2026? Van een simpele opfrisbeurt tot een comp
 ## Conclusie
 
 Een badkamerrenovatie kost gemiddeld 8.000-18.000 EUR voor de meeste Nederlandse huishoudens. Door slim te kiezen qua materialen en meerdere offertes te vergelijken, kun je flink besparen zonder in te leveren op kwaliteit.
+
+
+---
+
+*Vergelijk-uw-renovatie.nl is onafhankelijk. We kunnen een vergoeding ontvangen als je via onze links een offerte aanvraagt. Dit beïnvloedt onze beoordelingen niet. Prijzen zijn indicatief (april 2026).*
+
+---
+
+## Vraag vrijblijvend offertes aan
+
+Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
+
+[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+
+[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+
+**Handige producten (via Amazon.nl):**
+- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
+- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)

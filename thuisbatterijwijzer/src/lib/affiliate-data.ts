@@ -61,6 +61,37 @@ const links: AffiliateLink[] = [
     commissionType: 'cpa',
     commissionValue: 'geen commissie (informatief)',
   },
+  // Amazon PartnerNet (tag: vergelijk05-21)
+  {
+    id: 'amazon-jackery-powerstation',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=jackery+powerstation',
+    niche: 'thuisbatterijen',
+    label: 'Jackery Powerstation bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-ecoflow-powerstation',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=ecoflow+powerstation',
+    niche: 'thuisbatterijen',
+    label: 'EcoFlow Powerstation bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-balkonbatterij',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=balkonkrachtwerk+batterij',
+    niche: 'thuisbatterijen',
+    label: 'Balkonbatterij bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
 ];
 
 registerLinks(links);

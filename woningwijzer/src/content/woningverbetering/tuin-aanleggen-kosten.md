@@ -17,6 +17,8 @@ faq:
 relatedArticles:
   - "huis-verbouwen-gids"
 ---
+*Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
+
 
 ## Kosten per Type Tuin
 
@@ -38,3 +40,22 @@ relatedArticles:
 | Gazon (graszoden) | 8 - 15 EUR/m2 |
 | Schutting (per meter) | 80 - 200 EUR |
 | Tuinverlichting | 500 - 3.000 EUR |
+
+
+---
+
+*Vergelijk-uw-renovatie.nl is onafhankelijk. We kunnen een vergoeding ontvangen als je via onze links een offerte aanvraagt. Dit beïnvloedt onze beoordelingen niet. Prijzen zijn indicatief (april 2026).*
+
+---
+
+## Vraag vrijblijvend offertes aan
+
+Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
+
+[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+
+[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+
+**Handige producten (via Amazon.nl):**
+- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
+- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)

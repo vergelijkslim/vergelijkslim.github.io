@@ -1,6 +1,6 @@
 export interface AffiliateLink {
   id: string;
-  network: 'daisycon' | 'tradetracker' | 'bolcom' | 'awin' | 'direct';
+  network: 'daisycon' | 'tradetracker' | 'bolcom' | 'awin' | 'amazon' | 'direct';
   merchant: string;
   url: string;
   niche: string;
@@ -38,9 +38,13 @@ export function getLinksByNiche(niche: string): AffiliateLink[] {
 
 export function buildTrackingUrl(link: AffiliateLink, params?: Record<string, string>): string {
   const url = new URL(link.url);
-  url.searchParams.set('utm_source', 'vergelijk-uw-renovatie');
-  url.searchParams.set('utm_medium', 'affiliate');
-  url.searchParams.set('utm_campaign', link.niche);
+  if (link.network === 'amazon') {
+    url.searchParams.set('tag', 'vergelijk05-21');
+  } else {
+    url.searchParams.set('utm_source', 'vergelijk-uw-renovatie');
+    url.searchParams.set('utm_medium', 'affiliate');
+    url.searchParams.set('utm_campaign', link.niche);
+  }
   if (params) {
     for (const [key, value] of Object.entries(params)) {
       url.searchParams.set(key, value);

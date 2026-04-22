@@ -51,6 +51,27 @@ const links: AffiliateLink[] = [
     commissionType: 'cpa',
     commissionValue: 'geen commissie (informatief)',
   },
+  // Amazon PartnerNet (tag: vergelijk05-21)
+  {
+    id: 'amazon-laadkabel-type2',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=laadkabel+type+2+elektrische+auto',
+    niche: 'laadpalen',
+    label: 'Type 2 laadkabel bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-laadpaal-thuisladen',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=thuislader+elektrische+auto',
+    niche: 'laadpalen',
+    label: 'Thuislader elektrische auto bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
 ];
 
 registerLinks(links);

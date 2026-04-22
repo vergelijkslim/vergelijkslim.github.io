@@ -20,6 +20,8 @@ relatedArticles:
   - "huis-verbouwen-gids"
   - "woning-isoleren-volgorde"
 ---
+*Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
+
 
 ## Kosten per Materiaal
 
@@ -48,3 +50,22 @@ relatedArticles:
 ## Subsidie
 
 Kozijnen met HR++ of triple glas: ISDE-subsidie 37 - 62 EUR per m2 glasoppervlak. Combineer met andere isolatiemaatregelen voor maximale subsidie.
+
+
+---
+
+*Vergelijk-uw-renovatie.nl is onafhankelijk. We kunnen een vergoeding ontvangen als je via onze links een offerte aanvraagt. Dit beïnvloedt onze beoordelingen niet. Prijzen zijn indicatief (april 2026).*
+
+---
+
+## Vraag vrijblijvend offertes aan
+
+Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
+
+[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+
+[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+
+**Handige producten (via Amazon.nl):**
+- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
+- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)

@@ -55,6 +55,37 @@ const links: AffiliateLink[] = [
     commissionType: 'cpa',
     commissionValue: 'geen commissie (informatief)',
   },
+  // Amazon PartnerNet (tag: vergelijk05-21)
+  {
+    id: 'amazon-zonnepanelen-reiniger',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=zonnepanelen+reinigingsset',
+    niche: 'zonnepanelen',
+    label: 'Zonnepanelen reinigingsset bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-solar-monitor',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=solar+energy+monitor',
+    niche: 'zonnepanelen',
+    label: 'Zonne-energie monitor bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-portable-powerstation',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/s?k=portable+powerstation',
+    niche: 'zonnepanelen',
+    label: 'Portable powerstation bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
 ];
 
 registerLinks(links);
