@@ -61,6 +61,59 @@ const links: AffiliateLink[] = [
     commissionType: 'cpa',
     commissionValue: 'geen commissie (informatief)',
   },
+  // TradeTracker campagnes
+  {
+    id: 'zonneplan-offerte',
+    network: 'tradetracker',
+    merchant: 'Zonneplan',
+    url: 'https://www.zonneplan.nl/thuisbatterij/',
+    niche: 'thuisbatterijen',
+    label: 'Bekijk Zonneplan thuisbatterij',
+    commissionType: 'cpa',
+    commissionValue: '€60-€120 per lead',
+  },
+  {
+    id: 'vattenfall-batterij',
+    network: 'tradetracker',
+    merchant: 'Vattenfall',
+    url: 'https://www.vattenfall.nl/zonnepanelen/thuisbatterij/',
+    niche: 'thuisbatterijen',
+    label: 'Vattenfall thuisbatterij offerte',
+    commissionType: 'cpa',
+    commissionValue: '€50-€100 per lead',
+  },
+  // Daisycon campagnes (extra)
+  {
+    id: 'solar-matcher',
+    network: 'daisycon',
+    merchant: 'SolarMatcher',
+    url: 'https://www.solarmatcher.nl/thuisbatterij/',
+    niche: 'thuisbatterijen',
+    label: 'Vergelijk installateurs via SolarMatcher',
+    commissionType: 'cpa',
+    commissionValue: '€40-€90 per lead',
+  },
+  // bol.com producten
+  {
+    id: 'bolcom-powerstation',
+    network: 'bolcom',
+    merchant: 'bol.com',
+    url: 'https://www.bol.com/nl/nl/s/?searchtext=portable+powerstation',
+    niche: 'thuisbatterijen',
+    label: 'Powerstations bij bol.com',
+    commissionType: 'cps',
+    commissionValue: '3-6% per verkoop',
+  },
+  {
+    id: 'bolcom-balkonbatterij',
+    network: 'bolcom',
+    merchant: 'bol.com',
+    url: 'https://www.bol.com/nl/nl/s/?searchtext=balkonbatterij',
+    niche: 'thuisbatterijen',
+    label: 'Balkonbatterijen bij bol.com',
+    commissionType: 'cps',
+    commissionValue: '3-6% per verkoop',
+  },
 ];
 
 registerLinks(links);
