@@ -55,11 +55,10 @@ const sections = [
       <span class="hero-badge">Onafhankelijk & Eerlijk</span>
       <h1>Thuisbatterij vergelijken:<br />vind de beste keuze</h1>
       <p class="hero-sub">
-        Vergelijk de populairste thuisbatterijen op prijs, capaciteit en kwaliteit.
-        Onafhankelijk advies voor jouw situatie in 2026.
+        Verdien een thuisbatterij terug? Bereken het nu. Vergelijk de populairste modellen en gebruik onze gratis tools voor jouw situatie in 2026.
       </p>
       <div class="hero-cta">
-        <a href="/artikelen/" class="btn btn-cta">Bekijk alle artikelen</a>
+        <a href="/tools/roi-calculator/" class="btn btn-cta">Bereken terugverdientijd →</a>
         <a href="/vergelijkingen/" class="btn btn-outline">Vergelijk batterijen</a>
       </div>
     </div>
@@ -80,6 +79,52 @@ const sections = [
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span>Gratis offertes vergelijken</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactieve tools section -->
+  <section class="tools-highlight">
+    <div class="container">
+      <div class="section-header">
+        <h2>Gratis tools & calculators</h2>
+        <p>Concrete antwoorden op jouw energievragen — geen algemene tips, maar persoonlijke berekeningen.</p>
+      </div>
+      <div class="tools-grid-home">
+        <a href="/tools/roi-calculator/" class="tool-card-home tool-card-featured">
+          <div class="tool-icon-home">📈</div>
+          <div class="tool-content">
+            <span class="tool-badge-home">Meest gebruikt</span>
+            <strong>ROI Calculator</strong>
+            <p>Bereken de terugverdientijd van jouw thuisbatterij. Inclusief salderingsafbouw 2027 scenario en Chart.js grafieken.</p>
+          </div>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a href="/tools/salderingswijzer/" class="tool-card-home">
+          <div class="tool-icon-home">📉</div>
+          <div class="tool-content">
+            <span class="tool-badge-home tool-badge-warn">Actueel 2026</span>
+            <strong>Salderingswijzer</strong>
+            <p>Hoeveel verlies je door de salderingsafbouw 2027–2031? Bereken je persoonlijke impact.</p>
+          </div>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a href="/tools/configurator/" class="tool-card-home">
+          <div class="tool-icon-home">⚙️</div>
+          <div class="tool-content">
+            <strong>Batterij Configurator</strong>
+            <p>Vul je zonnepanelen en omvormer in. Zie direct welke thuisbatterijen compatibel zijn.</p>
+          </div>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a href="/tools/welke-batterij/" class="tool-card-home">
+          <div class="tool-icon-home">🧙</div>
+          <div class="tool-content">
+            <strong>Keuzehulp (5 vragen)</strong>
+            <p>Beantwoord 5 vragen en ontvang persoonlijk advies over de beste thuisbatterij voor jou.</p>
+          </div>
+          <span class="tool-arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
@@ -200,6 +245,21 @@ const sections = [
   .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); border-radius: var(--radius-lg); }
   .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); color: #fff; }
   @media (min-width: 768px) { .hero { padding: 6rem 0 7rem; } .hero h1 { font-size: 3.5rem; } .hero-sub { font-size: 1.25rem; } }
+
+  .tools-highlight { padding: 4rem 0; background: linear-gradient(to bottom, #eff6ff, #fff); border-bottom: 1px solid var(--color-border); }
+  .tools-grid-home { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 768px) { .tools-grid-home { grid-template-columns: 1fr; } }
+  .tool-card-home { display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-xl); background: var(--color-bg); text-decoration: none; color: var(--color-text); transition: all var(--transition-base); }
+  .tool-card-home:hover { text-decoration: none; box-shadow: var(--shadow-lg); transform: translateY(-2px); border-color: var(--color-primary-light); }
+  .tool-card-home.tool-card-featured { border-color: var(--color-primary); background: var(--color-primary-light); grid-column: span 2; }
+  @media (max-width: 768px) { .tool-card-home.tool-card-featured { grid-column: span 1; } }
+  .tool-icon-home { font-size: 2rem; flex-shrink: 0; }
+  .tool-content { flex: 1; }
+  .tool-content strong { display: block; font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .tool-content p { font-size: 0.875rem; color: var(--color-text-light); margin: 0; line-height: 1.5; }
+  .tool-badge-home { display: inline-block; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; background: var(--color-primary); color: #fff; margin-bottom: 0.375rem; }
+  .tool-badge-warn { background: #f59e0b; color: #fff; }
+  .tool-arrow { font-size: 1.25rem; color: var(--color-primary); flex-shrink: 0; align-self: center; }
 
   .trust-bar { background: var(--color-bg); border-bottom: 1px solid var(--color-border); padding: 1.25rem 0; }
   .trust-items { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
