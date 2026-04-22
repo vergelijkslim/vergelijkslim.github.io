@@ -4,7 +4,7 @@ description: "Alles over huis verbouwen in 2026. Kosten per verbouwing, subsidie
 niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: true
 affiliateLinks: ["verbouwing-offerte", "aannemer-vergelijk"]
 keywords:

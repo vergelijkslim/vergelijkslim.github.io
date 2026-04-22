@@ -4,7 +4,7 @@ description: "Wat kost een keuken renovatie in 2026? Vergelijk prijzen van budge
 niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

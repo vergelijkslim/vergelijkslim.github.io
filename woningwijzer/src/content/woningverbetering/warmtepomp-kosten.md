@@ -4,7 +4,7 @@ description: "Wat kost een warmtepomp in 2026? Vergelijk hybride, lucht-water en
 niche: "woningverbetering"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: true
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

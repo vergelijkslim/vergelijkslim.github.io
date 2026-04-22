@@ -4,7 +4,7 @@ description: "Wat kost vloerverwarming per m2 in 2026? Vergelijk watergedragen e
 niche: "woningverbetering"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

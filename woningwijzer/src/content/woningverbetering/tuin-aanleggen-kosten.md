@@ -4,7 +4,7 @@ description: "Wat kost het om een tuin aan te leggen in 2026? Kosten per m2 van 
 niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://woningwijzer.github.io',
+  site: 'https://vergelijk-uw-renovatie.nl',
   integrations: [sitemap()],
   build: {
     format: 'directory',

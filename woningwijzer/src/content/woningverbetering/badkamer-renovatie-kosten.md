@@ -4,7 +4,7 @@ description: "Wat kost een badkamerrenovatie in 2026? Van opfrisbeurt tot luxe r
 niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 affiliateLinks: ["verbouwing-offerte"]
 keywords:
   - badkamer renovatie kosten

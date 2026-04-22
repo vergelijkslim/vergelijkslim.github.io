@@ -4,7 +4,7 @@ description: "Wat kosten nieuwe kozijnen in 2026? Vergelijk kunststof, hout en a
 niche: "woningverbetering"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

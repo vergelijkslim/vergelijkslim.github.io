@@ -38,7 +38,7 @@ export function getLinksByNiche(niche: string): AffiliateLink[] {
 
 export function buildTrackingUrl(link: AffiliateLink, params?: Record<string, string>): string {
   const url = new URL(link.url);
-  url.searchParams.set('utm_source', 'woningwijzer');
+  url.searchParams.set('utm_source', 'vergelijk-uw-renovatie');
   url.searchParams.set('utm_medium', 'affiliate');
   url.searchParams.set('utm_campaign', link.niche);
   if (params) {

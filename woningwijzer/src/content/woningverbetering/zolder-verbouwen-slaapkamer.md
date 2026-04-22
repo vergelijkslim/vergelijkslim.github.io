@@ -4,7 +4,7 @@ description: "Wat kost het om je zolder te verbouwen tot slaapkamer? Kosten, ver
 niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:

@@ -4,7 +4,7 @@ description: "Wat kost een nieuwe cv-ketel in 2026? Vergelijk Intergas, Nefit en
 niche: "woningverbetering"
 type: "vergelijking"
 publishDate: 2026-04-15
-author: "Redactie WoningWijzer"
+author: "Redactie Vergelijk Uw Renovatie"
 featured: false
 affiliateLinks: ["verbouwing-offerte"]
 keywords:
