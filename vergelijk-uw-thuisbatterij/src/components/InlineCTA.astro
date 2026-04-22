@@ -7,9 +7,10 @@ interface Props {
   linkId: string;
   label?: string;
   variant?: 'blue' | 'amber';
+  trackingParams?: Record<string, string>;
 }
 
-const { title, description, linkId, label, variant = 'blue' } = Astro.props;
+const { title, description, linkId, label, variant = 'blue', trackingParams } = Astro.props;
 ---
 
 <aside class:list={['inline-cta', `inline-cta-${variant}`]}>
@@ -18,7 +19,7 @@ const { title, description, linkId, label, variant = 'blue' } = Astro.props;
     <p>{description}</p>
   </div>
   <div class="inline-cta-action">
-    <AffiliateButton linkId={linkId} label={label} variant="cta" />
+    <AffiliateButton linkId={linkId} label={label} variant="cta" trackingParams={trackingParams} />
   </div>
 </aside>
 

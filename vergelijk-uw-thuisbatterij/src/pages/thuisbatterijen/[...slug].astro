@@ -113,13 +113,14 @@ const reviewSchema = type === 'review' ? {
           linkId="thuisbatterij-offerte"
           label="Vraag gratis offertes aan"
           variant="blue"
+          trackingParams={{ utm_content: article.id }}
         />
 
         {affiliateLinks.length > 0 && (
           <div class="cta-box">
             <h3>Direct vergelijken</h3>
             <p>Bekijk de beste aanbiedingen bij onze partners.</p>
-            <div class="cta-buttons">{affiliateLinks.map((linkId) => (<AffiliateButton linkId={linkId} />))}</div>
+            <div class="cta-buttons">{affiliateLinks.map((linkId) => (<AffiliateButton linkId={linkId} trackingParams={{ utm_content: article.id }} />))}</div>
           </div>
         )}
         {faq.length > 0 && (
