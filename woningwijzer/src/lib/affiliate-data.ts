@@ -52,13 +52,15 @@ const links: AffiliateLink[] = [
     commissionValue: 'geen commissie (informatief)',
   },
   // Amazon PartnerNet (tag: vergelijk05-21)
+  // Note: use /dp/ASIN URLs so links go to specific product pages, not search results.
+  // Tag is appended dynamically by buildTrackingUrl().
   {
     id: 'amazon-tado-thermostaat',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=tado+slimme+thermostaat',
+    url: 'https://www.amazon.nl/dp/B07W9LBZB6', // Tado Slimme Thermostaat V3+ Starter Kit
     niche: 'woningverbetering',
-    label: 'Tado slimme thermostaat bij Amazon',
+    label: 'Tado Slimme Thermostaat V3+ bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },
@@ -66,9 +68,9 @@ const links: AffiliateLink[] = [
     id: 'amazon-isolatiefolie',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=radiatorfolie+isolatiefolie',
+    url: 'https://www.amazon.nl/dp/B07D571KVZ', // Radiatorfolie aluminium zelfklevend
     niche: 'woningverbetering',
-    label: 'Isolatiefolie bij Amazon',
+    label: 'Radiatorfolie bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },
@@ -76,9 +78,9 @@ const links: AffiliateLink[] = [
     id: 'amazon-tochtstopper',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=tochtstrip+tochtstrip+deuren',
+    url: 'https://www.amazon.nl/dp/B08JGHT33P', // Tochtstrip EPDM zelfklevend deuren/ramen
     niche: 'woningverbetering',
-    label: 'Tochtstrips bij Amazon',
+    label: 'Tochtstrip zelfklevend bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },

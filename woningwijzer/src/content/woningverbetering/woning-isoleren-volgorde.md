@@ -61,5 +61,5 @@ Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Verge
 [Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
 
 **Handige producten (via Amazon.nl):**
-- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
-- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)
+- [Radiatorfolie aluminium zelfklevend](https://www.amazon.nl/dp/B07D571KVZ?tag=vergelijk05-21)
+- [Tochtstrip EPDM zelfklevend deuren en ramen](https://www.amazon.nl/dp/B08JGHT33P?tag=vergelijk05-21)

@@ -52,11 +52,13 @@ const links: AffiliateLink[] = [
     commissionValue: 'geen commissie (informatief)',
   },
   // Amazon PartnerNet (tag: vergelijk05-21)
+  // Note: use /dp/ASIN URLs so links go to specific product pages, not search results.
+  // Tag is appended dynamically by buildTrackingUrl().
   {
     id: 'amazon-laadkabel-type2',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=laadkabel+type+2+elektrische+auto',
+    url: 'https://www.amazon.nl/dp/B08V3XXH4J', // KABELMAT Type 2 laadkabel 5m 32A
     niche: 'laadpalen',
     label: 'Type 2 laadkabel bij Amazon',
     commissionType: 'cps',
@@ -66,9 +68,9 @@ const links: AffiliateLink[] = [
     id: 'amazon-laadpaal-thuisladen',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=thuislader+elektrische+auto',
+    url: 'https://www.amazon.nl/dp/B09B4VFLVN', // Wallbox Pulsar Plus 7.4kW thuislader
     niche: 'laadpalen',
-    label: 'Thuislader elektrische auto bij Amazon',
+    label: 'Wallbox Pulsar Plus thuislader bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },

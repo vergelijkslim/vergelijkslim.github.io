@@ -115,13 +115,15 @@ const links: AffiliateLink[] = [
     commissionValue: '3-6% per verkoop',
   },
   // Amazon PartnerNet (tag: vergelijk05-21)
+  // Note: use /dp/ASIN URLs so links go to specific product pages, not search results.
+  // Tag is appended dynamically by buildTrackingUrl().
   {
     id: 'amazon-jackery-powerstation',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=jackery+powerstation',
+    url: 'https://www.amazon.nl/dp/B0C5GNJT6C', // Jackery Explorer 500 Plus powerstation
     niche: 'thuisbatterijen',
-    label: 'Jackery Powerstation bij Amazon',
+    label: 'Jackery Explorer 500 bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },
@@ -129,9 +131,9 @@ const links: AffiliateLink[] = [
     id: 'amazon-ecoflow-powerstation',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=ecoflow+powerstation',
+    url: 'https://www.amazon.nl/dp/B09FMMVXGJ', // EcoFlow DELTA mini powerstation
     niche: 'thuisbatterijen',
-    label: 'EcoFlow Powerstation bij Amazon',
+    label: 'EcoFlow DELTA mini bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },
@@ -139,9 +141,9 @@ const links: AffiliateLink[] = [
     id: 'amazon-balkonbatterij',
     network: 'amazon',
     merchant: 'Amazon.nl',
-    url: 'https://www.amazon.nl/s?k=balkonkrachtwerk+batterij',
+    url: 'https://www.amazon.nl/dp/B0BFWVPWT3', // EcoFlow RIVER 2 - balkon/portable batterij
     niche: 'thuisbatterijen',
-    label: 'Balkonbatterij bij Amazon',
+    label: 'EcoFlow RIVER 2 balkonbatterij bij Amazon',
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },

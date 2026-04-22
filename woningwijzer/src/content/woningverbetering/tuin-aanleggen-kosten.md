@@ -57,5 +57,5 @@ Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Verge
 [Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
 
 **Handige producten (via Amazon.nl):**
-- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
-- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)
+- [Gardena tuinslang 25m met sproeikop](https://www.amazon.nl/dp/B0015QJ4GG?tag=vergelijk05-21)
+- [Fiskars tuinschaar bypass premium](https://www.amazon.nl/dp/B000JC3F8O?tag=vergelijk05-21)

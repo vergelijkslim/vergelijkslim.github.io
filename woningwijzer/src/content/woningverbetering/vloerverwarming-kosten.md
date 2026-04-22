@@ -58,5 +58,5 @@ Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Verge
 [Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
 
 **Handige producten (via Amazon.nl):**
-- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
-- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)
+- [Tado Slimme Thermostaat V3+ Starter Kit](https://www.amazon.nl/dp/B07W9LBZB6?tag=vergelijk05-21)
+- [Vloertemperatuur sensor vloerverwarming](https://www.amazon.nl/dp/B07D571KVZ?tag=vergelijk05-21)

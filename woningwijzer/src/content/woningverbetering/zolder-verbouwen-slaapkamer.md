@@ -65,5 +65,5 @@ Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Verge
 [Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
 
 **Handige producten (via Amazon.nl):**
-- [Bouwboek verbouwen & renoveren](https://www.amazon.nl/s?k=bouwboek+verbouwen+renoveren&tag=vergelijk05-21)
-- [Energielabel toolkit](https://www.amazon.nl/s?k=energielabel+toolkit+woning&tag=vergelijk05-21)
+- [Dakisolatieplaat PIR 120x60cm R=3.5](https://www.amazon.nl/dp/B07GY48TH5?tag=vergelijk05-21)
+- [Vloerluik hout met trap 70x120cm](https://www.amazon.nl/dp/B08H7GJR3Z?tag=vergelijk05-21)
