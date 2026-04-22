@@ -7,6 +7,7 @@ on:
       - 'vergelijk-uw-thuisbatterij/**'
       - 'vergelijk-uw-laadpaal/**'
       - 'thuisbatterijwijzer/**'
+      - 'vergelijk-uw-hosting/**'
       - '.github/workflows/deploy-subsites.yml'
   workflow_dispatch:
     inputs:
@@ -19,6 +20,7 @@ on:
           - vergelijk-uw-thuisbatterij
           - vergelijk-uw-laadpaal
           - thuisbatterijwijzer
+          - vergelijk-uw-hosting
 
 permissions:
   contents: read
@@ -41,7 +43,7 @@ jobs:
           fi
 
           SITES='[]'
-          for dir in vergelijk-uw-thuisbatterij vergelijk-uw-laadpaal thuisbatterijwijzer; do
+          for dir in vergelijk-uw-thuisbatterij vergelijk-uw-laadpaal thuisbatterijwijzer vergelijk-uw-hosting; do
             if git diff --name-only HEAD~1 HEAD -- "$dir/" | grep -q .; then
               SITES=$(echo "$SITES" | jq --arg s "$dir" '. + [$s]')
             fi
@@ -49,7 +51,7 @@ jobs:
 
           # On workflow_dispatch without site selection, deploy all
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "$SITES" = "[]" ]; then
-            SITES='["vergelijk-uw-thuisbatterij","vergelijk-uw-laadpaal","thuisbatterijwijzer"]'
+            SITES='["vergelijk-uw-thuisbatterij","vergelijk-uw-laadpaal","thuisbatterijwijzer","vergelijk-uw-hosting"]'
           fi
 
           echo "sites=$SITES" >> "$GITHUB_OUTPUT"
@@ -76,6 +78,7 @@ jobs:
             vergelijk-uw-thuisbatterij) echo "id=${{ secrets.GA4_ID_THUISBATTERIJ }}" >> "$GITHUB_OUTPUT" ;;
             vergelijk-uw-laadpaal)      echo "id=${{ secrets.GA4_ID_LAADPAAL }}" >> "$GITHUB_OUTPUT" ;;
             thuisbatterijwijzer)        echo "id=${{ secrets.GA4_ID_THUISBATTERIJWIJZER }}" >> "$GITHUB_OUTPUT" ;;
+            vergelijk-uw-hosting)       echo "id=${{ secrets.GA4_ID_HOSTING }}" >> "$GITHUB_OUTPUT" ;;
           esac
       - name: Build ${{ matrix.site }}
         run: cd ${{ matrix.site }} && npx astro build
