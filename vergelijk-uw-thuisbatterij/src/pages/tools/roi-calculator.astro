@@ -1,0 +1,290 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Thuisbatterij ROI calculator – Terugverdientijd berekenen',
+  description: 'Bereken de terugverdientijd en opbrengst van een thuisbatterij op basis van jouw stroomverbruik, zonnepanelen en energieprijzen.',
+  url: 'https://vergelijk-uw-thuisbatterij.nl/tools/roi-calculator/',
+};
+---
+<BaseLayout
+  title="Thuisbatterij ROI Calculator – Bereken Jouw Terugverdientijd"
+  description="Bereken de terugverdientijd van een thuisbatterij op basis van jouw stroomverbruik, zonneopbrengst en huidige energieprijzen. Gratis tool."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Thuisbatterij ROI calculator</h1>
+        <p class="tool-intro">Bereken hoeveel een thuisbatterij jou bespaart en wanneer de investering terugverdiend is.</p>
+      </div>
+
+      <div class="calc-layout">
+        <!-- Inputs -->
+        <div class="calc-inputs">
+          <h2>Jouw situatie</h2>
+
+          <div class="field-group">
+            <label for="batterijCapaciteit">Batterijcapaciteit (kWh)</label>
+            <input type="range" id="batterijCapaciteit" min="3" max="15" value="10" step="0.5" />
+            <output id="capOutput">10 kWh</output>
+          </div>
+
+          <div class="field-group">
+            <label for="batterijPrijs">Batterijprijs incl. installatie (€)</label>
+            <input type="number" id="batterijPrijs" value="5500" min="2000" max="15000" step="100" />
+            <small>Incl. installatie gemiddeld €4.000–€8.000</small>
+          </div>
+
+          <div class="field-group">
+            <label for="zonOpbrengst">Jaarlijkse zonne-energie opbrengst (kWh)</label>
+            <input type="number" id="zonOpbrengst" value="4000" min="500" max="12000" step="100" />
+            <small>6 zonnepanelen ≈ 1.500 kWh/jaar, 16 panelen ≈ 4.000 kWh/jaar</small>
+          </div>
+
+          <div class="field-group">
+            <label for="eigenVerbruik">Eigen verbruik overdag (% van zonne-energie)</label>
+            <input type="range" id="eigenVerbruik" min="10" max="60" value="30" step="5" />
+            <output id="eigenOutput">30%</output>
+            <small>Gemiddeld thuis: 25–35%. Met batterij: 70–90%.</small>
+          </div>
+
+          <div class="field-group">
+            <label for="stroomprijs">Huidige stroomprijs (€/kWh)</label>
+            <input type="number" id="stroomprijs" value="0.32" min="0.15" max="0.60" step="0.01" />
+            <small>Gemiddeld in NL in 2025: €0.28–€0.35/kWh</small>
+          </div>
+
+          <div class="field-group">
+            <label for="terugleverprijs">Teruglevertarief (€/kWh)</label>
+            <input type="number" id="terugleverprijs" value="0.09" min="0.00" max="0.30" step="0.01" />
+            <small>Saldering afgebouwd – tarief varieert per leverancier</small>
+          </div>
+
+          <div class="field-group">
+            <label for="prijsstijging">Verwachte stroomprijs stijging per jaar (%)</label>
+            <input type="range" id="prijsstijging" min="0" max="10" value="3" step="0.5" />
+            <output id="prijsOutput">3%</output>
+          </div>
+        </div>
+
+        <!-- Resultaat -->
+        <div class="calc-result" id="calcResult">
+          <h2>Jouw berekening</h2>
+          <div id="roiSummary"></div>
+          <div id="roiChart"></div>
+          <div id="roiDetails"></div>
+          <div class="result-cta-block">
+            <a href="https://www.thuisbatterij.nl/offerte/" rel="nofollow" target="_blank" class="btn btn-cta btn-full">
+              Gratis offerte aanvragen →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meer tools -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/vergelijk/" class="tool-card">
+            <span class="tool-icon">📊</span>
+            <strong>Thuisbatterijen vergelijken</strong>
+            <span>Filterable vergelijkingstool</span>
+          </a>
+          <a href="/tools/welke-batterij/" class="tool-card">
+            <span class="tool-icon">🧙</span>
+            <strong>Welke batterij past bij mij?</strong>
+            <span>Persoonlijk advies via 5 vragen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  function calculate() {
+    const cap = parseFloat((document.getElementById('batterijCapaciteit') as HTMLInputElement).value);
+    const prijs = parseFloat((document.getElementById('batterijPrijs') as HTMLInputElement).value);
+    const zon = parseFloat((document.getElementById('zonOpbrengst') as HTMLInputElement).value);
+    const eigenPct = parseFloat((document.getElementById('eigenVerbruik') as HTMLInputElement).value) / 100;
+    const stroomprijs = parseFloat((document.getElementById('stroomprijs') as HTMLInputElement).value);
+    const teruglever = parseFloat((document.getElementById('terugleverprijs') as HTMLInputElement).value);
+    const stijging = parseFloat((document.getElementById('prijsstijging') as HTMLInputElement).value) / 100;
+
+    // Update outputs
+    (document.getElementById('capOutput') as HTMLElement).textContent = `${cap} kWh`;
+    (document.getElementById('eigenOutput') as HTMLElement).textContent = `${Math.round(eigenPct * 100)}%`;
+    (document.getElementById('prijsOutput') as HTMLElement).textContent = `${(stijging * 100).toFixed(1)}%`;
+
+    // Met batterij: eigenverbruik stijgt naar ~85%
+    const eigenVerbruikMetBat = Math.min(0.88, eigenPct + 0.45);
+    const extraEigenKwh = (eigenVerbruikMetBat - eigenPct) * zon;
+
+    // Besparing per jaar (jaar 1)
+    // Extra zelf verbruiken = minder terugleveren (teruglever) + minder inkopen (stroomprijs)
+    const besparingY1 = extraEigenKwh * (stroomprijs - teruglever);
+
+    // Extra effectiviteit door batterij (laad op en gebruik s'avonds)
+    // Ronde-trip efficiency ~93%
+    const dagelijksBeschikbaar = Math.min(cap * 0.9, (zon / 365) * (1 - eigenPct));
+    const jaarlijksBeschikbaar = dagelijksBeschikbaar * 300; // 300 bruikbare zondagen
+    const besparingBatterijSelfUse = jaarlijksBeschikbaar * (stroomprijs - teruglever);
+    const totalBesparingY1 = Math.max(besparingY1, besparingBatterijSelfUse);
+
+    // Terugverdientijd berekening
+    let cumulatief = 0;
+    let terugverdienJaar = 0;
+    const jaarData: { jaar: number; besparing: number; cumulatief: number }[] = [];
+    for (let jaar = 1; jaar <= 25; jaar++) {
+      const prijsFactor = Math.pow(1 + stijging, jaar - 1);
+      const besparing = totalBesparingY1 * prijsFactor;
+      cumulatief += besparing;
+      jaarData.push({ jaar, besparing: Math.round(besparing), cumulatief: Math.round(cumulatief) });
+      if (cumulatief >= prijs && terugverdienJaar === 0) terugverdienJaar = jaar;
+    }
+
+    // NPV over 15 jaar
+    const npv15 = jaarData.slice(0, 15).reduce((s, d) => s + d.cumulatief, 0) / 15 - prijs;
+    const roi15 = ((jaarData[14].cumulatief - prijs) / prijs * 100).toFixed(0);
+
+    // Summary
+    document.getElementById('roiSummary')!.innerHTML = `
+      <div class="roi-stats">
+        <div class="roi-stat ${terugverdienJaar > 0 && terugverdienJaar <= 15 ? 'good' : 'warn'}">
+          <div class="stat-label">Terugverdientijd</div>
+          <div class="stat-value">${terugverdienJaar > 0 ? `${terugverdienJaar} jaar` : '> 25 jaar'}</div>
+        </div>
+        <div class="roi-stat">
+          <div class="stat-label">Besparing jaar 1</div>
+          <div class="stat-value">€${Math.round(totalBesparingY1).toLocaleString('nl-NL')}</div>
+        </div>
+        <div class="roi-stat">
+          <div class="stat-label">Totale besparing 15j</div>
+          <div class="stat-value">€${jaarData[14].cumulatief.toLocaleString('nl-NL')}</div>
+        </div>
+        <div class="roi-stat ${parseInt(roi15) > 0 ? 'good' : 'warn'}">
+          <div class="stat-label">ROI na 15 jaar</div>
+          <div class="stat-value">${parseInt(roi15) > 0 ? '+' : ''}${roi15}%</div>
+        </div>
+      </div>
+    `;
+
+    // Chart (simple visual bar chart)
+    const maxCum = jaarData[24].cumulatief;
+    const chartRows = [1, 3, 5, 7, 10, 12, 15, 20, 25].map(j => {
+      const d = jaarData[j - 1];
+      const pct = Math.min(100, (d.cumulatief / Math.max(prijs * 1.5, maxCum)) * 100);
+      const terugverdiend = d.cumulatief >= prijs;
+      return `
+        <div class="chart-row">
+          <span class="chart-label">Jaar ${j}</span>
+          <div class="chart-bar-wrap">
+            <div class="chart-bar ${terugverdiend ? 'bar-green' : 'bar-amber'}" style="width: ${pct}%"></div>
+            <span class="chart-val">€${d.cumulatief.toLocaleString('nl-NL')}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    document.getElementById('roiChart')!.innerHTML = `
+      <div class="chart-section">
+        <h3>Cumulatieve besparing</h3>
+        <div class="chart-invest-line" style="left: ${Math.min(100, (prijs / Math.max(prijs * 1.5, maxCum)) * 100)}%">
+          <span>Investering €${prijs.toLocaleString('nl-NL')}</span>
+        </div>
+        <div class="chart">${chartRows}</div>
+        <div class="chart-legend">
+          <span class="legend-dot bar-green"></span> Terugverdiend
+          <span class="legend-dot bar-amber"></span> Nog niet terugverdiend
+        </div>
+      </div>
+    `;
+
+    // Details
+    document.getElementById('roiDetails')!.innerHTML = `
+      <div class="details-section">
+        <h3>Aannames</h3>
+        <div class="assumptions">
+          <div class="assumption"><span>Extra eigen zonneverbruik</span><span>${Math.round(extraEigenKwh)} kWh/jaar</span></div>
+          <div class="assumption"><span>Batterij bruikbare energie</span><span>${Math.round(jaarlijksBeschikbaar)} kWh/jaar</span></div>
+          <div class="assumption"><span>Ronde-trip efficiency</span><span>90%</span></div>
+          <div class="assumption"><span>Levensduur batterij</span><span>15–20 jaar</span></div>
+        </div>
+        <p class="disclaimer">⚠️ Dit is een indicatieve berekening. Werkelijke besparingen hangen af van gebruikspatroon, weerscondities en energieprijsontwikkelingen.</p>
+      </div>
+    `;
+  }
+
+  const inputs = ['batterijCapaciteit','batterijPrijs','zonOpbrengst','eigenVerbruik','stroomprijs','terugleverprijs','prijsstijging'];
+  inputs.forEach(id => {
+    document.getElementById(id)!.addEventListener('input', calculate);
+    document.getElementById(id)!.addEventListener('change', calculate);
+  });
+
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .calc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
+  @media (max-width: 768px) { .calc-layout { grid-template-columns: 1fr; } }
+
+  .calc-inputs h2, .calc-result h2 { font-size: 1.25rem; margin-bottom: 1.25rem; }
+  .field-group { margin-bottom: 1.25rem; }
+  .field-group label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.375rem; }
+  .field-group input[type="number"], .field-group select { width: 100%; padding: 0.625rem 0.875rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 1rem; background: var(--color-bg); }
+  .field-group input[type="range"] { width: 100%; accent-color: var(--color-primary); }
+  .field-group output { display: block; text-align: right; font-size: 0.875rem; font-weight: 600; color: var(--color-primary); }
+  .field-group small { display: block; font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 0.25rem; }
+
+  .calc-result { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.5rem; }
+
+  .roi-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.5rem; }
+  .roi-stat { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0.875rem; text-align: center; }
+  .roi-stat.good { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .roi-stat.warn { border-color: #fbbf24; background: #fef3c7; }
+  .stat-label { font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.25rem; }
+  .stat-value { font-size: 1.25rem; font-weight: 800; color: var(--color-text); }
+
+  .chart-section { margin-bottom: 1.5rem; }
+  .chart-section h3 { font-size: 1rem; margin-bottom: 0.875rem; }
+  .chart { display: flex; flex-direction: column; gap: 0.375rem; }
+  .chart-row { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8125rem; }
+  .chart-label { width: 50px; flex-shrink: 0; color: var(--color-text-muted); }
+  .chart-bar-wrap { flex: 1; display: flex; align-items: center; gap: 0.5rem; }
+  .chart-bar { height: 18px; border-radius: 3px; transition: width 0.4s ease; min-width: 4px; }
+  .bar-green { background: var(--color-primary); }
+  .bar-amber { background: #f59e0b; }
+  .chart-val { font-size: 0.75rem; white-space: nowrap; color: var(--color-text-light); }
+  .chart-legend { display: flex; gap: 1rem; font-size: 0.8125rem; color: var(--color-text-light); margin-top: 0.5rem; align-items: center; }
+  .legend-dot { display: inline-block; width: 12px; height: 12px; border-radius: 2px; }
+
+  .details-section h3 { font-size: 1rem; margin-bottom: 0.625rem; }
+  .assumptions { border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 0.75rem; }
+  .assumption { display: flex; justify-content: space-between; padding: 0.5rem 0.875rem; font-size: 0.875rem; border-bottom: 1px solid var(--color-border-light); }
+  .assumption:last-child { border-bottom: none; }
+  .assumption span:last-child { font-weight: 600; }
+  .disclaimer { font-size: 0.8125rem; color: var(--color-text-muted); }
+
+  .result-cta-block { margin-top: 1rem; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+  .btn-full { width: 100%; text-align: center; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+</style>

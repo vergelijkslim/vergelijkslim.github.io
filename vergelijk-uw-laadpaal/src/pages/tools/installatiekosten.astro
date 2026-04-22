@@ -1,0 +1,258 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Laadpaal installatiekosten berekenen',
+  description: 'Bereken de geschatte totale kosten van een laadpaal inclusief installatie op basis van jouw situatie.',
+  url: 'https://vergelijk-uw-laadpaal.nl/tools/installatiekosten/',
+};
+---
+<BaseLayout
+  title="Laadpaal Installatiekosten Berekenen – Gratis Calculator"
+  description="Bereken de geschatte totale kosten van een laadpaal inclusief installatie op basis van jouw situatie. Inclusief groep, kabellengte en slimme opties."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Laadpaal installatiekosten berekenen</h1>
+        <p class="tool-intro">Vul jouw situatie in en zie direct een realistische schatting van de totale kosten voor een thuislaadpaal.</p>
+      </div>
+
+      <div class="calc-layout">
+        <!-- Inputs -->
+        <div class="calc-inputs">
+          <div class="input-section">
+            <h2>Jouw situatie</h2>
+
+            <div class="field-group">
+              <label for="laadpaalKosten">Prijs laadpaal (€)</label>
+              <input type="number" id="laadpaalKosten" value="599" min="200" max="2000" step="50" />
+              <small>Gemiddeld €350–€850 voor een thuislaadpaal</small>
+            </div>
+
+            <div class="field-group">
+              <label for="aansluitingType">Type aansluiting</label>
+              <select id="aansluitingType">
+                <option value="1fase">1-fase (standaard)</option>
+                <option value="3fase" selected>3-fase</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="kabellengte">Kabellengte meterkast → garage (meter)</label>
+              <input type="range" id="kabellengte" min="5" max="50" value="15" step="5" />
+              <output id="kabelOutput">15 meter</output>
+            </div>
+
+            <div class="field-group">
+              <label for="nieuweGroep">Nieuwe groep in meterkast nodig?</label>
+              <select id="nieuweGroep">
+                <option value="nee">Nee, er is nog ruimte</option>
+                <option value="ja" selected>Ja, nieuwe groep nodig</option>
+                <option value="nieuw-bord">Nieuw groepenkast nodig</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="slimLaden">Slim laden / energiebeheer systeem</label>
+              <select id="slimLaden">
+                <option value="nee">Nee</option>
+                <option value="ja" selected>Ja (app + tijdschema)</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="wandBeugel">Wandbeugel / installatiemateriaal</label>
+              <select id="wandBeugel">
+                <option value="nee">Niet nodig</option>
+                <option value="ja">Ja (kanaalstukken, beugels)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resultaat -->
+        <div class="calc-result" id="calcResult">
+          <h2>Kostenoverzicht</h2>
+          <div class="cost-breakdown" id="costBreakdown">
+            <!-- Ingevuld via JS -->
+          </div>
+          <div class="total-box" id="totalBox">
+            <!-- Ingevuld via JS -->
+          </div>
+          <div class="result-tips" id="resultTips">
+            <!-- Ingevuld via JS -->
+          </div>
+          <div class="result-cta-block">
+            <p>Wil je exacte prijzen?</p>
+            <a href="/offerte/" class="btn btn-cta btn-full">Gratis offertes aanvragen →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools nav -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/vergelijk/" class="tool-card">
+            <span class="tool-icon">📊</span>
+            <strong>Laadpalen vergelijken</strong>
+            <span>Filterable vergelijkingstool met alle modellen</span>
+          </a>
+          <a href="/tools/welke-laadpaal/" class="tool-card">
+            <span class="tool-icon">🧙</span>
+            <strong>Welke laadpaal past bij mij?</strong>
+            <span>Persoonlijk advies via 5 vragen</span>
+          </a>
+          <a href="/tools/subsidie/" class="tool-card">
+            <span class="tool-icon">💰</span>
+            <strong>Subsidie checker</strong>
+            <span>Welke subsidies kun jij aanvragen?</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  function calculate() {
+    const laadpaalPrijs = parseFloat((document.getElementById('laadpaalKosten') as HTMLInputElement).value) || 599;
+    const aansluiting = (document.getElementById('aansluitingType') as HTMLSelectElement).value;
+    const kabellengte = parseInt((document.getElementById('kabellengte') as HTMLInputElement).value);
+    const nieuweGroep = (document.getElementById('nieuweGroep') as HTMLSelectElement).value;
+    const slimLaden = (document.getElementById('slimLaden') as HTMLSelectElement).value;
+    const wandBeugel = (document.getElementById('wandBeugel') as HTMLSelectElement).value;
+
+    // Update range output
+    (document.getElementById('kabelOutput') as HTMLElement).textContent = `${kabellengte} meter`;
+
+    // Bereken components
+    const arbeidskosten = aansluiting === '3fase' ? 250 : 180;
+    const kabelkosten = Math.round(kabellengte * 8); // ~€8/meter kabel incl. arbeid
+    const groepKosten = nieuweGroep === 'nee' ? 0 : nieuweGroep === 'ja' ? 75 : 400;
+    const slimKosten = slimLaden === 'ja' ? 50 : 0;
+    const materiaalkostenExtra = wandBeugel === 'ja' ? 80 : 0;
+    const btwFactor = 1.21;
+
+    const subtotaalEx = laadpaalPrijs + arbeidskosten + kabelkosten + groepKosten + slimKosten + materiaalkostenExtra;
+    const btwBedrag = Math.round(subtotaalEx * 0.21);
+    const totaalIncl = Math.round(subtotaalEx * btwFactor);
+
+    // Min-max range (± 20%)
+    const totaalMin = Math.round(totaalIncl * 0.85);
+    const totaalMax = Math.round(totaalIncl * 1.20);
+
+    const items = [
+      { label: 'Laadpaal hardware', amount: laadpaalPrijs, note: 'excl. BTW' },
+      { label: 'Arbeidskosten installateur', amount: arbeidskosten, note: `${aansluiting === '3fase' ? '3-fase' : '1-fase'} installatie` },
+      { label: 'Kabelwerk', amount: kabelkosten, note: `${kabellengte} meter kabel` },
+      ...(groepKosten > 0 ? [{ label: 'Groep / groepenkast', amount: groepKosten, note: nieuweGroep === 'nieuw-bord' ? 'Nieuwe groepenkast' : 'Nieuwe groep toevoegen' }] : []),
+      ...(slimKosten > 0 ? [{ label: 'Slim laadsysteem', amount: slimKosten, note: 'Configuratie & app-koppeling' }] : []),
+      ...(materiaalkostenExtra > 0 ? [{ label: 'Installatiemateriaal', amount: materiaalkostenExtra, note: 'Kanaalstukken, beugels' }] : []),
+    ];
+
+    const breakdown = document.getElementById('costBreakdown')!;
+    breakdown.innerHTML = items.map(item => `
+      <div class="cost-item">
+        <div>
+          <span class="cost-label">${item.label}</span>
+          <small class="cost-note">${item.note}</small>
+        </div>
+        <span class="cost-amount">€${item.amount.toLocaleString('nl-NL')}</span>
+      </div>
+    `).join('') + `
+      <div class="cost-item cost-btw">
+        <span class="cost-label">BTW (21%)</span>
+        <span class="cost-amount">€${btwBedrag.toLocaleString('nl-NL')}</span>
+      </div>
+    `;
+
+    document.getElementById('totalBox')!.innerHTML = `
+      <div class="total-label">Geschatte totaalkosten</div>
+      <div class="total-range">€${totaalMin.toLocaleString('nl-NL')} – €${totaalMax.toLocaleString('nl-NL')}</div>
+      <div class="total-note">Inclusief BTW. Prijzen zijn richtlijnen — vraag offertes aan voor exacte kosten.</div>
+    `;
+
+    const tips: string[] = [];
+    if (totaalIncl > 1500) tips.push('💡 Overweeg subsidie: de ISDE subsidie is al afgelopen, maar check je gemeente voor lokale subsidies.');
+    if (kabellengte > 20) tips.push('🔧 Lange kabellengte verhoogt kosten. Overleg met de installateur over de optimale route.');
+    if (nieuweGroep === 'nieuw-bord') tips.push('⚡ Een nieuwe groepenkast is een grote investering. Combineer dit met eventuele andere verbeteringen.');
+    if (aansluiting === '1fase') tips.push('📈 Upgrade naar 3-fase kan je laadsnelheid verdrievoudigen. Kosten: €200–€500 extra via netbeheerder.');
+
+    document.getElementById('resultTips')!.innerHTML = tips.length > 0 ? `
+      <div class="tips-block">
+        <h3>Tips voor jouw situatie</h3>
+        <ul>${tips.map(t => `<li>${t}</li>`).join('')}</ul>
+      </div>
+    ` : '';
+  }
+
+  // Event listeners
+  ['laadpaalKosten', 'aansluitingType', 'kabellengte', 'nieuweGroep', 'slimLaden', 'wandBeugel'].forEach(id => {
+    document.getElementById(id)!.addEventListener('input', calculate);
+    document.getElementById(id)!.addEventListener('change', calculate);
+  });
+
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .calc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
+  @media (max-width: 768px) { .calc-layout { grid-template-columns: 1fr; } }
+
+  .input-section h2, .calc-result h2 { font-size: 1.25rem; margin-bottom: 1.25rem; }
+  .field-group { margin-bottom: 1.25rem; }
+  .field-group label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.375rem; }
+  .field-group input[type="number"], .field-group select {
+    width: 100%; padding: 0.625rem 0.875rem; border: 1px solid var(--color-border);
+    border-radius: var(--radius-md); font-size: 1rem; background: var(--color-bg);
+  }
+  .field-group input[type="range"] { width: 100%; accent-color: var(--color-primary); }
+  .field-group output { display: block; text-align: right; font-size: 0.875rem; font-weight: 600; color: var(--color-primary); }
+  .field-group small { display: block; font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 0.25rem; }
+
+  .calc-result { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.5rem; }
+
+  .cost-breakdown { margin-bottom: 1rem; }
+  .cost-item { display: flex; justify-content: space-between; align-items: flex-start; padding: 0.625rem 0; border-bottom: 1px solid var(--color-border-light); }
+  .cost-item:last-child { border-bottom: none; }
+  .cost-btw { color: var(--color-text-light); }
+  .cost-label { display: block; font-weight: 600; font-size: 0.9375rem; }
+  .cost-note { display: block; font-size: 0.8125rem; color: var(--color-text-muted); }
+  .cost-amount { font-weight: 700; font-size: 1rem; white-space: nowrap; }
+
+  .total-box { background: var(--color-primary); color: #fff; border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1rem; text-align: center; }
+  .total-label { font-size: 0.875rem; opacity: 0.85; margin-bottom: 0.25rem; }
+  .total-range { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; }
+  .total-note { font-size: 0.8125rem; opacity: 0.8; margin-top: 0.25rem; }
+
+  .tips-block { background: var(--color-bg-warm); border: 1px solid #fde68a; border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1rem; }
+  .tips-block h3 { font-size: 0.9375rem; margin-bottom: 0.5rem; }
+  .tips-block ul { list-style: none; display: flex; flex-direction: column; gap: 0.375rem; }
+  .tips-block li { font-size: 0.875rem; color: var(--color-text); }
+
+  .result-cta-block { margin-top: 1rem; }
+  .result-cta-block p { font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 0.5rem; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+  .btn-full { width: 100%; text-align: center; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+</style>

@@ -1,0 +1,332 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Welke laadpaal past bij mij? – Quiz',
+  description: 'Beantwoord 5 vragen en ontdek welke laadpaal het beste bij jouw auto, huis en rijgedrag past.',
+  url: 'https://vergelijk-uw-laadpaal.nl/tools/welke-laadpaal/',
+};
+---
+<BaseLayout
+  title="Welke laadpaal past bij mij? – Persoonlijk Advies Quiz"
+  description="Beantwoord 5 vragen en ontdek welke laadpaal het beste bij jouw auto, huis en rijgedrag past."
+  structuredData={structuredData}
+>
+  <main class="quiz-page">
+    <div class="container">
+      <div class="quiz-header">
+        <h1>Welke laadpaal past bij mij?</h1>
+        <p class="quiz-intro">Beantwoord 5 korte vragen en ontvang persoonlijk laadpaaladvies op basis van jouw situatie.</p>
+      </div>
+
+      <div class="quiz-wrapper" id="quiz">
+
+        <!-- Progress -->
+        <div class="progress-bar" id="progressBar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <div class="step-indicator" id="stepIndicator">Vraag 1 van 5</div>
+
+        <!-- Vraag 1 -->
+        <div class="quiz-step active" data-step="1">
+          <h2>Wat voor auto heb je?</h2>
+          <div class="options">
+            <button class="option" data-key="auto" data-val="volledig-elektrisch">
+              <span class="option-icon">⚡</span>
+              <strong>Volledig elektrisch (BEV)</strong>
+              <span>Tesla, Volkswagen ID, Hyundai IONIQ, etc.</span>
+            </button>
+            <button class="option" data-key="auto" data-val="plug-in-hybride">
+              <span class="option-icon">🔋</span>
+              <strong>Plug-in hybride (PHEV)</strong>
+              <span>Kan opladen maar ook op brandstof rijden</span>
+            </button>
+            <button class="option" data-key="auto" data-val="geen-ev">
+              <span class="option-icon">⛽</span>
+              <strong>Nog geen elektrische auto</strong>
+              <span>Ik bereid me voor op aanschaf</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 2 -->
+        <div class="quiz-step" data-step="2">
+          <h2>Hoeveel kilometer rijd je gemiddeld per dag?</h2>
+          <div class="options">
+            <button class="option" data-key="km" data-val="weinig">
+              <span class="option-icon">🏘️</span>
+              <strong>Minder dan 30 km/dag</strong>
+              <span>Voornamelijk lokaal en woon-werkverkeer</span>
+            </button>
+            <button class="option" data-key="km" data-val="gemiddeld">
+              <span class="option-icon">🛣️</span>
+              <strong>30 – 80 km/dag</strong>
+              <span>Regulier woon-werkverkeer</span>
+            </button>
+            <button class="option" data-key="km" data-val="veel">
+              <span class="option-icon">🚗</span>
+              <strong>Meer dan 80 km/dag</strong>
+              <span>Veel rijden, zakelijk of langere ritten</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 3 -->
+        <div class="quiz-step" data-step="3">
+          <h2>Hoe is je thuis aansluiting?</h2>
+          <div class="options">
+            <button class="option" data-key="aansluiting" data-val="1fase">
+              <span class="option-icon">🔌</span>
+              <strong>1-fase (standaard)</strong>
+              <span>Oude woning, max. 25A per groep – max. 7.4 kW laden</span>
+            </button>
+            <button class="option" data-key="aansluiting" data-val="3fase">
+              <span class="option-icon">⚡</span>
+              <strong>3-fase aansluiting</strong>
+              <span>Nieuwbouw of uitgebreid – tot 22 kW laden mogelijk</span>
+            </button>
+            <button class="option" data-key="aansluiting" data-val="weet-niet">
+              <span class="option-icon">❓</span>
+              <strong>Weet ik niet</strong>
+              <span>Ik ga dit laten controleren</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 4 -->
+        <div class="quiz-step" data-step="4">
+          <h2>Heb je zonnepanelen thuis?</h2>
+          <div class="options">
+            <button class="option" data-key="zon" data-val="ja">
+              <span class="option-icon">☀️</span>
+              <strong>Ja, ik heb zonnepanelen</strong>
+              <span>Slim laden op zonneoverschot is interessant voor mij</span>
+            </button>
+            <button class="option" data-key="zon" data-val="binnenkort">
+              <span class="option-icon">🌤️</span>
+              <strong>Binnenkort / al gepland</strong>
+              <span>Wil alvast voorbereid zijn</span>
+            </button>
+            <button class="option" data-key="zon" data-val="nee">
+              <span class="option-icon">🌧️</span>
+              <strong>Nee, geen zonnepanelen</strong>
+              <span>Laad ik op net-stroom</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 5 -->
+        <div class="quiz-step" data-step="5">
+          <h2>Wat is je budget voor de laadpaal (excl. installatie)?</h2>
+          <div class="options">
+            <button class="option" data-key="budget" data-val="laag">
+              <span class="option-icon">💚</span>
+              <strong>Minder dan €500</strong>
+              <span>Zoek ik een goede basisoplossing</span>
+            </button>
+            <button class="option" data-key="budget" data-val="midden">
+              <span class="option-icon">💛</span>
+              <strong>€500 – €800</strong>
+              <span>Kwaliteit is belangrijk, betaalbaar</span>
+            </button>
+            <button class="option" data-key="budget" data-val="hoog">
+              <span class="option-icon">💎</span>
+              <strong>Meer dan €800</strong>
+              <span>Ik kies voor het beste product</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resultaat -->
+        <div class="quiz-step" data-step="result" id="resultSection">
+          <div class="result-card" id="resultCard">
+            <!-- Ingevuld via JS -->
+          </div>
+          <div class="result-actions">
+            <a href="/tools/vergelijk/" class="btn btn-primary">Bekijk alle laadpalen →</a>
+            <button class="btn btn-outline" id="restartQuiz">Quiz opnieuw doen</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  interface Answers { auto?: string; km?: string; aansluiting?: string; zon?: string; budget?: string; }
+  const answers: Answers = {};
+  let currentStep = 1;
+  const totalSteps = 5;
+
+  function showStep(step: number | string) {
+    document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+    const target = step === 'result'
+      ? document.querySelector('[data-step="result"]')
+      : document.querySelector(`[data-step="${step}"]`);
+    target?.classList.add('active');
+  }
+
+  function updateProgress() {
+    const pct = ((currentStep - 1) / totalSteps) * 100;
+    (document.getElementById('progressFill') as HTMLElement).style.width = `${pct}%`;
+    (document.getElementById('stepIndicator') as HTMLElement).textContent =
+      currentStep <= totalSteps ? `Vraag ${currentStep} van ${totalSteps}` : 'Jouw advies';
+  }
+
+  function buildResult(): string {
+    const { auto, km, aansluiting, zon, budget } = answers;
+
+    // Determine recommended power
+    let power = '11 kW';
+    let powerReason = '3-fase laden, goed voor dagelijks gebruik';
+    if (aansluiting === '1fase' || auto === 'plug-in-hybride') {
+      power = '7.4 kW';
+      powerReason = '1-fase aansluiting of PHEV: 7.4 kW is voldoende en kostenefficiënt';
+    } else if (km === 'veel' && aansluiting === '3fase') {
+      power = '22 kW';
+      powerReason = 'Veel rijden + 3-fase: maximale laadsnelheid voor snel opladen';
+    }
+
+    // Smart charging
+    const wantSmart = zon === 'ja' || zon === 'binnenkort' || km === 'veel';
+    const smartText = wantSmart
+      ? '✓ Slim laden (app + zonnepaneel integratie) aanbevolen'
+      : 'Basis laden is voldoende, slim laden optioneel';
+
+    // Budget
+    let productSuggestie = '';
+    let productUrl = '#';
+    let productWinkel = '';
+    if (budget === 'laag') {
+      productSuggestie = 'Blaupunkt of Vestel laadpaal (€299–€349)';
+      productUrl = 'https://www.amazon.nl/s?k=laadpaal+7kw&tag=vergelijk05-21';
+      productWinkel = 'Amazon';
+    } else if (budget === 'midden') {
+      productSuggestie = 'Easee Home of Alfen Eve (€549–€649)';
+      productUrl = 'https://www.amazon.nl/s?k=easee+laadpaal&tag=vergelijk05-21';
+      productWinkel = 'Amazon';
+    } else {
+      productSuggestie = 'Wallbox Pulsar Plus of Zaptec Go (€649–€849)';
+      productUrl = 'https://www.amazon.nl/dp/B08Q3G9RQL?tag=vergelijk05-21';
+      productWinkel = 'Amazon';
+    }
+
+    const laadtijd = auto === 'volledig-elektrisch'
+      ? power === '22 kW' ? '~2-3 uur voor een 60 kWh accu' : power === '11 kW' ? '~4-6 uur voor een 60 kWh accu' : '~8 uur voor een 60 kWh accu'
+      : '~1-2 uur voor PHEV accu';
+
+    return `
+      <div class="result-icon">🎯</div>
+      <h2>Jouw aanbeveling</h2>
+      <div class="result-specs">
+        <div class="result-spec highlight-spec">
+          <span class="rs-label">Aanbevolen vermogen</span>
+          <span class="rs-val">${power}</span>
+          <span class="rs-reason">${powerReason}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Slim laden</span>
+          <span class="rs-val">${smartText}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Geschatte laadtijd</span>
+          <span class="rs-val">${laadtijd}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Aanbevolen product</span>
+          <span class="rs-val">${productSuggestie}</span>
+        </div>
+      </div>
+      <div class="result-cta">
+        <a href="${productUrl}" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+          Bekijk aanbevolen laadpaal bij ${productWinkel} →
+        </a>
+      </div>
+      <p class="result-disclaimer">💡 Tip: Vraag altijd een offerte aan voor installatie – dat kost gemiddeld €200–€600 extra.</p>
+    `;
+  }
+
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = (btn as HTMLElement).dataset.key as keyof Answers;
+      const val = (btn as HTMLElement).dataset.val!;
+      answers[key] = val;
+
+      if (currentStep < totalSteps) {
+        currentStep++;
+        updateProgress();
+        showStep(currentStep);
+      } else {
+        // Show result
+        updateProgress();
+        document.getElementById('resultCard')!.innerHTML = buildResult();
+        showStep('result');
+        (document.getElementById('stepIndicator') as HTMLElement).textContent = 'Jouw advies';
+        (document.getElementById('progressFill') as HTMLElement).style.width = '100%';
+      }
+    });
+  });
+
+  document.getElementById('restartQuiz')!.addEventListener('click', () => {
+    Object.keys(answers).forEach(k => delete (answers as Record<string, unknown>)[k]);
+    currentStep = 1;
+    updateProgress();
+    showStep(1);
+  });
+
+  updateProgress();
+</script>
+
+<style>
+  .quiz-page { padding: 2rem 0 4rem; }
+  .quiz-header { margin-bottom: 2rem; text-align: center; }
+  .quiz-header h1 { margin-bottom: 0.5rem; }
+  .quiz-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .quiz-wrapper { max-width: 680px; margin: 0 auto; }
+
+  .progress-bar { height: 6px; background: var(--color-border); border-radius: 9999px; margin-bottom: 0.5rem; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--color-primary); border-radius: 9999px; transition: width 0.3s ease; }
+  .step-indicator { text-align: right; font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
+
+  .quiz-step { display: none; }
+  .quiz-step.active { display: block; }
+  .quiz-step h2 { margin-bottom: 1.25rem; font-size: 1.375rem; }
+
+  .options { display: flex; flex-direction: column; gap: 0.75rem; }
+  .option {
+    display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem;
+    border: 2px solid var(--color-border); border-radius: var(--radius-lg);
+    background: var(--color-bg); cursor: pointer; text-align: left;
+    transition: all var(--transition-fast); width: 100%;
+  }
+  .option:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .option-icon { font-size: 1.75rem; flex-shrink: 0; }
+  .option strong { display: block; font-size: 1rem; color: var(--color-text); }
+  .option span:last-child { display: block; font-size: 0.875rem; color: var(--color-text-light); }
+
+  .result-card { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 1.5rem; }
+  .result-icon { font-size: 3rem; text-align: center; margin-bottom: 0.5rem; }
+  .result-card h2 { text-align: center; margin-bottom: 1.5rem; color: var(--color-primary-dark); }
+  .result-specs { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+  .result-spec { padding: 0.875rem 1rem; background: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border-light); }
+  .highlight-spec { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .rs-label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; }
+  .rs-val { display: block; font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.125rem; }
+  .rs-reason { display: block; font-size: 0.8125rem; color: var(--color-text-light); }
+  .result-cta { margin-bottom: 1rem; }
+  .result-disclaimer { font-size: 0.875rem; color: var(--color-text-light); text-align: center; }
+
+  .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-primary { background: var(--color-primary); color: #fff; }
+  .btn-primary:hover { background: var(--color-primary-dark); text-decoration: none; color: #fff; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+  .btn-outline { background: none; border: 2px solid var(--color-border); color: var(--color-text-light); }
+  .btn-outline:hover { border-color: var(--color-primary); color: var(--color-primary); background: var(--color-primary-light); }
+  .btn-full { width: 100%; }
+</style>

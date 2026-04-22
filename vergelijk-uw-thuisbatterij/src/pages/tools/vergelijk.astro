@@ -1,0 +1,319 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Thuisbatterijen vergelijken – Interactieve tool 2025',
+  description: 'Vergelijk thuisbatterijen op capaciteit, prijs, garantie en merk. Filter en sorteer om de beste thuisbatterij voor jouw situatie te vinden.',
+  url: 'https://vergelijk-uw-thuisbatterij.nl/tools/vergelijk/',
+};
+
+const batterijen = [
+  { id: 1, naam: 'SolarEdge Home Battery 10kWh', merk: 'SolarEdge', capaciteit: 10, prijs: 4200, garantie: 10, vermogen: 5, slimLaden: true, hybride: true, highlight: true, url: 'https://www.coolblue.nl/thuisbatterijen', winkel: 'Coolblue' },
+  { id: 2, naam: 'Sigenergy SigenStor 10kWh', merk: 'Sigenergy', capaciteit: 10, prijs: 3800, garantie: 10, vermogen: 5, slimLaden: true, hybride: true, highlight: false, url: 'https://www.bol.com/nl/nl/s/?searchtext=thuisbatterij+10kwh', winkel: 'bol.com' },
+  { id: 3, naam: 'BYD Battery-Box Premium HVS 10.2', merk: 'BYD', capaciteit: 10.2, prijs: 3600, garantie: 10, vermogen: 5.1, slimLaden: true, hybride: false, highlight: false, url: 'https://www.amazon.nl/s?k=byd+battery+box&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 4, naam: 'Pylontech Phantom-S 7.4kWh', merk: 'Pylontech', capaciteit: 7.4, prijs: 2800, garantie: 10, vermogen: 3.5, slimLaden: false, hybride: false, highlight: false, url: 'https://www.amazon.nl/s?k=pylontech+thuisbatterij&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 5, naam: 'Huawei LUNA2000-10-S0', merk: 'Huawei', capaciteit: 10, prijs: 3900, garantie: 10, vermogen: 5, slimLaden: true, hybride: true, highlight: false, url: 'https://www.coolblue.nl/thuisbatterijen', winkel: 'Coolblue' },
+  { id: 6, naam: 'Growatt ARK-XH 6.5kWh', merk: 'Growatt', capaciteit: 6.5, prijs: 2400, garantie: 10, vermogen: 3.5, slimLaden: true, hybride: false, highlight: false, url: 'https://www.amazon.nl/s?k=growatt+thuisbatterij&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 7, naam: 'Victron Energy Lithium 5.2kWh', merk: 'Victron', capaciteit: 5.2, prijs: 2200, garantie: 5, vermogen: 2.5, slimLaden: false, hybride: false, highlight: false, url: 'https://www.amazon.nl/s?k=victron+lithium+batterij&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 8, naam: 'Fox ESS ECS2900 2.9kWh', merk: 'Fox ESS', capaciteit: 2.9, prijs: 1500, garantie: 5, vermogen: 1.5, slimLaden: false, hybride: false, highlight: false, url: 'https://www.bol.com/nl/nl/s/?searchtext=fox+ess+batterij', winkel: 'bol.com' },
+  { id: 9, naam: 'Sofar Solar BTS-5K-BDU 5kWh', merk: 'Sofar', capaciteit: 5, prijs: 1900, garantie: 5, vermogen: 2.5, slimLaden: true, hybride: false, highlight: false, url: 'https://www.amazon.nl/s?k=sofar+thuisbatterij&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 10, naam: 'Enphase IQ Battery 5P', merk: 'Enphase', capaciteit: 5, prijs: 3200, garantie: 15, vermogen: 3.84, slimLaden: true, hybride: true, highlight: false, url: 'https://www.coolblue.nl/thuisbatterijen', winkel: 'Coolblue' },
+];
+---
+<BaseLayout
+  title="Thuisbatterijen Vergelijken – Interactieve Vergelijkingstool 2025"
+  description="Vergelijk thuisbatterijen op capaciteit, prijs, garantie en merk. Filter op jouw budget en wensen om de beste thuisbatterij te vinden."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Thuisbatterijen vergelijken</h1>
+        <p class="tool-intro">Filter op jouw wensen en vergelijk de beste thuisbatterijen van 2025. Prijzen zijn indicatief en excl. installatie.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar" id="filterBar">
+        <div class="filter-group">
+          <label for="filterCapaciteit">Min. capaciteit</label>
+          <select id="filterCapaciteit">
+            <option value="">Alle capaciteiten</option>
+            <option value="3">Vanaf 3 kWh</option>
+            <option value="5">Vanaf 5 kWh</option>
+            <option value="10">Vanaf 10 kWh</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterMaxPrijs">Max. prijs</label>
+          <select id="filterMaxPrijs">
+            <option value="">Alle prijzen</option>
+            <option value="2000">Tot €2.000</option>
+            <option value="3000">Tot €3.000</option>
+            <option value="4000">Tot €4.000</option>
+            <option value="5000">Tot €5.000</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterHybride">Hybride omvormer</label>
+          <select id="filterHybride">
+            <option value="">Beide types</option>
+            <option value="1">Hybride (ingebouwd)</option>
+            <option value="0">Losse batterij</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterGarantie">Min. garantie</label>
+          <select id="filterGarantie">
+            <option value="">Alle garanties</option>
+            <option value="10">10 jaar of meer</option>
+            <option value="15">15 jaar</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sorteer">Sorteren</label>
+          <select id="sorteer">
+            <option value="prijs-asc">Prijs ↑</option>
+            <option value="prijs-desc">Prijs ↓</option>
+            <option value="capaciteit-desc">Capaciteit ↓</option>
+            <option value="garantie-desc">Garantie ↓</option>
+          </select>
+        </div>
+        <button class="btn-reset" id="resetFilters">Reset</button>
+      </div>
+
+      <div class="result-count" id="resultCount"></div>
+
+      <!-- Desktop table -->
+      <div class="table-wrapper desktop-only">
+        <table class="cmp-table" id="cmpTable">
+          <thead>
+            <tr>
+              <th>Thuisbatterij</th>
+              <th>Capaciteit</th>
+              <th>Vermogen</th>
+              <th>Prijs (excl. inst.)</th>
+              <th>Hybride</th>
+              <th>Garantie</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            {batterijen.map(b => (
+              <tr
+                class:list={['bat-row', { highlight: b.highlight }]}
+                data-capaciteit={b.capaciteit}
+                data-prijs={b.prijs}
+                data-hybride={b.hybride ? '1' : '0'}
+                data-garantie={b.garantie}
+              >
+                <td class="naam-cel">
+                  {b.highlight && <span class="badge-top">Beste keuze</span>}
+                  <span class="product-naam">{b.naam}</span>
+                  <small class="sub-info">{b.merk} · {b.slimLaden ? 'Slim laden' : 'Basis'}</small>
+                </td>
+                <td><strong>{b.capaciteit} kWh</strong></td>
+                <td>{b.vermogen} kW</td>
+                <td class="prijs-cel">€{b.prijs.toLocaleString('nl-NL')}</td>
+                <td>{b.hybride ? <span class="badge-yes">✓ Hybride</span> : <span class="badge-neutral">Losse bat.</span>}</td>
+                <td>{b.garantie} jaar</td>
+                <td class="cta-cel">
+                  <a href={b.url} rel="nofollow sponsored" target="_blank" class="btn btn-primary btn-sm">
+                    Bekijk bij {b.winkel}
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile cards -->
+      <div class="mobile-cards" id="mobileCards">
+        {batterijen.map(b => (
+          <div
+            class:list={['mobile-card', { 'mobile-highlight': b.highlight }]}
+            data-capaciteit={b.capaciteit}
+            data-prijs={b.prijs}
+            data-hybride={b.hybride ? '1' : '0'}
+            data-garantie={b.garantie}
+          >
+            {b.highlight && <span class="badge-top">Beste keuze</span>}
+            <h3 class="card-naam">{b.naam}</h3>
+            <div class="card-specs">
+              <div class="spec"><span class="spec-label">Capaciteit</span><span class="spec-val">{b.capaciteit} kWh</span></div>
+              <div class="spec"><span class="spec-label">Prijs</span><span class="spec-val">€{b.prijs.toLocaleString('nl-NL')}</span></div>
+              <div class="spec"><span class="spec-label">Vermogen</span><span class="spec-val">{b.vermogen} kW</span></div>
+              <div class="spec"><span class="spec-label">Garantie</span><span class="spec-val">{b.garantie} jaar</span></div>
+              <div class="spec"><span class="spec-label">Hybride</span><span class="spec-val">{b.hybride ? '✓ Ja' : 'Nee'}</span></div>
+              <div class="spec"><span class="spec-label">Slim laden</span><span class="spec-val">{b.slimLaden ? '✓ Ja' : 'Basis'}</span></div>
+            </div>
+            <a href={b.url} rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+              Bekijk bij {b.winkel} →
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <div class="no-results hidden" id="noResults">
+        <p>Geen batterijen gevonden. <button class="link-btn" id="resetFilters2">Reset filters</button></p>
+      </div>
+
+      <!-- Andere tools -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/roi-calculator/" class="tool-card">
+            <span class="tool-icon">📈</span>
+            <strong>ROI calculator</strong>
+            <span>Bereken wanneer jouw thuisbatterij terugverdiend is</span>
+          </a>
+          <a href="/tools/welke-batterij/" class="tool-card">
+            <span class="tool-icon">🧙</span>
+            <strong>Welke batterij past bij mij?</strong>
+            <span>Persoonlijk advies via 5 vragen</span>
+          </a>
+          <a href="/offerte/" class="tool-card">
+            <span class="tool-icon">📋</span>
+            <strong>Gratis offerte aanvragen</strong>
+            <span>Ontvang meerdere offertes van installateurs</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  const tableRows = Array.from(document.querySelectorAll<HTMLElement>('#tableBody .bat-row'));
+  const mobileCards = Array.from(document.querySelectorAll<HTMLElement>('#mobileCards .mobile-card'));
+  const resultCount = document.getElementById('resultCount')!;
+  const noResults = document.getElementById('noResults')!;
+
+  function applyFilters() {
+    const cap = parseFloat((document.getElementById('filterCapaciteit') as HTMLSelectElement).value) || 0;
+    const maxP = parseFloat((document.getElementById('filterMaxPrijs') as HTMLSelectElement).value) || Infinity;
+    const hybride = (document.getElementById('filterHybride') as HTMLSelectElement).value;
+    const minGar = parseFloat((document.getElementById('filterGarantie') as HTMLSelectElement).value) || 0;
+    const sort = (document.getElementById('sorteer') as HTMLSelectElement).value;
+
+    const all = tableRows.map((row, i) => ({ row, card: mobileCards[i] }));
+
+    let visible = all.filter(({ row }) => {
+      const c = parseFloat(row.dataset.capaciteit!);
+      const p = parseFloat(row.dataset.prijs!);
+      const g = parseFloat(row.dataset.garantie!);
+      if (cap && c < cap) return false;
+      if (p > maxP) return false;
+      if (hybride && row.dataset.hybride !== hybride) return false;
+      if (g < minGar) return false;
+      return true;
+    });
+
+    visible.sort((a, b) => {
+      const ac = parseFloat(a.row.dataset.capaciteit!), bc = parseFloat(b.row.dataset.capaciteit!);
+      const ap = parseFloat(a.row.dataset.prijs!), bp = parseFloat(b.row.dataset.prijs!);
+      const ag = parseFloat(a.row.dataset.garantie!), bg = parseFloat(b.row.dataset.garantie!);
+      if (sort === 'prijs-asc') return ap - bp;
+      if (sort === 'prijs-desc') return bp - ap;
+      if (sort === 'capaciteit-desc') return bc - ac;
+      if (sort === 'garantie-desc') return bg - ag;
+      return 0;
+    });
+
+    const visibleSet = new Set(visible.map(({ row }) => row));
+    all.forEach(({ row, card }) => {
+      const show = visibleSet.has(row);
+      row.style.display = show ? '' : 'none';
+      card.style.display = show ? '' : 'none';
+    });
+
+    const tbody = document.getElementById('tableBody')!;
+    visible.forEach(({ row }) => tbody.appendChild(row));
+    const mc = document.getElementById('mobileCards')!;
+    visible.forEach(({ card }) => mc.appendChild(card));
+
+    resultCount.textContent = `${visible.length} batterij${visible.length !== 1 ? 'en' : ''} gevonden`;
+    noResults.classList.toggle('hidden', visible.length > 0);
+  }
+
+  document.getElementById('filterBar')!.addEventListener('change', applyFilters);
+
+  function resetAll() {
+    ['filterCapaciteit','filterMaxPrijs','filterHybride','filterGarantie'].forEach(id => {
+      (document.getElementById(id) as HTMLSelectElement).value = '';
+    });
+    (document.getElementById('sorteer') as HTMLSelectElement).value = 'prijs-asc';
+    applyFilters();
+  }
+  document.getElementById('resetFilters')!.addEventListener('click', resetAll);
+  document.getElementById('resetFilters2')?.addEventListener('click', resetAll);
+
+  applyFilters();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.25rem; }
+  .filter-group { display: flex; flex-direction: column; gap: 0.25rem; min-width: 140px; }
+  .filter-group label { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); }
+  .filter-group select { padding: 0.5rem 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); font-size: 0.9375rem; cursor: pointer; }
+  .btn-reset { padding: 0.5rem 1rem; background: none; border: 1px solid var(--color-border); border-radius: var(--radius-md); cursor: pointer; font-size: 0.875rem; color: var(--color-text-light); align-self: flex-end; }
+  .btn-reset:hover { background: var(--color-bg); }
+
+  .result-count { font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: 0.75rem; }
+
+  .table-wrapper { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+  .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .cmp-table thead { background: var(--color-bg-alt); }
+  .cmp-table th { padding: 0.875rem 1rem; text-align: left; font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); border-bottom: 1px solid var(--color-border); }
+  .cmp-table td { padding: 0.875rem 1rem; border-bottom: 1px solid var(--color-border-light); vertical-align: middle; }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table tr.highlight { background: var(--color-primary-light); }
+  .naam-cel { min-width: 220px; }
+  .product-naam { display: block; font-weight: 600; }
+  .sub-info { color: var(--color-text-muted); font-size: 0.8125rem; }
+  .prijs-cel { font-weight: 700; color: var(--color-primary-dark); }
+  .badge-top { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.25rem; }
+  .badge-yes { color: var(--color-primary); font-weight: 600; }
+  .badge-neutral { color: var(--color-text-light); }
+  .cta-cel { white-space: nowrap; }
+  .btn-sm { padding: 0.375rem 0.75rem; font-size: 0.875rem; }
+
+  .mobile-cards { display: none; gap: 1rem; flex-direction: column; }
+  .mobile-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; background: var(--color-bg); }
+  .mobile-highlight { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .card-naam { font-size: 1rem; margin-bottom: 0.75rem; }
+  .card-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem; }
+  .spec { display: flex; flex-direction: column; gap: 0.125rem; }
+  .spec-label { font-size: 0.75rem; color: var(--color-text-muted); }
+  .spec-val { font-size: 0.9375rem; font-weight: 600; }
+  .btn-full { width: 100%; text-align: center; display: block; }
+
+  .desktop-only { display: block; }
+  @media (max-width: 768px) { .desktop-only { display: none; } .mobile-cards { display: flex; } .filter-bar { flex-direction: column; } .filter-group { min-width: 100%; } }
+
+  .no-results { text-align: center; padding: 3rem 1rem; color: var(--color-text-light); }
+  .hidden { display: none !important; }
+  .link-btn { background: none; border: none; color: var(--color-primary); cursor: pointer; text-decoration: underline; font-size: inherit; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.375rem; padding: 0.625rem 1.25rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-primary { background: var(--color-primary); color: #fff; }
+  .btn-primary:hover { background: var(--color-primary-dark); text-decoration: none; color: #fff; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+</style>

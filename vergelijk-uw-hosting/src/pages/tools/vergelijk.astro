@@ -1,0 +1,342 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Webhosting vergelijken – Interactieve vergelijkingstool 2025',
+  description: 'Vergelijk webhosting providers op prijs, opslag, uptime, support en functies. Filter op jouw wensen.',
+  url: 'https://vergelijk-uw-hosting.nl/tools/vergelijk/',
+};
+
+const providers = [
+  { id: 1, naam: 'Antagonist', type: 'shared', prijs: 3.50, opslag: 50, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: true, url: 'https://www.antagonist.nl/', winkel: 'Antagonist' },
+  { id: 2, naam: 'TransIP', type: 'shared', prijs: 2.99, opslag: 25, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 5, highlight: false, url: 'https://www.transip.nl/webhosting/', winkel: 'TransIP' },
+  { id: 3, naam: 'SiteGround', type: 'wordpress', prijs: 3.99, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 10, highlight: false, url: 'https://www.siteground.com/', winkel: 'SiteGround' },
+  { id: 4, naam: 'Kinsta', type: 'wordpress', prijs: 35.00, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://kinsta.com/', winkel: 'Kinsta' },
+  { id: 5, naam: 'Digital Ocean', type: 'vps', prijs: 6.00, opslag: 25, uptime: 99.99, support: 'community', gratisDomein: false, sslGratis: false, email: 0, highlight: false, url: 'https://www.digitalocean.com/', winkel: 'DigitalOcean' },
+  { id: 6, naam: 'Hetzner', type: 'vps', prijs: 4.15, opslag: 40, uptime: 99.9, support: 'ticket', gratisDomein: false, sslGratis: false, email: 0, highlight: false, url: 'https://www.hetzner.com/', winkel: 'Hetzner' },
+  { id: 7, naam: 'One.com', type: 'shared', prijs: 1.99, opslag: 50, uptime: 99.9, support: 'email', gratisDomein: true, sslGratis: true, email: 5, highlight: false, url: 'https://www.one.com/nl/', winkel: 'One.com' },
+  { id: 8, naam: 'Cloudways', type: 'managed', prijs: 14.00, opslag: 20, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://www.cloudways.com/', winkel: 'Cloudways' },
+  { id: 9, naam: 'Mijndomein.nl', type: 'shared', prijs: 2.49, opslag: 100, uptime: 99.9, support: 'email', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.mijndomein.nl/', winkel: 'Mijndomein' },
+  { id: 10, naam: 'Combell', type: 'shared', prijs: 4.99, opslag: 50, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.combell.com/nl/', winkel: 'Combell' },
+  { id: 11, naam: 'WP Engine', type: 'wordpress', prijs: 25.00, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://wpengine.com/', winkel: 'WP Engine' },
+  { id: 12, naam: 'IONOS', type: 'shared', prijs: 1.00, opslag: 100, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.ionos.nl/', winkel: 'IONOS' },
+];
+
+const typeLabels: Record<string, string> = {
+  shared: 'Shared', vps: 'VPS', wordpress: 'WordPress', managed: 'Managed Cloud',
+};
+---
+<BaseLayout
+  title="Webhosting Vergelijken – Interactieve Tool 2025"
+  description="Vergelijk meer dan 12 webhosting providers op prijs, opslag, uptime, support en functies. Filter op jouw wensen en vind de beste hosting."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Webhosting vergelijken</h1>
+        <p class="tool-intro">Filter op jouw wensen en vergelijk de beste hostingproviders van Nederland en Europa. Prijzen zijn per maand bij jaarabonnement.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar" id="filterBar">
+        <div class="filter-group">
+          <label for="filterType">Type hosting</label>
+          <select id="filterType">
+            <option value="">Alle types</option>
+            <option value="shared">Shared hosting</option>
+            <option value="wordpress">WordPress hosting</option>
+            <option value="vps">VPS</option>
+            <option value="managed">Managed Cloud</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterMaxPrijs">Max. prijs/mnd</label>
+          <select id="filterMaxPrijs">
+            <option value="">Alle prijzen</option>
+            <option value="3">Tot €3/mnd</option>
+            <option value="6">Tot €6/mnd</option>
+            <option value="15">Tot €15/mnd</option>
+            <option value="40">Tot €40/mnd</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterOpslag">Min. opslag</label>
+          <select id="filterOpslag">
+            <option value="">Alle opslagen</option>
+            <option value="10">10 GB+</option>
+            <option value="25">25 GB+</option>
+            <option value="50">50 GB+</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterSupport">Support</label>
+          <select id="filterSupport">
+            <option value="">Alle support types</option>
+            <option value="247">24/7 support</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterDomein">Gratis domein</label>
+          <select id="filterDomein">
+            <option value="">Alle opties</option>
+            <option value="1">Gratis domein</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sorteer">Sorteren</label>
+          <select id="sorteer">
+            <option value="prijs-asc">Prijs ↑</option>
+            <option value="prijs-desc">Prijs ↓</option>
+            <option value="uptime-desc">Uptime ↓</option>
+            <option value="opslag-desc">Opslag ↓</option>
+          </select>
+        </div>
+        <button class="btn-reset" id="resetFilters">Reset</button>
+      </div>
+
+      <div class="result-count" id="resultCount"></div>
+
+      <!-- Desktop table -->
+      <div class="table-wrapper desktop-only">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>Type</th>
+              <th>Prijs/mnd</th>
+              <th>Opslag</th>
+              <th>Uptime SLA</th>
+              <th>Support</th>
+              <th>Extras</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            {providers.map(p => (
+              <tr
+                class:list={['host-row', { highlight: p.highlight }]}
+                data-type={p.type}
+                data-prijs={p.prijs}
+                data-opslag={p.opslag}
+                data-uptime={p.uptime}
+                data-support={p.support === '24/7' ? '247' : 'basic'}
+                data-domein={p.gratisDomein ? '1' : '0'}
+              >
+                <td class="naam-cel">
+                  {p.highlight && <span class="badge-top">Beste keuze</span>}
+                  <span class="product-naam">{p.naam}</span>
+                </td>
+                <td><span class={`type-badge type-${p.type}`}>{typeLabels[p.type]}</span></td>
+                <td class="prijs-cel">€{p.prijs.toFixed(2)}</td>
+                <td>{p.opslag} GB</td>
+                <td>{p.uptime}%</td>
+                <td>{p.support === '24/7' ? <span class="badge-yes">✓ 24/7</span> : <span class="badge-neutral">{p.support}</span>}</td>
+                <td class="extras-cel">
+                  {p.gratisDomein && <span class="extra-tag">Gratis domein</span>}
+                  {p.sslGratis && <span class="extra-tag">SSL</span>}
+                  {p.email > 0 && <span class="extra-tag">{p.email} e-mails</span>}
+                </td>
+                <td class="cta-cel">
+                  <a href={p.url} rel="nofollow sponsored" target="_blank" class="btn btn-primary btn-sm">
+                    Bekijk aanbieding
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile cards -->
+      <div class="mobile-cards" id="mobileCards">
+        {providers.map(p => (
+          <div
+            class:list={['mobile-card', { 'mobile-highlight': p.highlight }]}
+            data-type={p.type}
+            data-prijs={p.prijs}
+            data-opslag={p.opslag}
+            data-uptime={p.uptime}
+            data-support={p.support === '24/7' ? '247' : 'basic'}
+            data-domein={p.gratisDomein ? '1' : '0'}
+          >
+            {p.highlight && <span class="badge-top">Beste keuze</span>}
+            <div class="card-header-row">
+              <h3 class="card-naam">{p.naam}</h3>
+              <span class={`type-badge type-${p.type}`}>{typeLabels[p.type]}</span>
+            </div>
+            <div class="card-specs">
+              <div class="spec"><span class="spec-label">Prijs/mnd</span><span class="spec-val">€{p.prijs.toFixed(2)}</span></div>
+              <div class="spec"><span class="spec-label">Opslag</span><span class="spec-val">{p.opslag} GB</span></div>
+              <div class="spec"><span class="spec-label">Uptime SLA</span><span class="spec-val">{p.uptime}%</span></div>
+              <div class="spec"><span class="spec-label">Support</span><span class="spec-val">{p.support}</span></div>
+            </div>
+            <div class="card-extras">
+              {p.gratisDomein && <span class="extra-tag">Gratis domein</span>}
+              {p.sslGratis && <span class="extra-tag">SSL</span>}
+              {p.email > 0 && <span class="extra-tag">{p.email} e-mails</span>}
+            </div>
+            <a href={p.url} rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+              Bekijk aanbieding →
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <div class="no-results hidden" id="noResults">
+        <p>Geen providers gevonden. <button class="link-btn" id="resetFilters2">Reset filters</button></p>
+      </div>
+
+      <!-- Andere tools -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/welke-hosting/" class="tool-card">
+            <span class="tool-icon">🧙</span>
+            <strong>Welke hosting heb ik nodig?</strong>
+            <span>Quiz: persoonlijk advies via 5 vragen</span>
+          </a>
+          <a href="/tools/prijscalculator/" class="tool-card">
+            <span class="tool-icon">🧮</span>
+            <strong>Prijscalculator</strong>
+            <span>Schat jouw maandelijkse hostingkosten</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  const tableRows = Array.from(document.querySelectorAll<HTMLElement>('#tableBody .host-row'));
+  const mobileCards = Array.from(document.querySelectorAll<HTMLElement>('#mobileCards .mobile-card'));
+  const resultCount = document.getElementById('resultCount')!;
+  const noResults = document.getElementById('noResults')!;
+
+  function applyFilters() {
+    const type = (document.getElementById('filterType') as HTMLSelectElement).value;
+    const maxP = parseFloat((document.getElementById('filterMaxPrijs') as HTMLSelectElement).value) || Infinity;
+    const minO = parseFloat((document.getElementById('filterOpslag') as HTMLSelectElement).value) || 0;
+    const support = (document.getElementById('filterSupport') as HTMLSelectElement).value;
+    const domein = (document.getElementById('filterDomein') as HTMLSelectElement).value;
+    const sort = (document.getElementById('sorteer') as HTMLSelectElement).value;
+
+    const all = tableRows.map((row, i) => ({ row, card: mobileCards[i] }));
+    let visible = all.filter(({ row }) => {
+      if (type && row.dataset.type !== type) return false;
+      if (parseFloat(row.dataset.prijs!) > maxP) return false;
+      if (parseFloat(row.dataset.opslag!) < minO) return false;
+      if (support === '247' && row.dataset.support !== '247') return false;
+      if (domein === '1' && row.dataset.domein !== '1') return false;
+      return true;
+    });
+
+    visible.sort((a, b) => {
+      const ap = parseFloat(a.row.dataset.prijs!), bp = parseFloat(b.row.dataset.prijs!);
+      const au = parseFloat(a.row.dataset.uptime!), bu = parseFloat(b.row.dataset.uptime!);
+      const ao = parseFloat(a.row.dataset.opslag!), bo = parseFloat(b.row.dataset.opslag!);
+      if (sort === 'prijs-asc') return ap - bp;
+      if (sort === 'prijs-desc') return bp - ap;
+      if (sort === 'uptime-desc') return bu - au;
+      if (sort === 'opslag-desc') return bo - ao;
+      return 0;
+    });
+
+    const visSet = new Set(visible.map(({ row }) => row));
+    all.forEach(({ row, card }) => {
+      const show = visSet.has(row);
+      row.style.display = show ? '' : 'none';
+      card.style.display = show ? '' : 'none';
+    });
+
+    const tbody = document.getElementById('tableBody')!;
+    visible.forEach(({ row }) => tbody.appendChild(row));
+    const mc = document.getElementById('mobileCards')!;
+    visible.forEach(({ card }) => mc.appendChild(card));
+
+    resultCount.textContent = `${visible.length} provider${visible.length !== 1 ? 's' : ''} gevonden`;
+    noResults.classList.toggle('hidden', visible.length > 0);
+  }
+
+  document.getElementById('filterBar')!.addEventListener('change', applyFilters);
+
+  function resetAll() {
+    ['filterType','filterMaxPrijs','filterOpslag','filterSupport','filterDomein'].forEach(id => {
+      (document.getElementById(id) as HTMLSelectElement).value = '';
+    });
+    (document.getElementById('sorteer') as HTMLSelectElement).value = 'prijs-asc';
+    applyFilters();
+  }
+  document.getElementById('resetFilters')!.addEventListener('click', resetAll);
+  document.getElementById('resetFilters2')?.addEventListener('click', resetAll);
+
+  applyFilters();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.25rem; }
+  .filter-group { display: flex; flex-direction: column; gap: 0.25rem; min-width: 130px; }
+  .filter-group label { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); }
+  .filter-group select { padding: 0.5rem 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); font-size: 0.9375rem; }
+  .btn-reset { padding: 0.5rem 1rem; background: none; border: 1px solid var(--color-border); border-radius: var(--radius-md); cursor: pointer; font-size: 0.875rem; color: var(--color-text-light); align-self: flex-end; }
+
+  .result-count { font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: 0.75rem; }
+
+  .table-wrapper { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+  .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .cmp-table thead { background: var(--color-bg-alt); }
+  .cmp-table th { padding: 0.875rem 1rem; text-align: left; font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); border-bottom: 1px solid var(--color-border); }
+  .cmp-table td { padding: 0.875rem 1rem; border-bottom: 1px solid var(--color-border-light); vertical-align: middle; }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table tr.highlight { background: var(--color-primary-light); }
+  .naam-cel { min-width: 160px; }
+  .product-naam { display: block; font-weight: 600; }
+  .prijs-cel { font-weight: 700; color: var(--color-primary-dark); }
+  .badge-top { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.25rem; }
+  .badge-yes { color: var(--color-primary); font-weight: 600; }
+  .badge-neutral { color: var(--color-text-light); }
+  .type-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 9999px; }
+  .type-shared { background: #dbeafe; color: #1e40af; }
+  .type-vps { background: #dcfce7; color: #166534; }
+  .type-wordpress { background: #ede9fe; color: #5b21b6; }
+  .type-managed { background: #fef3c7; color: #92400e; }
+  .extras-cel { min-width: 160px; }
+  .extra-tag { display: inline-block; font-size: 0.6875rem; font-weight: 600; padding: 0.125rem 0.4rem; border-radius: 0.25rem; background: var(--color-bg-alt); color: var(--color-text-light); border: 1px solid var(--color-border); margin: 0.125rem; }
+  .cta-cel { white-space: nowrap; }
+  .btn-sm { padding: 0.375rem 0.75rem; font-size: 0.875rem; }
+
+  .mobile-cards { display: none; gap: 1rem; flex-direction: column; }
+  .mobile-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; background: var(--color-bg); }
+  .mobile-highlight { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .card-header-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+  .card-naam { font-size: 1rem; margin: 0; }
+  .card-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.75rem; }
+  .spec { display: flex; flex-direction: column; gap: 0.125rem; }
+  .spec-label { font-size: 0.75rem; color: var(--color-text-muted); }
+  .spec-val { font-size: 0.9375rem; font-weight: 600; }
+  .card-extras { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.75rem; }
+  .btn-full { width: 100%; text-align: center; display: block; }
+
+  .desktop-only { display: block; }
+  @media (max-width: 768px) { .desktop-only { display: none; } .mobile-cards { display: flex; } .filter-bar { flex-direction: column; } .filter-group { min-width: 100%; } }
+
+  .no-results { text-align: center; padding: 3rem 1rem; color: var(--color-text-light); }
+  .hidden { display: none !important; }
+  .link-btn { background: none; border: none; color: var(--color-primary); cursor: pointer; text-decoration: underline; font-size: inherit; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+</style>

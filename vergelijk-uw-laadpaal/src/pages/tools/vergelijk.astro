@@ -1,0 +1,362 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../../src/lib/affiliate-data';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Laadpalen vergelijken – Interactieve vergelijkingstool',
+  description: 'Vergelijk thuis laadpalen op prijs, vermogen, merk en slimme functies. Filter en sorteer om de beste laadpaal voor jouw situatie te vinden.',
+  url: 'https://vergelijk-uw-laadpaal.nl/tools/vergelijk/',
+};
+
+const laadpalen = [
+  { id: 1, naam: 'Wallbox Pulsar Plus 22kW', merk: 'Wallbox', vermogen: 22, prijs: 699, slim: true, kabel: false, garantie: 3, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.amazon.nl/dp/B08Q3G9RQL?tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 2, naam: 'ABB Terra AC 22kW', merk: 'ABB', vermogen: 22, prijs: 849, slim: true, kabel: false, garantie: 2, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.coolblue.nl/laadpalen', winkel: 'Coolblue' },
+  { id: 3, naam: 'Easee Home 22kW', merk: 'Easee', vermogen: 22, prijs: 599, slim: true, kabel: false, garantie: 3, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: true, url: 'https://www.amazon.nl/s?k=easee+laadpaal&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 4, naam: 'Alfen Eve Single S-line 11kW', merk: 'Alfen', vermogen: 11, prijs: 549, slim: true, kabel: false, garantie: 3, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.bol.com/nl/nl/s/?searchtext=alfen+laadpaal', winkel: 'bol.com' },
+  { id: 5, naam: 'KEBA KeContact P30 11kW', merk: 'KEBA', vermogen: 11, prijs: 479, slim: true, kabel: true, garantie: 3, app: false, bidirectioneel: false, stekker: 'Type 2 kabel', highlight: false, url: 'https://www.amazon.nl/s?k=keba+laadpaal&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 6, naam: 'Zaptec Go 22kW', merk: 'Zaptec', vermogen: 22, prijs: 649, slim: true, kabel: false, garantie: 3, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.coolblue.nl/laadpalen', winkel: 'Coolblue' },
+  { id: 7, naam: 'Chargestorm Connected 2 – 22kW', merk: 'Chargestorm', vermogen: 22, prijs: 799, slim: true, kabel: false, garantie: 2, app: true, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.bol.com/nl/nl/s/?searchtext=laadpaal+22kw', winkel: 'bol.com' },
+  { id: 8, naam: 'Vestel EVC04 Smart 7.4kW', merk: 'Vestel', vermogen: 7.4, prijs: 349, slim: true, kabel: true, garantie: 2, app: true, bidirectioneel: false, stekker: 'Type 2 kabel', highlight: false, url: 'https://www.amazon.nl/s?k=vestel+laadpaal&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 9, naam: 'Blaupunkt EV-A2 11kW', merk: 'Blaupunkt', vermogen: 11, prijs: 299, slim: false, kabel: false, garantie: 2, app: false, bidirectioneel: false, stekker: 'Type 2', highlight: false, url: 'https://www.amazon.nl/s?k=blaupunkt+laadpaal&tag=vergelijk05-21', winkel: 'Amazon' },
+  { id: 10, naam: 'Volkswagen ID.Charger Connect', merk: 'Volkswagen', vermogen: 11, prijs: 449, slim: true, kabel: true, garantie: 3, app: true, bidirectioneel: false, stekker: 'Type 2 kabel', highlight: false, url: 'https://www.bol.com/nl/nl/s/?searchtext=volkswagen+id+charger', winkel: 'bol.com' },
+];
+---
+<BaseLayout
+  title="Laadpalen Vergelijken – Filterable Vergelijkingstool"
+  description="Vergelijk thuis laadpalen op prijs, vermogen, merk en slimme functies. Filter en sorteer om de beste laadpaal voor jouw situatie te vinden."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Laadpalen vergelijken</h1>
+        <p class="tool-intro">Filter op jouw wensen en vergelijk direct de beste thuislaadpalen. Prijzen zijn indicatief en kunnen variëren.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar" id="filterBar">
+        <div class="filter-group">
+          <label for="filterVermogen">Vermogen</label>
+          <select id="filterVermogen">
+            <option value="">Alle vermogens</option>
+            <option value="7">7.4 kW (1-fase)</option>
+            <option value="11">11 kW (3-fase)</option>
+            <option value="22">22 kW (3-fase max)</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterMaxPrijs">Max. prijs</label>
+          <select id="filterMaxPrijs">
+            <option value="">Alle prijzen</option>
+            <option value="400">Tot €400</option>
+            <option value="600">Tot €600</option>
+            <option value="800">Tot €800</option>
+            <option value="1000">Tot €1.000</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterSlim">Slim laden</label>
+          <select id="filterSlim">
+            <option value="">Alle types</option>
+            <option value="1">Slim (app, tijdschema)</option>
+            <option value="0">Standaard</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterKabel">Kabel</label>
+          <select id="filterKabel">
+            <option value="">Met of zonder</option>
+            <option value="1">Vaste kabel</option>
+            <option value="0">Socket (eigen kabel)</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sorteer">Sorteren</label>
+          <select id="sorteer">
+            <option value="prijs-asc">Prijs ↑</option>
+            <option value="prijs-desc">Prijs ↓</option>
+            <option value="vermogen-desc">Vermogen ↓</option>
+            <option value="garantie-desc">Garantie ↓</option>
+          </select>
+        </div>
+        <button class="btn-reset" id="resetFilters">Reset filters</button>
+      </div>
+
+      <div class="result-count" id="resultCount"></div>
+
+      <!-- Desktop table -->
+      <div class="table-wrapper desktop-only">
+        <table class="cmp-table" id="cmpTable">
+          <thead>
+            <tr>
+              <th>Laadpaal</th>
+              <th>Merk</th>
+              <th>Vermogen</th>
+              <th>Prijs</th>
+              <th>Slim</th>
+              <th>Kabel</th>
+              <th>Garantie</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            {laadpalen.map(lp => (
+              <tr
+                class:list={['lp-row', { highlight: lp.highlight }]}
+                data-vermogen={lp.vermogen}
+                data-prijs={lp.prijs}
+                data-slim={lp.slim ? '1' : '0'}
+                data-kabel={lp.kabel ? '1' : '0'}
+                data-garantie={lp.garantie}
+              >
+                <td class="naam-cel">
+                  {lp.highlight && <span class="badge-top">Beste keuze</span>}
+                  <span class="product-naam">{lp.naam}</span>
+                  <small class="stekker-type">{lp.stekker}</small>
+                </td>
+                <td>{lp.merk}</td>
+                <td><strong>{lp.vermogen} kW</strong></td>
+                <td class="prijs-cel">€{lp.prijs.toLocaleString('nl-NL')}</td>
+                <td>{lp.slim ? <span class="badge-yes">✓ Slim</span> : <span class="badge-no">Basis</span>}</td>
+                <td>{lp.kabel ? <span class="badge-yes">✓ Kabel</span> : <span class="badge-neutral">Socket</span>}</td>
+                <td>{lp.garantie} jaar</td>
+                <td class="cta-cel">
+                  <a href={lp.url} rel="nofollow sponsored" target="_blank" class="btn btn-primary btn-sm">
+                    Bekijk bij {lp.winkel}
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile cards -->
+      <div class="mobile-cards" id="mobileCards">
+        {laadpalen.map(lp => (
+          <div
+            class:list={['mobile-card', { 'mobile-highlight': lp.highlight }]}
+            data-vermogen={lp.vermogen}
+            data-prijs={lp.prijs}
+            data-slim={lp.slim ? '1' : '0'}
+            data-kabel={lp.kabel ? '1' : '0'}
+            data-garantie={lp.garantie}
+          >
+            {lp.highlight && <span class="badge-top">Beste keuze</span>}
+            <h3 class="card-naam">{lp.naam}</h3>
+            <div class="card-specs">
+              <div class="spec"><span class="spec-label">Vermogen</span><span class="spec-val">{lp.vermogen} kW</span></div>
+              <div class="spec"><span class="spec-label">Prijs</span><span class="spec-val">€{lp.prijs.toLocaleString('nl-NL')}</span></div>
+              <div class="spec"><span class="spec-label">Slim laden</span><span class="spec-val">{lp.slim ? '✓ Ja' : 'Nee'}</span></div>
+              <div class="spec"><span class="spec-label">Kabel</span><span class="spec-val">{lp.kabel ? '✓ Vaste kabel' : 'Socket'}</span></div>
+              <div class="spec"><span class="spec-label">Garantie</span><span class="spec-val">{lp.garantie} jaar</span></div>
+              <div class="spec"><span class="spec-label">Stekker</span><span class="spec-val">{lp.stekker}</span></div>
+            </div>
+            <a href={lp.url} rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+              Bekijk bij {lp.winkel} →
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <div class="no-results hidden" id="noResults">
+        <p>Geen laadpalen gevonden met deze filters. <button class="link-btn" id="resetFilters2">Reset filters</button></p>
+      </div>
+
+      <!-- Andere tools CTA -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/welke-laadpaal/" class="tool-card">
+            <span class="tool-icon">🧙</span>
+            <strong>Welke laadpaal past bij mij?</strong>
+            <span>Beantwoord 5 vragen en krijg persoonlijk advies</span>
+          </a>
+          <a href="/tools/installatiekosten/" class="tool-card">
+            <span class="tool-icon">🔧</span>
+            <strong>Installatiekosten berekenen</strong>
+            <span>Schat de totale kosten van laadpaal + installatie</span>
+          </a>
+          <a href="/tools/subsidie/" class="tool-card">
+            <span class="tool-icon">💰</span>
+            <strong>Subsidie checker</strong>
+            <span>Check welke subsidies jij kunt aanvragen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  const tableRows = Array.from(document.querySelectorAll<HTMLElement>('#tableBody .lp-row'));
+  const mobileCards = Array.from(document.querySelectorAll<HTMLElement>('#mobileCards .mobile-card'));
+  const resultCount = document.getElementById('resultCount')!;
+  const noResults = document.getElementById('noResults')!;
+
+  function getFilters() {
+    return {
+      vermogen: (document.getElementById('filterVermogen') as HTMLSelectElement).value,
+      maxPrijs: (document.getElementById('filterMaxPrijs') as HTMLSelectElement).value,
+      slim: (document.getElementById('filterSlim') as HTMLSelectElement).value,
+      kabel: (document.getElementById('filterKabel') as HTMLSelectElement).value,
+      sort: (document.getElementById('sorteer') as HTMLSelectElement).value,
+    };
+  }
+
+  function applyFilters() {
+    const { vermogen, maxPrijs, slim, kabel, sort } = getFilters();
+
+    const allItems = tableRows.map((row, i) => ({ row, card: mobileCards[i] }));
+
+    // Filter
+    let visible = allItems.filter(({ row }) => {
+      const v = parseFloat(row.dataset.vermogen!);
+      const p = parseFloat(row.dataset.prijs!);
+      if (vermogen && String(vermogen) === '7' && v > 8) return false;
+      if (vermogen && String(vermogen) === '11' && (v < 8 || v > 12)) return false;
+      if (vermogen && String(vermogen) === '22' && v < 12) return false;
+      if (maxPrijs && p > parseFloat(maxPrijs)) return false;
+      if (slim && row.dataset.slim !== slim) return false;
+      if (kabel && row.dataset.kabel !== kabel) return false;
+      return true;
+    });
+
+    // Sort
+    visible.sort((a, b) => {
+      const av = parseFloat(a.row.dataset.vermogen!), bv = parseFloat(b.row.dataset.vermogen!);
+      const ap = parseFloat(a.row.dataset.prijs!), bp = parseFloat(b.row.dataset.prijs!);
+      const ag = parseFloat(a.row.dataset.garantie!), bg = parseFloat(b.row.dataset.garantie!);
+      if (sort === 'prijs-asc') return ap - bp;
+      if (sort === 'prijs-desc') return bp - ap;
+      if (sort === 'vermogen-desc') return bv - av;
+      if (sort === 'garantie-desc') return bg - ag;
+      return 0;
+    });
+
+    const visibleIds = new Set(visible.map(({ row }) => row));
+
+    // Show/hide
+    allItems.forEach(({ row, card }) => {
+      const show = visibleIds.has(row);
+      row.style.display = show ? '' : 'none';
+      card.style.display = show ? '' : 'none';
+    });
+
+    // Reorder table rows
+    const tbody = document.getElementById('tableBody')!;
+    visible.forEach(({ row }) => tbody.appendChild(row));
+
+    const mobileContainer = document.getElementById('mobileCards')!;
+    visible.forEach(({ card }) => mobileContainer.appendChild(card));
+
+    resultCount.textContent = `${visible.length} laadpal${visible.length !== 1 ? 'en' : ''} gevonden`;
+    noResults.classList.toggle('hidden', visible.length > 0);
+  }
+
+  document.getElementById('filterBar')!.addEventListener('change', applyFilters);
+
+  function resetAll() {
+    (document.getElementById('filterVermogen') as HTMLSelectElement).value = '';
+    (document.getElementById('filterMaxPrijs') as HTMLSelectElement).value = '';
+    (document.getElementById('filterSlim') as HTMLSelectElement).value = '';
+    (document.getElementById('filterKabel') as HTMLSelectElement).value = '';
+    (document.getElementById('sorteer') as HTMLSelectElement).value = 'prijs-asc';
+    applyFilters();
+  }
+
+  document.getElementById('resetFilters')!.addEventListener('click', resetAll);
+  document.getElementById('resetFilters2')?.addEventListener('click', resetAll);
+
+  applyFilters();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .filter-bar {
+    display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end;
+    background: var(--color-bg-alt); border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.25rem;
+  }
+  .filter-group { display: flex; flex-direction: column; gap: 0.25rem; min-width: 140px; }
+  .filter-group label { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); }
+  .filter-group select {
+    padding: 0.5rem 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);
+    background: var(--color-bg); font-size: 0.9375rem; cursor: pointer;
+  }
+  .btn-reset {
+    padding: 0.5rem 1rem; background: none; border: 1px solid var(--color-border);
+    border-radius: var(--radius-md); cursor: pointer; font-size: 0.875rem;
+    color: var(--color-text-light); align-self: flex-end; white-space: nowrap;
+  }
+  .btn-reset:hover { background: var(--color-bg); }
+
+  .result-count { font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: 0.75rem; }
+
+  .table-wrapper { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+  .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .cmp-table thead { background: var(--color-bg-alt); }
+  .cmp-table th { padding: 0.875rem 1rem; text-align: left; font-size: 0.8125rem; font-weight: 600; color: var(--color-text-light); border-bottom: 1px solid var(--color-border); }
+  .cmp-table td { padding: 0.875rem 1rem; border-bottom: 1px solid var(--color-border-light); vertical-align: middle; }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table tr.highlight { background: var(--color-primary-light); }
+  .naam-cel { min-width: 200px; }
+  .product-naam { display: block; font-weight: 600; }
+  .stekker-type { color: var(--color-text-muted); font-size: 0.8125rem; }
+  .prijs-cel { font-weight: 700; color: var(--color-primary-dark); }
+  .badge-top { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.25rem; }
+  .badge-yes { color: var(--color-primary); font-weight: 600; }
+  .badge-no { color: var(--color-text-muted); }
+  .badge-neutral { color: var(--color-text-light); }
+  .cta-cel { white-space: nowrap; }
+  .btn-sm { padding: 0.375rem 0.75rem; font-size: 0.875rem; }
+
+  .mobile-cards { display: none; gap: 1rem; flex-direction: column; }
+  .mobile-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; background: var(--color-bg); }
+  .mobile-highlight { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .card-naam { font-size: 1rem; margin-bottom: 0.75rem; }
+  .card-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem; }
+  .spec { display: flex; flex-direction: column; gap: 0.125rem; }
+  .spec-label { font-size: 0.75rem; color: var(--color-text-muted); }
+  .spec-val { font-size: 0.9375rem; font-weight: 600; }
+  .btn-full { width: 100%; text-align: center; display: block; }
+
+  .desktop-only { display: block; }
+
+  @media (max-width: 768px) {
+    .desktop-only { display: none; }
+    .mobile-cards { display: flex; }
+    .filter-bar { flex-direction: column; }
+    .filter-group { min-width: 100%; }
+  }
+
+  .no-results { text-align: center; padding: 3rem 1rem; color: var(--color-text-light); }
+  .hidden { display: none !important; }
+  .link-btn { background: none; border: none; color: var(--color-primary); cursor: pointer; text-decoration: underline; font-size: inherit; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card {
+    display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem;
+    border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    text-decoration: none; color: var(--color-text); background: var(--color-bg);
+    transition: all var(--transition-fast);
+  }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.375rem; padding: 0.625rem 1.25rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-primary { background: var(--color-primary); color: #fff; }
+  .btn-primary:hover { background: var(--color-primary-dark); text-decoration: none; color: #fff; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+</style>

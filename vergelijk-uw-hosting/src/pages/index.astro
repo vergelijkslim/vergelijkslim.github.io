@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Vergelijk-uw-Hosting.nl',
+  url: 'https://vergelijk-uw-hosting.nl',
+  description: 'Onafhankelijk platform voor het vergelijken van webhosting in Nederland',
+  inLanguage: 'nl',
+};
+
+const tools = [
+  {
+    title: 'Hosting vergelijken',
+    description: 'Filter op prijs, opslag, uptime en support. Vind de beste hosting voor jouw situatie.',
+    href: '/tools/vergelijk/',
+    icon: '📊',
+    cta: 'Vergelijk nu',
+  },
+  {
+    title: 'Welke hosting heb ik nodig?',
+    description: 'Beantwoord 5 vragen en ontvang persoonlijk advies. Van shared tot VPS tot managed WordPress.',
+    href: '/tools/welke-hosting/',
+    icon: '🧙',
+    cta: 'Start de quiz',
+  },
+  {
+    title: 'Prijscalculator',
+    description: 'Schat je maandelijkse hostingkosten op basis van jouw bezoekersaantal, opslag en e-mailbehoeften.',
+    href: '/tools/prijscalculator/',
+    icon: '🧮',
+    cta: 'Bereken kosten',
+  },
+];
+
+const hostingTypes = [
+  { naam: 'Shared hosting', prijs: 'v.a. €2/mnd', omschrijving: 'Ideaal voor kleine websites, blogs en beginners.', icon: '🌐' },
+  { naam: 'VPS hosting', prijs: 'v.a. €10/mnd', omschrijving: 'Meer controle en resources. Goed voor groeiende sites.', icon: '⚙️' },
+  { naam: 'WordPress hosting', prijs: 'v.a. €5/mnd', omschrijving: 'Geoptimaliseerd voor WordPress, inclusief 1-click install.', icon: '📝' },
+  { naam: 'Dedicated server', prijs: 'v.a. €50/mnd', omschrijving: 'Maximale performance voor grote projecten.', icon: '🖥️' },
+];
+---
+<BaseLayout
+  title="Vergelijk-uw-Hosting.nl"
+  description="Vergelijk webhosting in Nederland. Onafhankelijk advies over shared hosting, VPS, WordPress hosting en meer. Vind de beste hosting voor jouw situatie."
+  structuredData={structuredData}
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🔍 Onafhankelijk vergelijkplatform</div>
+        <h1>Vind de beste hosting voor jouw website</h1>
+        <p class="hero-desc">Vergelijk meer dan 20 hostingproviders op prijs, uptime, support en functies. Geen reclame, wel eerlijk advies.</p>
+        <div class="hero-cta">
+          <a href="/tools/vergelijk/" class="btn btn-primary btn-lg">Vergelijk hosting →</a>
+          <a href="/tools/welke-hosting/" class="btn btn-outline btn-lg">Welke hosting heb ik nodig?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="tools-section">
+    <div class="container">
+      <h2>Interactieve tools</h2>
+      <p class="section-sub">Gebruik onze gratis tools om de perfecte hosting te vinden.</p>
+      <div class="tools-grid">
+        {tools.map(tool => (
+          <a href={tool.href} class="tool-card">
+            <span class="tool-icon">{tool.icon}</span>
+            <h3>{tool.title}</h3>
+            <p>{tool.description}</p>
+            <span class="tool-cta">{tool.cta} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Hosting types -->
+  <section class="types-section">
+    <div class="container">
+      <h2>Soorten webhosting</h2>
+      <div class="types-grid">
+        {hostingTypes.map(t => (
+          <div class="type-card">
+            <span class="type-icon">{t.icon}</span>
+            <h3>{t.naam}</h3>
+            <div class="type-prijs">{t.prijs}</div>
+            <p>{t.omschrijving}</p>
+          </div>
+        ))}
+      </div>
+      <div class="types-cta">
+        <a href="/tools/welke-hosting/" class="btn btn-primary">Ontdek welk type bij jou past →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { background: linear-gradient(135deg, var(--color-primary-light) 0%, #e0e7ff 100%); padding: 4rem 0; }
+  .hero-content { max-width: 680px; }
+  .hero-badge { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.875rem; font-weight: 600; padding: 0.25rem 0.875rem; border-radius: 9999px; margin-bottom: 1rem; }
+  .hero h1 { margin-bottom: 1rem; }
+  .hero-desc { font-size: 1.125rem; color: var(--color-text-light); margin-bottom: 2rem; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-lg { padding: 0.875rem 1.75rem; font-size: 1rem; }
+
+  .tools-section { padding: 4rem 0; }
+  .tools-section h2 { margin-bottom: 0.5rem; }
+  .section-sub { color: var(--color-text-light); margin-bottom: 2rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-xl); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); box-shadow: var(--shadow-sm); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); transform: translateY(-2px); box-shadow: var(--shadow-md); text-decoration: none; }
+  .tool-icon { font-size: 2.5rem; }
+  .tool-card h3 { font-size: 1.125rem; margin: 0; }
+  .tool-card p { font-size: 0.9375rem; color: var(--color-text-light); margin: 0; }
+  .tool-cta { font-size: 0.9375rem; font-weight: 600; color: var(--color-primary); }
+
+  .types-section { background: var(--color-bg-alt); padding: 4rem 0; }
+  .types-section h2 { margin-bottom: 1.5rem; }
+  .types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .type-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; }
+  .type-icon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+  .type-card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+  .type-prijs { font-size: 0.875rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; }
+  .type-card p { font-size: 0.875rem; color: var(--color-text-light); }
+  .types-cta { text-align: center; }
+</style>

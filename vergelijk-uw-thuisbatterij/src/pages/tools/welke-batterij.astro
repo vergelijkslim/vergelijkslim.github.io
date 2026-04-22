@@ -1,0 +1,308 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Welke thuisbatterij past bij mij? – Quiz',
+  description: 'Beantwoord 5 vragen en ontdek welke thuisbatterij het beste bij jouw huis, zonnepanelen en energiegebruik past.',
+  url: 'https://vergelijk-uw-thuisbatterij.nl/tools/welke-batterij/',
+};
+---
+<BaseLayout
+  title="Welke Thuisbatterij Past Bij Mij? – Persoonlijk Advies Quiz"
+  description="Beantwoord 5 korte vragen en ontvang persoonlijk advies over de beste thuisbatterij voor jouw situatie."
+  structuredData={structuredData}
+>
+  <main class="quiz-page">
+    <div class="container">
+      <div class="quiz-header">
+        <h1>Welke thuisbatterij past bij mij?</h1>
+        <p class="quiz-intro">Beantwoord 5 korte vragen en ontvang persoonlijk advies over de juiste batterijcapaciteit en aanpak.</p>
+      </div>
+
+      <div class="quiz-wrapper" id="quiz">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 0%"></div></div>
+        <div class="step-indicator" id="stepIndicator">Vraag 1 van 5</div>
+
+        <!-- Vraag 1 -->
+        <div class="quiz-step active" data-step="1">
+          <h2>Hoeveel zonnepanelen heb je?</h2>
+          <div class="options">
+            <button class="option" data-key="panelen" data-val="weinig">
+              <span class="option-icon">🔆</span>
+              <strong>1–6 panelen (klein systeem)</strong>
+              <span>Opbrengst ~500–1.500 kWh/jaar</span>
+            </button>
+            <button class="option" data-key="panelen" data-val="gemiddeld">
+              <span class="option-icon">☀️</span>
+              <strong>7–12 panelen (gemiddeld)</strong>
+              <span>Opbrengst ~1.500–3.000 kWh/jaar</span>
+            </button>
+            <button class="option" data-key="panelen" data-val="veel">
+              <span class="option-icon">🌞</span>
+              <strong>13+ panelen (groot systeem)</strong>
+              <span>Opbrengst >3.000 kWh/jaar</span>
+            </button>
+            <button class="option" data-key="panelen" data-val="geen">
+              <span class="option-icon">❓</span>
+              <strong>Nog geen zonnepanelen</strong>
+              <span>Ik wil ze combineren aanschaffen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 2 -->
+        <div class="quiz-step" data-step="2">
+          <h2>Wat is je jaarlijks stroomverbruik?</h2>
+          <div class="options">
+            <button class="option" data-key="verbruik" data-val="laag">
+              <span class="option-icon">🏡</span>
+              <strong>Minder dan 2.500 kWh/jaar</strong>
+              <span>Kleine woning of flat, 1-2 personen</span>
+            </button>
+            <button class="option" data-key="verbruik" data-val="gemiddeld">
+              <span class="option-icon">🏘️</span>
+              <strong>2.500 – 4.500 kWh/jaar</strong>
+              <span>Gemiddeld gezin, 3-4 personen</span>
+            </button>
+            <button class="option" data-key="verbruik" data-val="hoog">
+              <span class="option-icon">🏠</span>
+              <strong>Meer dan 4.500 kWh/jaar</strong>
+              <span>Grote woning, warmtepomp of laadpaal thuis</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 3 -->
+        <div class="quiz-step" data-step="3">
+          <h2>Wat is het hoofddoel van de batterij?</h2>
+          <div class="options">
+            <button class="option" data-key="doel" data-val="besparen">
+              <span class="option-icon">💰</span>
+              <strong>Zoveel mogelijk besparen op stroom</strong>
+              <span>Maximaal eigen zonnestroom benutten</span>
+            </button>
+            <button class="option" data-key="doel" data-val="backup">
+              <span class="option-icon">🛡️</span>
+              <strong>Backup bij stroomuitval</strong>
+              <span>Onafhankelijkheid bij storingen</span>
+            </button>
+            <button class="option" data-key="doel" data-val="laadpaal">
+              <span class="option-icon">⚡</span>
+              <strong>Combinatie met laadpaal EV</strong>
+              <span>Eigen zonnestroom gebruiken om auto op te laden</span>
+            </button>
+            <button class="option" data-key="doel" data-val="onafhankelijk">
+              <span class="option-icon">🏗️</span>
+              <strong>Maximale energieonafhankelijkheid</strong>
+              <span>Zo min mogelijk van het net afhankelijk</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 4 -->
+        <div class="quiz-step" data-step="4">
+          <h2>Heb je al een omvormer?</h2>
+          <div class="options">
+            <button class="option" data-key="omvormer" data-val="hybride">
+              <span class="option-icon">✅</span>
+              <strong>Ja, hybride omvormer</strong>
+              <span>Geschikt voor directe batterijkoppeling</span>
+            </button>
+            <button class="option" data-key="omvormer" data-val="string">
+              <span class="option-icon">🔌</span>
+              <strong>Ja, string omvormer</strong>
+              <span>Retrofit batterij nodig (AC-gekoppeld)</span>
+            </button>
+            <button class="option" data-key="omvormer" data-val="geen">
+              <span class="option-icon">🆕</span>
+              <strong>Geen of nieuwe installatie</strong>
+              <span>Ik begin nieuw of vervang alles</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 5 -->
+        <div class="quiz-step" data-step="5">
+          <h2>Wat is je budget voor de batterij (excl. zonnepanelen)?</h2>
+          <div class="options">
+            <button class="option" data-key="budget" data-val="laag">
+              <span class="option-icon">💚</span>
+              <strong>Tot €3.000</strong>
+              <span>Instapmodel, kleinere capaciteit</span>
+            </button>
+            <button class="option" data-key="budget" data-val="midden">
+              <span class="option-icon">💛</span>
+              <strong>€3.000 – €6.000</strong>
+              <span>Goede middenklasse batterij</span>
+            </button>
+            <button class="option" data-key="budget" data-val="hoog">
+              <span class="option-icon">💎</span>
+              <strong>Meer dan €6.000</strong>
+              <span>Premium systeem, grote capaciteit</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resultaat -->
+        <div class="quiz-step" data-step="result" id="resultSection">
+          <div class="result-card" id="resultCard"></div>
+          <div class="result-actions">
+            <a href="/tools/vergelijk/" class="btn btn-primary">Vergelijk alle batterijen →</a>
+            <button class="btn btn-outline" id="restartQuiz">Opnieuw doen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  interface Answers { panelen?: string; verbruik?: string; doel?: string; omvormer?: string; budget?: string; }
+  const answers: Answers = {};
+  let currentStep = 1;
+  const totalSteps = 5;
+
+  function showStep(step: number | string) {
+    document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+    const t = step === 'result'
+      ? document.querySelector('[data-step="result"]')
+      : document.querySelector(`[data-step="${step}"]`);
+    t?.classList.add('active');
+  }
+
+  function updateProgress() {
+    const pct = ((currentStep - 1) / totalSteps) * 100;
+    (document.getElementById('progressFill') as HTMLElement).style.width = `${pct}%`;
+    (document.getElementById('stepIndicator') as HTMLElement).textContent =
+      currentStep <= totalSteps ? `Vraag ${currentStep} van ${totalSteps}` : 'Jouw advies';
+  }
+
+  function buildResult(): string {
+    const { panelen, verbruik, doel, omvormer, budget } = answers;
+
+    // Capaciteit advies
+    let capAdvies = '5–7 kWh';
+    let capReden = 'Goed voor een gemiddeld huishouden met zonnepanelen';
+    if (panelen === 'weinig' || verbruik === 'laag') { capAdvies = '3–5 kWh'; capReden = 'Kleinere opbrengst – kleinere batterij is kostenefficiënter'; }
+    if (panelen === 'veel' || verbruik === 'hoog' || doel === 'onafhankelijk') { capAdvies = '10–15 kWh'; capReden = 'Grote opbrengst of hoog verbruik vereist meer opslagcapaciteit'; }
+    if (doel === 'laadpaal') { capAdvies = '10+ kWh'; capReden = 'EV laden vraagt veel energie – grotere batterij is noodzakelijk'; }
+
+    // Batterij type
+    let typeAdvies = 'Losse LFP-batterij (AC-gekoppeld)';
+    let typeUrl = 'https://www.amazon.nl/s?k=thuisbatterij+lfp&tag=vergelijk05-21';
+    let typeWinkel = 'Amazon';
+    if (omvormer === 'hybride') { typeAdvies = 'DC-gekoppelde batterij (bij hybride omvormer)'; typeUrl = 'https://www.coolblue.nl/thuisbatterijen'; typeWinkel = 'Coolblue'; }
+    if (omvormer === 'geen' || budget === 'hoog') { typeAdvies = 'Volledig hybride systeem (omvormer + batterij)'; typeUrl = 'https://www.coolblue.nl/thuisbatterijen'; typeWinkel = 'Coolblue'; }
+
+    // Budget match
+    let productSuggestie = '';
+    if (budget === 'laag') productSuggestie = 'Fox ESS of Pylontech starter (€1.500–€3.000)';
+    else if (budget === 'midden') productSuggestie = 'BYD Battery-Box of Growatt ARK (€3.000–€5.000)';
+    else productSuggestie = 'SolarEdge Home, Huawei LUNA of Enphase IQ Battery (€5.000+)';
+
+    // Backup relevant
+    const backupTip = doel === 'backup'
+      ? '<div class="result-spec"><span class="rs-label">Backup functie</span><span class="rs-val">Let op: kies een systeem met "Island Mode" voor echte stroomuitval bescherming. Niet alle batterijen ondersteunen dit!</span></div>'
+      : '';
+
+    return `
+      <div class="result-icon">🔋</div>
+      <h2>Jouw aanbeveling</h2>
+      <div class="result-specs">
+        <div class="result-spec highlight-spec">
+          <span class="rs-label">Aanbevolen capaciteit</span>
+          <span class="rs-val">${capAdvies}</span>
+          <span class="rs-reason">${capReden}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Batterijtype</span>
+          <span class="rs-val">${typeAdvies}</span>
+        </div>
+        ${backupTip}
+        <div class="result-spec">
+          <span class="rs-label">Aanbevolen product</span>
+          <span class="rs-val">${productSuggestie}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Bereken terugverdientijd</span>
+          <span class="rs-val"><a href="/tools/roi-calculator/">Gebruik onze ROI calculator →</a></span>
+        </div>
+      </div>
+      <div class="result-cta">
+        <a href="${typeUrl}" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+          Bekijk aanbevolen systemen bij ${typeWinkel} →
+        </a>
+      </div>
+      <p class="result-disclaimer">💡 Tip: Installatie kost gemiddeld €500–€1.500 extra. Vraag meerdere offertes aan.</p>
+    `;
+  }
+
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = (btn as HTMLElement).dataset.key as keyof Answers;
+      const val = (btn as HTMLElement).dataset.val!;
+      answers[key] = val;
+      if (currentStep < totalSteps) {
+        currentStep++;
+        updateProgress();
+        showStep(currentStep);
+      } else {
+        document.getElementById('resultCard')!.innerHTML = buildResult();
+        showStep('result');
+        (document.getElementById('stepIndicator') as HTMLElement).textContent = 'Jouw advies';
+        (document.getElementById('progressFill') as HTMLElement).style.width = '100%';
+      }
+    });
+  });
+
+  document.getElementById('restartQuiz')!.addEventListener('click', () => {
+    Object.keys(answers).forEach(k => delete (answers as Record<string, unknown>)[k]);
+    currentStep = 1;
+    updateProgress();
+    showStep(1);
+  });
+
+  updateProgress();
+</script>
+
+<style>
+  .quiz-page { padding: 2rem 0 4rem; }
+  .quiz-header { margin-bottom: 2rem; text-align: center; }
+  .quiz-header h1 { margin-bottom: 0.5rem; }
+  .quiz-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+  .quiz-wrapper { max-width: 680px; margin: 0 auto; }
+  .progress-bar { height: 6px; background: var(--color-border); border-radius: 9999px; margin-bottom: 0.5rem; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--color-primary); border-radius: 9999px; transition: width 0.3s ease; }
+  .step-indicator { text-align: right; font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
+  .quiz-step { display: none; }
+  .quiz-step.active { display: block; }
+  .quiz-step h2 { margin-bottom: 1.25rem; font-size: 1.375rem; }
+  .options { display: flex; flex-direction: column; gap: 0.75rem; }
+  .option { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg); cursor: pointer; text-align: left; transition: all var(--transition-fast); width: 100%; }
+  .option:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .option-icon { font-size: 1.75rem; flex-shrink: 0; }
+  .option strong { display: block; font-size: 1rem; color: var(--color-text); }
+  .option span:last-child { display: block; font-size: 0.875rem; color: var(--color-text-light); }
+  .result-card { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 1.5rem; }
+  .result-icon { font-size: 3rem; text-align: center; margin-bottom: 0.5rem; }
+  .result-card h2 { text-align: center; margin-bottom: 1.5rem; color: var(--color-primary-dark); }
+  .result-specs { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+  .result-spec { padding: 0.875rem 1rem; background: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border-light); }
+  .highlight-spec { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .rs-label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; }
+  .rs-val { display: block; font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.125rem; }
+  .rs-reason { display: block; font-size: 0.8125rem; color: var(--color-text-light); }
+  .result-cta { margin-bottom: 1rem; }
+  .result-disclaimer { font-size: 0.875rem; color: var(--color-text-light); text-align: center; }
+  .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-primary { background: var(--color-primary); color: #fff; }
+  .btn-primary:hover { background: var(--color-primary-dark); text-decoration: none; color: #fff; }
+  .btn-cta { background: var(--color-secondary); color: #fff; }
+  .btn-cta:hover { background: #92400e; text-decoration: none; color: #fff; }
+  .btn-outline { background: none; border: 2px solid var(--color-border); color: var(--color-text-light); }
+  .btn-outline:hover { border-color: var(--color-primary); color: var(--color-primary); background: var(--color-primary-light); }
+  .btn-full { width: 100%; }
+</style>

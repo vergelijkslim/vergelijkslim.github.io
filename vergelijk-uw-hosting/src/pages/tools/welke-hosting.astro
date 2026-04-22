@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Welke webhosting heb ik nodig? – Quiz',
+  description: 'Beantwoord 5 vragen en ontdek welk type webhosting het beste bij jouw situatie past.',
+  url: 'https://vergelijk-uw-hosting.nl/tools/welke-hosting/',
+};
+---
+<BaseLayout
+  title="Welke Webhosting Heb Ik Nodig? – Persoonlijk Advies Quiz"
+  description="Beantwoord 5 korte vragen en ontdek of shared hosting, VPS, WordPress hosting of managed cloud het beste bij jou past."
+  structuredData={structuredData}
+>
+  <main class="quiz-page">
+    <div class="container">
+      <div class="quiz-header">
+        <h1>Welke hosting heb ik nodig?</h1>
+        <p class="quiz-intro">Beantwoord 5 vragen en ontvang persoonlijk advies op basis van jouw website, verkeer en technische kennis.</p>
+      </div>
+
+      <div class="quiz-wrapper" id="quiz">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 0%"></div></div>
+        <div class="step-indicator" id="stepIndicator">Vraag 1 van 5</div>
+
+        <!-- Vraag 1 -->
+        <div class="quiz-step active" data-step="1">
+          <h2>Wat voor website ga je maken?</h2>
+          <div class="options">
+            <button class="option" data-key="type" data-val="blog">
+              <span class="option-icon">✍️</span>
+              <strong>Blog of persoonlijke site</strong>
+              <span>Een portfolio, hobby of familiewebsite</span>
+            </button>
+            <button class="option" data-key="type" data-val="wordpress">
+              <span class="option-icon">📝</span>
+              <strong>WordPress website / CMS</strong>
+              <span>Nieuwssite, bedrijfswebsite of magazine</span>
+            </button>
+            <button class="option" data-key="type" data-val="webshop">
+              <span class="option-icon">🛒</span>
+              <strong>Webshop / WooCommerce</strong>
+              <span>Online verkopen van producten of diensten</span>
+            </button>
+            <button class="option" data-key="type" data-val="app">
+              <span class="option-icon">⚙️</span>
+              <strong>Webapplicatie of SaaS</strong>
+              <span>Custom software, API, of platform</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 2 -->
+        <div class="quiz-step" data-step="2">
+          <h2>Hoeveel bezoekers verwacht je per maand?</h2>
+          <div class="options">
+            <button class="option" data-key="verkeer" data-val="klein">
+              <span class="option-icon">🌱</span>
+              <strong>Minder dan 5.000 bezoekers/maand</strong>
+              <span>Start-up of nieuwe website</span>
+            </button>
+            <button class="option" data-key="verkeer" data-val="medium">
+              <span class="option-icon">🌿</span>
+              <strong>5.000 – 50.000 bezoekers/maand</strong>
+              <span>Groeiende website of mkb</span>
+            </button>
+            <button class="option" data-key="verkeer" data-val="groot">
+              <span class="option-icon">🌳</span>
+              <strong>Meer dan 50.000 bezoekers/maand</strong>
+              <span>Populaire site, grote webshop of platform</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 3 -->
+        <div class="quiz-step" data-step="3">
+          <h2>Hoe technisch ben je?</h2>
+          <div class="options">
+            <button class="option" data-key="tech" data-val="beginner">
+              <span class="option-icon">🙋</span>
+              <strong>Beginner</strong>
+              <span>Ik wil een makkelijke beheerinterface, geen server-gedoe</span>
+            </button>
+            <button class="option" data-key="tech" data-val="gemiddeld">
+              <span class="option-icon">💻</span>
+              <strong>Gemiddeld</strong>
+              <span>Ik werk wel eens met FTP, cPanel of WordPress</span>
+            </button>
+            <button class="option" data-key="tech" data-val="expert">
+              <span class="option-icon">🔧</span>
+              <strong>Expert</strong>
+              <span>Ik ben comfortabel met Linux, SSH en server-configuratie</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 4 -->
+        <div class="quiz-step" data-step="4">
+          <h2>Hoe belangrijk is uptime / betrouwbaarheid?</h2>
+          <div class="options">
+            <button class="option" data-key="uptime" data-val="normaal">
+              <span class="option-icon">😌</span>
+              <strong>Normaal – korte uitval is acceptabel</strong>
+              <span>Hobbyproject of kleine site</span>
+            </button>
+            <button class="option" data-key="uptime" data-val="hoog">
+              <span class="option-icon">⚡</span>
+              <strong>Hoog – 99.9% uptime nodig</strong>
+              <span>Zakelijke website of webshop</span>
+            </button>
+            <button class="option" data-key="uptime" data-val="kritiek">
+              <span class="option-icon">🛡️</span>
+              <strong>Kritiek – 99.99% SLA vereist</strong>
+              <span>Mission-critical applicatie, financieel of medisch</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vraag 5 -->
+        <div class="quiz-step" data-step="5">
+          <h2>Wat is je maandelijks hostingbudget?</h2>
+          <div class="options">
+            <button class="option" data-key="budget" data-val="laag">
+              <span class="option-icon">💚</span>
+              <strong>Tot €5/maand</strong>
+              <span>Zo goedkoop mogelijk</span>
+            </button>
+            <button class="option" data-key="budget" data-val="midden">
+              <span class="option-icon">💛</span>
+              <strong>€5 – €20/maand</strong>
+              <span>Goede kwaliteit, betaalbaar</span>
+            </button>
+            <button class="option" data-key="budget" data-val="hoog">
+              <span class="option-icon">💎</span>
+              <strong>€20 – €50/maand</strong>
+              <span>Premium service en performance</span>
+            </button>
+            <button class="option" data-key="budget" data-val="enterprise">
+              <span class="option-icon">🏢</span>
+              <strong>Meer dan €50/maand</strong>
+              <span>Enterprise of dedicated resources</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resultaat -->
+        <div class="quiz-step" data-step="result" id="resultSection">
+          <div class="result-card" id="resultCard"></div>
+          <div class="result-actions">
+            <a href="/tools/vergelijk/" class="btn btn-primary">Vergelijk alle providers →</a>
+            <button class="btn btn-outline" id="restartQuiz">Opnieuw doen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  interface Answers { type?: string; verkeer?: string; tech?: string; uptime?: string; budget?: string; }
+  const answers: Answers = {};
+  let currentStep = 1;
+  const totalSteps = 5;
+
+  function showStep(step: number | string) {
+    document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+    const t = step === 'result'
+      ? document.querySelector('[data-step="result"]')
+      : document.querySelector(`[data-step="${step}"]`);
+    t?.classList.add('active');
+  }
+
+  function updateProgress() {
+    const pct = ((currentStep - 1) / totalSteps) * 100;
+    (document.getElementById('progressFill') as HTMLElement).style.width = `${pct}%`;
+    (document.getElementById('stepIndicator') as HTMLElement).textContent =
+      currentStep <= totalSteps ? `Vraag ${currentStep} van ${totalSteps}` : 'Jouw advies';
+  }
+
+  function buildResult(): string {
+    const { type, verkeer, tech, uptime, budget } = answers;
+
+    let hostingType = 'Shared hosting';
+    let typeReden = 'Ideaal voor beginners en kleine websites';
+    let provider = 'Antagonist of TransIP';
+    let providerUrl = 'https://www.antagonist.nl/';
+    let providerWinkel = 'Antagonist';
+
+    // Logic
+    if (type === 'app' || (tech === 'expert' && verkeer !== 'klein')) {
+      hostingType = 'VPS (Virtual Private Server)';
+      typeReden = 'Volledige controle, schaalbaar en krachtig voor custom applicaties';
+      provider = 'Hetzner of DigitalOcean';
+      providerUrl = 'https://www.hetzner.com/';
+      providerWinkel = 'Hetzner';
+    } else if (type === 'wordpress' && (verkeer === 'groot' || budget === 'hoog' || budget === 'enterprise')) {
+      hostingType = 'Managed WordPress hosting';
+      typeReden = 'Geoptimaliseerd voor WordPress met automatische updates, caching en beveiliging';
+      provider = 'Kinsta of WP Engine';
+      providerUrl = 'https://kinsta.com/';
+      providerWinkel = 'Kinsta';
+    } else if (type === 'wordpress' || (type === 'webshop' && tech === 'beginner')) {
+      hostingType = 'WordPress hosting';
+      typeReden = '1-click WordPress install, geoptimaliseerde servers en eenvoudig beheer';
+      provider = 'SiteGround';
+      providerUrl = 'https://www.siteground.com/';
+      providerWinkel = 'SiteGround';
+    } else if (uptime === 'kritiek' || verkeer === 'groot') {
+      hostingType = 'Managed Cloud hosting';
+      typeReden = 'Hoge beschikbaarheid, automatisch schalen en professionele support';
+      provider = 'Cloudways';
+      providerUrl = 'https://www.cloudways.com/';
+      providerWinkel = 'Cloudways';
+    } else if (budget === 'laag' || type === 'blog') {
+      hostingType = 'Shared hosting (budget)';
+      typeReden = 'Goedkoopste optie, perfect voor kleine sites met weinig verkeer';
+      provider = 'IONOS of One.com';
+      providerUrl = 'https://www.ionos.nl/';
+      providerWinkel = 'IONOS';
+    }
+
+    const tips = [];
+    if (type === 'webshop') tips.push('🛒 Voor een webshop: zorg voor SSL-certificaat en kies hosting met snelle laadtijden (NVMe SSD).');
+    if (tech === 'beginner') tips.push('👶 Als beginner: kies een provider met goede cPanel of DirectAdmin interface en Nederlandse support.');
+    if (uptime === 'kritiek') tips.push('🛡️ Voor kritieke uptime: kijk naar SLA garanties en CDN opties bij de provider.');
+
+    return `
+      <div class="result-icon">🌐</div>
+      <h2>Jouw aanbeveling</h2>
+      <div class="result-specs">
+        <div class="result-spec highlight-spec">
+          <span class="rs-label">Aanbevolen hosting type</span>
+          <span class="rs-val">${hostingType}</span>
+          <span class="rs-reason">${typeReden}</span>
+        </div>
+        <div class="result-spec">
+          <span class="rs-label">Aanbevolen provider</span>
+          <span class="rs-val">${provider}</span>
+        </div>
+        ${tips.map(t => `<div class="result-tip">${t}</div>`).join('')}
+      </div>
+      <div class="result-cta">
+        <a href="${providerUrl}" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+          Bekijk ${providerWinkel} →
+        </a>
+      </div>
+      <p class="result-disclaimer">💡 Tip: Vergelijk altijd meerdere providers. Gebruik onze vergelijkingstool voor een compleet overzicht.</p>
+    `;
+  }
+
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = (btn as HTMLElement).dataset.key as keyof Answers;
+      const val = (btn as HTMLElement).dataset.val!;
+      answers[key] = val;
+      if (currentStep < totalSteps) {
+        currentStep++;
+        updateProgress();
+        showStep(currentStep);
+      } else {
+        document.getElementById('resultCard')!.innerHTML = buildResult();
+        showStep('result');
+        (document.getElementById('stepIndicator') as HTMLElement).textContent = 'Jouw advies';
+        (document.getElementById('progressFill') as HTMLElement).style.width = '100%';
+      }
+    });
+  });
+
+  document.getElementById('restartQuiz')!.addEventListener('click', () => {
+    Object.keys(answers).forEach(k => delete (answers as Record<string, unknown>)[k]);
+    currentStep = 1;
+    updateProgress();
+    showStep(1);
+  });
+
+  updateProgress();
+</script>
+
+<style>
+  .quiz-page { padding: 2rem 0 4rem; }
+  .quiz-header { margin-bottom: 2rem; text-align: center; }
+  .quiz-header h1 { margin-bottom: 0.5rem; }
+  .quiz-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+  .quiz-wrapper { max-width: 680px; margin: 0 auto; }
+  .progress-bar { height: 6px; background: var(--color-border); border-radius: 9999px; margin-bottom: 0.5rem; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--color-primary); border-radius: 9999px; transition: width 0.3s ease; }
+  .step-indicator { text-align: right; font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
+  .quiz-step { display: none; }
+  .quiz-step.active { display: block; }
+  .quiz-step h2 { margin-bottom: 1.25rem; font-size: 1.375rem; }
+  .options { display: flex; flex-direction: column; gap: 0.75rem; }
+  .option { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg); cursor: pointer; text-align: left; transition: all var(--transition-fast); width: 100%; }
+  .option:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .option-icon { font-size: 1.75rem; flex-shrink: 0; }
+  .option strong { display: block; font-size: 1rem; color: var(--color-text); }
+  .option span:last-child { display: block; font-size: 0.875rem; color: var(--color-text-light); }
+  .result-card { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 1.5rem; }
+  .result-icon { font-size: 3rem; text-align: center; margin-bottom: 0.5rem; }
+  .result-card h2 { text-align: center; margin-bottom: 1.5rem; color: var(--color-primary-dark); }
+  .result-specs { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+  .result-spec { padding: 0.875rem 1rem; background: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border-light); }
+  .highlight-spec { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .rs-label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; }
+  .rs-val { display: block; font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.125rem; }
+  .rs-reason { display: block; font-size: 0.8125rem; color: var(--color-text-light); }
+  .result-tip { padding: 0.75rem 1rem; background: #fef9c3; border: 1px solid #fde047; border-radius: var(--radius-md); font-size: 0.875rem; }
+  .result-cta { margin-bottom: 1rem; }
+  .result-disclaimer { font-size: 0.875rem; color: var(--color-text-light); text-align: center; }
+  .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+</style>
