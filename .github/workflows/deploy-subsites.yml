@@ -69,7 +69,18 @@ jobs:
           cache: npm
           cache-dependency-path: ${{ matrix.site }}/package-lock.json
       - run: cd ${{ matrix.site }} && npm ci
-      - run: cd ${{ matrix.site }} && npx astro build
+      - name: Set GA4 ID for ${{ matrix.site }}
+        id: ga4
+        run: |
+          case "${{ matrix.site }}" in
+            vergelijk-uw-thuisbatterij) echo "id=${{ secrets.GA4_ID_THUISBATTERIJ }}" >> "$GITHUB_OUTPUT" ;;
+            vergelijk-uw-laadpaal)      echo "id=${{ secrets.GA4_ID_LAADPAAL }}" >> "$GITHUB_OUTPUT" ;;
+            thuisbatterijwijzer)        echo "id=${{ secrets.GA4_ID_THUISBATTERIJWIJZER }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Build ${{ matrix.site }}
+        run: cd ${{ matrix.site }} && npx astro build
+        env:
+          PUBLIC_GA4_ID: ${{ steps.ga4.outputs.id }}
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
