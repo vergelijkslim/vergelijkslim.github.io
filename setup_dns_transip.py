@@ -23,6 +23,8 @@ PRIVATE_KEY_PATH = "C:/Users/vande/.paperclip/instances/default/companies/308baf
 API_URL = "https://api.transip.nl/v6"
 
 DOMAINS = [
+    "slimzonnig.nl",
+    "vergelijk-uw-thuisbatterij.nl",
     "vergelijk-uw-hosting.nl",
     "vergelijk-uw-renovatie.nl",
     "vergelijk-uw-laadpaal.nl",
@@ -38,6 +40,8 @@ DNS_RECORDS = [
 ]
 
 GITHUB_REPOS = {
+    "slimzonnig.nl":             "vergelijkslim/slimzonnig",
+    "vergelijk-uw-thuisbatterij.nl": "vergelijkslim/thuisbatterijwijzer",
     "vergelijk-uw-hosting.nl":  "vergelijkslim/hostingwijzer",
     "vergelijk-uw-renovatie.nl": "vergelijkslim/woningwijzer",
     "vergelijk-uw-laadpaal.nl": "vergelijkslim/laadpaalwijzer",
