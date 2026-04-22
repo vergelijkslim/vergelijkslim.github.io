@@ -4,35 +4,35 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Welke webhosting heb ik nodig? – Quiz',
-  description: 'Beantwoord 5 vragen en ontdek welk type webhosting het beste bij jouw situatie past.',
+  name: 'Welke webhosting heb ik nodig? – Slimme Keuzehulp',
+  description: 'Beantwoord 4 vragen en ontvang Top 3 hostingaanbevelingen op maat.',
   url: 'https://vergelijk-uw-hosting.nl/tools/welke-hosting/',
 };
 ---
 <BaseLayout
-  title="Welke Webhosting Heb Ik Nodig? – Persoonlijk Advies Quiz"
-  description="Beantwoord 5 korte vragen en ontdek of shared hosting, VPS, WordPress hosting of managed cloud het beste bij jou past."
+  title="Welke Webhosting Heb Ik Nodig? – Slimme Keuzehulp"
+  description="Beantwoord 4 vragen en ontvang persoonlijk advies: Top 3 hostingproviders op maat, met prijs, functies en uitleg waarom ze bij jou passen."
   structuredData={structuredData}
 >
   <main class="quiz-page">
     <div class="container">
       <div class="quiz-header">
         <h1>Welke hosting heb ik nodig?</h1>
-        <p class="quiz-intro">Beantwoord 5 vragen en ontvang persoonlijk advies op basis van jouw website, verkeer en technische kennis.</p>
+        <p class="quiz-intro">Beantwoord 4 vragen en ontvang je persoonlijke Top 3 — met uitleg waarom elke keuze bij jou past.</p>
       </div>
 
       <div class="quiz-wrapper" id="quiz">
         <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 0%"></div></div>
-        <div class="step-indicator" id="stepIndicator">Vraag 1 van 5</div>
+        <div class="step-indicator" id="stepIndicator">Stap 1 van 4</div>
 
-        <!-- Vraag 1 -->
+        <!-- Stap 1: Sitetype -->
         <div class="quiz-step active" data-step="1">
           <h2>Wat voor website ga je maken?</h2>
           <div class="options">
             <button class="option" data-key="type" data-val="blog">
               <span class="option-icon">✍️</span>
               <strong>Blog of persoonlijke site</strong>
-              <span>Een portfolio, hobby of familiewebsite</span>
+              <span>Portfolio, hobby of familiewebsite</span>
             </button>
             <button class="option" data-key="type" data-val="wordpress">
               <span class="option-icon">📝</span>
@@ -47,80 +47,56 @@ const structuredData = {
             <button class="option" data-key="type" data-val="app">
               <span class="option-icon">⚙️</span>
               <strong>Webapplicatie of SaaS</strong>
-              <span>Custom software, API, of platform</span>
+              <span>Custom software, API of platform</span>
             </button>
           </div>
         </div>
 
-        <!-- Vraag 2 -->
+        <!-- Stap 2: Bezoekers -->
         <div class="quiz-step" data-step="2">
           <h2>Hoeveel bezoekers verwacht je per maand?</h2>
-          <div class="options">
+          <div class="slider-step">
+            <div class="slider-labels"><span>100</span><span>100.000</span></div>
+            <input type="range" id="bezoekersSlider" min="100" max="100000" step="100" value="5000" class="slider" />
+            <div class="slider-val" id="sliderVal">5.000 bezoekers/maand</div>
+          </div>
+          <div class="options mt-opts">
             <button class="option" data-key="verkeer" data-val="klein">
               <span class="option-icon">🌱</span>
-              <strong>Minder dan 5.000 bezoekers/maand</strong>
-              <span>Start-up of nieuwe website</span>
+              <strong>Minder dan 5.000/maand</strong>
+              <span>Starter of nieuwe website</span>
             </button>
             <button class="option" data-key="verkeer" data-val="medium">
               <span class="option-icon">🌿</span>
-              <strong>5.000 – 50.000 bezoekers/maand</strong>
+              <strong>5.000 – 50.000/maand</strong>
               <span>Groeiende website of mkb</span>
             </button>
             <button class="option" data-key="verkeer" data-val="groot">
               <span class="option-icon">🌳</span>
-              <strong>Meer dan 50.000 bezoekers/maand</strong>
-              <span>Populaire site, grote webshop of platform</span>
+              <strong>Meer dan 50.000/maand</strong>
+              <span>Populaire site of grote webshop</span>
             </button>
           </div>
         </div>
 
-        <!-- Vraag 3 -->
+        <!-- Stap 3: Features -->
         <div class="quiz-step" data-step="3">
-          <h2>Hoe technisch ben je?</h2>
-          <div class="options">
-            <button class="option" data-key="tech" data-val="beginner">
-              <span class="option-icon">🙋</span>
-              <strong>Beginner</strong>
-              <span>Ik wil een makkelijke beheerinterface, geen server-gedoe</span>
-            </button>
-            <button class="option" data-key="tech" data-val="gemiddeld">
-              <span class="option-icon">💻</span>
-              <strong>Gemiddeld</strong>
-              <span>Ik werk wel eens met FTP, cPanel of WordPress</span>
-            </button>
-            <button class="option" data-key="tech" data-val="expert">
-              <span class="option-icon">🔧</span>
-              <strong>Expert</strong>
-              <span>Ik ben comfortabel met Linux, SSH en server-configuratie</span>
-            </button>
+          <h2>Welke functies heb je nodig?</h2>
+          <p class="step-sub">Kies alles wat van toepassing is</p>
+          <div class="checklist">
+            <label class="check-item"><input type="checkbox" data-feature="email" /> <span class="check-icon">📧</span> <span class="check-label"><strong>E-mail hosting</strong><em>Eigen @domein e-mailadressen</em></span></label>
+            <label class="check-item"><input type="checkbox" data-feature="ssl" /> <span class="check-icon">🔒</span> <span class="check-label"><strong>Gratis SSL-certificaat</strong><em>HTTPS voor jouw website</em></span></label>
+            <label class="check-item"><input type="checkbox" data-feature="wordpress" /> <span class="check-icon">📝</span> <span class="check-label"><strong>WordPress 1-click install</strong><em>Direct aan de slag met WordPress</em></span></label>
+            <label class="check-item"><input type="checkbox" data-feature="databases" /> <span class="check-icon">🗄️</span> <span class="check-label"><strong>MySQL databases</strong><em>Voor dynamische websites en webshops</em></span></label>
+            <label class="check-item"><input type="checkbox" data-feature="ssh" /> <span class="check-icon">💻</span> <span class="check-label"><strong>SSH / root toegang</strong><em>Volledige servertoegang (gevorderd)</em></span></label>
+            <label class="check-item"><input type="checkbox" data-feature="backups" /> <span class="check-icon">💾</span> <span class="check-label"><strong>Automatische backups</strong><em>Dagelijks of wekelijks je data veiliggesteld</em></span></label>
           </div>
+          <button class="btn btn-primary mt-btn" id="nextStep3">Volgende stap →</button>
         </div>
 
-        <!-- Vraag 4 -->
+        <!-- Stap 4: Budget -->
         <div class="quiz-step" data-step="4">
-          <h2>Hoe belangrijk is uptime / betrouwbaarheid?</h2>
-          <div class="options">
-            <button class="option" data-key="uptime" data-val="normaal">
-              <span class="option-icon">😌</span>
-              <strong>Normaal – korte uitval is acceptabel</strong>
-              <span>Hobbyproject of kleine site</span>
-            </button>
-            <button class="option" data-key="uptime" data-val="hoog">
-              <span class="option-icon">⚡</span>
-              <strong>Hoog – 99.9% uptime nodig</strong>
-              <span>Zakelijke website of webshop</span>
-            </button>
-            <button class="option" data-key="uptime" data-val="kritiek">
-              <span class="option-icon">🛡️</span>
-              <strong>Kritiek – 99.99% SLA vereist</strong>
-              <span>Mission-critical applicatie, financieel of medisch</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Vraag 5 -->
-        <div class="quiz-step" data-step="5">
-          <h2>Wat is je maandelijks hostingbudget?</h2>
+          <h2>Wat is je maandelijks budget?</h2>
           <div class="options">
             <button class="option" data-key="budget" data-val="laag">
               <span class="option-icon">💚</span>
@@ -145,12 +121,16 @@ const structuredData = {
           </div>
         </div>
 
-        <!-- Resultaat -->
+        <!-- Resultaat: Top 3 -->
         <div class="quiz-step" data-step="result" id="resultSection">
-          <div class="result-card" id="resultCard"></div>
+          <div class="result-header">
+            <h2>Jouw Top 3 aanbevelingen</h2>
+            <p class="result-sub">Op basis van jouw antwoorden — gesorteerd op beste match</p>
+          </div>
+          <div class="top3-grid" id="top3Grid"></div>
           <div class="result-actions">
-            <a href="/tools/vergelijk/" class="btn btn-primary">Vergelijk alle providers →</a>
-            <button class="btn btn-outline" id="restartQuiz">Opnieuw doen</button>
+            <a href="/tools/vergelijk/" class="btn btn-outline">Vergelijk alle providers →</a>
+            <button class="btn btn-ghost" id="restartQuiz">Opnieuw doen</button>
           </div>
         </div>
       </div>
@@ -159,117 +139,280 @@ const structuredData = {
 </BaseLayout>
 
 <script>
-  interface Answers { type?: string; verkeer?: string; tech?: string; uptime?: string; budget?: string; }
-  const answers: Answers = {};
+  interface Answers {
+    type?: string;
+    verkeer?: string;
+    features?: string[];
+    budget?: string;
+  }
+
+  interface Provider {
+    naam: string;
+    type: string;
+    prijs: string;
+    prijsNum: number;
+    uptime: string;
+    support: string;
+    features: string[];
+    badge?: string;
+    url: string;
+    winkel: string;
+    omschrijving: string;
+    score?: number;
+    matchReasons?: string[];
+  }
+
+  const ALL_PROVIDERS: Provider[] = [
+    {
+      naam: 'Antagonist', type: 'shared', prijs: '€3,50/mnd', prijsNum: 3.5,
+      uptime: '99,99%', support: '24/7 NL', badge: 'Beste koop',
+      features: ['email', 'ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://www.antagonist.nl/?tag=vergelijk05-21',
+      winkel: 'Antagonist',
+      omschrijving: 'Betrouwbare Nederlandse hoster met 24/7 support en uitstekende prijs-kwaliteitsverhouding.'
+    },
+    {
+      naam: 'TransIP', type: 'shared', prijs: '€2,99/mnd', prijsNum: 2.99,
+      uptime: '99,99%', support: '24/7 NL',
+      features: ['email', 'ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://www.transip.nl/webhosting/?tag=vergelijk05-21',
+      winkel: 'TransIP',
+      omschrijving: 'Grote Nederlandse provider met sterke uptime-garantie en gratis domein.'
+    },
+    {
+      naam: 'IONOS', type: 'shared', prijs: '€1,00/mnd', prijsNum: 1.0,
+      uptime: '99,99%', support: '24/7',
+      features: ['email', 'ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://www.ionos.nl/?tag=vergelijk05-21',
+      winkel: 'IONOS',
+      omschrijving: 'Goedkoopste optie met gratis domein en ruim opslag. Ideaal voor starters.'
+    },
+    {
+      naam: 'SiteGround', type: 'wordpress', prijs: '€3,99/mnd', prijsNum: 3.99,
+      uptime: '99,99%', support: '24/7', badge: 'Beste WordPress',
+      features: ['ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://www.siteground.com/?tag=vergelijk05-21',
+      winkel: 'SiteGround',
+      omschrijving: 'Geoptimaliseerd voor WordPress met snelle servers, staging en automatische updates.'
+    },
+    {
+      naam: 'Kinsta', type: 'wordpress', prijs: '€35,00/mnd', prijsNum: 35.0,
+      uptime: '99,99%', support: '24/7', badge: 'Premium WordPress',
+      features: ['ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://kinsta.com/?tag=vergelijk05-21',
+      winkel: 'Kinsta',
+      omschrijving: 'Premium managed WordPress op Google Cloud. Razendsnel en schaalbaar voor grote sites.'
+    },
+    {
+      naam: 'WP Engine', type: 'wordpress', prijs: '€25,00/mnd', prijsNum: 25.0,
+      uptime: '99,99%', support: '24/7',
+      features: ['ssl', 'wordpress', 'databases', 'backups'],
+      url: 'https://wpengine.com/?tag=vergelijk05-21',
+      winkel: 'WP Engine',
+      omschrijving: 'Managed WordPress hosting met DevKit, staging en Genesis framework inbegrepen.'
+    },
+    {
+      naam: 'Cloudways', type: 'managed', prijs: '€14,00/mnd', prijsNum: 14.0,
+      uptime: '99,99%', support: '24/7', badge: 'Beste uptime',
+      features: ['ssl', 'wordpress', 'databases', 'backups', 'ssh'],
+      url: 'https://www.cloudways.com/?tag=vergelijk05-21',
+      winkel: 'Cloudways',
+      omschrijving: 'Managed cloud hosting op keuze van AWS, GCP of DO. Ideaal voor webshops en groeiende sites.'
+    },
+    {
+      naam: 'Hetzner', type: 'vps', prijs: '€4,15/mnd', prijsNum: 4.15,
+      uptime: '99,9%', support: 'Ticket',
+      features: ['ssh', 'databases'],
+      url: 'https://www.hetzner.com/?tag=vergelijk05-21',
+      winkel: 'Hetzner',
+      omschrijving: 'Krachtige Europese VPS voor gevorderde gebruikers. Beste prijs per GB RAM en opslag.'
+    },
+    {
+      naam: 'DigitalOcean', type: 'vps', prijs: '€6,00/mnd', prijsNum: 6.0,
+      uptime: '99,99%', support: 'Community',
+      features: ['ssh', 'databases', 'backups'],
+      url: 'https://www.digitalocean.com/?tag=vergelijk05-21',
+      winkel: 'DigitalOcean',
+      omschrijving: 'Populaire VPS-provider met eenvoudige interface en uitgebreide documentatie.'
+    },
+    {
+      naam: 'One.com', type: 'shared', prijs: '€1,99/mnd', prijsNum: 1.99,
+      uptime: '99,9%', support: 'E-mail',
+      features: ['email', 'ssl', 'wordpress', 'databases'],
+      url: 'https://www.one.com/nl/?tag=vergelijk05-21',
+      winkel: 'One.com',
+      omschrijving: 'Eenvoudige en betaalbare hosting met gratis domein. Goed voor kleine persoonlijke sites.'
+    },
+  ];
+
+  const answers: Answers = { features: [] };
   let currentStep = 1;
-  const totalSteps = 5;
+  const totalSteps = 4;
 
   function showStep(step: number | string) {
     document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
-    const t = step === 'result'
+    const target = step === 'result'
       ? document.querySelector('[data-step="result"]')
       : document.querySelector(`[data-step="${step}"]`);
-    t?.classList.add('active');
+    target?.classList.add('active');
   }
 
   function updateProgress() {
     const pct = ((currentStep - 1) / totalSteps) * 100;
     (document.getElementById('progressFill') as HTMLElement).style.width = `${pct}%`;
     (document.getElementById('stepIndicator') as HTMLElement).textContent =
-      currentStep <= totalSteps ? `Vraag ${currentStep} van ${totalSteps}` : 'Jouw advies';
+      currentStep <= totalSteps ? `Stap ${currentStep} van ${totalSteps}` : 'Jouw advies';
   }
 
-  function buildResult(): string {
-    const { type, verkeer, tech, uptime, budget } = answers;
+  function scoreProviders(): Provider[] {
+    const { type, verkeer, features = [], budget } = answers;
+    const scored = ALL_PROVIDERS.map(p => {
+      let score = 0;
+      const reasons: string[] = [];
 
-    let hostingType = 'Shared hosting';
-    let typeReden = 'Ideaal voor beginners en kleine websites';
-    let provider = 'Antagonist of TransIP';
-    let providerUrl = 'https://www.antagonist.nl/';
-    let providerWinkel = 'Antagonist';
+      // Type match
+      if (type === 'blog' && (p.type === 'shared')) { score += 30; reasons.push('Ideaal voor een blog of persoonlijke site'); }
+      if (type === 'wordpress' && p.type === 'wordpress') { score += 40; reasons.push('Geoptimaliseerd voor WordPress'); }
+      if (type === 'wordpress' && p.type === 'shared') { score += 20; }
+      if (type === 'webshop' && (p.type === 'wordpress' || p.type === 'managed')) { score += 35; reasons.push('Snel en stabiel voor webshops'); }
+      if (type === 'webshop' && p.type === 'shared') { score += 15; }
+      if (type === 'app' && p.type === 'vps') { score += 40; reasons.push('Volledige controle voor web-applicaties'); }
+      if (type === 'app' && p.type === 'managed') { score += 30; }
 
-    // Logic
-    if (type === 'app' || (tech === 'expert' && verkeer !== 'klein')) {
-      hostingType = 'VPS (Virtual Private Server)';
-      typeReden = 'Volledige controle, schaalbaar en krachtig voor custom applicaties';
-      provider = 'Hetzner of DigitalOcean';
-      providerUrl = 'https://www.hetzner.com/';
-      providerWinkel = 'Hetzner';
-    } else if (type === 'wordpress' && (verkeer === 'groot' || budget === 'hoog' || budget === 'enterprise')) {
-      hostingType = 'Managed WordPress hosting';
-      typeReden = 'Geoptimaliseerd voor WordPress met automatische updates, caching en beveiliging';
-      provider = 'Kinsta of WP Engine';
-      providerUrl = 'https://kinsta.com/';
-      providerWinkel = 'Kinsta';
-    } else if (type === 'wordpress' || (type === 'webshop' && tech === 'beginner')) {
-      hostingType = 'WordPress hosting';
-      typeReden = '1-click WordPress install, geoptimaliseerde servers en eenvoudig beheer';
-      provider = 'SiteGround';
-      providerUrl = 'https://www.siteground.com/';
-      providerWinkel = 'SiteGround';
-    } else if (uptime === 'kritiek' || verkeer === 'groot') {
-      hostingType = 'Managed Cloud hosting';
-      typeReden = 'Hoge beschikbaarheid, automatisch schalen en professionele support';
-      provider = 'Cloudways';
-      providerUrl = 'https://www.cloudways.com/';
-      providerWinkel = 'Cloudways';
-    } else if (budget === 'laag' || type === 'blog') {
-      hostingType = 'Shared hosting (budget)';
-      typeReden = 'Goedkoopste optie, perfect voor kleine sites met weinig verkeer';
-      provider = 'IONOS of One.com';
-      providerUrl = 'https://www.ionos.nl/';
-      providerWinkel = 'IONOS';
-    }
+      // Traffic match
+      if (verkeer === 'klein' && p.prijsNum <= 5) { score += 20; reasons.push('Past bij weinig verkeer en laag budget'); }
+      if (verkeer === 'medium' && (p.type === 'shared' || p.type === 'wordpress' || p.type === 'managed')) { score += 15; }
+      if (verkeer === 'groot' && (p.type === 'managed' || p.type === 'vps' || p.type === 'wordpress')) { score += 25; reasons.push('Schaalbaar voor hoog bezoekersaantal'); }
 
-    const tips = [];
-    if (type === 'webshop') tips.push('🛒 Voor een webshop: zorg voor SSL-certificaat en kies hosting met snelle laadtijden (NVMe SSD).');
-    if (tech === 'beginner') tips.push('👶 Als beginner: kies een provider met goede cPanel of DirectAdmin interface en Nederlandse support.');
-    if (uptime === 'kritiek') tips.push('🛡️ Voor kritieke uptime: kijk naar SLA garanties en CDN opties bij de provider.');
+      // Features match
+      const matchedFeatures = features.filter(f => p.features.includes(f));
+      score += matchedFeatures.length * 8;
+      if (matchedFeatures.includes('ssh') && p.features.includes('ssh')) reasons.push('SSH-toegang beschikbaar');
+      if (matchedFeatures.includes('email') && p.features.includes('email')) reasons.push('Inclusief e-mail hosting');
+      if (matchedFeatures.includes('backups') && p.features.includes('backups')) reasons.push('Automatische backups inbegrepen');
 
-    return `
-      <div class="result-icon">🌐</div>
-      <h2>Jouw aanbeveling</h2>
-      <div class="result-specs">
-        <div class="result-spec highlight-spec">
-          <span class="rs-label">Aanbevolen hosting type</span>
-          <span class="rs-val">${hostingType}</span>
-          <span class="rs-reason">${typeReden}</span>
+      // Budget match
+      if (budget === 'laag' && p.prijsNum <= 3) { score += 25; reasons.push(`Valt binnen je budget van €5/mnd`); }
+      if (budget === 'laag' && p.prijsNum > 5) { score -= 20; }
+      if (budget === 'midden' && p.prijsNum <= 20) { score += 15; }
+      if (budget === 'midden' && p.prijsNum > 20) { score -= 15; }
+      if (budget === 'hoog' && p.prijsNum >= 10 && p.prijsNum <= 50) { score += 15; }
+      if (budget === 'enterprise' && p.prijsNum >= 25) { score += 20; reasons.push('Enterprise-niveau kwaliteit en support'); }
+
+      // Uptime bonus
+      if (p.uptime === '99,99%') { score += 5; }
+
+      // Cap negative scores
+      if (score < 0) score = 0;
+
+      return { ...p, score, matchReasons: reasons.slice(0, 3) };
+    });
+
+    return scored.sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 3);
+  }
+
+  function featureLabel(f: string): string {
+    const map: Record<string, string> = {
+      email: '📧 E-mail', ssl: '🔒 SSL', wordpress: '📝 WordPress',
+      databases: '🗄️ Databases', ssh: '💻 SSH', backups: '💾 Backups'
+    };
+    return map[f] ?? f;
+  }
+
+  function renderTop3(providers: Provider[]) {
+    const medals = ['🥇', '🥈', '🥉'];
+    const labels = ['Beste match', 'Goede keuze', 'Overweeg ook'];
+    return providers.map((p, i) => `
+      <div class="top3-card ${i === 0 ? 'top3-winner' : ''}">
+        <div class="top3-medal">${medals[i]} <span class="top3-label">${labels[i]}</span></div>
+        ${p.badge ? `<div class="top3-badge">${p.badge}</div>` : ''}
+        <h3 class="top3-naam">${p.naam}</h3>
+        <div class="top3-type">${p.type === 'shared' ? 'Shared hosting' : p.type === 'vps' ? 'VPS' : p.type === 'wordpress' ? 'WordPress hosting' : 'Managed cloud'}</div>
+        <div class="top3-prijs">${p.prijs}</div>
+        <div class="top3-specs">
+          <span>⬆️ ${p.uptime}</span>
+          <span>🎧 ${p.support}</span>
         </div>
-        <div class="result-spec">
-          <span class="rs-label">Aanbevolen provider</span>
-          <span class="rs-val">${provider}</span>
+        <div class="top3-features">
+          ${p.features.map(f => `<span class="feat-tag">${featureLabel(f)}</span>`).join('')}
         </div>
-        ${tips.map(t => `<div class="result-tip">${t}</div>`).join('')}
-      </div>
-      <div class="result-cta">
-        <a href="${providerUrl}" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
-          Bekijk ${providerWinkel} →
+        ${p.matchReasons && p.matchReasons.length > 0 ? `
+        <div class="top3-reasons">
+          <strong>Waarom past dit bij jou?</strong>
+          <ul>${p.matchReasons.map(r => `<li>✓ ${r}</li>`).join('')}</ul>
+        </div>` : ''}
+        <a href="${p.url}" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full top3-cta">
+          Bekijk ${p.winkel} →
         </a>
       </div>
-      <p class="result-disclaimer">💡 Tip: Vergelijk altijd meerdere providers. Gebruik onze vergelijkingstool voor een compleet overzicht.</p>
-    `;
+    `).join('');
   }
 
-  document.querySelectorAll('.option').forEach(btn => {
+  function showResult() {
+    const top3 = scoreProviders();
+    document.getElementById('top3Grid')!.innerHTML = renderTop3(top3);
+    showStep('result');
+    (document.getElementById('stepIndicator') as HTMLElement).textContent = 'Jouw advies';
+    (document.getElementById('progressFill') as HTMLElement).style.width = '100%';
+  }
+
+  // Option click handler (steps 1, 2, 4)
+  document.querySelectorAll('.option[data-key]').forEach(btn => {
     btn.addEventListener('click', () => {
       const key = (btn as HTMLElement).dataset.key as keyof Answers;
       const val = (btn as HTMLElement).dataset.val!;
-      answers[key] = val;
-      if (currentStep < totalSteps) {
-        currentStep++;
-        updateProgress();
-        showStep(currentStep);
-      } else {
-        document.getElementById('resultCard')!.innerHTML = buildResult();
-        showStep('result');
-        (document.getElementById('stepIndicator') as HTMLElement).textContent = 'Jouw advies';
-        (document.getElementById('progressFill') as HTMLElement).style.width = '100%';
-      }
+      if (key === 'features') return;
+      (answers as Record<string, unknown>)[key] = val;
+
+      // Visual feedback
+      const siblings = (btn as HTMLElement).closest('.options')?.querySelectorAll('.option');
+      siblings?.forEach(s => s.classList.remove('selected'));
+      (btn as HTMLElement).classList.add('selected');
+
+      setTimeout(() => {
+        if (currentStep < totalSteps) {
+          currentStep++;
+          updateProgress();
+          showStep(currentStep);
+        } else {
+          showResult();
+        }
+      }, 200);
     });
   });
 
-  document.getElementById('restartQuiz')!.addEventListener('click', () => {
-    Object.keys(answers).forEach(k => delete (answers as Record<string, unknown>)[k]);
+  // Step 3: checkboxes + next button
+  document.querySelectorAll('input[data-feature]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      answers.features = Array.from(document.querySelectorAll<HTMLInputElement>('input[data-feature]:checked'))
+        .map(el => el.dataset.feature!);
+    });
+  });
+
+  document.getElementById('nextStep3')?.addEventListener('click', () => {
+    currentStep++;
+    updateProgress();
+    showStep(currentStep);
+  });
+
+  // Slider (decorative — selection via buttons)
+  const slider = document.getElementById('bezoekersSlider') as HTMLInputElement;
+  const sliderVal = document.getElementById('sliderVal')!;
+  if (slider) {
+    slider.addEventListener('input', () => {
+      const v = parseInt(slider.value);
+      sliderVal.textContent = v.toLocaleString('nl-NL') + ' bezoekers/maand';
+    });
+  }
+
+  // Restart
+  document.getElementById('restartQuiz')?.addEventListener('click', () => {
+    answers.type = undefined;
+    answers.verkeer = undefined;
+    answers.features = [];
+    answers.budget = undefined;
+    document.querySelectorAll<HTMLInputElement>('input[data-feature]').forEach(cb => cb.checked = false);
+    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
     currentStep = 1;
     updateProgress();
     showStep(1);
@@ -283,30 +426,72 @@ const structuredData = {
   .quiz-header { margin-bottom: 2rem; text-align: center; }
   .quiz-header h1 { margin-bottom: 0.5rem; }
   .quiz-intro { color: var(--color-text-light); font-size: 1.0625rem; }
-  .quiz-wrapper { max-width: 680px; margin: 0 auto; }
+  .quiz-wrapper { max-width: 720px; margin: 0 auto; }
   .progress-bar { height: 6px; background: var(--color-border); border-radius: 9999px; margin-bottom: 0.5rem; overflow: hidden; }
-  .progress-fill { height: 100%; background: var(--color-primary); border-radius: 9999px; transition: width 0.3s ease; }
+  .progress-fill { height: 100%; background: var(--color-primary); border-radius: 9999px; transition: width 0.35s ease; }
   .step-indicator { text-align: right; font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
   .quiz-step { display: none; }
   .quiz-step.active { display: block; }
   .quiz-step h2 { margin-bottom: 1.25rem; font-size: 1.375rem; }
+  .step-sub { color: var(--color-text-light); font-size: 0.9375rem; margin-bottom: 1rem; margin-top: -0.75rem; }
+  .mt-opts { margin-top: 1.25rem; }
+  .mt-btn { margin-top: 1.5rem; }
+
+  /* Options */
   .options { display: flex; flex-direction: column; gap: 0.75rem; }
   .option { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg); cursor: pointer; text-align: left; transition: all var(--transition-fast); width: 100%; }
   .option:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .option.selected { border-color: var(--color-primary); background: var(--color-primary-light); box-shadow: 0 0 0 3px rgba(79,70,229,0.15); }
   .option-icon { font-size: 1.75rem; flex-shrink: 0; }
   .option strong { display: block; font-size: 1rem; color: var(--color-text); }
   .option span:last-child { display: block; font-size: 0.875rem; color: var(--color-text-light); }
-  .result-card { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 1.5rem; }
-  .result-icon { font-size: 3rem; text-align: center; margin-bottom: 0.5rem; }
-  .result-card h2 { text-align: center; margin-bottom: 1.5rem; color: var(--color-primary-dark); }
-  .result-specs { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
-  .result-spec { padding: 0.875rem 1rem; background: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border-light); }
-  .highlight-spec { border-color: var(--color-primary); background: var(--color-primary-light); }
-  .rs-label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; }
-  .rs-val { display: block; font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.125rem; }
-  .rs-reason { display: block; font-size: 0.8125rem; color: var(--color-text-light); }
-  .result-tip { padding: 0.75rem 1rem; background: #fef9c3; border: 1px solid #fde047; border-radius: var(--radius-md); font-size: 0.875rem; }
-  .result-cta { margin-bottom: 1rem; }
-  .result-disclaimer { font-size: 0.875rem; color: var(--color-text-light); text-align: center; }
-  .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+  /* Slider */
+  .slider-step { margin-bottom: 1rem; }
+  .slider-labels { display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.375rem; }
+  .slider { width: 100%; accent-color: var(--color-primary); height: 6px; margin-bottom: 0.5rem; }
+  .slider-val { text-align: center; font-weight: 600; font-size: 1rem; color: var(--color-primary-dark); }
+
+  /* Checklist */
+  .checklist { display: flex; flex-direction: column; gap: 0.625rem; }
+  .check-item { display: flex; align-items: center; gap: 0.875rem; padding: 0.875rem 1rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); cursor: pointer; transition: all var(--transition-fast); }
+  .check-item:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+  .check-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--color-primary); flex-shrink: 0; }
+  .check-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .check-label { display: flex; flex-direction: column; gap: 0.125rem; }
+  .check-label strong { font-size: 0.9375rem; color: var(--color-text); }
+  .check-label em { font-size: 0.8125rem; color: var(--color-text-light); font-style: normal; }
+
+  /* Result */
+  .result-header { text-align: center; margin-bottom: 2rem; }
+  .result-header h2 { margin-bottom: 0.375rem; }
+  .result-sub { color: var(--color-text-light); font-size: 0.9375rem; }
+  .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem; }
+  .btn-ghost { background: none; border: 1px solid var(--color-border); color: var(--color-text-light); }
+
+  /* Top 3 grid */
+  .top3-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  @media (max-width: 768px) { .top3-grid { grid-template-columns: 1fr; } }
+
+  .top3-card { border: 2px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.5rem; background: var(--color-bg); display: flex; flex-direction: column; gap: 0.75rem; position: relative; }
+  .top3-winner { border-color: var(--color-primary); background: var(--color-primary-light); box-shadow: var(--shadow-md); }
+  .top3-medal { font-size: 1.25rem; display: flex; align-items: center; gap: 0.375rem; }
+  .top3-label { font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .top3-badge { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.625rem; border-radius: 9999px; width: fit-content; }
+  .top3-naam { font-size: 1.25rem; font-weight: 700; margin: 0; }
+  .top3-type { font-size: 0.8125rem; color: var(--color-text-muted); }
+  .top3-prijs { font-size: 1.5rem; font-weight: 800; color: var(--color-primary-dark); }
+  .top3-specs { display: flex; gap: 0.75rem; font-size: 0.8125rem; color: var(--color-text-light); flex-wrap: wrap; }
+  .top3-features { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+  .feat-tag { font-size: 0.6875rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 0.25rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-light); }
+  .top3-winner .feat-tag { background: #fff; }
+  .top3-reasons { background: #fff; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); padding: 0.75rem; font-size: 0.8125rem; }
+  .top3-winner .top3-reasons { background: rgba(255,255,255,0.7); }
+  .top3-reasons strong { display: block; margin-bottom: 0.375rem; color: var(--color-text); font-size: 0.8125rem; }
+  .top3-reasons ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.25rem; }
+  .top3-reasons li { color: var(--color-text-light); }
+  .top3-cta { margin-top: auto; }
+  .btn-cta { background: var(--color-primary); color: #fff; padding: 0.75rem 1.25rem; border-radius: var(--radius-md); font-weight: 600; text-decoration: none; display: inline-block; transition: background var(--transition-fast); }
+  .btn-cta:hover { background: var(--color-primary-dark); text-decoration: none; }
+  .btn-full { width: 100%; text-align: center; }
 </style>

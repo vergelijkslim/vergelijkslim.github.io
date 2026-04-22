@@ -1,0 +1,307 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Verhuiskosten Calculator – Overstappen van Hosting',
+  description: 'Bereken wat het kost om over te stappen naar een andere hostingprovider: downtime, domeinkosten en opzegkosten.',
+  url: 'https://vergelijk-uw-hosting.nl/tools/verhuiskosten/',
+};
+
+const providers = [
+  { naam: 'Antagonist', type: 'shared', opzeg: 0, domeinTransfer: 9.95, downtime: 'laag', url: 'https://www.antagonist.nl/?tag=vergelijk05-21' },
+  { naam: 'TransIP', type: 'shared', opzeg: 0, domeinTransfer: 7.49, downtime: 'laag', url: 'https://www.transip.nl/webhosting/?tag=vergelijk05-21' },
+  { naam: 'IONOS', type: 'shared', opzeg: 0, domeinTransfer: 8.00, downtime: 'laag', url: 'https://www.ionos.nl/?tag=vergelijk05-21' },
+  { naam: 'SiteGround', type: 'wordpress', opzeg: 0, domeinTransfer: 0, downtime: 'laag', url: 'https://www.siteground.com/?tag=vergelijk05-21' },
+  { naam: 'Kinsta', type: 'wordpress', opzeg: 0, domeinTransfer: 0, downtime: 'laag', url: 'https://kinsta.com/?tag=vergelijk05-21' },
+  { naam: 'WP Engine', type: 'wordpress', opzeg: 0, domeinTransfer: 0, downtime: 'laag', url: 'https://wpengine.com/?tag=vergelijk05-21' },
+  { naam: 'Cloudways', type: 'managed', opzeg: 0, domeinTransfer: 0, downtime: 'geen', url: 'https://www.cloudways.com/?tag=vergelijk05-21' },
+  { naam: 'Hetzner', type: 'vps', opzeg: 0, domeinTransfer: 0, downtime: 'medium', url: 'https://www.hetzner.com/?tag=vergelijk05-21' },
+  { naam: 'DigitalOcean', type: 'vps', opzeg: 0, domeinTransfer: 0, downtime: 'medium', url: 'https://www.digitalocean.com/?tag=vergelijk05-21' },
+  { naam: 'One.com', type: 'shared', opzeg: 0, domeinTransfer: 9.00, downtime: 'laag', url: 'https://www.one.com/nl/?tag=vergelijk05-21' },
+  { naam: 'Combell', type: 'shared', opzeg: 0, domeinTransfer: 9.95, downtime: 'laag', url: 'https://www.combell.com/nl/?tag=vergelijk05-21' },
+  { naam: 'Mijndomein.nl', type: 'shared', opzeg: 0, domeinTransfer: 8.95, downtime: 'laag', url: 'https://www.mijndomein.nl/?tag=vergelijk05-21' },
+  { naam: 'Anders / eigen server', type: 'other', opzeg: 0, domeinTransfer: 10.00, downtime: 'hoog', url: '' },
+];
+---
+<BaseLayout
+  title="Verhuiskosten Calculator – Overstappen van Hosting"
+  description="Bereken wat het kost om over te stappen van hosting. Geschatte downtime, domein transfer kosten en opzegkosten in één overzicht."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Verhuiskosten Calculator</h1>
+        <p class="tool-intro">Overweeg je te wisselen van hostingprovider? Bereken wat dat kost: downtime, domein transfer en eventuele opzegkosten.</p>
+      </div>
+
+      <div class="calc-wrapper">
+        <!-- Input panel -->
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label for="fromProvider">Ik zit nu bij</label>
+            <select id="fromProvider">
+              <option value="">— Selecteer je huidige provider —</option>
+              {providers.map(p => <option value={p.naam} data-opzeg={p.opzeg} data-domein={p.domeinTransfer} data-downtime={p.downtime}>{p.naam}</option>)}
+            </select>
+          </div>
+
+          <div class="arrow-divider">→</div>
+
+          <div class="input-group">
+            <label for="toProvider">Ik wil naar</label>
+            <select id="toProvider">
+              <option value="">— Selecteer je nieuwe provider —</option>
+              {providers.filter(p => p.naam !== 'Anders / eigen server').map(p => (
+                <option value={p.naam} data-url={p.url}>{p.naam}</option>
+              ))}
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="contractType">Huidig contract type</label>
+            <select id="contractType">
+              <option value="maand">Maandelijks (opzegbaar per maand)</option>
+              <option value="jaar">Jaarlijks</option>
+              <option value="2jaar">2-jarig</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="maandenResterend">Resterende contractduur (maanden)</label>
+            <input type="number" id="maandenResterend" min="0" max="24" value="0" placeholder="0" />
+            <span class="input-hint">0 = geen resterende contractperiode</span>
+          </div>
+
+          <div class="input-group">
+            <label for="maandprijs">Huidige maandprijs (€)</label>
+            <input type="number" id="maandprijs" min="0" step="0.01" value="5.00" placeholder="5.00" />
+          </div>
+
+          <div class="input-group">
+            <label for="heeftDomein">Heb je een domein bij je huidige hoster?</label>
+            <select id="heeftDomein">
+              <option value="ja">Ja, ik wil het meenemen (transfer)</option>
+              <option value="nee">Nee, of ik heb al een apart domein</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary btn-calc" id="calcBtn">Bereken verhuiskosten →</button>
+        </div>
+
+        <!-- Result panel -->
+        <div class="calc-result hidden" id="calcResult">
+          <div class="result-title">
+            <span id="resultFrom"></span> → <span id="resultTo"></span>
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="cost-item">
+              <div class="cost-label">Domein transfer kosten</div>
+              <div class="cost-val" id="costDomein">€ 0,00</div>
+              <div class="cost-note" id="noteDomein"></div>
+            </div>
+            <div class="cost-item">
+              <div class="cost-label">Geschatte opzegkosten</div>
+              <div class="cost-val" id="costOpzeg">€ 0,00</div>
+              <div class="cost-note" id="noteOpzeg"></div>
+            </div>
+            <div class="cost-item highlight-cost">
+              <div class="cost-label">Totale eenmalige kosten</div>
+              <div class="cost-val total-val" id="costTotaal">€ 0,00</div>
+            </div>
+          </div>
+
+          <div class="downtime-box" id="downtimeBox">
+            <div class="downtime-icon" id="downtimeIcon">⏱️</div>
+            <div>
+              <strong>Geschatte downtime</strong>
+              <div class="downtime-desc" id="downtimeDesc"></div>
+            </div>
+          </div>
+
+          <div class="tips-box" id="tipsBox">
+            <strong>💡 Tips voor een soepele verhuizing</strong>
+            <ul id="tipsList"></ul>
+          </div>
+
+          <div class="cta-box" id="ctaBox">
+            <a href="#" id="ctaLink" rel="nofollow sponsored" target="_blank" class="btn btn-cta btn-full">
+              Stap nu over naar <span id="ctaProvider"></span> →
+            </a>
+            <a href="/tools/vergelijk/" class="btn btn-outline btn-full mt-sm">Bekijk alle providers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <p>⚠️ Genoemde bedragen zijn schattingen. Raadpleeg altijd de algemene voorwaarden van je huidige provider voor exacte opzeg- en transferkosten.</p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  interface ProviderData {
+    opzeg: number;
+    domein: number;
+    downtime: string;
+    url?: string;
+  }
+
+  const providerMeta: Record<string, ProviderData> = {
+    'Antagonist':           { opzeg: 0, domein: 9.95, downtime: 'laag', url: 'https://www.antagonist.nl/?tag=vergelijk05-21' },
+    'TransIP':              { opzeg: 0, domein: 7.49, downtime: 'laag', url: 'https://www.transip.nl/webhosting/?tag=vergelijk05-21' },
+    'IONOS':                { opzeg: 0, domein: 8.00, downtime: 'laag', url: 'https://www.ionos.nl/?tag=vergelijk05-21' },
+    'SiteGround':           { opzeg: 0, domein: 0,    downtime: 'laag', url: 'https://www.siteground.com/?tag=vergelijk05-21' },
+    'Kinsta':               { opzeg: 0, domein: 0,    downtime: 'laag', url: 'https://kinsta.com/?tag=vergelijk05-21' },
+    'WP Engine':            { opzeg: 0, domein: 0,    downtime: 'laag', url: 'https://wpengine.com/?tag=vergelijk05-21' },
+    'Cloudways':            { opzeg: 0, domein: 0,    downtime: 'geen', url: 'https://www.cloudways.com/?tag=vergelijk05-21' },
+    'Hetzner':              { opzeg: 0, domein: 0,    downtime: 'medium', url: 'https://www.hetzner.com/?tag=vergelijk05-21' },
+    'DigitalOcean':         { opzeg: 0, domein: 0,    downtime: 'medium', url: 'https://www.digitalocean.com/?tag=vergelijk05-21' },
+    'One.com':              { opzeg: 0, domein: 9.00, downtime: 'laag', url: 'https://www.one.com/nl/?tag=vergelijk05-21' },
+    'Combell':              { opzeg: 0, domein: 9.95, downtime: 'laag', url: 'https://www.combell.com/nl/?tag=vergelijk05-21' },
+    'Mijndomein.nl':        { opzeg: 0, domein: 8.95, downtime: 'laag', url: 'https://www.mijndomein.nl/?tag=vergelijk05-21' },
+    'Anders / eigen server':{ opzeg: 0, domein: 10.0, downtime: 'hoog', url: '' },
+  };
+
+  const downtimeInfo: Record<string, { icon: string; label: string; desc: string; color: string }> = {
+    geen:   { icon: '✅', label: 'Geen downtime verwacht', desc: 'Provider ondersteunt zero-downtime migratie of biedt migratiehulp.', color: '#22c55e' },
+    laag:   { icon: '🟡', label: '15 min – 2 uur downtime', desc: 'Korte DNS-propagatie. Zet je TTL laag voor de verhuizing en plan buiten piekuren.', color: '#eab308' },
+    medium: { icon: '🟠', label: '2 – 8 uur downtime', desc: 'Handmatige serverconfiguratie vereist. Plan een onderhoudsvenster en zet een "we verhuizen" pagina klaar.', color: '#f97316' },
+    hoog:   { icon: '🔴', label: '8 – 24 uur mogelijke downtime', desc: 'Complexe servermigratie. Overweeg een professionele migratiepartner.', color: '#ef4444' },
+  };
+
+  function fmt(n: number): string {
+    return '€ ' + n.toFixed(2).replace('.', ',');
+  }
+
+  document.getElementById('calcBtn')!.addEventListener('click', () => {
+    const from = (document.getElementById('fromProvider') as HTMLSelectElement).value;
+    const to   = (document.getElementById('toProvider') as HTMLSelectElement).value;
+    const contract = (document.getElementById('contractType') as HTMLSelectElement).value;
+    const maanden  = parseInt((document.getElementById('maandenResterend') as HTMLInputElement).value) || 0;
+    const prijs    = parseFloat((document.getElementById('maandprijs') as HTMLInputElement).value) || 0;
+    const domein   = (document.getElementById('heeftDomein') as HTMLSelectElement).value;
+
+    if (!from || !to) {
+      alert('Selecteer zowel je huidige als je nieuwe provider.');
+      return;
+    }
+    if (from === to) {
+      alert('Je huidige en nieuwe provider zijn hetzelfde. Kies een andere nieuwe provider.');
+      return;
+    }
+
+    const fromData = providerMeta[from] ?? { opzeg: 0, domein: 10, downtime: 'laag' };
+    const toData   = providerMeta[to]   ?? { opzeg: 0, domein: 0,  downtime: 'laag', url: '' };
+
+    // Domein transfer costs (only from current provider side)
+    const domeinKosten = domein === 'ja' ? fromData.domein : 0;
+
+    // Opzeg: if remaining months > 0 on a yearly/2-year contract
+    let opzegKosten = 0;
+    if (maanden > 0 && (contract === 'jaar' || contract === '2jaar')) {
+      opzegKosten = maanden * prijs;
+    }
+
+    const totaal = domeinKosten + opzegKosten;
+    const downtime = fromData.downtime;
+    const dt = downtimeInfo[downtime] ?? downtimeInfo['laag'];
+    const toUrl = toData.url ?? '';
+
+    // Fill result
+    (document.getElementById('resultFrom') as HTMLElement).textContent = from;
+    (document.getElementById('resultTo') as HTMLElement).textContent = to;
+    (document.getElementById('costDomein') as HTMLElement).textContent = fmt(domeinKosten);
+    (document.getElementById('noteDomein') as HTMLElement).textContent =
+      domein === 'ja'
+        ? `Domein .nl transfer kost typisch €${fromData.domein.toFixed(2).replace('.', ',')} bij ${from}.`
+        : 'Geen domein transfer nodig.';
+    (document.getElementById('costOpzeg') as HTMLElement).textContent = fmt(opzegKosten);
+    (document.getElementById('noteOpzeg') as HTMLElement).textContent =
+      opzegKosten > 0
+        ? `${maanden} maand(en) × €${prijs.toFixed(2).replace('.', ',')} resterende contractperiode.`
+        : 'Geen opzegkosten (maandelijks contract of geen resterende periode).';
+    (document.getElementById('costTotaal') as HTMLElement).textContent = fmt(totaal);
+
+    // Downtime
+    const dtBox = document.getElementById('downtimeBox')!;
+    dtBox.style.borderColor = dt.color;
+    (document.getElementById('downtimeIcon') as HTMLElement).textContent = dt.icon;
+    const dtDesc = document.getElementById('downtimeDesc')!;
+    dtDesc.innerHTML = `<strong style="color:${dt.color}">${dt.label}</strong><br>${dt.desc}`;
+
+    // Tips
+    const tips: string[] = [
+      'Verlaag je DNS TTL 24 uur van tevoren naar 300 seconden.',
+      'Maak een volledige backup voordat je verhuist.',
+      'Wacht met opzeggen bij je oude provider tot je nieuwe site 100% werkt.',
+    ];
+    if (domein === 'ja') tips.push('Domein transfers bij .nl duren 5-7 werkdagen via SIDN.');
+    if (downtime === 'medium' || downtime === 'hoog') tips.push('Plan de verhuizing op een rustig moment (nacht of weekend).');
+    (document.getElementById('tipsList') as HTMLElement).innerHTML = tips.map(t => `<li>${t}</li>`).join('');
+
+    // CTA
+    if (toUrl) {
+      (document.getElementById('ctaLink') as HTMLAnchorElement).href = toUrl;
+      (document.getElementById('ctaProvider') as HTMLElement).textContent = to;
+      document.getElementById('ctaBox')!.classList.remove('hidden');
+    } else {
+      document.getElementById('ctaBox')!.classList.add('hidden');
+    }
+
+    document.getElementById('calcResult')!.classList.remove('hidden');
+    document.getElementById('calcResult')!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+
+  .calc-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+  @media (max-width: 768px) { .calc-wrapper { grid-template-columns: 1fr; } }
+
+  .calc-inputs { display: flex; flex-direction: column; gap: 1.25rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 2rem; }
+  .input-group { display: flex; flex-direction: column; gap: 0.375rem; }
+  .input-group label { font-size: 0.875rem; font-weight: 600; color: var(--color-text); }
+  .input-group select, .input-group input[type="number"] { padding: 0.625rem 0.875rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); font-size: 0.9375rem; width: 100%; }
+  .input-hint { font-size: 0.75rem; color: var(--color-text-muted); }
+  .arrow-divider { text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--color-primary); padding: 0.25rem 0; }
+  .btn-calc { margin-top: 0.5rem; }
+
+  .calc-result { background: var(--color-bg); border: 2px solid var(--color-primary); border-radius: var(--radius-xl); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .hidden { display: none !important; }
+  .result-title { font-size: 1.125rem; font-weight: 700; color: var(--color-text); }
+
+  .cost-breakdown { display: flex; flex-direction: column; gap: 0.75rem; }
+  .cost-item { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.875rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+  .highlight-cost { background: var(--color-primary-light); border-color: var(--color-primary); }
+  .cost-label { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-muted); }
+  .cost-val { font-size: 1.25rem; font-weight: 700; color: var(--color-text); }
+  .total-val { font-size: 1.625rem; color: var(--color-primary-dark); }
+  .cost-note { font-size: 0.8125rem; color: var(--color-text-light); }
+
+  .downtime-box { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); }
+  .downtime-icon { font-size: 1.75rem; flex-shrink: 0; }
+  .downtime-desc { font-size: 0.875rem; color: var(--color-text-light); margin-top: 0.25rem; line-height: 1.5; }
+
+  .tips-box { background: #fef9c3; border: 1px solid #fde047; border-radius: var(--radius-md); padding: 1rem 1.25rem; }
+  .tips-box strong { display: block; margin-bottom: 0.5rem; }
+  .tips-box ul { margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.375rem; }
+  .tips-box li { font-size: 0.875rem; color: #92400e; }
+
+  .cta-box { display: flex; flex-direction: column; gap: 0.75rem; }
+  .btn-cta { background: var(--color-primary); color: #fff; padding: 0.875rem 1.25rem; border-radius: var(--radius-md); font-weight: 600; text-decoration: none; display: block; text-align: center; transition: background var(--transition-fast); }
+  .btn-cta:hover { background: var(--color-primary-dark); text-decoration: none; }
+  .btn-full { width: 100%; }
+  .mt-sm { margin-top: 0; }
+
+  .disclaimer { margin-top: 2rem; padding: 1rem; background: var(--color-bg-alt); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+  .disclaimer p { font-size: 0.875rem; color: var(--color-text-light); margin: 0; }
+</style>

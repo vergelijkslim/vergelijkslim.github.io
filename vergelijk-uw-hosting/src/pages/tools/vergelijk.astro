@@ -10,18 +10,18 @@ const structuredData = {
 };
 
 const providers = [
-  { id: 1, naam: 'Antagonist', type: 'shared', prijs: 3.50, opslag: 50, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: true, url: 'https://www.antagonist.nl/', winkel: 'Antagonist' },
-  { id: 2, naam: 'TransIP', type: 'shared', prijs: 2.99, opslag: 25, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 5, highlight: false, url: 'https://www.transip.nl/webhosting/', winkel: 'TransIP' },
-  { id: 3, naam: 'SiteGround', type: 'wordpress', prijs: 3.99, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 10, highlight: false, url: 'https://www.siteground.com/', winkel: 'SiteGround' },
-  { id: 4, naam: 'Kinsta', type: 'wordpress', prijs: 35.00, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://kinsta.com/', winkel: 'Kinsta' },
-  { id: 5, naam: 'Digital Ocean', type: 'vps', prijs: 6.00, opslag: 25, uptime: 99.99, support: 'community', gratisDomein: false, sslGratis: false, email: 0, highlight: false, url: 'https://www.digitalocean.com/', winkel: 'DigitalOcean' },
-  { id: 6, naam: 'Hetzner', type: 'vps', prijs: 4.15, opslag: 40, uptime: 99.9, support: 'ticket', gratisDomein: false, sslGratis: false, email: 0, highlight: false, url: 'https://www.hetzner.com/', winkel: 'Hetzner' },
-  { id: 7, naam: 'One.com', type: 'shared', prijs: 1.99, opslag: 50, uptime: 99.9, support: 'email', gratisDomein: true, sslGratis: true, email: 5, highlight: false, url: 'https://www.one.com/nl/', winkel: 'One.com' },
-  { id: 8, naam: 'Cloudways', type: 'managed', prijs: 14.00, opslag: 20, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://www.cloudways.com/', winkel: 'Cloudways' },
-  { id: 9, naam: 'Mijndomein.nl', type: 'shared', prijs: 2.49, opslag: 100, uptime: 99.9, support: 'email', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.mijndomein.nl/', winkel: 'Mijndomein' },
-  { id: 10, naam: 'Combell', type: 'shared', prijs: 4.99, opslag: 50, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.combell.com/nl/', winkel: 'Combell' },
-  { id: 11, naam: 'WP Engine', type: 'wordpress', prijs: 25.00, opslag: 10, uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true, email: 0, highlight: false, url: 'https://wpengine.com/', winkel: 'WP Engine' },
-  { id: 12, naam: 'IONOS', type: 'shared', prijs: 1.00, opslag: 100, uptime: 99.99, support: '24/7', gratisDomein: true, sslGratis: true, email: 10, highlight: false, url: 'https://www.ionos.nl/', winkel: 'IONOS' },
+  { id: 1,  naam: 'Antagonist',    type: 'shared',    prijs: 3.50,  prijsJaar: 2.99,  opslag: 50,  uptime: 99.99, support: '24/7', gratisDomein: true,  sslGratis: true,  email: 10, highlight: true,  badge: 'Beste koop',    url: 'https://www.antagonist.nl/?tag=vergelijk05-21',        winkel: 'Antagonist' },
+  { id: 2,  naam: 'TransIP',       type: 'shared',    prijs: 2.99,  prijsJaar: 2.49,  opslag: 25,  uptime: 99.99, support: '24/7', gratisDomein: true,  sslGratis: true,  email: 5,  highlight: false, badge: 'Beste uptime',  url: 'https://www.transip.nl/webhosting/?tag=vergelijk05-21', winkel: 'TransIP' },
+  { id: 3,  naam: 'SiteGround',    type: 'wordpress', prijs: 3.99,  prijsJaar: 2.99,  opslag: 10,  uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true,  email: 10, highlight: false, badge: 'Beste support',  url: 'https://www.siteground.com/?tag=vergelijk05-21',        winkel: 'SiteGround' },
+  { id: 4,  naam: 'Kinsta',        type: 'wordpress', prijs: 35.00, prijsJaar: 29.17, opslag: 10,  uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true,  email: 0,  highlight: false, badge: null,            url: 'https://kinsta.com/?tag=vergelijk05-21',                winkel: 'Kinsta' },
+  { id: 5,  naam: 'DigitalOcean',  type: 'vps',       prijs: 6.00,  prijsJaar: 6.00,  opslag: 25,  uptime: 99.99, support: 'community', gratisDomein: false, sslGratis: false, email: 0, highlight: false, badge: null,           url: 'https://www.digitalocean.com/?tag=vergelijk05-21',     winkel: 'DigitalOcean' },
+  { id: 6,  naam: 'Hetzner',       type: 'vps',       prijs: 4.15,  prijsJaar: 4.15,  opslag: 40,  uptime: 99.9,  support: 'ticket',    gratisDomein: false, sslGratis: false, email: 0, highlight: false, badge: null,           url: 'https://www.hetzner.com/?tag=vergelijk05-21',          winkel: 'Hetzner' },
+  { id: 7,  naam: 'One.com',       type: 'shared',    prijs: 1.99,  prijsJaar: 1.49,  opslag: 50,  uptime: 99.9,  support: 'email', gratisDomein: true,  sslGratis: true,  email: 5,  highlight: false, badge: null,            url: 'https://www.one.com/nl/?tag=vergelijk05-21',           winkel: 'One.com' },
+  { id: 8,  naam: 'Cloudways',     type: 'managed',   prijs: 14.00, prijsJaar: 12.00, opslag: 20,  uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true,  email: 0,  highlight: false, badge: null,            url: 'https://www.cloudways.com/?tag=vergelijk05-21',        winkel: 'Cloudways' },
+  { id: 9,  naam: 'Mijndomein.nl', type: 'shared',    prijs: 2.49,  prijsJaar: 1.99,  opslag: 100, uptime: 99.9,  support: 'email', gratisDomein: true,  sslGratis: true,  email: 10, highlight: false, badge: null,            url: 'https://www.mijndomein.nl/?tag=vergelijk05-21',        winkel: 'Mijndomein' },
+  { id: 10, naam: 'Combell',       type: 'shared',    prijs: 4.99,  prijsJaar: 4.16,  opslag: 50,  uptime: 99.99, support: '24/7', gratisDomein: true,  sslGratis: true,  email: 10, highlight: false, badge: null,            url: 'https://www.combell.com/nl/?tag=vergelijk05-21',       winkel: 'Combell' },
+  { id: 11, naam: 'WP Engine',     type: 'wordpress', prijs: 25.00, prijsJaar: 20.83, opslag: 10,  uptime: 99.99, support: '24/7', gratisDomein: false, sslGratis: true,  email: 0,  highlight: false, badge: null,            url: 'https://wpengine.com/?tag=vergelijk05-21',             winkel: 'WP Engine' },
+  { id: 12, naam: 'IONOS',         type: 'shared',    prijs: 1.00,  prijsJaar: 0.50,  opslag: 100, uptime: 99.99, support: '24/7', gratisDomein: true,  sslGratis: true,  email: 10, highlight: false, badge: null,            url: 'https://www.ionos.nl/?tag=vergelijk05-21',             winkel: 'IONOS' },
 ];
 
 const typeLabels: Record<string, string> = {
@@ -97,6 +97,15 @@ const typeLabels: Record<string, string> = {
         <button class="btn-reset" id="resetFilters">Reset</button>
       </div>
 
+      <!-- Prijs toggle -->
+      <div class="prijs-toggle-bar">
+        <span class="toggle-label">Prijs weergeven:</span>
+        <div class="toggle-group" id="prijsToggle">
+          <button class="toggle-btn active" data-mode="maand">Per maand</button>
+          <button class="toggle-btn" data-mode="jaar">Per jaar <span class="toggle-savings">Bespaar tot 50%</span></button>
+        </div>
+      </div>
+
       <div class="result-count" id="resultCount"></div>
 
       <!-- Desktop table -->
@@ -120,6 +129,7 @@ const typeLabels: Record<string, string> = {
                 class:list={['host-row', { highlight: p.highlight }]}
                 data-type={p.type}
                 data-prijs={p.prijs}
+                data-prijs-jaar={p.prijsJaar}
                 data-opslag={p.opslag}
                 data-uptime={p.uptime}
                 data-support={p.support === '24/7' ? '247' : 'basic'}
@@ -127,10 +137,11 @@ const typeLabels: Record<string, string> = {
               >
                 <td class="naam-cel">
                   {p.highlight && <span class="badge-top">Beste keuze</span>}
+                  {p.badge && !p.highlight && <span class="badge-secondary">{p.badge}</span>}
                   <span class="product-naam">{p.naam}</span>
                 </td>
                 <td><span class={`type-badge type-${p.type}`}>{typeLabels[p.type]}</span></td>
-                <td class="prijs-cel">€{p.prijs.toFixed(2)}</td>
+                <td class="prijs-cel" data-maand={p.prijs} data-jaar={p.prijsJaar}>€{p.prijs.toFixed(2)}</td>
                 <td>{p.opslag} GB</td>
                 <td>{p.uptime}%</td>
                 <td>{p.support === '24/7' ? <span class="badge-yes">✓ 24/7</span> : <span class="badge-neutral">{p.support}</span>}</td>
@@ -157,18 +168,20 @@ const typeLabels: Record<string, string> = {
             class:list={['mobile-card', { 'mobile-highlight': p.highlight }]}
             data-type={p.type}
             data-prijs={p.prijs}
+            data-prijs-jaar={p.prijsJaar}
             data-opslag={p.opslag}
             data-uptime={p.uptime}
             data-support={p.support === '24/7' ? '247' : 'basic'}
             data-domein={p.gratisDomein ? '1' : '0'}
           >
             {p.highlight && <span class="badge-top">Beste keuze</span>}
+            {p.badge && !p.highlight && <span class="badge-secondary">{p.badge}</span>}
             <div class="card-header-row">
               <h3 class="card-naam">{p.naam}</h3>
               <span class={`type-badge type-${p.type}`}>{typeLabels[p.type]}</span>
             </div>
             <div class="card-specs">
-              <div class="spec"><span class="spec-label">Prijs/mnd</span><span class="spec-val">€{p.prijs.toFixed(2)}</span></div>
+              <div class="spec"><span class="spec-label">Prijs/mnd</span><span class="spec-val card-prijs" data-maand={p.prijs} data-jaar={p.prijsJaar}>€{p.prijs.toFixed(2)}</span></div>
               <div class="spec"><span class="spec-label">Opslag</span><span class="spec-val">{p.opslag} GB</span></div>
               <div class="spec"><span class="spec-label">Uptime SLA</span><span class="spec-val">{p.uptime}%</span></div>
               <div class="spec"><span class="spec-label">Support</span><span class="spec-val">{p.support}</span></div>
@@ -196,12 +209,17 @@ const typeLabels: Record<string, string> = {
           <a href="/tools/welke-hosting/" class="tool-card">
             <span class="tool-icon">🧙</span>
             <strong>Welke hosting heb ik nodig?</strong>
-            <span>Quiz: persoonlijk advies via 5 vragen</span>
+            <span>Slimme wizard: Top 3 aanbevelingen op maat</span>
           </a>
           <a href="/tools/prijscalculator/" class="tool-card">
             <span class="tool-icon">🧮</span>
             <strong>Prijscalculator</strong>
             <span>Schat jouw maandelijkse hostingkosten</span>
+          </a>
+          <a href="/tools/verhuiskosten/" class="tool-card">
+            <span class="tool-icon">🚚</span>
+            <strong>Verhuiskosten Calculator</strong>
+            <span>Wat kost overstappen van provider?</span>
           </a>
         </div>
       </div>
@@ -273,6 +291,40 @@ const typeLabels: Record<string, string> = {
   document.getElementById('resetFilters2')?.addEventListener('click', resetAll);
 
   applyFilters();
+
+  // Prijs toggle (maand / jaar)
+  let prijsModus: 'maand' | 'jaar' = 'maand';
+
+  function updatePrijzen() {
+    // Update table price cells
+    document.querySelectorAll<HTMLElement>('.prijs-cel[data-maand]').forEach(cell => {
+      const p = parseFloat(prijsModus === 'jaar' ? (cell.dataset.jaar ?? cell.dataset.maand ?? '0') : (cell.dataset.maand ?? '0'));
+      cell.textContent = '€' + p.toFixed(2);
+      // also update row data-prijs for sort
+      const row = cell.closest<HTMLElement>('.host-row');
+      if (row) row.dataset.prijs = String(p);
+    });
+    // Update mobile card price spans
+    document.querySelectorAll<HTMLElement>('.card-prijs[data-maand]').forEach(span => {
+      const p = parseFloat(prijsModus === 'jaar' ? (span.dataset.jaar ?? span.dataset.maand ?? '0') : (span.dataset.maand ?? '0'));
+      span.textContent = '€' + p.toFixed(2);
+      const card = span.closest<HTMLElement>('.mobile-card');
+      if (card) card.dataset.prijs = String(p);
+    });
+    // Update filter label
+    const priceHeader = document.querySelector<HTMLElement>('.cmp-table th:nth-child(3)');
+    if (priceHeader) priceHeader.textContent = prijsModus === 'jaar' ? 'Prijs/mnd (jaar)' : 'Prijs/mnd';
+    applyFilters();
+  }
+
+  document.getElementById('prijsToggle')?.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      prijsModus = (btn as HTMLElement).dataset.mode as 'maand' | 'jaar';
+      document.querySelectorAll('#prijsToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      updatePrijzen();
+    });
+  });
 </script>
 
 <style>
@@ -300,6 +352,15 @@ const typeLabels: Record<string, string> = {
   .product-naam { display: block; font-weight: 600; }
   .prijs-cel { font-weight: 700; color: var(--color-primary-dark); }
   .badge-top { display: inline-block; background: var(--color-primary); color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.25rem; }
+  .badge-secondary { display: inline-block; background: #f59e0b; color: #fff; font-size: 0.6875rem; font-weight: 700; padding: 0.125rem 0.5rem; border-radius: 9999px; margin-bottom: 0.25rem; }
+
+  /* Prijs toggle */
+  .prijs-toggle-bar { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  .toggle-label { font-size: 0.875rem; font-weight: 600; color: var(--color-text-light); }
+  .toggle-group { display: flex; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+  .toggle-btn { padding: 0.4rem 1rem; font-size: 0.875rem; font-weight: 600; background: var(--color-bg); border: none; cursor: pointer; color: var(--color-text-light); transition: all var(--transition-fast); display: flex; align-items: center; gap: 0.375rem; }
+  .toggle-btn.active { background: var(--color-primary); color: #fff; }
+  .toggle-savings { font-size: 0.6875rem; background: #dcfce7; color: #166534; padding: 0.1rem 0.375rem; border-radius: 9999px; font-weight: 700; }
   .badge-yes { color: var(--color-primary); font-weight: 600; }
   .badge-neutral { color: var(--color-text-light); }
   .type-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 9999px; }
