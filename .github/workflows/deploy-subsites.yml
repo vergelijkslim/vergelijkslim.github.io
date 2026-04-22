@@ -45,7 +45,7 @@ jobs:
           SITES='[]'
           for dir in vergelijk-uw-thuisbatterij vergelijk-uw-laadpaal thuisbatterijwijzer vergelijk-uw-hosting; do
             if git diff --name-only HEAD~1 HEAD -- "$dir/" | grep -q .; then
-              SITES=$(echo "$SITES" | jq --arg s "$dir" '. + [$s]')
+              SITES=$(echo "$SITES" | jq -c --arg s "$dir" '. + [$s]')
             fi
           done
 
