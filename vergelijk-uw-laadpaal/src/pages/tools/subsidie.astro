@@ -27,6 +27,15 @@ const structuredData = {
           <h2>Jouw situatie</h2>
 
           <div class="field-group">
+            <label for="postcode">Postcode</label>
+            <div class="postcode-row">
+              <input type="text" id="postcode" placeholder="bijv. 1234 AB" maxlength="7" autocomplete="postal-code" />
+              <span class="postcode-result" id="postcodeResult"></span>
+            </div>
+            <small>Vul je postcode in voor lokale subsidieinfo (optioneel)</small>
+          </div>
+
+          <div class="field-group">
             <label>Eigenaar of huurder?</label>
             <div class="radio-group">
               <label class="radio-option"><input type="radio" name="eigendom" value="eigenaar" checked /> Eigenaar</label>
@@ -165,6 +174,65 @@ const structuredData = {
 </BaseLayout>
 
 <script>
+  // Postcode → gemeente mapping (4-digit prefix ranges)
+  const postcodeMap: Record<string, { gemeente: string; label: string }> = {
+    '10': { gemeente: 'amsterdam', label: 'Amsterdam' },
+    '11': { gemeente: 'amsterdam', label: 'Amsterdam' },
+    '12': { gemeente: 'amsterdam', label: 'Amsterdam' },
+    '20': { gemeente: 'amsterdam', label: 'Amsterdam regio' },
+    '21': { gemeente: 'amsterdam', label: 'Amsterdam regio' },
+    '22': { gemeente: 'amsterdam', label: 'Amsterdam regio' },
+    '24': { gemeente: 'denhaag', label: 'Den Haag regio' },
+    '25': { gemeente: 'denhaag', label: 'Den Haag' },
+    '26': { gemeente: 'denhaag', label: 'Den Haag regio' },
+    '27': { gemeente: 'denhaag', label: 'Den Haag regio' },
+    '28': { gemeente: 'denhaag', label: 'Den Haag regio' },
+    '29': { gemeente: 'rotterdam', label: 'Rotterdam regio' },
+    '30': { gemeente: 'rotterdam', label: 'Rotterdam' },
+    '31': { gemeente: 'rotterdam', label: 'Rotterdam regio' },
+    '32': { gemeente: 'rotterdam', label: 'Rotterdam regio' },
+    '33': { gemeente: 'rotterdam', label: 'Rotterdam regio' },
+    '35': { gemeente: 'utrecht', label: 'Utrecht' },
+    '36': { gemeente: 'utrecht', label: 'Utrecht regio' },
+    '56': { gemeente: 'eindhoven', label: 'Eindhoven' },
+    '57': { gemeente: 'eindhoven', label: 'Eindhoven regio' },
+    '66': { gemeente: 'gelderland', label: 'Gelderland' },
+    '67': { gemeente: 'gelderland', label: 'Gelderland' },
+    '68': { gemeente: 'gelderland', label: 'Gelderland' },
+    '69': { gemeente: 'gelderland', label: 'Gelderland' },
+    '74': { gemeente: 'overijssel', label: 'Overijssel' },
+    '75': { gemeente: 'overijssel', label: 'Overijssel' },
+    '76': { gemeente: 'overijssel', label: 'Overijssel' },
+    '77': { gemeente: 'overijssel', label: 'Overijssel' },
+    '97': { gemeente: 'groningen', label: 'Groningen' },
+    '98': { gemeente: 'groningen', label: 'Groningen regio' },
+    '99': { gemeente: 'groningen', label: 'Groningen regio' },
+  };
+
+  const postcodeInput = document.getElementById('postcode') as HTMLInputElement;
+  const postcodeResult = document.getElementById('postcodeResult') as HTMLElement;
+  const gemeenteSelect = document.getElementById('gemeente') as HTMLSelectElement;
+
+  postcodeInput?.addEventListener('input', () => {
+    const raw = postcodeInput.value.replace(/\s/g, '');
+    const digits = raw.replace(/[^0-9]/g, '');
+    if (digits.length >= 2) {
+      const prefix2 = digits.substring(0, 2);
+      const match = postcodeMap[prefix2];
+      if (match) {
+        gemeenteSelect.value = match.gemeente;
+        postcodeResult.textContent = `📍 ${match.label} herkend`;
+        postcodeResult.className = 'postcode-result found';
+      } else {
+        gemeenteSelect.value = 'anders';
+        postcodeResult.textContent = digits.length >= 4 ? '📍 Geen specifieke lokale data beschikbaar' : '';
+        postcodeResult.className = 'postcode-result';
+      }
+    } else {
+      postcodeResult.textContent = '';
+    }
+  });
+
   document.getElementById('checkBtn')!.addEventListener('click', () => {
     const eigendom = (document.querySelector('input[name="eigendom"]:checked') as HTMLInputElement)?.value;
     const zakelijk = (document.querySelector('input[name="zakelijk"]:checked') as HTMLInputElement)?.value;
@@ -243,6 +311,11 @@ const structuredData = {
 </script>
 
 <style>
+  .postcode-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+  .postcode-row input { flex: 1; min-width: 140px; padding: 0.625rem 0.875rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 1rem; background: var(--color-bg); }
+  .postcode-result { font-size: 0.875rem; color: var(--color-text-muted); }
+  .postcode-result.found { color: var(--color-primary); font-weight: 600; }
+
   .tool-page { padding: 2rem 0 4rem; }
   .tool-header { margin-bottom: 2rem; }
   .tool-header h1 { margin-bottom: 0.5rem; }

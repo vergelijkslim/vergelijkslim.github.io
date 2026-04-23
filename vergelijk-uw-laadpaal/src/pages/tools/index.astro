@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const tools = [
+  {
+    href: '/tools/totaalkosten/',
+    icon: '💶',
+    title: 'Totaalkosten calculator',
+    desc: 'Bereken je maandelijkse laadkosten thuis en vergelijk ze direct met publiek laden en rijden op benzine.',
+    tag: 'Aanbevolen',
+    tagColor: 'green',
+  },
+  {
+    href: '/tools/vergelijk/',
+    icon: '📊',
+    title: 'Laadpalen vergelijken',
+    desc: 'Vergelijk alle populaire thuislaadpalen op prijs, vermogen, slimme functies en reviews.',
+    tag: null,
+    tagColor: null,
+  },
+  {
+    href: '/tools/welke-laadpaal/',
+    icon: '🧙',
+    title: 'Welke laadpaal past bij mij?',
+    desc: 'Beantwoord 5 vragen en ontvang een persoonlijk laadpaal-advies op maat.',
+    tag: null,
+    tagColor: null,
+  },
+  {
+    href: '/tools/installatiekosten/',
+    icon: '🔧',
+    title: 'Installatiekosten berekenen',
+    desc: 'Bereken de geschatte totale installatiekosten voor jouw specifieke situatie inclusief BTW.',
+    tag: null,
+    tagColor: null,
+  },
+  {
+    href: '/tools/installatie-configurator/',
+    icon: '🏗️',
+    title: 'Installatie configurator',
+    desc: 'Stap-voor-stap wizard: geef jouw situatie op en ontvang een realistische kostenraming.',
+    tag: 'Nieuw',
+    tagColor: 'blue',
+  },
+  {
+    href: '/tools/subsidie/',
+    icon: '💰',
+    title: 'Subsidie checker',
+    desc: 'Check welke subsidies en belastingvoordelen voor jou van toepassing zijn bij aanschaf van een laadpaal.',
+    tag: null,
+    tagColor: null,
+  },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Laadpaal tools en calculators',
+  description: 'Gratis tools en calculators voor laadpalen: vergelijken, kosten berekenen, subsidie checken en meer.',
+  url: 'https://vergelijk-uw-laadpaal.nl/tools/',
+};
+---
+<BaseLayout
+  title="Laadpaal Tools & Calculators – Gratis Hulpmiddelen"
+  description="Gratis tools en calculators voor laadpalen. Vergelijk modellen, bereken kosten, check subsidies en configureer je installatie."
+  structuredData={structuredData}
+>
+  <main class="tools-overview">
+    <div class="container">
+      <div class="page-header">
+        <h1>Laadpaal tools &amp; calculators</h1>
+        <p class="page-intro">Alle gratis hulpmiddelen op een rij. Van kosten berekenen tot het vinden van de beste laadpaal voor jouw situatie.</p>
+      </div>
+
+      <div class="tools-grid">
+        {tools.map(tool => (
+          <a href={tool.href} class="tool-card">
+            <div class="tc-top">
+              <span class="tc-icon">{tool.icon}</span>
+              {tool.tag && (
+                <span class={`tc-tag tc-tag--${tool.tagColor}`}>{tool.tag}</span>
+              )}
+            </div>
+            <h2 class="tc-title">{tool.title}</h2>
+            <p class="tc-desc">{tool.desc}</p>
+            <span class="tc-cta">Ga naar tool →</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="tools-footer">
+        <p>Mis je een tool? <a href="/offerte/">Vraag gratis offertes aan</a> bij erkende installateurs.</p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .tools-overview { padding: 2.5rem 0 4rem; }
+  .page-header { margin-bottom: 2.5rem; }
+  .page-header h1 { margin-bottom: 0.5rem; }
+  .page-intro { color: var(--color-text-light); font-size: 1.0625rem; max-width: 560px; }
+
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+
+  .tool-card { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.75rem 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-xl); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: #ecfdf5; transform: translateY(-2px); box-shadow: var(--shadow-lg); text-decoration: none; }
+
+  .tc-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+  .tc-icon { font-size: 2.25rem; }
+  .tc-tag { font-size: 0.6875rem; font-weight: 700; padding: 0.1875rem 0.625rem; border-radius: 9999px; white-space: nowrap; }
+  .tc-tag--green { background: #dcfce7; color: #166534; }
+  .tc-tag--blue { background: #dbeafe; color: #1e40af; }
+
+  .tc-title { font-size: 1.125rem; font-weight: 700; font-family: var(--font-sans); margin: 0; }
+  .tc-desc { font-size: 0.9375rem; color: var(--color-text-light); line-height: 1.6; flex: 1; }
+  .tc-cta { font-size: 0.875rem; font-weight: 600; color: var(--color-primary); margin-top: auto; }
+
+  .tools-footer { text-align: center; color: var(--color-text-muted); font-size: 0.9375rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); }
+  .tools-footer a { color: var(--color-primary); }
+</style>
