@@ -1,0 +1,245 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AffiliateButton from '../../components/AffiliateButton.astro';
+
+const tijdlijn = [
+  { jaar: 2025, pct: 100, label: 'Volledige saldering', kleur: '#16a34a' },
+  { jaar: 2026, pct: 64, label: '64% saldering', kleur: '#65a30d' },
+  { jaar: 2027, pct: 50, label: '50% saldering', kleur: '#ca8a04' },
+  { jaar: 2028, pct: 37, label: '37% saldering', kleur: '#d97706' },
+  { jaar: 2029, pct: 25, label: '25% saldering', kleur: '#ea580c' },
+  { jaar: 2030, pct: 12, label: '12% saldering', kleur: '#dc2626' },
+  { jaar: 2031, pct: 0, label: 'Geen saldering', kleur: '#991b1b' },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Salderingswijzer – impact salderingsafbouw 2027-2031',
+  description: 'Bereken wat de salderingsafbouw betekent voor jouw energierekening en of een thuisbatterij loont.',
+  url: 'https://vergelijk-uw-thuisbatterij.nl/tools/salderingswijzer/',
+};
+---
+<BaseLayout
+  title="Salderingswijzer – Wat Betekent de Salderingsafbouw voor Jou?"
+  description="Bereken de persoonlijke impact van de salderingsafbouw 2027-2031 op jouw energierekening. En ontdek of een thuisbatterij het verlies compenseert."
+  structuredData={structuredData}
+>
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-header">
+        <h1>Salderingswijzer</h1>
+        <p class="tool-intro">Nederland schrapt saldering stapsgewijs tussen 2026 en 2031. Bereken wat dit voor jouw situatie betekent — en of een thuisbatterij het verlies compenseert.</p>
+      </div>
+
+      <!-- Tijdlijn -->
+      <section class="timeline-section">
+        <h2>De salderingsafbouw 2025–2031</h2>
+        <div class="timeline">
+          {tijdlijn.map((t) => (
+            <div class="timeline-item">
+              <div class="tl-year">{t.jaar}</div>
+              <div class="tl-bar-wrap">
+                <div class="tl-bar" style={`width: ${t.pct}%; background: ${t.kleur};`}></div>
+              </div>
+              <div class="tl-pct" style={`color: ${t.kleur};`}>{t.pct}%</div>
+              <div class="tl-label">{t.label}</div>
+            </div>
+          ))}
+        </div>
+        <p class="timeline-note">Saldering betekent dat je teruggeleverde stroom kunt verrekenen met je verbruik. Bij 0% krijg je alleen nog het (lage) teruglevertarief van je energieleverancier.</p>
+      </section>
+
+      <!-- Persoonlijke calculator -->
+      <section class="calc-section">
+        <h2>Bereken jouw persoonlijke impact</h2>
+        <div class="calc-layout">
+          <div class="calc-inputs">
+            <div class="field-group">
+              <label for="aantalPanelen">Aantal zonnepanelen</label>
+              <input type="range" id="aantalPanelen" min="4" max="40" value="16" step="1" />
+              <output id="panelenOutput">16 panelen</output>
+            </div>
+            <div class="field-group">
+              <label for="panelWp">Vermogen per paneel (Wp)</label>
+              <select id="panelWp">
+                <option value="300">300 Wp (oudere panelen)</option>
+                <option value="375">375 Wp (gemiddeld)</option>
+                <option value="420" selected>420 Wp (nieuw)</option>
+                <option value="480">480 Wp (premium)</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="jaarVerbruik">Jaarlijks verbruik (kWh)</label>
+              <input type="number" id="jaarVerbruik" value="3500" min="1000" max="15000" step="100" />
+            </div>
+            <div class="field-group">
+              <label for="stroomtarief">Stroomtarief (€/kWh)</label>
+              <input type="number" id="stroomtarief" value="0.32" min="0.10" max="0.60" step="0.01" />
+            </div>
+            <div class="field-group">
+              <label for="teruglevertarief">Teruglevertarief (€/kWh)</label>
+              <input type="number" id="teruglevertarief" value="0.08" min="0.00" max="0.25" step="0.01" />
+            </div>
+          </div>
+
+          <div class="calc-result" id="calcResult">
+            <h3>Jouw verlies door salderingsafbouw</h3>
+            <div class="impact-table" id="impactTable"></div>
+            <div class="impact-cta" id="impactCta"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="cta-box">
+          <h2>Beperk je verlies met een thuisbatterij</h2>
+          <p>Een thuisbatterij slaat overproductie op voor eigen gebruik 's avonds en 's nachts. Zo heb je minder teruglevering nodig en voel je de salderingsafbouw veel minder.</p>
+          <div class="cta-buttons">
+            <a href="/tools/roi-calculator/" class="btn btn-primary">Bereken mijn ROI →</a>
+            <AffiliateButton linkId="thuisbatterij-offerte" label="Gratis offertes aanvragen" variant="cta" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools nav -->
+      <div class="tools-nav">
+        <h2>Meer tools</h2>
+        <div class="tools-grid">
+          <a href="/tools/roi-calculator/" class="tool-card">
+            <span class="tool-icon">📈</span>
+            <strong>ROI Calculator</strong>
+            <span>Wanneer verdient jouw batterij zichzelf terug?</span>
+          </a>
+          <a href="/tools/configurator/" class="tool-card">
+            <span class="tool-icon">⚙️</span>
+            <strong>Batterij configurator</strong>
+            <span>Welke batterij past bij jouw installatie?</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  function calculate() {
+    const panelen = parseInt((document.getElementById('aantalPanelen') as HTMLInputElement).value);
+    const wp = parseInt((document.getElementById('panelWp') as HTMLSelectElement).value);
+    const verbruik = parseFloat((document.getElementById('jaarVerbruik') as HTMLInputElement).value) || 3500;
+    const tarief = parseFloat((document.getElementById('stroomtarief') as HTMLInputElement).value) || 0.32;
+    const teruglever = parseFloat((document.getElementById('teruglevertarief') as HTMLInputElement).value) || 0.08;
+
+    (document.getElementById('panelenOutput') as HTMLElement).textContent = `${panelen} panelen`;
+
+    const productie = panelen * wp * 0.85 / 1000 * 1000; // ~850 kWh/kWp in NL
+    const overschot = Math.max(0, productie - verbruik);
+
+    const salderingPcts: Record<number, number> = {
+      2025: 1.0, 2026: 0.64, 2027: 0.50, 2028: 0.37, 2029: 0.25, 2030: 0.12, 2031: 0.0
+    };
+
+    const waarde2025 = overschot * tarief;
+
+    const rows = Object.entries(salderingPcts).map(([jaar, pct]) => {
+      const waarde = overschot * (pct * tarief + (1 - pct) * teruglever);
+      const verlies = waarde2025 - waarde;
+      return { jaar: parseInt(jaar), pct: pct * 100, waarde: Math.round(waarde), verlies: Math.round(verlies) };
+    });
+
+    const table = document.getElementById('impactTable')!;
+    table.innerHTML = `
+      <div class="it-header">
+        <span>Jaar</span><span>Saldering</span><span>Waarde teruglevering</span><span>Verlies t.o.v. nu</span>
+      </div>
+      ${rows.map(r => `
+        <div class="it-row ${r.verlies > 200 ? 'it-row--warn' : ''}">
+          <span><strong>${r.jaar}</strong></span>
+          <span>${r.pct}%</span>
+          <span>€${r.waarde.toLocaleString('nl-NL')}/jr</span>
+          <span class="it-verlies">${r.verlies > 0 ? `−€${r.verlies.toLocaleString('nl-NL')}` : '—'}</span>
+        </div>
+      `).join('')}
+    `;
+
+    const totaalVerlies2031 = rows[rows.length - 1].verlies;
+    const cta = document.getElementById('impactCta')!;
+    if (totaalVerlies2031 > 50) {
+      cta.innerHTML = `
+        <div class="verlies-box">
+          <strong>Jouw totale verlies in 2031: €${totaalVerlies2031.toLocaleString('nl-NL')}/jaar</strong>
+          <p>Een thuisbatterij compenseert dit door overproductie op te slaan voor eigen verbruik.</p>
+          <a href="/tools/roi-calculator/" class="btn btn-primary btn-sm">Bereken of een batterij loont →</a>
+        </div>
+      `;
+    }
+  }
+
+  ['aantalPanelen', 'panelWp', 'jaarVerbruik', 'stroomtarief', 'teruglevertarief'].forEach(id => {
+    document.getElementById(id)?.addEventListener('input', calculate);
+    document.getElementById(id)?.addEventListener('change', calculate);
+  });
+
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-header h1 { margin-bottom: 0.5rem; }
+  .tool-intro { color: var(--color-text-light); font-size: 1.0625rem; max-width: 640px; }
+
+  .timeline-section { margin-bottom: 3rem; }
+  .timeline-section h2 { margin-bottom: 1.5rem; }
+  .timeline { display: flex; flex-direction: column; gap: 0.625rem; margin-bottom: 1rem; }
+  .timeline-item { display: grid; grid-template-columns: 48px 1fr 48px 1fr; align-items: center; gap: 0.75rem; }
+  .tl-year { font-weight: 700; font-size: 0.9375rem; }
+  .tl-bar-wrap { background: var(--color-bg-alt); border-radius: 4px; height: 20px; overflow: hidden; }
+  .tl-bar { height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+  .tl-pct { font-weight: 700; font-size: 0.9375rem; text-align: right; }
+  .tl-label { font-size: 0.8125rem; color: var(--color-text-light); }
+  @media (max-width: 640px) { .timeline-item { grid-template-columns: 44px 1fr 44px; } .tl-label { display: none; } }
+  .timeline-note { font-size: 0.875rem; color: var(--color-text-muted); padding: 0.75rem; background: var(--color-bg-alt); border-radius: var(--radius-md); border-left: 3px solid var(--color-border); }
+
+  .calc-section { margin-bottom: 3rem; }
+  .calc-section h2 { margin-bottom: 1.5rem; }
+  .calc-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 2rem; }
+  @media (max-width: 768px) { .calc-layout { grid-template-columns: 1fr; } }
+
+  .field-group { margin-bottom: 1.25rem; }
+  .field-group label { display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.375rem; }
+  .field-group input[type="range"] { width: 100%; accent-color: var(--color-primary); }
+  .field-group input[type="number"], .field-group select { width: 100%; padding: 0.625rem 0.875rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 1rem; background: var(--color-bg); }
+  .field-group output { display: block; text-align: right; font-size: 0.875rem; font-weight: 600; color: var(--color-primary); }
+
+  .calc-result h3 { font-size: 1.125rem; margin-bottom: 1rem; }
+  .it-header, .it-row { display: grid; grid-template-columns: 52px 64px 1fr 1fr; gap: 0.5rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; }
+  .it-header { background: var(--color-bg-alt); border-radius: var(--radius-md) var(--radius-md) 0 0; font-weight: 600; font-size: 0.8125rem; color: var(--color-text-muted); }
+  .it-row { border-bottom: 1px solid var(--color-border-light); }
+  .it-row--warn { background: #fff7ed; }
+  .it-verlies { color: #dc2626; font-weight: 600; }
+
+  .verlies-box { background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-lg); padding: 1.25rem; margin-top: 1rem; }
+  .verlies-box strong { display: block; margin-bottom: 0.5rem; color: #991b1b; font-size: 1rem; }
+  .verlies-box p { color: var(--color-text-light); font-size: 0.9375rem; margin-bottom: 0.875rem; }
+  .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+  .cta-section { margin-bottom: 3rem; }
+  .cta-box { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: #fff; border-radius: var(--radius-xl); padding: 2.5rem 2rem; }
+  .cta-box h2 { color: #fff; margin-bottom: 0.75rem; }
+  .cta-box p { opacity: 0.85; line-height: 1.7; margin-bottom: 1.5rem; max-width: 560px; }
+  .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9375rem; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; border: none; }
+  .btn-primary { background: #fff; color: var(--color-primary); }
+  .btn-primary:hover { background: #eff6ff; text-decoration: none; }
+
+  .tools-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+  .tools-nav h2 { margin-bottom: 1rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.375rem; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: var(--color-primary-light); text-decoration: none; }
+  .tool-icon { font-size: 1.75rem; }
+  .tool-card strong { font-size: 0.9375rem; }
+  .tool-card span:last-child { font-size: 0.8125rem; color: var(--color-text-light); }
+</style>

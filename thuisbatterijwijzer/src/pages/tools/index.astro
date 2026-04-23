@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const tools = [
+  { href: '/tools/roi-calculator/', icon: '📈', title: 'ROI Calculator', desc: 'Bereken de terugverdientijd van een thuisbatterij op basis van jouw situatie.', tag: 'Aanbevolen', tagColor: 'green' },
+  { href: '/tools/salderingswijzer/', icon: '📉', title: 'Salderingswijzer', desc: 'Bereken de persoonlijke impact van de salderingsafbouw 2027–2031 op jouw energierekening.', tag: 'Actueel', tagColor: 'amber' },
+  { href: '/tools/configurator/', icon: '⚙️', title: 'Batterij configurator', desc: 'Vind welke thuisbatterijen compatibel zijn met jouw zonnepanelen en omvormer.', tag: null, tagColor: null },
+];
+---
+<BaseLayout
+  title="Thuisbatterij Tools & Calculators"
+  description="Gratis tools voor thuisbatterijen: ROI calculator, salderingswijzer en batterij configurator."
+>
+  <main class="tools-overview">
+    <div class="container">
+      <div class="page-header">
+        <h1>Thuisbatterij tools</h1>
+        <p class="page-intro">Bereken of een thuisbatterij voor jou loont en welk model het beste bij jouw installatie past.</p>
+      </div>
+      <div class="tools-grid">
+        {tools.map(t => (
+          <a href={t.href} class="tool-card">
+            <div class="tc-top">
+              <span class="tc-icon">{t.icon}</span>
+              {t.tag && <span class={`tc-tag tc-tag--${t.tagColor}`}>{t.tag}</span>}
+            </div>
+            <h2 class="tc-title">{t.title}</h2>
+            <p class="tc-desc">{t.desc}</p>
+            <span class="tc-cta">Ga naar tool →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+<style>
+  .tools-overview { padding: 2.5rem 0 4rem; }
+  .page-header { margin-bottom: 2.5rem; }
+  .page-header h1 { margin-bottom: 0.5rem; }
+  .page-intro { color: var(--color-text-light); font-size: 1.0625rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+  .tool-card { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.75rem 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-xl); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-fast); }
+  .tool-card:hover { border-color: var(--color-primary); background: #eff6ff; transform: translateY(-2px); box-shadow: var(--shadow-lg); text-decoration: none; }
+  .tc-top { display: flex; align-items: center; justify-content: space-between; }
+  .tc-icon { font-size: 2.25rem; }
+  .tc-tag { font-size: 0.6875rem; font-weight: 700; padding: 0.1875rem 0.625rem; border-radius: 9999px; }
+  .tc-tag--green { background: #dcfce7; color: #166534; }
+  .tc-tag--amber { background: #fef3c7; color: #92400e; }
+  .tc-title { font-size: 1.125rem; font-weight: 700; font-family: var(--font-sans); margin: 0; }
+  .tc-desc { font-size: 0.9375rem; color: var(--color-text-light); line-height: 1.6; flex: 1; }
+  .tc-cta { font-size: 0.875rem; font-weight: 600; color: var(--color-primary); }
+</style>

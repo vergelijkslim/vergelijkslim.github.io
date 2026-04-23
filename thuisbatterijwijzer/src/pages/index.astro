@@ -59,8 +59,8 @@ const sections = [
         Van Tesla Powerwall tot BYD en Huawei.
       </p>
       <div class="hero-cta">
-        <a href="/artikelen/" class="btn btn-cta">Bekijk alle artikelen</a>
-        <a href="/vergelijkingen/" class="btn btn-outline">Vergelijk batterijen</a>
+        <a href="/tools/roi-calculator/" class="btn btn-cta">Bereken mijn terugverdientijd →</a>
+        <a href="/tools/salderingswijzer/" class="btn btn-outline">Salderingsafbouw berekenen</a>
       </div>
     </div>
   </section>
@@ -80,6 +80,41 @@ const sections = [
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span>Gratis offertes vergelijken</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interactieve tools & calculators</h2>
+        <p>ChatGPT kan dit niet: persoonlijke berekeningen op basis van jouw situatie.</p>
+      </div>
+      <div class="tools-grid-home">
+        <a href="/tools/roi-calculator/" class="tool-card-home tool-card-home--featured">
+          <span class="tch-icon">📈</span>
+          <div>
+            <strong>ROI Calculator</strong>
+            <p>Bereken wanneer jouw thuisbatterij zichzelf terugverdient — inclusief salderingsafbouw.</p>
+          </div>
+          <span class="tch-cta">Start berekening →</span>
+        </a>
+        <a href="/tools/salderingswijzer/" class="tool-card-home">
+          <span class="tch-icon">📉</span>
+          <div>
+            <strong>Salderingswijzer</strong>
+            <p>Wat kost jou de salderingsafbouw 2027–2031?</p>
+          </div>
+          <span class="tch-cta">Bereken impact →</span>
+        </a>
+        <a href="/tools/configurator/" class="tool-card-home">
+          <span class="tch-icon">⚙️</span>
+          <div>
+            <strong>Batterij configurator</strong>
+            <p>Welke batterij past bij jouw zonnepanelen en omvormer?</p>
+          </div>
+          <span class="tch-cta">Configureer →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -149,6 +184,17 @@ const sections = [
   .section-card h3 { font-family: var(--font-sans); font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; }
   .section-card p { color: var(--color-text-light); font-size: 0.9375rem; margin-bottom: 1rem; line-height: 1.6; }
   .section-meta { font-size: 0.875rem; font-weight: 600; color: var(--color-primary); }
+
+  .tools-section { padding: 4rem 0; background: var(--color-bg-alt); }
+  .tools-grid-home { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  @media (min-width: 768px) { .tools-grid-home { grid-template-columns: 1.5fr 1fr 1fr; } }
+  .tool-card-home { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-xl); text-decoration: none; color: var(--color-text); background: var(--color-bg); transition: all var(--transition-base); }
+  .tool-card-home:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); text-decoration: none; transform: translateY(-2px); }
+  .tool-card-home--featured { border-color: var(--color-primary); background: #eff6ff; }
+  .tch-icon { font-size: 2rem; }
+  .tool-card-home strong { font-family: var(--font-sans); font-size: 1rem; font-weight: 700; display: block; margin-bottom: 0.25rem; }
+  .tool-card-home p { font-size: 0.875rem; color: var(--color-text-light); line-height: 1.5; margin: 0; }
+  .tch-cta { font-size: 0.875rem; font-weight: 600; color: var(--color-primary); margin-top: auto; }
 
   .latest { padding: 4rem 0; background: var(--color-bg-alt); }
   .latest-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
