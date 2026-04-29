@@ -19,7 +19,7 @@ faq:
   - question: "Wat is het verschil tussen de Alpha ESS Smile B3 en B6?"
     answer: "De Alpha ESS Smile B3 heeft een capaciteit van 5,7 kWh en is geschikt voor kleinere huishoudens. De B6 biedt 11,4 kWh capaciteit en is ideaal voor grotere woningen of huishoudens met een hoger energieverbruik."
   - question: "Werkt de Alpha ESS Smile met mijn bestaande omvormer?"
-    answer: "De Alpha ESS Smile is via AC-koppeling compatibel met de meeste omvormers op de markt. Voor DC-koppeling heeft u een Alpha ESS hybride omvormer nodig."
+    answer: "De Alpha ESS Smile is via AC-koppeling compatibel met de meeste omvormers op de markt. Voor DC-koppeling hebt je een Alpha ESS hybride omvormer nodig."
   - question: "Hoelang gaat een Alpha ESS batterij mee?"
     answer: "Alpha ESS garandeert minimaal 80% restcapaciteit na 10 jaar of 4.000 laadcycli. In de praktijk zijn levensduren van 15+ jaar realistisch."
   - question: "Is Alpha ESS een betrouwbaar merk?"
@@ -72,7 +72,7 @@ Een van de sterkste punten van de Alpha ESS Smile is de brede compatibiliteit. H
 
 Bij AC-koppeling is er wel een licht efficiÃ«ntieverlies ten opzichte van DC-koppeling (ca. 3-5%), maar voor de meeste gebruikers weegt de kostenbesparing ruimschoots op tegen dit verlies.
 
-[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een installateur beoordelen welke koppelingsmethode het beste bij uw situatie past.
+[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een installateur beoordelen welke koppelingsmethode het beste bij jouw situatie past.
 
 ---
 
@@ -80,9 +80,9 @@ Bij AC-koppeling is er wel een licht efficiÃ«ntieverlies ten opzichte van DC-k
 
 De Alpha ESS Smile is uitsluitend bedoeld voor binneninstallatie (IP21) â€” denk aan de meterkast, technische ruimte of garage. De installatie neemt gemiddeld 4-6 uur in beslag voor een ervaren installateur.
 
-De SMILE-app van Alpha ESS is functioneel en biedt real-time monitoring van alle energiestromen. U kunt via de app inzien hoeveel energie uw panelen produceren, hoeveel er in de batterij gaat, hoeveel de batterij afgeeft en wat uw nettoverbruik is. Historische data is beschikbaar per dag, week, maand en jaar.
+De SMILE-app van Alpha ESS is functioneel en biedt real-time monitoring van alle energiestromen. Je kunt via de app inzien hoeveel energie jouw panelen produceren, hoeveel er in de batterij gaat, hoeveel de batterij afgeeft en wat jouw nettoverbruik is. Historische data is beschikbaar per dag, week, maand en jaar.
 
-Een handige functie is de "Smart Meter"-integratie: koppel een slimme meter aan het Alpha ESS-systeem en het systeem optimaliseert automatisch het laad- en ontlaadgedrag op basis van uw werkelijke verbruik in real-time.
+Een handige functie is de "Smart Meter"-integratie: koppel een slimme meter aan het Alpha ESS-systeem en het systeem optimaliseert automatisch het laad- en ontlaadgedrag op basis van jouw werkelijke verbruik in real-time.
 
 ---
 
@@ -121,12 +121,12 @@ Het maximale laad- en ontlaadvermogen van 5 kW (B6) is adequaat voor een gemidde
 
 ## Vergelijking: B3 of B6?
 
-De keuze tussen de Smile B3 en B6 hangt af van uw jaarlijks energieverbruik:
+De keuze tussen de Smile B3 en B6 hangt af van jouw jaarlijks energieverbruik:
 
 - **Smile B3 (5,7 kWh)**: Ideaal voor huishoudens met een jaarverbruik tot ca. 3.500 kWh en 8-12 zonnepanelen. Het systeem dekt dan een groot deel van het avondverbruik.
 - **Smile B6 (11,4 kWh)**: Aanbevolen voor huishoudens met een jaarverbruik van 4.000 kWh of meer, grote gezinnen, of huishoudens met een elektrische auto.
 
-Twijfelt u welke variant bij u past? [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een specialist uw situatie analyseren.
+Twijfelt je welke variant bij je past? [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een specialist jouw situatie analyseren.
 
 ---
 

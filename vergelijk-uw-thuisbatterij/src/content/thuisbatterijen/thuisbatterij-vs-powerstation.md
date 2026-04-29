@@ -18,9 +18,9 @@ keywords:
   - ecoflow delta pro thuisbatterij
 faq:
   - question: "Wat is het verschil tussen een thuisbatterij en een powerstation?"
-    answer: "Een thuisbatterij is een vast geÃ¯nstalleerd systeem dat gekoppeld is aan uw zonnepanelen en huisinstallatie. Een powerstation is een draagbaar apparaat dat los staat van de huisinstallatie en handmatig opgeladen en ingezet moet worden."
+    answer: "Een thuisbatterij is een vast geÃ¯nstalleerd systeem dat gekoppeld is aan jouw zonnepanelen en huisinstallatie. Een powerstation is een draagbaar apparaat dat los staat van de huisinstallatie en handmatig opgeladen en ingezet moet worden."
   - question: "Is een powerstation goedkoper dan een thuisbatterij?"
-    answer: "Ja, powerstations zijn aanzienlijk goedkoper in aanschaf (â‚¬500 â€“ â‚¬3.000 vs. â‚¬3.500 â€“ â‚¬12.000). Maar ze hebben ook veel minder capaciteit en zijn niet geÃ¯ntegreerd met uw zonnepanelen."
+    answer: "Ja, powerstations zijn aanzienlijk goedkoper in aanschaf (â‚¬500 â€“ â‚¬3.000 vs. â‚¬3.500 â€“ â‚¬12.000). Maar ze hebben ook veel minder capaciteit en zijn niet geÃ¯ntegreerd met jouw zonnepanelen."
   - question: "Kan ik een powerstation gebruiken als back-up voor mijn hele huis?"
     answer: "Grote powerstations zoals de EcoFlow Delta Pro (3,6 kWh) kunnen een beperkt aantal apparaten voor korte tijd voeden, maar zijn niet geschikt als vervanging voor een volwaardige huisinstallatie."
   - question: "Voor wie is een powerstation beter dan een thuisbatterij?"
@@ -41,7 +41,7 @@ In dit artikel zetten we beide categorieÃ«n grondig naast elkaar. We bespreken
 
 ## Wat Is een Thuisbatterij?
 
-Een thuisbatterij is een vast geÃ¯nstalleerd energieopslagsysteem dat wordt gekoppeld aan uw zonnepanelen en huisinstallatie. Overdag, als uw zonnepanelen meer produceren dan u verbruikt, laadt de thuisbatterij op. 's Avonds en 's nachts, als de panelen niet produceren, levert de batterij stroom aan uw woning.
+Een thuisbatterij is een vast geÃ¯nstalleerd energieopslagsysteem dat wordt gekoppeld aan jouw zonnepanelen en huisinstallatie. Overdag, als jouw zonnepanelen meer produceren dan je verbruikt, laadt de thuisbatterij op. 's Avonds en 's nachts, als de panelen niet produceren, levert de batterij stroom aan jouw woning.
 
 Bekende merken zijn Tesla (Powerwall), BYD (Battery-Box), Growatt (APX), Sigenergy, Alpha ESS en SolarEdge. Capaciteiten variÃ«ren doorgaans van 5 tot 20 kWh. De aanschafprijs inclusief installatie ligt tussen â‚¬3.500 en â‚¬15.000.
 
@@ -51,7 +51,7 @@ Bekende merken zijn Tesla (Powerwall), BYD (Battery-Box), Growatt (APX), Sigener
 
 Een powerstation (ook wel: draagbaar energiestation of portable power station) is een grote, oplaadbare accu in een draagbare behuizing. Het apparaat heeft meerdere aansluitingen: USB, USB-C, 230V AC-stopcontacten en soms 12V DC-aansluitingen.
 
-U laadt een powerstation op via het stopcontact, zonnepanelen (met losse panelen) of uw auto. Vervolgens kunt u er apparaten op aansluiten alsof het een verlengsnoer met accu is.
+Je laadt een powerstation op via het stopcontact, zonnepanelen (met losse panelen) of jouw auto. Vervolgens kun je er apparaten op aansluiten alsof het een verlengsnoer met accu is.
 
 Populaire merken zijn EcoFlow (Delta, Delta Pro, Delta Max), Jackery (Explorer-serie) en Bluetti (AC200, EB70). Capaciteiten lopen van 250 Wh tot 3.600 Wh (bij de EcoFlow Delta Pro). Prijzen variÃ«ren van â‚¬300 tot â‚¬3.000.
 
@@ -80,15 +80,15 @@ Het capaciteitsverschil is enorm. Zelfs de grootste powerstations (EcoFlow Delta
 
 **Winnaar: Thuisbatterij**
 
-Als uw primaire doel is om te besparen op uw energierekening door zelf opgewekte zonne-energie zo veel mogelijk zelf te gebruiken, is een thuisbatterij de enige zinvolle keuze.
+Als jouw primaire doel is om te besparen op jouw energierekening door zelf opgewekte zonne-energie zo veel mogelijk zelf te gebruiken, is een thuisbatterij de enige zinvolle keuze.
 
-Een thuisbatterij laadt automatisch op wanneer uw zonnepanelen meer produceren dan u verbruikt, en ontlaadt automatisch wanneer u meer verbruikt dan de panelen produceren. Dit gebeurt 24/7, zonder dat u er iets voor hoeft te doen.
+Een thuisbatterij laadt automatisch op wanneer jouw zonnepanelen meer produceren dan je verbruikt, en ontlaadt automatisch wanneer je meer verbruikt dan de panelen produceren. Dit gebeurt 24/7, zonder dat je er iets voor hoeft te doen.
 
-Een powerstation doet dit niet automatisch. U moet het zelf opladen (via stopcontact of losse zonnepanelen) en bewust inzetten. Dit is niet praktisch als dagelijkse energiebeheeroplossing.
+Een powerstation doet dit niet automatisch. Je moet het zelf opladen (via stopcontact of losse zonnepanelen) en bewust inzetten. Dit is niet praktisch als dagelijkse energiebeheeroplossing.
 
 **Rekensom**: Een 10 kWh thuisbatterij kan bij 250 laadcycli per jaar ca. 2.500 kWh per jaar aan goedkope of gratis zonne-energie opslaan en gebruiken. Bij â‚¬0,30/kWh is dat â‚¬750 besparing per jaar. Een powerstation haalt dit nooit.
 
-[Vraag een gratis offerte aan voor een thuisbatterij](https://www.thuisbatterij.nl/offerte/) en ontdek uw exacte besparingspotentieel.
+[Vraag een gratis offerte aan voor een thuisbatterij](https://www.thuisbatterij.nl/offerte/) en ontdek jouw exacte besparingspotentieel.
 
 ---
 
@@ -98,8 +98,8 @@ Een powerstation doet dit niet automatisch. U moet het zelf opladen (via stopcon
 
 Bij een stroomstoring bieden beide opties bescherming, maar op een heel andere manier:
 
-- Een **thuisbatterij** schakelt bij netuitval automatisch over (in milliseconden bij goede systemen) en kan uw volledige huisinstallatie voeden â€” inclusief koelkast, verlichting, router en telefoonopladers â€” gedurende meerdere uren of zelfs een hele dag.
-- Een **powerstation** moet handmatig worden ingezet. U steekt de apparaten die u wilt voeden aan op het powerstation. Dit is flexibeler (u kunt het mee nemen) maar minder comfortabel.
+- Een **thuisbatterij** schakelt bij netuitval automatisch over (in milliseconden bij goede systemen) en kan jouw volledige huisinstallatie voeden â€” inclusief koelkast, verlichting, router en telefoonopladers â€” gedurende meerdere uren of zelfs een hele dag.
+- Een **powerstation** moet handmatig worden ingezet. Je steekt de apparaten die je wilt voeden aan op het powerstation. Dit is flexibeler (je kunt het mee nemen) maar minder comfortabel.
 
 Voor een gezin met kinderen dat comfort en continuÃ¯teit wil bij stroomuitval, is de thuisbatterij beter. Voor een alleenstaande die af en toe ergens een lamp en telefoon wil opladen, volstaat een goed powerstation.
 
@@ -109,7 +109,7 @@ Voor een gezin met kinderen dat comfort en continuÃ¯teit wil bij stroomuitval,
 
 **Winnaar: Powerstation**
 
-Dit is het domein van het powerstation. Een Jackery Explorer 1000 of EcoFlow Delta 2 Past in de kofferbak van uw auto, kan een mini-koelkast, koffiezetapparaat en telefoonopladers voeden op een camping, en is in 1-2 uur opgeladen via zonnepanelen of uw auto.
+Dit is het domein van het powerstation. Een Jackery Explorer 1000 of EcoFlow Delta 2 Past in de kofferbak van jouw auto, kan een mini-koelkast, koffiezetapparaat en telefoonopladers voeden op een camping, en is in 1-2 uur opgeladen via zonnepanelen of jouw auto.
 
 Een thuisbatterij is hier per definitie ongeschikt â€” het is een vast geÃ¯nstalleerd systeem.
 
@@ -119,7 +119,7 @@ Een thuisbatterij is hier per definitie ongeschikt â€” het is een vast geÃ
 
 **Winnaar: Powerstation (of Zendure SolarFlow)**
 
-Heeft u geen eigen dak en mag u geen vaste installaties plaatsen? Dan is een powerstation de meest realistische optie. U kunt het mee nemen bij verhuizing, vereist geen installateur en is geen aantasting van het pand.
+Heb je geen eigen dak en mag je geen vaste installaties plaatsen? Dan is een powerstation de meest realistische optie. Je kunt het mee nemen bij verhuizing, vereist geen installateur en is geen aantasting van het pand.
 
 Een middenweg is de [Zendure SolarFlow](/thuisbatterijen/zendure-solarflow-review/) (zie onze review): een plug-and-play balkonbatterij die speciaal is ontworpen voor huurders met balkonzonnepanelen. Capaciteit is beperkt (max. 1,92 kWh), maar de automatische werking in combinatie met balkonpanelen maakt het een stap boven een regulier powerstation.
 
@@ -129,9 +129,9 @@ Een middenweg is de [Zendure SolarFlow](/thuisbatterijen/zendure-solarflow-revie
 
 **Winnaar: Powerstation**
 
-Gaat u over twee jaar verhuizen? Of woont u tijdelijk ergens? Dan is investeren in een vaste thuisbatterij financieel weinig verstandig. De installatie is niet eenvoudig te verplaatsen (en zeker niet gratis), en bij verkoop van uw woning recupereert u misschien niet de volledige waarde.
+Gaat je over twee jaar verhuizen? Of woont je tijdelijk ergens? Dan is investeren in een vaste thuisbatterij financieel weinig verstandig. De installatie is niet eenvoudig te verplaatsen (en zeker niet gratis), en bij verkoop van jouw woning recupereert je misschien niet de volledige waarde.
 
-Een powerstation gaat gewoon mee. U verliest een investering van â‚¬500 â€“ â‚¬2.000, niet van â‚¬8.000.
+Een powerstation gaat gewoon mee. Je verliest een investering van â‚¬500 â€“ â‚¬2.000, niet van â‚¬8.000.
 
 ---
 
@@ -153,7 +153,7 @@ De EcoFlow Delta Pro Ultra is interessant: met 6,1 kWh en 7,2 kW AC-vermogen nad
 
 ## FinanciÃ«le Vergelijking: Wat Levert Meer Op?
 
-Laten we eerlijk zijn: powerstations leveren geld op als besparing op stroom niet het doel is. Ze hebben geen terugverdientijd in de klassieke zin. U koopt een powerstation voor gemak, flexibiliteit en veiligheid â€” niet als financiÃ«le investering.
+Laten we eerlijk zijn: powerstations leveren geld op als besparing op stroom niet het doel is. Ze hebben geen terugverdientijd in de klassieke zin. Je koopt een powerstation voor gemak, flexibiliteit en veiligheid â€” niet als financiÃ«le investering.
 
 Een thuisbatterij is wÃ©l een financiÃ«le investering:
 
@@ -166,9 +166,9 @@ Bij een stijgende energieprijs (historisch gemiddeld +3-5% per jaar) verbetert d
 
 ---
 
-## Wanneer Kiest U Een Powerstation?
+## Wanneer Kies Je Een Powerstation?
 
-Kies voor een powerstation als u:
+Kies voor een powerstation als je:
 
 - In een **huurwoning** woont
 - **Regelmatig kampeert** of een camper/caravan heeft
@@ -179,38 +179,38 @@ Kies voor een powerstation als u:
 
 ---
 
-## Wanneer Kiest U Een Thuisbatterij?
+## Wanneer Kies Je Een Thuisbatterij?
 
-Kies voor een thuisbatterij als u:
+Kies voor een thuisbatterij als je:
 
 - Een **koopwoning** bezit
 - Al **zonnepanelen heeft of wilt installeren**
-- **Structureel wilt besparen** op uw energierekening
+- **Structureel wilt besparen** op jouw energierekening
 - **Energieonafhankelijkheid** op lange termijn nastreeft
 - Bereid bent een **investering van 7-12 jaar** te maken
-- **Netcongestie** in uw regio heeft en meer zelfconsumptie wilt
+- **Netcongestie** in jouw regio heeft en meer zelfconsumptie wilt
 
-[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek welke thuisbatterij het beste bij uw woning past.
+[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek welke thuisbatterij het beste bij jouw woning past.
 
 ---
 
 ## De Hybride Oplossing: Beide Tegelijk
 
-Wist u dat veel thuisbatterij-eigenaren ook een powerstation hebben? De twee sluiten elkaar niet uit. Een thuisbatterij zorgt voor dagelijkse automatische energieopslag en -besparing. Een klein powerstation (EcoFlow Delta 2, ca. â‚¬800) fungeert als aanvullende back-up voor buitengebruik, kamperen of als mobiele oplader.
+Wist je dat veel thuisbatterij-eigenaren ook een powerstation hebben? De twee sluiten elkaar niet uit. Een thuisbatterij zorgt voor dagelijkse automatische energieopslag en -besparing. Een klein powerstation (EcoFlow Delta 2, ca. â‚¬800) fungeert als aanvullende back-up voor buitengebruik, kamperen of als mobiele oplader.
 
-Dit is zeker zinvol als u een elektrische auto heeft die regelmatig mee op vakantie gaat: laat uw thuisbatterij thuis werken terwijl u op de camping uw powerstation inzet.
+Dit is zeker zinvol als je een elektrische auto hebt die regelmatig mee op vakantie gaat: laat jouw thuisbatterij thuis werken terwijl je op de camping jouw powerstation inzet.
 
 ---
 
 ## Conclusie: Thuisbatterij vs. Powerstation
 
-De keuze tussen een thuisbatterij en een powerstation is niet moeilijk als u uw situatie eerlijk analyseert:
+De keuze tussen een thuisbatterij en een powerstation is niet moeilijk als je jouw situatie eerlijk analyseert:
 
 - **Eigenaar van een woning met zonnepanelen en een langetermijnhorizon?** Kies een thuisbatterij. De financiÃ«le en praktische voordelen zijn overduidelijk.
 - **Huurder, camperaar of iemand die flexibiliteit boven besparing stelt?** Kies een powerstation.
-- **Wilt u het beste van beide werelden?** Combineer een thuisbatterij met een klein powerstation voor onderweg.
+- **Wil je het beste van beide werelden?** Combineer een thuisbatterij met een klein powerstation voor onderweg.
 
-[Bekijk het aanbod aan thuisbatterijen en powerstations bij Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis persoonlijk advies aan](https://www.thuisbatterij.nl/offerte/) om de beste keuze voor uw specifieke situatie te maken.
+[Bekijk het aanbod aan thuisbatterijen en powerstations bij Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis persoonlijk advies aan](https://www.thuisbatterij.nl/offerte/) om de beste keuze voor jouw specifieke situatie te maken.
 ```
 
 ---

@@ -21,7 +21,7 @@ faq:
   - question: "Hoe lang is de garantie op de Growatt APX?"
     answer: "Growatt biedt 10 jaar garantie op de APX thuisbatterij."
   - question: "Is de Growatt APX geschikt voor mijn woning?"
-    answer: "De Growatt APX is geschikt voor de meeste Nederlandse woningen met zonnepanelen. Controleer wel of uw omvormer compatibel is."
+    answer: "De Growatt APX is geschikt voor de meeste Nederlandse woningen met zonnepanelen. Controleer wel of jouw omvormer compatibel is."
   - question: "Hoe verhoudt de Growatt APX zich tot de Tesla Powerwall?"
     answer: "De Growatt APX is aanzienlijk goedkoper dan de Tesla Powerwall maar biedt minder vermogen en software-integratie. Voor budgetbewuste consumenten is het een solide alternatief."
 relatedArticles:
@@ -31,9 +31,9 @@ relatedArticles:
 
 ## Growatt APX Thuisbatterij: De Beste Budgetkeuze van 2026?
 
-Als u op zoek bent naar een betrouwbare thuisbatterij zonder de hoge prijskaartjes van premium merken, dan is de Growatt APX zeker het overwegen waard. Growatt is een van de grootste fabrikanten van omvormers en batterijsystemen ter wereld, met meer dan twee decennia ervaring in de energieopslag-sector. De APX-lijn is specifiek ontworpen voor de Europese residentiÃ«le markt en combineert een aantrekkelijke prijs met degelijke technologie.
+Als je op zoek bent naar een betrouwbare thuisbatterij zonder de hoge prijskaartjes van premium merken, dan is de Growatt APX zeker het overwegen waard. Growatt is een van de grootste fabrikanten van omvormers en batterijsystemen ter wereld, met meer dan twee decennia ervaring in de energieopslag-sector. De APX-lijn is specifiek ontworpen voor de Europese residentiÃ«le markt en combineert een aantrekkelijke prijs met degelijke technologie.
 
-In deze review nemen we de Growatt APX grondig onder de loep: van technische specificaties tot installatiegemak, en van de dagelijkse gebruikservaring tot de totale kosten over de levensduur. We vergelijken de APX ook met de Tesla Powerwall, de marktleider, zodat u precies weet wat u krijgt voor uw geld.
+In deze review nemen we de Growatt APX grondig onder de loep: van technische specificaties tot installatiegemak, en van de dagelijkse gebruikservaring tot de totale kosten over de levensduur. We vergelijken de APX ook met de Tesla Powerwall, de marktleider, zodat je precies weet wat je krijgt voor jouw geld.
 
 **Onze eindscore: 7,5 / 10**
 
@@ -64,9 +64,9 @@ De LFP-chemie (lithiumijzerfosfaat) is een groot pluspunt. LFP-cellen zijn veili
 
 De Growatt APX werkt het beste in combinatie met een Growatt-omvormer, maar is via AC-koppeling ook bruikbaar met omvormers van andere merken. De installatie duurt gemiddeld een halve dag voor een gecertificeerde installateur. Het systeem kan zowel binnen als buiten worden geÃ¯nstalleerd dankzij de IP55-bescherming.
 
-De ShinePhone-app van Growatt biedt real-time inzicht in uw energieverbruik, opwek en laadstatus. De interface is functioneel, al mist het de gepolijste gebruikerservaring van duurdere merken zoals Tesla of SolarEdge. Updates worden over-the-air uitgerold, wat zorgt voor continue softwareverbetering.
+De ShinePhone-app van Growatt biedt real-time inzicht in jouw energieverbruik, opwek en laadstatus. De interface is functioneel, al mist het de gepolijste gebruikerservaring van duurdere merken zoals Tesla of SolarEdge. Updates worden over-the-air uitgerold, wat zorgt voor continue softwareverbetering.
 
-Bent u geÃ¯nteresseerd in de Growatt APX voor uw woning? [Vraag een gratis offerte aan via thuisbatterij-offerte](https://www.thuisbatterij.nl/offerte/) en ontvang een persoonlijk advies van een gecertificeerde installateur bij u in de buurt.
+Bent je geÃ¯nteresseerd in de Growatt APX voor jouw woning? [Vraag een gratis offerte aan via thuisbatterij-offerte](https://www.thuisbatterij.nl/offerte/) en ontvang een persoonlijk advies van een gecertificeerde installateur bij je in de buurt.
 
 ---
 
@@ -74,7 +74,7 @@ Bent u geÃ¯nteresseerd in de Growatt APX voor uw woning? [Vraag een gratis off
 
 In de praktijk presteert de Growatt APX goed voor een batterij in dit prijssegment. Het systeem laadt snel op met zonne-energie en schakelt soepel over bij netuitval. De reactietijd bij netuitval is gemiddeld 20-40 milliseconden, wat acceptabel is voor de meeste huishoudelijke apparaten.
 
-Het energiebeheer is instelbaar via de app: u kunt prioriteiten stellen (eerst batterij opladen, of eerst verbruik dekken), piekuren instellen en exportlimieten configureren. Voor de gemiddelde Nederlandse consument is dit meer dan voldoende.
+Het energiebeheer is instelbaar via de app: je kunt prioriteiten stellen (eerst batterij opladen, of eerst verbruik dekken), piekuren instellen en exportlimieten configureren. Voor de gemiddelde Nederlandse consument is dit meer dan voldoende.
 
 Een punt van aandacht is het geluid. De Growatt APX produceert een licht zoemend geluid van de ventilatie, wat in een stille ruimte hoorbaar kan zijn. In een technische ruimte of garage is dit doorgaans geen probleem.
 
@@ -83,7 +83,7 @@ Een punt van aandacht is het geluid. De Growatt APX produceert een licht zoemend
 ## Voordelen van de Growatt APX
 
 - **Uitstekende prijs-kwaliteitverhouding**: Voor â‚¬3.500 tot â‚¬5.000 inclusief installatie is dit een van de voordeligste 10 kWh-systemen op de markt.
-- **LFP-celchemie**: Veilig, langdurig en hittebestendig. U hoeft zich geen zorgen te maken over oververhitting.
+- **LFP-celchemie**: Veilig, langdurig en hittebestendig. Je hoeft zich geen zorgen te maken over oververhitting.
 - **10 jaar garantie**: Growatt staat achter zijn product met een solide garantietermijn.
 - **Brede compatibiliteit**: Via AC-koppeling inzetbaar met de meeste omvormers op de markt.
 - **Gevestigd merk**: Growatt is een van de grootste energieopslagfabrikanten wereldwijd, met uitgebreide servicestructuren.
@@ -112,7 +112,7 @@ Een punt van aandacht is het geluid. De Growatt APX produceert een licht zoemend
 | Back-up functie | Optioneel | Standaard |
 | Score | 7,5/10 | 9,0/10 |
 
-De Tesla Powerwall 3 heeft duidelijk meer vermogen (11,5 kW vs. 5 kW) en een grotere capaciteit. Maar het prijsverschil is enorm: voor de prijs van Ã©Ã©n Powerwall 3 koopt u twee Growatt APX-systemen, met 20 kWh aan totale capaciteit. Voor gezinnen die primair zonne-energie willen opslaan en niet de hoogste uitgangsstroom nodig hebben, is de Growatt APX een rationelere keuze.
+De Tesla Powerwall 3 heeft duidelijk meer vermogen (11,5 kW vs. 5 kW) en een grotere capaciteit. Maar het prijsverschil is enorm: voor de prijs van Ã©Ã©n Powerwall 3 koopt je twee Growatt APX-systemen, met 20 kWh aan totale capaciteit. Voor gezinnen die primair zonne-energie willen opslaan en niet de hoogste uitgangsstroom nodig hebben, is de Growatt APX een rationelere keuze.
 
 ---
 
@@ -125,7 +125,7 @@ De Growatt APX is ideaal voor:
 - **Mensen die al een Growatt-omvormer hebben**: de integratie is dan naadloos.
 - **Consumenten die de terugverdientijd centraal stellen**: de lagere aanschafprijs zorgt voor een snellere ROI.
 
-Wilt u weten of de Growatt APX past bij uw situatie? [Bekijk de Growatt APX op Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) bij een erkend installateur.
+Wil je weten of de Growatt APX past bij jouw situatie? [Bekijk de Growatt APX op Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) bij een erkend installateur.
 
 ---
 
@@ -135,4 +135,4 @@ De Growatt APX is een solide thuisbatterij die zijn geld meer dan waard is. De L
 
 Het verliest punten op app-kwaliteit en bekendheid, maar voor wie niet de meest geavanceerde functies nodig heeft, is dit een uitstekend budgetalternatief. Wij geven de Growatt APX een verdiende **7,5 uit 10**.
 
-**Klaar om te besparen?** [Vraag vandaag nog uw gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek wat een thuisbatterij voor uw energierekening kan betekenen.
+**Klaar om te besparen?** [Vraag vandaag nog jouw gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek wat een thuisbatterij voor jouw energierekening kan betekenen.

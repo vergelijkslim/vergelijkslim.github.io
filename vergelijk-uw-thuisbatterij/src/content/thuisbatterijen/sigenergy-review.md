@@ -21,7 +21,7 @@ faq:
   - question: "Wat kost een Sigenergy-installatie compleet?"
     answer: "Een complete Sigenergy-installatie inclusief omvormer, batterij en installatie kost tussen de â‚¬8.000 en â‚¬12.000, afhankelijk van de gewenste capaciteit en systeemconfiguratie."
   - question: "Is Sigenergy geschikt voor bestaande zonnepanelen?"
-    answer: "Ja, Sigenergy kan worden gecombineerd met bestaande zonnepanelen, maar de meerwaarde van het ecosysteem is het grootst wanneer u ook de Sigenergy-omvormer gebruikt."
+    answer: "Ja, Sigenergy kan worden gecombineerd met bestaande zonnepanelen, maar de meerwaarde van het ecosysteem is het grootst wanneer je ook de Sigenergy-omvormer gebruikt."
   - question: "Hoe lang is de garantie op Sigenergy?"
     answer: "Sigenergy biedt standaard 10 jaar garantie op zowel de omvormer als de batterijmodules."
 relatedArticles:
@@ -34,7 +34,7 @@ relatedArticles:
 
 De thuisbatterijmarkt verandert snel. Waar de eerste generatie systemen nog bestond uit losstaande omvormers en batterijen van verschillende merken, zien we nu een duidelijke trend richting geÃ¯ntegreerde ecosystemen. Sigenergy is hierin een absolute voorloper: het merk biedt een volledig gesloten systeem waarbij omvormer, batterij, energiemanagementsysteem en app naadloos samenwerken als Ã©Ã©n geheel.
 
-Het resultaat is indrukwekkend â€” maar de prijs is navenant. In deze review bespreken we wat u van Sigenergy mag verwachten, voor wie het geschikt is en of de hogere investering gerechtvaardigd is.
+Het resultaat is indrukwekkend â€” maar de prijs is navenant. In deze review bespreken we wat je van Sigenergy mag verwachten, voor wie het geschikt is en of de hogere investering gerechtvaardigd is.
 
 **Onze eindscore: 8,5 / 10**
 
@@ -51,7 +51,7 @@ Een hybride omvormer die zowel DC-input van zonnepanelen als AC-input van het ne
 De batterijmodules zijn stapelbaar van 5 kWh tot 30 kWh. Elk module is voorzien van LFP-cellen en heeft zijn eigen BMS (Battery Management System) voor optimale prestaties en veiligheid.
 
 **3. Het Sigenergy EMS (Energy Management System)**
-Het hart van het ecosysteem. Het EMS coÃ¶rdineert real-time alle energiestromen: van panelen, van het net, naar de batterij, naar de woning en terug naar het net. Met kunstmatige intelligentie optimaliseert het systeem automatisch op basis van uw verbruikspatroon, weersvoorspellingen en dynamische energieprijzen.
+Het hart van het ecosysteem. Het EMS coÃ¶rdineert real-time alle energiestromen: van panelen, van het net, naar de batterij, naar de woning en terug naar het net. Met kunstmatige intelligentie optimaliseert het systeem automatisch op basis van jouw verbruikspatroon, weersvoorspellingen en dynamische energieprijzen.
 
 ---
 
@@ -78,11 +78,11 @@ De cycluslevensduur van meer dan 8.000 cycli bij 90% DoD (Depth of Discharge) is
 
 ## Installatie en Inbedrijfstelling
 
-De installatie van een Sigenergy-systeem is uitsluitend voorbehouden aan gecertificeerde Sigenergy-installateurs. Dit is bewust zo gekozen: de complexiteit van het geÃ¯ntegreerde systeem vereist specifieke kennis. Na installatie configureert de installateur het EMS op basis van uw situatie: dakoriÃ«ntatie, schaduw, verbruikspatroon en eventuele elektrische auto.
+De installatie van een Sigenergy-systeem is uitsluitend voorbehouden aan gecertificeerde Sigenergy-installateurs. Dit is bewust zo gekozen: de complexiteit van het geÃ¯ntegreerde systeem vereist specifieke kennis. Na installatie configureert de installateur het EMS op basis van jouw situatie: dakoriÃ«ntatie, schaduw, verbruikspatroon en eventuele elektrische auto.
 
-De inbedrijfstelling duurt doorgaans Ã©Ã©n volledige werkdag. Daarna is het systeem volledig operationeel en begint het EMS automatisch te leren van uw verbruikspatroon. Na 2-3 weken is de optimalisatie volledig ingeslepen.
+De inbedrijfstelling duurt doorgaans Ã©Ã©n volledige werkdag. Daarna is het systeem volledig operationeel en begint het EMS automatisch te leren van jouw verbruikspatroon. Na 2-3 weken is de optimalisatie volledig ingeslepen.
 
-[Vraag een gratis offerte aan voor een Sigenergy-installatie](https://www.thuisbatterij.nl/offerte/) bij een gecertificeerd installateur in uw regio.
+[Vraag een gratis offerte aan voor een Sigenergy-installatie](https://www.thuisbatterij.nl/offerte/) bij een gecertificeerd installateur in jouw regio.
 
 ---
 
@@ -91,9 +91,9 @@ De inbedrijfstelling duurt doorgaans Ã©Ã©n volledige werkdag. Daarna is het 
 Waar Sigenergy werkelijk uitblinkt, is in het intelligente energiebeheer. Het EMS analyseert continu:
 
 - **Weersdata**: Op basis van weersverwachtingen past het systeem de laadstrategie aan. Komt er morgen een bewolkte dag? Dan laadt het systeem vandaag de batterij voller.
-- **Dynamische energieprijzen**: Heeft u een variabel energiecontract? Sigenergy laadt de batterij automatisch op in de goedkoopste uren en levert energie terug aan het net tijdens piekprijzen.
-- **Verbruikspatronen**: Het systeem leert wanneer u thuis bent, wanneer de wasmachine draait en wanneer uw auto oplaadt. Dit alles wordt meegenomen in de optimalisatie.
-- **V2H-integratie**: Heeft u een elektrische auto met Vehicle-to-Home-functionaliteit? De Sigenergy kan uw auto inzetten als extra energiebuffer.
+- **Dynamische energieprijzen**: Heb je een variabel energiecontract? Sigenergy laadt de batterij automatisch op in de goedkoopste uren en levert energie terug aan het net tijdens piekprijzen.
+- **Verbruikspatronen**: Het systeem leert wanneer je thuis bent, wanneer de wasmachine draait en wanneer jouw auto oplaadt. Dit alles wordt meegenomen in de optimalisatie.
+- **V2H-integratie**: Heb je een elektrische auto met Vehicle-to-Home-functionaliteit? De Sigenergy kan jouw auto inzetten als extra energiebuffer.
 
 In de praktijk betekent dit dat Sigenergy-gebruikers gemiddeld 15-25% meer zelfconsumptie realiseren dan met een niet-geoptimaliseerd systeem. Over de levensduur van het systeem kan dit duizenden euro's extra besparing opleveren.
 
@@ -103,8 +103,8 @@ In de praktijk betekent dit dat Sigenergy-gebruikers gemiddeld 15-25% meer zelfc
 
 - **Volledig geÃ¯ntegreerd ecosysteem**: Omvormer, batterij en EMS werken als Ã©Ã©n geheel â€” minder storingsgevoeligheid, hogere efficiÃ«ntie.
 - **AI-gestuurde optimalisatie**: Het systeem optimaliseert automatisch op basis van weer, prijzen en verbruikspatroon.
-- **Modulair tot 30 kWh**: Groeit mee met uw behoeften. Begin met 5 kWh en breid later uit.
-- **V2H-ondersteuning**: Uniek in dit prijssegment â€” uw elektrische auto als extra buffer.
+- **Modulair tot 30 kWh**: Groeit mee met jouw behoeften. Begin met 5 kWh en breid later uit.
+- **V2H-ondersteuning**: Uniek in dit prijssegment â€” jouw elektrische auto als extra buffer.
 - **IP65-bescherming**: Volledig buiteninstalleerbaar.
 - **Uitstekende efficiÃ«ntie**: 97,6% systeem efficiÃ«ntie, hoger dan de meeste concurrenten.
 - **Volledig eilandbedrijf**: Bij stroomuitval schakelt het systeem naadloos over naar off-grid modus.
@@ -114,9 +114,9 @@ In de praktijk betekent dit dat Sigenergy-gebruikers gemiddeld 15-25% meer zelfc
 ## Nadelen van Sigenergy
 
 - **Hoge aanschafprijs**: Met â‚¬8.000 tot â‚¬12.000 is Sigenergy een serieuze investering.
-- **Installateurvereiste**: U kunt dit systeem niet zelf installeren. U bent afhankelijk van gecertificeerde partners.
+- **Installateurvereiste**: Je kunt dit systeem niet zelf installeren. Je bent afhankelijk van gecertificeerde partners.
 - **Relatief jong merk**: Sigenergy is jonger dan concurrenten als Tesla of BYD. De lange-termijn servicegarantie is nog niet bewezen.
-- **Gesloten ecosysteem**: De meerwaarde van het systeem is het grootst wanneer u alles van Sigenergy gebruikt. Mengen met andere merken is suboptimaal.
+- **Gesloten ecosysteem**: De meerwaarde van het systeem is het grootst wanneer je alles van Sigenergy gebruikt. Mengen met andere merken is suboptimaal.
 
 ---
 
@@ -154,4 +154,4 @@ De hoge prijs is de grootste drempel. Maar voor wie bereid is te investeren, bie
 
 **Onze score: 8,5 / 10** â€” Topkeuze voor veeleisende gebruikers.
 
-[Vraag vandaag een gratis offerte aan voor Sigenergy](https://www.thuisbatterij.nl/offerte/) en ontdek wat dit systeem voor uw situatie kan betekenen. Of [bekijk beschikbare opties via Coolblue](https://www.coolblue.nl/thuisbatterijen).
+[Vraag vandaag een gratis offerte aan voor Sigenergy](https://www.thuisbatterij.nl/offerte/) en ontdek wat dit systeem voor jouw situatie kan betekenen. Of [bekijk beschikbare opties via Coolblue](https://www.coolblue.nl/thuisbatterijen).

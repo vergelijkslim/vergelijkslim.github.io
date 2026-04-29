@@ -22,7 +22,7 @@ faq:
   - question: "Hoeveel kost de Zendure SolarFlow?"
     answer: "De Zendure SolarFlow kost tussen de â‚¬600 en â‚¬900, afhankelijk van de capaciteitsvariant (960Wh of 1920Wh)."
   - question: "Heb ik een installateur nodig voor de Zendure SolarFlow?"
-    answer: "Nee, de Zendure SolarFlow is een plug-and-play systeem. U kunt het zelf aansluiten zonder een gecertificeerde installateur."
+    answer: "Nee, de Zendure SolarFlow is een plug-and-play systeem. Je kunt het zelf aansluiten zonder een gecertificeerde installateur."
   - question: "Is de Zendure SolarFlow veilig?"
     answer: "Ja, de SolarFlow is voorzien van LFP-cellen en voldoet aan Europese veiligheidsnormen. Het systeem heeft ingebouwde overlaad- en temperatuurbeveiliging."
 relatedArticles:
@@ -33,7 +33,7 @@ relatedArticles:
 
 ## Zendure SolarFlow: Energieopslag voor het Balkon, Eindelijk Bereikbaar voor Iedereen
 
-Niet iedereen heeft een eigen dak om zonnepanelen op te leggen. Huurders, appartementsbewoners en mensen met een plat dak zonder vergunning zitten vaak met de handen in het haar als het gaat om zelfopwek van energie. De Zendure SolarFlow biedt een elegante oplossing: een compacte, plug-and-play batterij die samenwerkt met balkonzonnepanelen en waarvoor u geen installateur nodig heeft.
+Niet iedereen heeft een eigen dak om zonnepanelen op te leggen. Huurders, appartementsbewoners en mensen met een plat dak zonder vergunning zitten vaak met de handen in het haar als het gaat om zelfopwek van energie. De Zendure SolarFlow biedt een elegante oplossing: een compacte, plug-and-play batterij die samenwerkt met balkonzonnepanelen en waarvoor je geen installateur nodig heeft.
 
 In deze review bespreken we alle aspecten van de Zendure SolarFlow: hoe het werkt, wat het oplevert, voor wie het geschikt is en of de investering de moeite waard is.
 
@@ -43,7 +43,7 @@ In deze review bespreken we alle aspecten van de Zendure SolarFlow: hoe het werk
 
 ## Wat Is de Zendure SolarFlow Precies?
 
-De Zendure SolarFlow is een zogenaamd "balkonkrachtcentrale"-systeem met geÃ¯ntegreerde batterijopslag. Waar een standaard balkoninstallatie zonder batterij alleen energie levert zolang de zon schijnt, slaat de SolarFlow overdag opgewekte energie op en geeft die later â€” op het moment dat u het echt nodig heeft â€” vrij aan uw huishoudnet.
+De Zendure SolarFlow is een zogenaamd "balkonkrachtcentrale"-systeem met geÃ¯ntegreerde batterijopslag. Waar een standaard balkoninstallatie zonder batterij alleen energie levert zolang de zon schijnt, slaat de SolarFlow overdag opgewekte energie op en geeft die later â€” op het moment dat je het echt nodig hebt â€” vrij aan jouw huishoudnet.
 
 Het systeem bestaat uit een compacte batterij-unit en een slimme micro-omvormer. De batterij-unit is verkrijgbaar in twee capaciteiten:
 
@@ -79,9 +79,9 @@ De grootste troef van de Zendure SolarFlow is de installatiegemak. De setup is l
 2. Sluit de zonnepanelen aan op de SolarFlow-hub.
 3. Verbind de hub met de micro-omvormer via de bijgeleverde kabels.
 4. Steek de micro-omvormer in een buitenstopcontact of verlengkabel.
-5. Download de Zendure-app en configureer uw systeem via WiFi.
+5. Download de Zendure-app en configureer jouw systeem via WiFi.
 
-De Zendure-app is verrassend uitgebreid. U ziet real-time hoeveel energie uw panelen opwekken, hoeveel er in de batterij gaat, hoeveel de batterij afgeeft en wat uw netto netverbruik is. U kunt ook een "slim laadschema" instellen, waarbij de batterij alleen 's nachts ontlaadt (handig als u dynamische energiecontracten heeft).
+De Zendure-app is verrassend uitgebreid. Je ziet real-time hoeveel energie jouw panelen opwekken, hoeveel er in de batterij gaat, hoeveel de batterij afgeeft en wat jouw netto netverbruik is. Je kunt ook een "slim laadschema" instellen, waarbij de batterij alleen 's nachts ontlaadt (handig als je dynamische energiecontracten hebt).
 
 [Bekijk de Zendure SolarFlow bij Coolblue](https://www.coolblue.nl/thuisbatterijen) en check de actuele prijs en beschikbaarheid.
 
@@ -89,9 +89,9 @@ De Zendure-app is verrassend uitgebreid. U ziet real-time hoeveel energie uw pan
 
 ## Prestaties in de Praktijk
 
-In de praktijk presteert de Zendure SolarFlow uitstekend voor zijn klasse. Met twee panelen van 400W piek laadt de 960Wh-variant op een zonnige dag volledig op in 2-3 uur. De energie wordt vervolgens 's avonds afgeleverd aan het huisnet, waardoor u structureel minder van het net afneemt.
+In de praktijk presteert de Zendure SolarFlow uitstekend voor zijn klasse. Met twee panelen van 400W piek laadt de 960Wh-variant op een zonnige dag volledig op in 2-3 uur. De energie wordt vervolgens 's avonds afgeleverd aan het huisnet, waardoor je structureel minder van het net afneemt.
 
-Rekensommetje: als u met de 1920Wh-variant dagelijks 1,5 kWh uit uw batterij haalt (realistisch bij een gemiddelde dagopbrengst), bespaart u bij een energieprijs van â‚¬0,30/kWh zo'n â‚¬164 per jaar. De terugverdientijd ligt daarmee op 5-6 jaar, wat voor een batterijsysteem erg netjes is.
+Rekensommetje: als je met de 1920Wh-variant dagelijks 1,5 kWh uit jouw batterij haalt (realistisch bij een gemiddelde dagopbrengst), bespaart je bij een energieprijs van â‚¬0,30/kWh zo'n â‚¬164 per jaar. De terugverdientijd ligt daarmee op 5-6 jaar, wat voor een batterijsysteem erg netjes is.
 
 De ontlaadsnelheid van 800W (bij de 1920Wh-variant) is voldoende voor de meeste basisverbruikers: LED-verlichting, televisie, laptop, router, kleine keukenapparaten. Een wasmachine of oven vergt meer vermogen dan het systeem kan leveren, maar dat is bij deze klasse ook niet de bedoeling.
 
@@ -103,15 +103,15 @@ De ontlaadsnelheid van 800W (bij de 1920Wh-variant) is voldoende voor de meeste 
 - **LFP-veiligheid**: Lithiumijzerfosfaat-cellen zijn stabiel, veilig en gaan lang mee.
 - **Uitstekende app**: Gedetailleerd inzicht in energiestromen, met slim laadschema.
 - **IP65-bescherming**: Geschikt voor gebruik buiten, ook in de regen.
-- **Modulair**: U begint met 960Wh en breidt later uit naar 1920Wh.
+- **Modulair**: Je begint met 960Wh en breidt later uit naar 1920Wh.
 - **Scherpe prijs**: Vanaf â‚¬600 is dit de meest toegankelijke batterijoplossing op de markt.
 
 ---
 
 ## Nadelen van de Zendure SolarFlow
 
-- **Beperkte capaciteit**: 1920Wh is weinig vergeleken met een volwaardige thuisbatterij van 10 kWh. U dekt slechts een deel van uw avondverbruik.
-- **Maximaal 800W invoer**: Bij grote balkonsystemen (meer dan 2 panelen) laat u potentieel opbrengst liggen.
+- **Beperkte capaciteit**: 1920Wh is weinig vergeleken met een volwaardige thuisbatterij van 10 kWh. Je dekt slechts een deel van jouw avondverbruik.
+- **Maximaal 800W invoer**: Bij grote balkonsystemen (meer dan 2 panelen) laat je potentieel opbrengst liggen.
 - **Geen back-upfunctie bij stroomuitval**: De SolarFlow schakelt net als alle grid-tied systemen uit bij netuitval.
 - **Korte garantie**: 5 jaar garantie is minder dan de 10 jaar die grotere thuisbatterijen bieden.
 - **Geschikt voor balkon, niet voor heel huis**: Wie het volledige huishouden wil ontkoppelen van het net, heeft een grotere oplossing nodig.
@@ -131,7 +131,7 @@ De SolarFlow is geen vervanging voor een volwaardige thuisbatterij zoals de BYD 
 | Geschikt voor | Huurders, balkonpanelen | Eigen woning, full solar |
 | Back-up bij uitval | Nee | Ja (bij sommige) |
 
-Heeft u een koopwoning met zonnepanelen op het dak en wilt u serieus investeren in energieopslag? Dan raden wij aan ook een offerte te vragen voor een volwaardige thuisbatterij. [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en vergelijk uw opties.
+Heb je een koopwoning met zonnepanelen op het dak en wil je serieus investeren in energieopslag? Dan raden wij aan ook een offerte te vragen voor een volwaardige thuisbatterij. [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en vergelijk jouw opties.
 
 ---
 
