@@ -38,10 +38,14 @@ API_URL = "https://api.transip.nl/v6"
 #   2. Add Property (Domain type)
 #   3. Copy the TXT record value shown
 VERIFICATION_TOKENS = {
-    "vergelijk-uw-renovatie.nl":     None,  # e.g. "google-site-verification=AbCdEf123..."
+    # Already have TXT records in DNS (just need board to click Verify in GSC):
+    "vergelijk-uw-renovatie.nl":     "google-site-verification=SxtoGnEpKqJavY4tTjHnO_GOD_RVbgWnuk2XvxegZp8",
+    "vergelijk-uw-laadpaal.nl":      "google-site-verification=OcI2V2XfDzDESDOqIEC_Kbe1BOdFfFppkdVZmvwtVT4",
+    "vergelijk-uw-hosting.nl":       "google-site-verification=BofBhnWKn87Da4WoAh0ZnLz73ogd3e8ntezfI09GwX8",
+    # Needs token from board (go to GSC > Add property > Domain > copy TXT value):
     "vergelijk-uw-thuisbatterij.nl": None,
-    "vergelijk-uw-laadpaal.nl":      None,
-    "vergelijk-uw-hosting.nl":       None,
+    # thuisbatterijwijzer.nl is NOT in TransIP account - needs clarification from board
+    # "thuisbatterijwijzer.nl":       None,
 }
 
 
