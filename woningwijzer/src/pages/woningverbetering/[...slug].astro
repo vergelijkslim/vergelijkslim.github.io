@@ -5,6 +5,7 @@ import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
 import AffiliateButton from '../../components/AffiliateButton.astro';
 import { getCollection, render } from 'astro:content';
 import '../../lib/affiliate-data';
+import LastUpdated from '../../components/LastUpdated.astro';
 
 export async function getStaticPaths() {
   const articles = await getCollection('woningverbetering');
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await render(article);
-const { title, description, faq, affiliateLinks, publishDate, updatedDate, author, type } = article.data;
+const { title, description, faq, affiliateLinks, publishDate, updatedDate, author, type, changelog } = article.data;
 const readTime = Math.max(1, Math.ceil(article.body!.split(/\s+/).length / 250));
 const typeLabels: Record<string, string> = { vergelijking: 'Vergelijking', review: 'Review', gids: 'Gids', regionaal: 'Regionaal' };
 const breadcrumbs = [
@@ -64,6 +65,7 @@ const articleSchema = {
 
     <div class="container article-body">
       <div class="content-wrapper">
+        <LastUpdated publishDate={publishDate} updatedDate={updatedDate} changelog={changelog} />
         <div class="prose"><Content /></div>
         {affiliateLinks.length > 0 && (
           <div class="cta-box">

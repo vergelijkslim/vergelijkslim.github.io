@@ -17,6 +17,9 @@ const articleSchema = z.object({
     .array(z.object({ question: z.string(), answer: z.string() }))
     .default([]),
   relatedArticles: z.array(z.string()).default([]),
+  changelog: z
+    .array(z.object({ date: z.coerce.date(), note: z.string() }))
+    .default([]),
   city: z.string().optional(),
   province: z.string().optional(),
 });

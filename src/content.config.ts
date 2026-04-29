@@ -22,6 +22,9 @@ const articleSchema = z.object({
     )
     .default([]),
   relatedArticles: z.array(z.string()).default([]),
+  changelog: z
+    .array(z.object({ date: z.coerce.date(), note: z.string() }))
+    .default([]),
   city: z.string().optional(),
   province: z.string().optional(),
 });

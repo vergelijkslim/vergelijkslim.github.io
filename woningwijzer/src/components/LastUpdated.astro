@@ -1,0 +1,93 @@
+---
+interface ChangelogEntry {
+  date: Date;
+  note: string;
+}
+
+interface Props {
+  updatedDate?: Date;
+  publishDate: Date;
+  changelog?: ChangelogEntry[];
+}
+
+const { updatedDate, publishDate, changelog = [] } = Astro.props;
+const displayDate = updatedDate ?? publishDate;
+---
+
+<div class="last-updated-block">
+  <div class="last-updated-main">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </svg>
+    <span>
+      Laatst bijgewerkt:
+      <time datetime={displayDate.toISOString()}>
+        {displayDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })}
+      </time>
+    </span>
+  </div>
+  {changelog.length > 0 && (
+    <ul class="changelog-list">
+      {changelog.map((entry) => (
+        <li>
+          <time datetime={entry.date.toISOString()} class="changelog-date">
+            {entry.date.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' })}
+          </time>
+          <span class="changelog-note">{entry.note}</span>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
+<style>
+  .last-updated-block {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--color-bg-alt, #f8fafc);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.875rem;
+    margin-bottom: 1.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted, #64748b);
+  }
+  .last-updated-main {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-weight: 500;
+  }
+  .last-updated-main svg {
+    flex-shrink: 0;
+    color: var(--color-primary, #16a34a);
+  }
+  .last-updated-main time {
+    color: var(--color-text, #0f172a);
+  }
+  .changelog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.375rem;
+    border-top: 1px solid var(--color-border-light, #f1f5f9);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .changelog-list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+  .changelog-date {
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--color-text-light, #475569);
+  }
+  .changelog-note {
+    color: var(--color-text-muted, #64748b);
+  }
+</style>
