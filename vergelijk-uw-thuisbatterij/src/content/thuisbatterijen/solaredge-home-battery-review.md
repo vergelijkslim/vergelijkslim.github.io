@@ -79,7 +79,7 @@ De installatie van de SolarEdge Home Battery vereist een SolarEdge hybride omvor
 
 **Heeft u gÃ©Ã©n SolarEdge-omvormer?** Dan raden wij aan ook andere systemen te overwegen. De meerkosten voor een SolarEdge hybride omvormer plus de battery zijn vaak hoger dan een compleet systeem van Sigenergy of BYD, terwijl die systemen vergelijkbare of betere prestaties bieden.
 
-[Vraag een gratis offerte aan](thuisbatterij-offerte) om te laten beoordelen of de SolarEdge Home Battery bij uw installatie past.
+[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) om te laten beoordelen of de SolarEdge Home Battery bij uw installatie past.
 
 ---
 
@@ -153,7 +153,7 @@ De SolarEdge Home Battery is de beste keuze voor:
 - **Nieuwe installaties waarbij paneel-niveau monitoring prioriteit is**: De DC-optimizer architectuur biedt uniek inzicht per paneel.
 - **Woningen met veel schaduw**: DC-optimizers compenseren schaduweffecten beter dan string-omvormers.
 
-Wilt u weten of SolarEdge bij uw situatie past? [Vraag een gratis offerte aan](thuisbatterij-offerte) en laat een specialist uw installatie beoordelen.
+Wilt u weten of SolarEdge bij uw situatie past? [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een specialist uw installatie beoordelen.
 
 ---
 
@@ -165,4 +165,4 @@ Wie zonder SolarEdge-omvormer begint, doet er verstandig aan ook andere systemen
 
 **Onze score: 7,5 / 10** â€” Uitstekend voor SolarEdge-gebruikers, ongeschikt voor anderen.
 
-[Bekijk de SolarEdge Home Battery via Coolblue](coolblue-thuisbatterij) of [vraag een offerte aan bij een gecertificeerd SolarEdge-installateur](thuisbatterij-offerte).
+[Bekijk de SolarEdge Home Battery via Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een offerte aan bij een gecertificeerd SolarEdge-installateur](https://www.thuisbatterij.nl/offerte/).

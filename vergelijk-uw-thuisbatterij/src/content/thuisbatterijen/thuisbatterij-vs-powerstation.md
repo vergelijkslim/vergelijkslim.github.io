@@ -88,7 +88,7 @@ Een powerstation doet dit niet automatisch. U moet het zelf opladen (via stopcon
 
 **Rekensom**: Een 10 kWh thuisbatterij kan bij 250 laadcycli per jaar ca. 2.500 kWh per jaar aan goedkope of gratis zonne-energie opslaan en gebruiken. Bij â‚¬0,30/kWh is dat â‚¬750 besparing per jaar. Een powerstation haalt dit nooit.
 
-[Vraag een gratis offerte aan voor een thuisbatterij](thuisbatterij-offerte) en ontdek uw exacte besparingspotentieel.
+[Vraag een gratis offerte aan voor een thuisbatterij](https://www.thuisbatterij.nl/offerte/) en ontdek uw exacte besparingspotentieel.
 
 ---
 
@@ -121,7 +121,7 @@ Een thuisbatterij is hier per definitie ongeschikt â€” het is een vast geÃ
 
 Heeft u geen eigen dak en mag u geen vaste installaties plaatsen? Dan is een powerstation de meest realistische optie. U kunt het mee nemen bij verhuizing, vereist geen installateur en is geen aantasting van het pand.
 
-Een middenweg is de [Zendure SolarFlow](zendure-solarflow-review) (zie onze review): een plug-and-play balkonbatterij die speciaal is ontworpen voor huurders met balkonzonnepanelen. Capaciteit is beperkt (max. 1,92 kWh), maar de automatische werking in combinatie met balkonpanelen maakt het een stap boven een regulier powerstation.
+Een middenweg is de [Zendure SolarFlow](/thuisbatterijen/zendure-solarflow-review/) (zie onze review): een plug-and-play balkonbatterij die speciaal is ontworpen voor huurders met balkonzonnepanelen. Capaciteit is beperkt (max. 1,92 kWh), maar de automatische werking in combinatie met balkonpanelen maakt het een stap boven een regulier powerstation.
 
 ---
 
@@ -190,7 +190,7 @@ Kies voor een thuisbatterij als u:
 - Bereid bent een **investering van 7-12 jaar** te maken
 - **Netcongestie** in uw regio heeft en meer zelfconsumptie wilt
 
-[Vraag een gratis offerte aan](thuisbatterij-offerte) en ontdek welke thuisbatterij het beste bij uw woning past.
+[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek welke thuisbatterij het beste bij uw woning past.
 
 ---
 
@@ -210,7 +210,7 @@ De keuze tussen een thuisbatterij en een powerstation is niet moeilijk als u uw 
 - **Huurder, camperaar of iemand die flexibiliteit boven besparing stelt?** Kies een powerstation.
 - **Wilt u het beste van beide werelden?** Combineer een thuisbatterij met een klein powerstation voor onderweg.
 
-[Bekijk het aanbod aan thuisbatterijen en powerstations bij Coolblue](coolblue-thuisbatterij) of [vraag een gratis persoonlijk advies aan](thuisbatterij-offerte) om de beste keuze voor uw specifieke situatie te maken.
+[Bekijk het aanbod aan thuisbatterijen en powerstations bij Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis persoonlijk advies aan](https://www.thuisbatterij.nl/offerte/) om de beste keuze voor uw specifieke situatie te maken.
 ```
 
 ---

@@ -82,7 +82,7 @@ De installatie van een Sigenergy-systeem is uitsluitend voorbehouden aan gecerti
 
 De inbedrijfstelling duurt doorgaans Ã©Ã©n volledige werkdag. Daarna is het systeem volledig operationeel en begint het EMS automatisch te leren van uw verbruikspatroon. Na 2-3 weken is de optimalisatie volledig ingeslepen.
 
-[Vraag een gratis offerte aan voor een Sigenergy-installatie](thuisbatterij-offerte) bij een gecertificeerd installateur in uw regio.
+[Vraag een gratis offerte aan voor een Sigenergy-installatie](https://www.thuisbatterij.nl/offerte/) bij een gecertificeerd installateur in uw regio.
 
 ---
 
@@ -154,4 +154,4 @@ De hoge prijs is de grootste drempel. Maar voor wie bereid is te investeren, bie
 
 **Onze score: 8,5 / 10** â€” Topkeuze voor veeleisende gebruikers.
 
-[Vraag vandaag een gratis offerte aan voor Sigenergy](thuisbatterij-offerte) en ontdek wat dit systeem voor uw situatie kan betekenen. Of [bekijk beschikbare opties via Coolblue](coolblue-thuisbatterij).
+[Vraag vandaag een gratis offerte aan voor Sigenergy](https://www.thuisbatterij.nl/offerte/) en ontdek wat dit systeem voor uw situatie kan betekenen. Of [bekijk beschikbare opties via Coolblue](https://www.coolblue.nl/thuisbatterijen).

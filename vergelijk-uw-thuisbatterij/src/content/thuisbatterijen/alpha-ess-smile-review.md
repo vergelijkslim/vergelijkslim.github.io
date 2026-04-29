@@ -72,7 +72,7 @@ Een van de sterkste punten van de Alpha ESS Smile is de brede compatibiliteit. H
 
 Bij AC-koppeling is er wel een licht efficiÃ«ntieverlies ten opzichte van DC-koppeling (ca. 3-5%), maar voor de meeste gebruikers weegt de kostenbesparing ruimschoots op tegen dit verlies.
 
-[Vraag een gratis offerte aan](thuisbatterij-offerte) en laat een installateur beoordelen welke koppelingsmethode het beste bij uw situatie past.
+[Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een installateur beoordelen welke koppelingsmethode het beste bij uw situatie past.
 
 ---
 
@@ -126,7 +126,7 @@ De keuze tussen de Smile B3 en B6 hangt af van uw jaarlijks energieverbruik:
 - **Smile B3 (5,7 kWh)**: Ideaal voor huishoudens met een jaarverbruik tot ca. 3.500 kWh en 8-12 zonnepanelen. Het systeem dekt dan een groot deel van het avondverbruik.
 - **Smile B6 (11,4 kWh)**: Aanbevolen voor huishoudens met een jaarverbruik van 4.000 kWh of meer, grote gezinnen, of huishoudens met een elektrische auto.
 
-Twijfelt u welke variant bij u past? [Vraag een gratis offerte aan](thuisbatterij-offerte) en laat een specialist uw situatie analyseren.
+Twijfelt u welke variant bij u past? [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een specialist uw situatie analyseren.
 
 ---
 
@@ -150,4 +150,4 @@ De beperkte IP-rating en lagere cycluslevensduur zijn punten van aandacht, maar 
 
 **Onze score: 7,0 / 10** â€” Solide keuze voor prijs-kwaliteit.
 
-[Bekijk Alpha ESS-producten via Coolblue](coolblue-thuisbatterij) of [vraag een vrijblijvende offerte aan](thuisbatterij-offerte).
+[Bekijk Alpha ESS-producten via Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een vrijblijvende offerte aan](https://www.thuisbatterij.nl/offerte/).

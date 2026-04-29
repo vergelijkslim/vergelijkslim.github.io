@@ -66,7 +66,7 @@ De Growatt APX werkt het beste in combinatie met een Growatt-omvormer, maar is v
 
 De ShinePhone-app van Growatt biedt real-time inzicht in uw energieverbruik, opwek en laadstatus. De interface is functioneel, al mist het de gepolijste gebruikerservaring van duurdere merken zoals Tesla of SolarEdge. Updates worden over-the-air uitgerold, wat zorgt voor continue softwareverbetering.
 
-Bent u geÃ¯nteresseerd in de Growatt APX voor uw woning? [Vraag een gratis offerte aan via thuisbatterij-offerte](thuisbatterij-offerte) en ontvang een persoonlijk advies van een gecertificeerde installateur bij u in de buurt.
+Bent u geÃ¯nteresseerd in de Growatt APX voor uw woning? [Vraag een gratis offerte aan via thuisbatterij-offerte](https://www.thuisbatterij.nl/offerte/) en ontvang een persoonlijk advies van een gecertificeerde installateur bij u in de buurt.
 
 ---
 
@@ -125,7 +125,7 @@ De Growatt APX is ideaal voor:
 - **Mensen die al een Growatt-omvormer hebben**: de integratie is dan naadloos.
 - **Consumenten die de terugverdientijd centraal stellen**: de lagere aanschafprijs zorgt voor een snellere ROI.
 
-Wilt u weten of de Growatt APX past bij uw situatie? [Bekijk de Growatt APX op Coolblue](coolblue-thuisbatterij) of [vraag een gratis offerte aan](thuisbatterij-offerte) bij een erkend installateur.
+Wilt u weten of de Growatt APX past bij uw situatie? [Bekijk de Growatt APX op Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) bij een erkend installateur.
 
 ---
 
@@ -135,4 +135,4 @@ De Growatt APX is een solide thuisbatterij die zijn geld meer dan waard is. De L
 
 Het verliest punten op app-kwaliteit en bekendheid, maar voor wie niet de meest geavanceerde functies nodig heeft, is dit een uitstekend budgetalternatief. Wij geven de Growatt APX een verdiende **7,5 uit 10**.
 
-**Klaar om te besparen?** [Vraag vandaag nog uw gratis offerte aan](thuisbatterij-offerte) en ontdek wat een thuisbatterij voor uw energierekening kan betekenen.
+**Klaar om te besparen?** [Vraag vandaag nog uw gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en ontdek wat een thuisbatterij voor uw energierekening kan betekenen.

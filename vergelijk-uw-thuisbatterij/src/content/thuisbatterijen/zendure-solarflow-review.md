@@ -83,7 +83,7 @@ De grootste troef van de Zendure SolarFlow is de installatiegemak. De setup is l
 
 De Zendure-app is verrassend uitgebreid. U ziet real-time hoeveel energie uw panelen opwekken, hoeveel er in de batterij gaat, hoeveel de batterij afgeeft en wat uw netto netverbruik is. U kunt ook een "slim laadschema" instellen, waarbij de batterij alleen 's nachts ontlaadt (handig als u dynamische energiecontracten heeft).
 
-[Bekijk de Zendure SolarFlow bij Coolblue](coolblue-thuisbatterij) en check de actuele prijs en beschikbaarheid.
+[Bekijk de Zendure SolarFlow bij Coolblue](https://www.coolblue.nl/thuisbatterijen) en check de actuele prijs en beschikbaarheid.
 
 ---
 
@@ -131,7 +131,7 @@ De SolarFlow is geen vervanging voor een volwaardige thuisbatterij zoals de BYD 
 | Geschikt voor | Huurders, balkonpanelen | Eigen woning, full solar |
 | Back-up bij uitval | Nee | Ja (bij sommige) |
 
-Heeft u een koopwoning met zonnepanelen op het dak en wilt u serieus investeren in energieopslag? Dan raden wij aan ook een offerte te vragen voor een volwaardige thuisbatterij. [Vraag een gratis offerte aan](thuisbatterij-offerte) en vergelijk uw opties.
+Heeft u een koopwoning met zonnepanelen op het dak en wilt u serieus investeren in energieopslag? Dan raden wij aan ook een offerte te vragen voor een volwaardige thuisbatterij. [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en vergelijk uw opties.
 
 ---
 
@@ -154,4 +154,4 @@ De beperkingen in capaciteit en vermogen zijn reÃ«el, maar passen bij het doel
 
 **Onze score: 8,0 / 10** â€” Aanrader voor huurders en balkoneigenaren.
 
-[Bekijk de Zendure SolarFlow bij Coolblue](coolblue-thuisbatterij) of [vraag meer informatie aan over balkonoplossingen](thuisbatterij-offerte).
+[Bekijk de Zendure SolarFlow bij Coolblue](https://www.coolblue.nl/thuisbatterijen) of [vraag meer informatie aan over balkonoplossingen](https://www.thuisbatterij.nl/offerte/).

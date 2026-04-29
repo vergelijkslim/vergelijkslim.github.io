@@ -75,7 +75,7 @@ De V2H-ondersteuning (Vehicle-to-Home) maakt Sigenergy uniek: uw elektrische aut
 
 **Score: 8,5/10** | **Aanbevolen voor:** premium kopers, EV-rijders, gebruikers met dynamisch energiecontract.
 
-[Vraag een offerte aan voor Sigenergy of vergelijkbare premium systemen](thuisbatterij-offerte).
+[Vraag een offerte aan voor Sigenergy of vergelijkbare premium systemen](https://www.thuisbatterij.nl/offerte/).
 
 ---
 
@@ -107,7 +107,7 @@ De app-ervaring en het maximale vermogen (5 kW) zijn minder indrukwekkend dan du
 
 **Score: 7,5/10** | **Aanbevolen voor:** budgetbewuste kopers, eerste thuisbatterij, gemiddeld verbruik.
 
-[Bekijk de Growatt APX en andere budgetopties op Coolblue](coolblue-thuisbatterij).
+[Bekijk de Growatt APX en andere budgetopties op Coolblue](https://www.coolblue.nl/thuisbatterijen).
 
 ---
 
@@ -196,7 +196,7 @@ Sigenergy valt op met meer dan 8.000 cycli â€” bij dagelijks gebruik beteke
 **Beste betrouwbaarheid/merkreputatie**: BYD Battery-Box HVS
 **Beste voor eenvoud**: Alpha ESS Smile B6
 
-Wilt u een persoonlijk advies op basis van uw specifieke situatie? [Vraag een gratis offerte aan](thuisbatterij-offerte) en laat een gecertificeerde installateur uw opties in kaart brengen. Of [bekijk het aanbod en vergelijk prijzen direct op Coolblue](coolblue-thuisbatterij).
+Wilt u een persoonlijk advies op basis van uw specifieke situatie? [Vraag een gratis offerte aan](https://www.thuisbatterij.nl/offerte/) en laat een gecertificeerde installateur uw opties in kaart brengen. Of [bekijk het aanbod en vergelijk prijzen direct op Coolblue](https://www.coolblue.nl/thuisbatterijen).
 
 ---
 
@@ -206,4 +206,4 @@ De thuisbatterijmarkt van 2026 biedt voor elk budget en elke situatie een passen
 
 Wat alle zeven systemen gemeen hebben: ze zijn gebouwd op veilige LFP-celchemie, bieden 10 jaar garantie en zijn gereed voor de energietransitie van de komende decennia. Investeren in een thuisbatterij is in 2026 meer dan ooit een verstandige keuze.
 
-[Vraag vandaag een gratis, vrijblijvende offerte aan](thuisbatterij-offerte) en zet de eerste stap naar energieonafhankelijkheid.
+[Vraag vandaag een gratis, vrijblijvende offerte aan](https://www.thuisbatterij.nl/offerte/) en zet de eerste stap naar energieonafhankelijkheid.
