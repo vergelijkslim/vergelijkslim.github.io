@@ -4,6 +4,7 @@ import FAQSchema from '../../components/seo/FAQSchema.astro';
 import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
 import AffiliateButton from '../../components/AffiliateButton.astro';
 import InlineCTA from '../../components/InlineCTA.astro';
+import AuthorBlock from '../../components/AuthorBlock.astro';
 import { getCollection, render } from 'astro:content';
 import '../../lib/affiliate-data';
 
@@ -115,6 +116,8 @@ const reviewSchema = type === 'review' ? {
           variant="blue"
           trackingParams={{ utm_content: article.id }}
         />
+
+        <AuthorBlock />
 
         {affiliateLinks.length > 0 && (
           <div class="cta-box">
