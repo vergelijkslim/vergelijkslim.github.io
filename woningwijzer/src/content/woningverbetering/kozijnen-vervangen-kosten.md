@@ -62,9 +62,9 @@ Kozijnen met HR++ of triple glas: ISDE-subsidie 37 - 62 EUR per m2 glasoppervlak
 
 Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
 
-[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+[Vraag gratis renovatie-offertes aan →](https://www.offerteadviseur.nl/verbouwen/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
-[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+[Vergelijk isolatie installateurs →](https://www.verbeterjehuis.nl/isolatie/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
 **Handige producten (via Amazon.nl):**
 - [Tochtstrip EPDM zelfklevend deuren en ramen](https://www.amazon.nl/dp/B08JGHT33P?tag=vergelijk05-21)

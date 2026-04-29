@@ -146,9 +146,9 @@ Een verbouwing is een flinke investering, maar met de juiste voorbereiding en ee
 
 Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
 
-[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+[Vraag gratis renovatie-offertes aan →](https://www.offerteadviseur.nl/verbouwen/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
-[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+[Vergelijk isolatie installateurs →](https://www.verbeterjehuis.nl/isolatie/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
 **Handige producten (via Amazon.nl):**
 - [Bosch PSB 1800 LI-2 accuboormachine](https://www.amazon.nl/dp/B09Z91WB4S?tag=vergelijk05-21)

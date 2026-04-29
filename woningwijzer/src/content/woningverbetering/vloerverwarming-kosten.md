@@ -53,9 +53,9 @@ relatedArticles:
 
 Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
 
-[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+[Vraag gratis renovatie-offertes aan →](https://www.offerteadviseur.nl/verbouwen/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
-[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+[Vergelijk isolatie installateurs →](https://www.verbeterjehuis.nl/isolatie/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
 **Handige producten (via Amazon.nl):**
 - [Tado Slimme Thermostaat V3+ Starter Kit](https://www.amazon.nl/dp/B07W9LBZB6?tag=vergelijk05-21)

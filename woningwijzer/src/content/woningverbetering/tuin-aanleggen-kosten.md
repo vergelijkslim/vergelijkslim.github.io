@@ -52,9 +52,9 @@ relatedArticles:
 
 Aannemerkosten verschillen sterk — tot 40% verschil voor hetzelfde werk. Vergelijk altijd minimaal 3 offertes:
 
-[Vraag gratis renovatie-offertes aan →](https://TRADETRACKER-RENOVATIE-OFFERTE-URL)
+[Vraag gratis renovatie-offertes aan →](https://www.offerteadviseur.nl/verbouwen/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
-[Vergelijk isolatie installateurs →](https://DAISYCON-ISOLATIE-OFFERTE-URL)
+[Vergelijk isolatie installateurs →](https://www.verbeterjehuis.nl/isolatie/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
 **Handige producten (via Amazon.nl):**
 - [Gardena tuinslang 25m met sproeikop](https://www.amazon.nl/dp/B0015QJ4GG?tag=vergelijk05-21)
