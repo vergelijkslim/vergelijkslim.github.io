@@ -5,7 +5,7 @@ niche: "woningverbetering"
 type: "gids"
 publishDate: 2026-04-15
 author: "Redactie Vergelijk Uw Renovatie"
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "aannemer-vergelijk"]
 keywords:
   - dakkapel plaatsen kosten
   - dakkapel kosten 2026

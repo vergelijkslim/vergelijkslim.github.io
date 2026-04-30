@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-30
 author: "Redactie Vergelijk Uw Renovatie"
 featured: true
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "aannemer-vergelijk"]
 keywords:
   - schilderwerk kosten
   - schilder kosten per m2

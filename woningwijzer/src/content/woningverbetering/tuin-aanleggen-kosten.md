@@ -6,7 +6,7 @@ type: "gids"
 publishDate: 2026-04-15
 author: "Redactie Vergelijk Uw Renovatie"
 featured: false
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "aannemer-vergelijk"]
 keywords:
   - tuin aanleggen kosten per m2
   - tuin laten aanleggen kosten

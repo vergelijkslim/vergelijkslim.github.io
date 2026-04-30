@@ -6,7 +6,7 @@ type: "gids"
 publishDate: 2026-04-15
 author: "Redactie Vergelijk Uw Renovatie"
 featured: false
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "isolatie-offerte", "subsidie-check"]
 keywords:
   - woning isoleren volgorde
   - huis isoleren

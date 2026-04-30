@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-29
 author: "Redactie Vergelijk Uw Renovatie"
 featured: true
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "aannemer-vergelijk"]
 keywords:
   - badkamer renovatie kosten
   - badkamer verbouwen prijs
