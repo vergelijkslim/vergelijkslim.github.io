@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: false
-affiliateLinks: ["zonnepanelen-offerte", "thuisbatterij-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "thuisbatterij-offerte", "amazon-portable-powerstation"]
 keywords:
   - zonnepanelen thuisbatterij
   - thuisbatterij kosten

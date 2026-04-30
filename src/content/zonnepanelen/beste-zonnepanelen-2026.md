@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: true
-affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk", "amazon-solar-monitor"]
 keywords:
   - beste zonnepanelen 2026
   - zonnepanelen vergelijken

@@ -6,7 +6,7 @@ type: "gids"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: true
-affiliateLinks: ["zonnepanelen-offerte", "energieleverancier-vergelijk"]
+affiliateLinks: ["zonnepanelen-offerte", "energieleverancier-vergelijk", "amazon-zonnepanelen-reiniger"]
 keywords:
   - zonnepanelen nederland
   - zonnepanelen gids
