@@ -1,10 +1,65 @@
 import { registerLinks, type AffiliateLink } from './affiliates';
 
-// Real destination URLs — replace with tracked affiliate URLs once registered
-// with Daisycon/TradeTracker/Awin. Current links are direct (untracked).
-// TODO: Register at https://www.daisycon.com and https://www.tradetracker.com
-//       to get tracked affiliate links with commission tracking.
+// Daisycon energy campaigns — publisher 41aslimzo, media 420541
+// programId: 'PENDING' = tracking URL activates zodra board program IDs aanlevert (AFF-155)
 const links: AffiliateLink[] = [
+  // ── Daisycon energieleveranciers ──────────────────────────────────────────────
+  {
+    id: 'vattenfall-energie',
+    network: 'daisycon',
+    programId: 'PENDING', // TODO: vervang met echt Daisycon program ID (AFF-155)
+    merchant: 'Vattenfall',
+    url: 'https://www.vattenfall.nl/energie/',
+    niche: 'energie',
+    label: 'Stroom + gas via Vattenfall',
+    commissionType: 'cpa',
+    commissionValue: '€96 per conversie',
+  },
+  {
+    id: 'essent-energie',
+    network: 'daisycon',
+    programId: 'PENDING', // TODO: vervang met echt Daisycon program ID (AFF-155)
+    merchant: 'Essent',
+    url: 'https://www.essent.nl/',
+    niche: 'energie',
+    label: 'Stroom + gas via Essent',
+    commissionType: 'cpa',
+    commissionValue: '€70 per conversie',
+  },
+  {
+    id: 'vandebron-energie',
+    network: 'daisycon',
+    programId: 'PENDING', // TODO: vervang met echt Daisycon program ID (AFF-155)
+    merchant: 'Vandebron',
+    url: 'https://vandebron.nl/',
+    niche: 'energie',
+    label: 'Groene stroom via Vandebron',
+    commissionType: 'cpa',
+    commissionValue: '€60 per conversie + €0,51/klik',
+  },
+  {
+    id: 'innova-energie',
+    network: 'daisycon',
+    programId: 'PENDING', // TODO: vervang met echt Daisycon program ID (AFF-155)
+    merchant: 'Innova Energie',
+    url: 'https://www.innovaenergie.nl/',
+    niche: 'energie',
+    label: 'Goedkope energie via Innova',
+    commissionType: 'cpa',
+    commissionValue: '€60 per conversie',
+  },
+  {
+    id: 'energieleverancier-vergelijk',
+    network: 'daisycon',
+    programId: 'PENDING', // TODO: vervang met echt Daisycon program ID (AFF-155)
+    merchant: 'Pricewise',
+    url: 'https://www.pricewise.nl/energie-vergelijken/',
+    niche: 'energie',
+    label: 'Vergelijk energieleveranciers',
+    commissionType: 'cpa',
+    commissionValue: '€30-€80 per overstap',
+  },
+  // ── Zonnepanelen ──────────────────────────────────────────────────────────────
   {
     id: 'zonnepanelen-offerte',
     network: 'direct',
@@ -13,17 +68,7 @@ const links: AffiliateLink[] = [
     niche: 'zonnepanelen',
     label: 'Gratis offertes aanvragen',
     commissionType: 'cpa',
-    commissionValue: '€40-€120 per lead (na Daisycon registratie)',
-  },
-  {
-    id: 'energieleverancier-vergelijk',
-    network: 'direct',
-    merchant: 'Pricewise (Energievergelijken)',
-    url: 'https://www.pricewise.nl/energie-vergelijken/',
-    niche: 'zonnepanelen',
-    label: 'Vergelijk energieleveranciers',
-    commissionType: 'cpa',
-    commissionValue: '€30-€80 per overstap (na Daisycon registratie)',
+    commissionValue: '€40-€120 per lead',
   },
   {
     id: 'installateur-vergelijk',
@@ -33,7 +78,7 @@ const links: AffiliateLink[] = [
     niche: 'zonnepanelen',
     label: 'Vergelijk installateurs',
     commissionType: 'cpa',
-    commissionValue: '€40-€100 per lead (na Daisycon registratie)',
+    commissionValue: '€40-€100 per lead',
   },
   {
     id: 'thuisbatterij-offerte',

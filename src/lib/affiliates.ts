@@ -7,6 +7,8 @@ export interface AffiliateLink {
   label: string;
   commissionType: 'cpa' | 'cps' | 'recurring';
   commissionValue: string;
+  /** Daisycon program ID — required when network === 'daisycon' */
+  programId?: string;
 }
 
 export interface AffiliateConfig {
@@ -46,18 +48,27 @@ export function getLinksByNetwork(network: AffiliateLink['network']): AffiliateL
   return config.links.filter((l) => l.network === network);
 }
 
+const DAISYCON_PUBLISHER_ID = '41aslimzo';
+const DAISYCON_MEDIA_ID = '420541';
+
 export function buildTrackingUrl(link: AffiliateLink, params?: Record<string, string>): string {
   if (link.url.startsWith('#')) {
     return link.url;
   }
-  const url = new URL(link.url);
   if (link.network === 'amazon') {
+    const url = new URL(link.url);
     url.searchParams.set('tag', 'vergelijk05-21');
-  } else {
-    url.searchParams.set('utm_source', 'slimzonnig');
-    url.searchParams.set('utm_medium', 'affiliate');
-    url.searchParams.set('utm_campaign', link.niche);
+    return url.toString();
   }
+  if (link.network === 'daisycon' && link.programId && link.programId !== 'PENDING') {
+    const encoded = encodeURIComponent(link.url);
+    return `https://click.daisycon.com/tc/${DAISYCON_PUBLISHER_ID}/${DAISYCON_MEDIA_ID}/${link.programId}/?url=${encoded}`;
+  }
+  // Fallback: direct link with UTM params
+  const url = new URL(link.url);
+  url.searchParams.set('utm_source', 'slimzonnig');
+  url.searchParams.set('utm_medium', 'affiliate');
+  url.searchParams.set('utm_campaign', link.niche);
   if (params) {
     for (const [key, value] of Object.entries(params)) {
       url.searchParams.set(key, value);
