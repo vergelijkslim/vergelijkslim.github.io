@@ -5,7 +5,7 @@ niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
-affiliateLinks: ["zonnepanelen-offerte", "subsidie-check"]
+affiliateLinks: ["zonnepanelen-offerte", "subsidie-check", "installateur-vergelijk"]
 keywords:
   - zonnepanelen subsidie 2026
   - ISDE subsidie
