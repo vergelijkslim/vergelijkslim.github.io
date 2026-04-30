@@ -84,6 +84,36 @@ const links: AffiliateLink[] = [
     commissionType: 'cps',
     commissionValue: '3-10% per verkoop',
   },
+  {
+    id: 'amazon-vloer-ondervloer',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/dp/B08CQWJVJ5', // Quick-Step Uniclic ondervloer 7dB
+    niche: 'woningverbetering',
+    label: 'Vloer ondervloer (akoestisch) bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-vloer-treklat',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/dp/B001CGXUIM', // Laminaat treklat set + klopblok
+    niche: 'woningverbetering',
+    label: 'Laminaat leggerij set bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
+  {
+    id: 'amazon-solar-monitor',
+    network: 'amazon',
+    merchant: 'Amazon.nl',
+    url: 'https://www.amazon.nl/dp/B0BDF5DX3N', // Shelly Pro 3EM energie monitor
+    niche: 'woningverbetering',
+    label: 'Shelly Pro 3EM energie monitor bij Amazon',
+    commissionType: 'cps',
+    commissionValue: '3-10% per verkoop',
+  },
 ];
 
 registerLinks(links);

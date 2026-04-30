@@ -6,7 +6,7 @@ type: "vergelijking"
 publishDate: 2026-04-30
 author: "Redactie Vergelijk Uw Renovatie"
 featured: true
-affiliateLinks: ["verbouwing-offerte"]
+affiliateLinks: ["verbouwing-offerte", "subsidie-check", "amazon-solar-monitor"]
 keywords:
   - zonnepanelen kosten
   - zonnepanelen prijs 2026
