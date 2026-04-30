@@ -6,7 +6,7 @@ type: "gids"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: false
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk", "amazon-solar-monitor"]
 keywords:
   - hoeveel zonnepanelen heb ik nodig
   - zonnepanelen berekenen

@@ -6,7 +6,7 @@ type: "regionaal"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: false
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
 keywords:
   - zonnepanelen installateur den haag
   - zonnepanelen den haag

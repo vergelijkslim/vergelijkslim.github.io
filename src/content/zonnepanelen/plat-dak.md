@@ -6,7 +6,7 @@ type: "gids"
 publishDate: 2026-04-15
 author: "Redactie SlimZonnig"
 featured: false
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "installateur-vergelijk"]
 keywords:
   - zonnepanelen plat dak
   - plat dak zonnepanelen

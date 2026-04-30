@@ -5,7 +5,7 @@ niche: "zonnepanelen"
 type: "gids"
 publishDate: 2026-04-16
 author: "Redactie SlimZonnig"
-affiliateLinks: ["zonnepanelen-offerte"]
+affiliateLinks: ["zonnepanelen-offerte", "energieleverancier-vergelijk"]
 keywords:
   - salderingsregeling 2026
   - salderingsregeling 2027
