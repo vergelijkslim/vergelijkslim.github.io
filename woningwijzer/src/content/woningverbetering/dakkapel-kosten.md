@@ -24,6 +24,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Dakkapel Plaatsen: Wat Kost Het in 2026?
+
 
 Een dakkapel is een van de populairste manieren om extra ruimte en licht te creëren op zolder. Maar wat kost het precies? We zetten alle kosten, regels en tips op een rij.
 
@@ -63,6 +65,14 @@ Een dakkapel is een van de populairste manieren om extra ruimte en licht te cre�
 ## Plaatsingstijd
 
 Een prefab dakkapel wordt vaak in 1 dag geplaatst. Maatwerk duurt 2-5 dagen. De totale doorlooptijd (bestelling tot plaatsing) is gemiddeld 4-8 weken.
+
+## Dit raad ik af
+
+**Een maatwerk dakkapel raad ik af als je dakvlak standaard is.** Maatwerk kost 20–40% meer dan een prefab dakkapel terwijl het eindresultaat nauwelijks verschilt. Prefab dakkapellen zijn tegenwoordig goed geïsoleerd en professioneel afgewerkt. Maatwerk heeft alleen toegevoegde waarde bij ongebruikelijke dakhellingshoeken of specifieke breedte-eisen.
+
+**Ik raad af om een dakkapel te plaatsen zonder dakconstructie te laten controleren.** Oudere woningen (voor 1975) hebben soms een dakconstructie die versterking nodig heeft voordat een dakkapel geplaatst kan worden. Een dakconstructie-check kost €150–€300 en voorkomt een dure verrassing halverwege de verbouwing.
+
+**Mijn keuze:** Prefab dakkapel van een gespecialiseerd bedrijf, niet van een algemene aannemer. Dakkapelspecialisten (zoals Dakkapel.nl of vergelijkbare partijen) doen dit werk elke dag en zijn 15–25% goedkoper dan algemene aannemers voor hetzelfde product. Vraag altijd referentieprojecten op en controleer of de afdichting rondom wordt gegarandeerd.
 
 ## Conclusie
 

@@ -23,6 +23,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Vloerverwarming Kosten per m2 (2026)
+
 
 ## Kosten per Type
 
@@ -42,6 +44,13 @@ relatedArticles:
 | Vloerverhoging | 5-8 cm (nat) / 2-3 cm (droog) | 0.5-1 cm |
 | Combinatie warmtepomp | Uitstekend | Niet ideaal |
 
+## Dit raad ik af
+
+**Elektrische vloerverwarming als hoofdverwarming raad ik af.** Elektrisch is prima als bijverwarming in een badkamer of keuken, maar als je het gebruikt om een volledig vertrek op temperatuur te brengen, zijn de energiekosten significant hoger dan watergedragen vloerverwarming. Elektrisch als primaire verwarming in woonkamers is een dure vergissing die bij elke energierekening pijn doet.
+
+**Ik raad ook af om vloerverwarming te plaatsen op een houten vloer zonder specialistisch advies.** Massief hout en vloerverwarming zijn geen goede combinatie — het hout werkt (zet uit en krimpt) door de temperatuurwisselingen, wat scheuren en kieren geeft. Engineered wood (samengesteld hout) is beter bestand, maar vraag altijd de aanbevolen maximumtemperatuur op bij de vloerenproducent.
+
+**Mijn keuze:** Watergedragen vloerverwarming bij nieuwbouw of renovatie waarbij de vloer toch open gaat, gecombineerd met een warmtepomp. Dat is de meest efficiënte combinatie: warmtepomp werkt optimaal bij lage aanvoertemperaturen (30–35°C), precies wat vloerverwarming nodig heeft. Elektrisch alleen in de badkamer als luxe aanvulling — een mat van €200–€400 die de tegels 's ochtends op temperatuur brengt.
 
 ---
 

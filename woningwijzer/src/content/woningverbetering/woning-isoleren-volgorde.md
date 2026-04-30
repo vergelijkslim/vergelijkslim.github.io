@@ -23,6 +23,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Woning Isoleren: De Juiste Volgorde (2026)
+
 
 ## De Ideale Isolatie Volgorde
 
@@ -33,6 +35,14 @@ relatedArticles:
 | 3 | Vloerisolatie | 150 - 350 EUR | 1.500 - 3.500 EUR | 5-10 jaar |
 | 4 | HR++ glas | 200 - 400 EUR | 3.000 - 8.000 EUR | 8-15 jaar |
 | 5 | Kierdichting | 50 - 150 EUR | 100 - 500 EUR | 1-3 jaar |
+
+## Dit raad ik af
+
+**Vloerisolatie als eerste maatregel raad ik af, tenzij je kruipruimtevocht hebt.** Spouwmuurisolatie en dakisolatie geven een snellere terugverdientijd én een groter comforteffect. Vloerisolatie is zinvol maar staat terecht onderaan de prioriteitenlijst — de warmteverliezen via de vloer zijn in de meeste woningen kleiner dan via gevel en dak.
+
+**Ik raad af om HR++-glas te vervangen als je enkel glas hebt in perfecte kozijnen.** Als de kozijnen nog in goede staat zijn, is HR++ plaatsen in bestaande kozijnen (dubbelglas-renovatie) veel goedkoper dan complete kozijnvervanging. Vraag dit specifiek aan bij de offerte — veel installateurs bieden automatisch complete vervanging aan terwijl alleen het glas al een groot verschil maakt.
+
+**Mijn keuze:** Spouwmuurisolatie eerst. Het is de goedkoopste maatregel per m² en geeft direct merkbaar comfortvoordeel in de winter — de muren voelen niet langer koud aan. Na spouwmuurisolatie: dakisolatie. Dan pas HR++ glas en vloerisolatie. Combineer altijd minimaal twee maatregelen om voor ISDE-subsidie in aanmerking te komen.
 
 ## ISDE Subsidie 2026
 

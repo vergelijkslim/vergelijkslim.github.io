@@ -41,6 +41,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Aanbouw Kosten 2026: Prijs per m² + Vergunning & Tips
+
 Een aanbouw is de meest ingrijpende manier om je woning te vergroten — en voor veel gezinnen de slimste investering. Je wint extra woonoppervlak zonder te verhuizen, verhoogt de woningwaarde en past de woning aan op jouw behoeften. In dit artikel vind je alle kosten voor 2026, de vergunningseisen en concrete tips om te besparen.
 
 ## Kosten Overzicht: Aanbouw per Type
@@ -185,6 +187,16 @@ Een aanbouw moet worden aangesloten op de bestaande systemen in de woning. Dit i
 6. **Vergunning aanvragen** — Indien nodig. Reken op 8-16 weken.
 7. **Bouw** — Fundering → ruwbouw → installaties → isolatie → afwerking.
 8. **Oplevering** — Laat door een bouwinspecteur controleren vóór definitieve betaling.
+
+## Dit raad ik af
+
+**Een aanbouw met lessenaardak raad ik af als je dakramen wil.** Het lessenaardak ziet er modern uit op foto's, maar de lage kant heeft nauwelijks hoogte — je hebt dan een muur van 90 cm aan één kant, wat de gebruiksruimte sterk beperkt. Kies voor een plat dak of zadeldak als je de volledige ruimte wil benutten.
+
+**Ik raad ook af om te beginnen met bouwen zonder vaste contractprijs.** Aannemers die werken op regie (per uur) kunnen bij tegenvallers de rekening flink laten oplopen. Zorg altijd voor een vaste aanneemsom inclusief een post "onvoorzien" van 10%. Zo weet je waar je aan toe bent.
+
+**Een uitbouw in een jaar met een hoge hypotheekrente raad ik af als je het kunt uitstellen.** Bouwen op lening terwijl de hypotheekrente hoog is en de woningmarkt onzeker is, maakt de businesscase zwak. Als je het met 2–3 jaar kunt uitstellen, doe dat dan — óf onderzoek of je het kunt meefinancieren bij herfinanciering.
+
+**Mijn keuze:** Houtskelet constructie met plat dak voor de meeste aanbouwen. Sneller gebouwd, beter te isoleren dan traditioneel metselwerk, en bij vergunningsvrij bouwen (max. 4m diep) bespaar je ook nog eens op de vergunningskosten. Zorg dat je isolatiewaarden hoog zijn — een aanbouw die je in de zomer niet kunt koelen is vervelender dan je van tevoren denkt.
 
 ## Conclusie
 

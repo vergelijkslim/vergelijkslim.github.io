@@ -25,7 +25,7 @@ const links: AffiliateLink[] = [
     id: 'warmtepomp-offerte',
     network: 'direct',
     merchant: 'Warmtepomp-weetjes',
-    url: 'https://www.warmtepomp-weetjes.nl/offertes/',
+    url: 'https://www.warmtepomp-weetjes.nl/warmtepomp-offertes/',
     niche: 'woningverbetering',
     label: 'Vergelijk warmtepompen',
     commissionType: 'cpa',

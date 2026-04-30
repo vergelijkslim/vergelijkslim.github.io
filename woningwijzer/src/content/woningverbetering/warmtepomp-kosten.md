@@ -35,6 +35,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Warmtepomp Kosten 2026: Compleet Overzicht met Subsidies
+
 Een warmtepomp is de meest effectieve manier om je woning te verduurzamen en aardgasvrij te verwarmen. Maar welke kosten komen hierbij kijken, welke subsidies kun je aanvragen en hoe lang duurt het voor de investering zich terugverdient? In dit overzicht zetten we alles voor je op een rij.
 
 ## Kosten per Type Warmtepomp (2026)
@@ -52,8 +54,8 @@ Een warmtepomp is de meest effectieve manier om je woning te verduurzamen en aar
 
 | Woningtype | Aanbevolen | Waarom |
 |---|---|---|
-| Bestaand (matig geisoleerd) | Hybride | Cv-ketel als backup bij strenge vorst |
-| Goed geisoleerd (Rc 3+) | Lucht-water | Volledig van gas af |
+| Bestaand (matig geïsoleerd) | Hybride | Cv-ketel als backup bij strenge vorst |
+| Goed geïsoleerd (Rc 3+) | Lucht-water | Volledig van gas af |
 | Nieuwbouw | Lucht-water of bodem | Verplicht gasloos, optimale isolatie |
 | Appartement zonder tuin | Lucht-lucht | Geen buitenunit of bodem nodig |
 
@@ -155,6 +157,16 @@ De **Investeringssubsidie Duurzame Energie en Energiebesparing (ISDE)** is de vo
 
 **Advies:** Kies een merk met een sterk servicenetwerk in Nederland. Bij storing wil je snel een monteur — dat is bij NIBE, Daikin en Vaillant het best geregeld.
 
+## Dit raad ik af
+
+**Een lucht-lucht warmtepomp voor verwarming raad ik af als primaire verwarming voor een Nederlands huis.** Lucht-lucht pompen zijn prima voor koeling in de zomer, maar voor verwarming in een NL-winter zijn ze inefficiënt en oncomfortabel — ze blazen warme lucht uit aan het plafond terwijl je voeten koud blijven. Voor verwarming wil je een lucht-water warmtepomp die het vloerverwarmings- of radiatorcircuit voedt.
+
+**Een volledig elektrische warmtepomp in een slecht geïsoleerde woning raad ik af.** Als je spouwmuurisolatie mist of dubbele beglazing ontbreekt, gaat de warmtepomp continu op maximaal vermogen draaien — de energierekening wordt dan hoger dan met gas. Isoleer eerst (label C of beter), dan de warmtepomp. In de verkeerde volgorde gooi je geld weg.
+
+**Ik raad ook af om de goedkoopste installateur te nemen.** Een warmtepomp is een systeem waarbij kleine installatiefouten (verkeerd ingeregeld vermogen, slechte vloeistofkoppelingen) jaren later pas opvallen. Kies een installateur met STEK-certificaat en aantoonbare ervaring met het gekozen merk.
+
+**Mijn keuze:** Hybride warmtepomp als je woning gebouwd is voor 1980 en je niet wil investeren in grote isolatiewerken. Volledig elektrisch lucht-water zodra je woning label C of beter heeft. En specifiek qua merk: NIBE of Daikin — niet vanwege marketingpraatjes, maar omdat ik in de praktijk zie dat hun servicenetwerk in Nederland het best functioneert bij storingen.
+
 ## Praktische Tips
 
 1. **Isoleer eerst je woning** — Een warmtepomp rendeert beter in een goed geïsoleerde woning. Investeer eerst in [spouwmuurisolatie en dakisolatie](/woningverbetering/woning-isoleren-volgorde/).
@@ -174,7 +186,7 @@ De **Investeringssubsidie Duurzame Energie en Energiebesparing (ISDE)** is de vo
 
 Warmtepompinstallateurs verschillen sterk in prijs en kwaliteit. Vergelijk altijd minimaal 3 offertes:
 
-[Vergelijk warmtepompen en ontvang offertes →](https://www.warmtepomp-weetjes.nl/offertes/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
+[Vergelijk warmtepompen en ontvang offertes →](https://www.warmtepomp-weetjes.nl/warmtepomp-offertes/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 
 [Vraag gratis renovatie-offertes aan →](https://www.offerteadviseur.nl/verbouwen/?utm_source=vergelijk-uw-renovatie&utm_medium=affiliate&utm_campaign=woningverbetering)
 

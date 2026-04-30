@@ -19,6 +19,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Tuin Aanleggen Kosten per m2 (2026)
+
 
 ## Kosten per Type Tuin
 
@@ -41,6 +43,13 @@ relatedArticles:
 | Schutting (per meter) | 80 - 200 EUR |
 | Tuinverlichting | 500 - 3.000 EUR |
 
+## Dit raad ik af
+
+**Kunstgras raad ik af.** Ik weet dat het populair is, maar na 8–10 jaar ziet kunstgras er versleten en vies uit, het houdt water vast (hittestress in de zomer), en het recyclen van het materiaal is milieuproblemen. De onderhoudskosten vallen bovendien mee voor normaal gazon — graszoden eens per 2–3 weken maaien is werkelijk het enige wat nodig is. Kies voor echte gazon of siergrind als je geen onderhoud wil.
+
+**Ik raad ook af om een complete tuinrenovatie tegelijk te doen als je nieuw in een woning woont.** Wacht een jaar: je leert dan hoe de zon loopt, waar het nat blijft, en wat je écht wil met de ruimte. Tuinen die worden aangelegd voordat je echt weet hoe je de tuin gebruikt, worden altijd opnieuw verbouwd.
+
+**Mijn keuze:** Sierbestrating voor het terras (20–30 jaar mee, weinig onderhoud), gazon voor de speelruimte, en vaste planten langs de randen — geen jaarlijks planten nodig. Budget reserveer ik voor goede drainage als de tuin lager ligt dan het huis. Wateroverlast is het hardnekkigste tuinprobleem en het goedkoopst op te lossen bij aanleg.
 
 ---
 

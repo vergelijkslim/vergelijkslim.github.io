@@ -23,6 +23,8 @@ relatedArticles:
 ---
 *Dit artikel bevat affiliate links. Als je via onze links een offerte aanvraagt of product aanschaft, ontvangen wij mogelijk een vergoeding — zonder extra kosten voor jou.*
 
+# Cv-ketel Vervangen 2026: Kosten, Merken en Subsidies
+
 
 ## Kosten Nieuwe Cv-ketel
 
@@ -50,6 +52,13 @@ relatedArticles:
 | Gasbesparing | 50-60% | 15-20% (vs oude ketel) |
 | Terugverdientijd | 5-8 jaar | Direct |
 
+## Dit raad ik af
+
+**Een nieuwe cv-ketel van een onbekend goedkoop merk raad ik af.** Een cv-ketel is het kloppende hart van je verwarming. Merken als Remeha, Intergas en Vaillant zijn duurder dan huismerken van de bouwmarkt, maar ze hebben bewezen betrouwbaarheid en een goed servicenetwerk. Als je cv-ketel kapot gaat in de winter, wil je een installateur die het onderdeel op voorraad heeft — dat is bij niche-merken lang niet altijd het geval.
+
+**Ik raad ook af om een nieuwe cv-ketel te nemen als je al weet dat je binnen 5–7 jaar gaat verduurzamen.** Een nieuwe ketel kost €1.500–€2.500 en is na installatie financieel afgeschreven. Als je al weet dat je naar een warmtepomp gaat, kun je beter tijdelijk een refurbished cv-ketel laten plaatsen (€500–€800) en het vrijgekomen budget investeren in isolatie als voorbereiding op de warmtepomp.
+
+**Mijn keuze:** Als ik een ketel vervang in een woning die ik nog 5–10 jaar ga bewonen: Remeha Calenta. Betrouwbaar, ruim beschikbaar, en Remeha-installateurs zitten door heel Nederland. Als ik weet dat ik over 3–5 jaar ga verduurzamen: hybride warmtepomp direct, zodat ik subsidie pak nu de ISDE nog bestaat en ik niet twee keer installeer.
 
 ---
 

@@ -56,6 +56,9 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" />
 
+  <!-- TradeTracker site verificatie -->
+  <meta name="tt-site-verification" content="0afafdd5c0c876d7ee7e78407ace124fe2bcf04a" />
+
   <!-- GA4: activated when PUBLIC_GA4_ID env var is set (e.g. G-XXXXXXXXXX) -->
   {import.meta.env.PUBLIC_GA4_ID && (
     <>
@@ -96,5 +99,12 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     <Footer />
     <CookieConsent />
   </div>
+
+  <!-- Begin TradeTracker SuperTag Code -->
+  <script is:inline>
+  var _TradeTrackerTagOptions = { t: 'a', s: '509223', chk: '4f90a60e8af05a914a280ba69c4d0503', overrideOptions: {} };
+  (function() {var tt = document.createElement('script'), s = document.getElementsByTagName('script')[0]; tt.setAttribute('type', 'text/javascript'); tt.setAttribute('src', (document.location.protocol == 'https:' ? 'https' : 'http') + '://tm.tradetracker.net/tag?t=' + _TradeTrackerTagOptions.t + '&s=' + _TradeTrackerTagOptions.s + '&chk=' + _TradeTrackerTagOptions.chk); s.parentNode.insertBefore(tt, s);})();
+  </script>
+  <!-- End TradeTracker SuperTag Code -->
 </body>
 </html>
